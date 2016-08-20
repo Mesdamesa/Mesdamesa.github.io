@@ -5,21 +5,164 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse, et créée par Alice Tabart.">
+    <meta name="description" content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse. Dirigée par Alice Tabart.">
     <meta name="author" content="Alice et Gilles Tabart">
     <meta name="robots" content="index, follow">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <meta name="keywords" content="théâtre, contemporain, Toulouse, Alice Tabart, spectacle, danse, compagnie, mesdames a">
+    <meta name="keywords" content="théâtre, contemporain, Toulouse, Alice Tabart, spectacle, danse, compagnie, mesdames a">
     <title>Compagnie Mesdames A - Théâtre contemporain Toulouse</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
+
+    <!-- Fonts stuff -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+  	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--
+    <[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <[endif]>
+    -->
+
 </head>
-<body>
-§
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
-</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Mesdames a</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#actu">Actualité</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#creations">Créations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#compagnie">La Compagnie</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h1>Welcome</h1>
+                    <p><strong>Mesdames a</strong> Make sure to include the page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                   <!-- <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualites Section -->
+    <section id="actu" class="actu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Actualites</h1>
+                    <h2>Prochaines dates</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creation Section -->
+    <section id="creations" class="creations-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Creations</h1>
+                    <h2>Spectateur(s) - un accident de theatre</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Creation Section -->
+    <section id="compagnie" class="compagnie-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Compagnie</h1>
+                    <h1>Les acteurs</h1>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Creation Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <h1>Contact</h1>
+                   <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
