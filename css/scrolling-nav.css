@@ -18,9 +18,10 @@ html {
 background-color: rgba(0, 0, 0, 0.85);}
 
 p {
+    font-family: "Avenir Next" !important;
     font-size: 20px;
-    font-face: AvenirNext-Regular;
     letter-spacing: -0.8px;
+    text-align: justify;
     color: #ffffff;
 }
 
@@ -53,7 +54,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #111;
+    background: #050505;
 }
 
 .creations-section {
@@ -67,7 +68,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #111;
+    background: #050505;
 }
 
 .contact-section {
