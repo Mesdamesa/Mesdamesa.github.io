@@ -14,8 +14,83 @@ html {
     height: 100%;
 }
 
-.navebar, .navbar-default, .navbar-fixed-top{
-background-color: rgba(0, 0, 0, 0.85);}
+
+.navbar, .navbar-inverse, .navbar-fixed-top{
+background-color: rgba(0, 0, 0, 0.85);
+eborder:none;
+}
+
+.navbar .nav > li > a {
+    color: white;
+}
+
+ .nav li {
+float:left;
+width:145px; /*Fixes the width of all elements*/
+padding-left:0px; 
+padding-right:0px;
+    font-family: "Microsoft Tai Le" !important;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav li a:link {
+display: block;
+width: 100%;    
+}
+
+.nav li a:hover {
+/*background-color: rgba(0, 0, 0);*/
+border-bottom: 3px solid #fafafa;
+}
+
+.navbar-inverse .navbar-nav > .active {
+   /*background: rgba(0, 0, 0);*/
+   border-bottom: 3px solid white;
+ }
+
+
+/* .navbar-inverse .navbar-nav > .active > a:focus {
+          background: rgba(0, 0, 0);
+          border-bottom: 3px solid white;
+ }
+.navbar-inverse .navbar-nav > .active > a, 
+ .navbar-inverse .navbar-nav > .active > a:hover{}*/
+
+.navbar-brand img#logo{
+   max-height:148px;
+   position:relative;
+   right:-53px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-brand.smaller img#logo {
+   max-height:40px;
+    padding: 0;
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    text-align: center;
+}
+
+p.intro-text{
+    font-family:  "Avenir Next" !important;
+    font-size: 24px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #ffffff;
+}
 
 p {
     font-family: "Avenir Next" !important;
@@ -46,8 +121,14 @@ of those sections to manage the look and feel of the site. */
 .home-section {
     height: 100%;
     padding-top: 150px;
-    text-align: center;
-    background: #000;
+    background: url('./../media/image/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .actu-section {
@@ -59,21 +140,21 @@ of those sections to manage the look and feel of the site. */
 
 .creations-section {
    height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #000;
 }
 
 .compagnie-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #050505;
 }
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #000;
 }
