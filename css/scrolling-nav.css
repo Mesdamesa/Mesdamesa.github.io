@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
+ body {
     width: 100%;
     height: 100%;
 }
@@ -15,74 +15,41 @@ html {
 }
 
 
-.navbar, .navbar-inverse, .navbar-fixed-top{
-background-color: rgba(0, 0, 0, 0.85);
-eborder:none;
-}
-
-.navbar .nav > li > a {
-    color: white;
-}
-
- .nav li {
-float:left;
-width:145px; /*Fixes the width of all elements*/
-padding-left:0px; 
-padding-right:0px;
-    font-family: "Microsoft Tai Le" !important;
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.nav li a:link {
-display: block;
-width: 100%;    
-}
-
-.nav li a:hover {
-/*background-color: rgba(0, 0, 0);*/
-border-bottom: 3px solid #fafafa;
-}
-
-.navbar-inverse .navbar-nav > .active {
-   /*background: rgba(0, 0, 0);*/
-   border-bottom: 3px solid white;
- }
-
-
 /* .navbar-inverse .navbar-nav > .active > a:focus {
           background: rgba(0, 0, 0);
           border-bottom: 3px solid white;
  }
 .navbar-inverse .navbar-nav > .active > a, 
- .navbar-inverse .navbar-nav > .active > a:hover{}*/
+.navbar-inverse .navbar-nav > .active > a:hover{}*/
+
 
 .navbar-brand img#logo{
-   max-height:148px;
-   position:relative;
-   right:-53px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+ max-height:148px;
+ position:relative;
+ right:-53px;
+ -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -ms-transition: all 0.5s;
+ -o-transition: all 0.5s;
+ transition: all 0.5s;
 }
 
 .navbar-brand.smaller img#logo {
-   max-height:40px;
-    padding: 0;
+ max-height:40px;
+ padding: 0;
 }
 
+
+/*full widht banner end of home page*/
 .banner{
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 25%;
+    height: 28%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.57);
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.67); 
+    /* text-align: center;*/
 }
+
 
 p.intro-text{
     font-family:  "Avenir Next" !important;
@@ -90,29 +57,311 @@ p.intro-text{
     letter-spacing: -1px;
     text-align: center;
     color: #ffffff;
+    margin-top: 20px;
+    word-wrap: break-word;
 }
 
-p {
+.btn-nous-soutenir {
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;  
+    padding-top: 5px;
+    margin-top: 66px;
+    color: #000000;
+}
+
+.btn-nous-soutenir:hover {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 5px;
+    margin-top: 66px;
+    color: #fff;
+}
+
+.txt-nous-soutenir{
+    font-family: "Microsoft Tai Le" !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    line-height: 90%;
+
+}
+.txt-nous-soutenir-small{
+   font-family: "Microsoft Tai Le" !important;
+   font-size: 13px;
+   font-weight: 400;
+   text-align: center;
+
+}
+
+p.reduction-dimpots {
+    width: 220px;
+    margin-top: 5px;
+    font-family: "Helvetica";
+    font-size: 13px;
+    color: #ffffff;
+}
+/*ENDOF full widht banner end of home page*/
+
+
+p{
     font-family: "Avenir Next" !important;
     font-size: 20px;
-    letter-spacing: -0.8px;
+    object-fit: contain;
+    letter-spacing: -0.83px;
     text-align: justify;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+
+.date, .date-lieu, .date-piece, .date-date, .date-lieu, .date-infos-carte {
+    font-family: "Avenir Next";
+    font-size: 14px;
+    color: #000;
+}
+
+.date-jour-mois{
+    text-align: center;
+}
+.date-jour{
+     font-family: "Avenir Next";
+    font-size: 24px;
+    color: #000;
+       font-weight: 600;
+}
+
+.date-mois{
+        font-family: "Avenir Next";
+    font-size: 14px;
+    color: #f83131;
+       font-weight: 600; 
+}
+
+ul.production  li{
+margin: 5px;
+}
+
+ul.production{
+    font-family: "Avenir Next" !important;
+    font-size: 18px;
+    object-fit: contain;
+    letter-spacing: -0.83px;
+    text-align: justify;
+    color: #ffffff;
+    padding-top: 0px;
+
+}
+
+ul.production a{
+     color: #fff;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+ul.production a:hover{
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+p.equip-crea{
+    font-size: 18px;
+}
+
+p.production{
+    font-size: 18px;
+}
+
+p a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+p a:hover{
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+
+p a:visited{
+    color: #aaa;
+        border-bottom: 1px #aaa dashed;
+}
+
+
+h1 {
+    font-family: "Avenir Next" !important;
+    font-size: 26px;
+    letter-spacing: -0.83px;
+    font-weight: 600;
+    color: #eee;   
+    text-align: left;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: "Avenir Next" !important;
+    font-size: 24px;
+    font-weight: 600;
+    color: #eee;  
+    text-align: left; 
+    padding-top: 10px;
+}
+
+h3 {
+    font-family: "Avenir Next" !important;
+    font-size: 20px;
+    font-weight: 600;
+    color: #eee;  
+    text-align: left; 
+    padding-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .navbar-brand img#logo{
+     max-height:100px;
+     position:relative;
+     right:-53px;
+     -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+     -ms-transition: all 0.5s;
+     -o-transition: all 0.5s;
+     transition: all 0.5s;
+    }
+
+    .navbar-brand.smaller img#logo {
+     max-height:40px;
+     padding: 0;
+    }
+    .banner{
+        height: 33%;
+    }
+
+    p.intro-text{
+        font-family:  "Avenir Next" !important;
+        font-size: 21px;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+
+    .btn-nous-soutenir {
+    width: 190px;
+    margin-top: 5px;
+}
+
+.btn-nous-soutenir:hover {
+    margin-top: 5px;
+}
+
+    p {
+        font-size: 16px;
+        letter-spacing: -0.6px;
+    }
+}
+
+
+@media(min-width:992px) {
+   /* For bigger than 1200: */
+   .navbar, .navbar-inverse, .navbar-fixed-top{
+    background-color: rgba(0, 0, 0, 0.85);
+    border:none;
+}
+
+.navbar .nav > li > a {
+    color: white;
+}
+.navbar {
+    padding: 10px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    padding: 0;
+}
+
+
+.nav li {
+    float:left;
+    width:145px; /*Fixes the width of all elements*/
+    padding-left:0px; 
+    padding-right:0px;
+    font-family: "Microsoft Tai Le" !important;
+    font-size: 18px;
+    text-align: center;
     color: #ffffff;
 }
 
-
-@media(min-width:767px) {
-    .navbar {
-        padding: 10px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
+.nav li a:link {
+    display: block;
+    width: 100%;    
 }
+
+.nav li a:hover {
+    /*background-color: rgba(0, 0, 0);*/
+    border-bottom: 3px solid #fafafa;
+}
+
+.navbar-inverse .navbar-nav > .active {
+   /*background: rgba(0, 0, 0);*/
+   border-bottom: 3px solid white;
+}
+}
+
+/*
+@media (max-width: 1199px) {
+    .navbar-brand img#logo {
+     max-height:40px;
+     padding: 0;
+ }
+ .navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-text {
+    float: none;
+    margin: 15px 0;
+}*/
+/* since 3.1.0 */
+/*.navbar-collapse.collapse.in { 
+    display: block!important;
+}
+.collapsing {
+    overflow: hidden!important;
+}
+}*/
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -133,28 +382,28 @@ of those sections to manage the look and feel of the site. */
 
 .actu-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .creations-section {
-   height: 100%;
-    padding-top: 50px;
-    text-align: center;
-    background: #000;
+ height: 100%;
+ padding-top: 40px;
+ text-align: center;
+ background: #000;
 }
 
 .compagnie-section {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .contact-section {
     height: 100%;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     background: #000;
 }
