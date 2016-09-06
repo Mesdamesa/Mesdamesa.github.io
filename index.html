@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,389 +9,337 @@
     <meta name="author" content="Alice et Gilles Tabart">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="théâtre, contemporain, Toulouse, Alice Tabart, spectacle, danse, compagnie, mesdames a">
-
     <title>Compagnie Mesdames A - Théâtre contemporain Toulouse</title>
-
-<!-- Bootstrap CSS and JS 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-
-<!-- Custom CSS -->
-<link href="css/scrolling-nav.css" rel="stylesheet">
-<link href="css/the-big-picture.css" rel="stylesheet">
-<link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-
-
-
-<!--Tooltip init-->
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip(); 
+    <!-- Bootstrap CSS and JS
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/the-big-picture.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <!--Tooltip init-->
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
     });
-</script>
-
-<!--Navbar collapse when one item selected-->
-<script>
-    $(document).on('click','.navbar-collapse.in',function(e) {
-        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    </script>
+    <!--Navbar collapse when one item selected-->
+    <script>
+    $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
             $(this).collapse('hide');
         }
     });
-</script>
-
-<!--Add to Calendar button (atc) init-->
-<script type="text/javascript">
-    (function () {
-        if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-        if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-            s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-            s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-            var h = d[g]('body')[0];h.appendChild(s); }})();
-        </script>
-
-
-        <!-- Fonts stuff -->
-        <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
+    </script>
+    <!-- Fonts stuff -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
 
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-
+    <!--Add to Calendar button (atc) init-->
+    <script type="text/javascript">
+    (function() {
+        if (window.addtocalendar)
+            if (typeof window.addtocalendar.start == "function") return;
+        if (window.ifaddtocalendar == undefined) {
+            window.ifaddtocalendar = 1;
+            var d = document,
+                s = d.createElement('script'),
+                g = 'getElementsByTagName';
+            s.type = 'text/javascript';
+            s.charset = 'UTF-8';
+            s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+            var h = d[g]('body')[0];
+            h.appendChild(s);
+        }
+    })();
+    </script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-
-               <div class="container">
-
-
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <div class="row">
-                  <div class="col-xs-2 col-lg-3">
-                    <a class="navbar-brand page-scroll" href="#page-top" title="logo Mesdames a">
-                        <img id="logo" src="media/image/LogoCompagnieMa.svg">
-                    </a>
-                </div>
-
-
-                <div class="col-xs-10 col-lg-9">
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                            <li class="hidden">
-                                <a class="page-scroll link-nav" href="#page-top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" class="active" href="#home">Mesdames a</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#actu">Actualités</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#creations">Créations</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#contact">Contact</a>
-                            </li>
-                        </ul>
+                <div class="container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="row">
+                        <div class="col-xs-2 col-lg-3">
+                            <a class="navbar-brand page-scroll" href="#page-top" title="logo Mesdames a">
+                                <img id="logo" src="media/image/LogoCompagnieMa.svg">
+                            </a>
+                        </div>
+                        <div class="col-xs-10 col-lg-9">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                                    <li class="hidden">
+                                        <a class="page-scroll link-nav" href="#page-top"></a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll link-nav" class="active" href="#home">Mesdames a</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll link-nav" href="#actu">Actualités</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll link-nav" href="#creations">Créations</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll link-nav" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
                     </div>
-                    <!-- /.navbar-collapse -->
+                    <!-- /.row -->
                 </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+                <!-- /.container -->
     </nav>
-
     <!-- Home Section -->
     <section id="home" class="home-section">
-
         <div class="container-fluid banner">
-
-           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1"> 
-
-                <div class="row" >
-
-                    <div class="col-md-6 col-md-offset-2 col-xs-12">
-                        <p class="intro-text center-block" >
-                            La Cie Mesdames A aime faire discuter jeu, danse et musique sur scène.<br>
-                            <br>
-                            Chacune de ses créations interroge la place de l'individu dans la société contemporaine.
-                        </p>
-                    </div>
-                    <div class="col-md-3 center-block col-xs-12" data-toggle="tooltip" data-placement="bottom" title="A la réception de votre don, nous vous enverrons un reçu fiscal : 66% du montant est déductible d'impôts (dans la limite de 20% de votre revenu imposable).">
-                       <div class="button">
-                        <a class="btn btn-nous-soutenir center-block" href="media/pdf/bulletin-adhesion-mesdames-a.pdf" >
-                            <span class="txt-nous-soutenir">Nous soutenir<br></span>
-                            <span class="txt-nous-soutenir-small">(PDF formulaire d'adhésion)</span>
-                        </a>
-                    </div>
-
-                    <p class="reduction-dimpots center-block">
-                        Profitez d'une réduction d'impôts: un don de 35€ par exemple revient à moins de 12€ après impots.
-                    </p>
-                    ::after
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-</section>
-
-<!-- Actualites Section -->
-<section id="actu" class="actu-section">
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-            <h1>Actualites</h1>
-            <p>
-                La compagnie Mesdames prépare la rentrée de <a href="#spectateurs">Spectateur(s)</a> après deux mois passés à Sévérac avec La citee des dragons et pioupioupiou. 
-            </p>
-
-            <h2>Prochaines dates</h2>
-
-
-            <ul class="list-group prochaines-dates">
-              <li class="list-group-item">
-                  <div class="row">
-                      <div class="col-xs-12 col-md-2 date-jour-mois">
-                          <span class="pull-xs-right"><p> <span class="date-jour">18</span><br><span class="date-mois">OCT</span></p></span>
-                      </div>
-                      <div class="col-xs-12 col-md-7">
-                      <p class="date">
-                      <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> SPECTATEUR(S), un accident de théâtre</span><br>
-                            <span class="date-date">mardi 18 oct - 21h00</span> / <span class="date-lieu">Theatre du Grand Rond</span> <span class="date-infos-carte"> (<a class="map" href="#home">map</a>) - <a href="#home">réservation</a></span>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-2 col-xs-12">
+                            <p class="intro-text center-block">
+                                La Cie Mesdames A aime faire discuter jeu, danse et musique sur scène.
+                                <br>
+                                <br> Chacune de ses créations interroge la place de l'individu dans la société contemporaine.
                             </p>
                         </div>
-                        <div class="col-xs-12 col-md-3">
-                            <span class="addtocalendar atc-style-blue pull-xs-left" 
-                            data-on-button-click="Ajouter au calentdrier('click '+this.id);">
-                            <var class="atc_event">
-                                <var class="atc_date_start">2016-10-18 21:00:00</var>
-                                <var class="atc_date_end">2016-10-18 22:30:00</var>
-                                <var class="atc_timezone">Europe/Paris</var>
-                                <var class="atc_title">Spectateur(s), un accidant de théâtre</var>
-                                <var class="atc_description">Spectateur(s), pièce de la Compagnie Mesdames A au Grand Rond</var>
-                                <var class="atc_location">Theatre du Grand Rond, Toulouse</var>
-                                <var class="atc_organizer">Compagnie Mesdames a</var>
-                                <var class="atc_organizer_email">cie.mesdames.a@gmail.com</var>
-                            </var>
-                        </span>
-                    </div>
-
-                </li>
-            </div>
-        </div>
-        <li class="list-group-item">
-            <span class="tag tag-default tag-pill pull-xs-right">2</span>
-            Dapibus ac facilisis in
-        </li>
-        <li class="list-group-item">
-            <span class="tag tag-default tag-pill pull-xs-right">1</span>
-            Morbi leo risus
-        </li>
-    </ul>
-
-
-
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- Creation Section -->
-<section id="creations" class="creations-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-                <!--<h1>Créations</h1>-->
-                <div class="creations spectateurs" >
-                    <h2>Spectateur(s) - un accident de théâtre</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/119352016"></iframe>
-                  </div>
-
-                  <p>Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une fable contemporaine, quelque part entre l'Inde, New-York et la France.
-                    <br>
-                    Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle : sommes nous acteurs ou spectateurs de nos vies ?<br>
-                    SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage : ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.<br></p><br>
-
-                    <h3>Équipe de création</h3>
-                    <p class="equip-crea">
-                        <i>Écriture, mise en scène &amp; costumes /</i> Alice Tabart<br>
-                        <i>Interprétation /</i> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez<br>
-                        <i>Chorégraphies /</i> Joël Sitbon &amp; Elsa Sanchez<br>
-                        <i>Création musicale /</i> Simon Giesbert<br>
-                        <i>Création lumière /</i> Damien Peray &amp; Serena Andreasi<br>
-                    </p>
-
-                    <h3>Gallerie</h3>
-
-
-                    <h3>Production</h3>
-                    <p class="production">
-                        Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.<br>
-                        <br>
-                        Plus de details sur l’équipe et la production dans:<br>
-                        <ul class="production">
-                            <li>le <a href="media/spectateurs/pdf/dossier-spectateur.pdf">Dossier de communication</a></li>
-                            <li>la <a href="">Revue de presse</a></li>
-                            <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
-                        </ul>
-
-                        <!-- Modal dates passees -->
-                        <div id="modal-dates-spectateur" class="modal fade" role="dialog">
-                          <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Dates passées - Spectateur(s)</h4>
+                        <div class="col-md-3 center-block col-xs-12" data-toggle="tooltip" data-placement="bottom" title="A la réception de votre don, nous vous enverrons un reçu fiscal : 66% du montant est déductible d'impôts (dans la limite de 20% de votre revenu imposable).">
+                            <div class="button">
+                                <a class="btn btn-nous-soutenir center-block" href="media/pdf/bulletin-adhesion-mesdames-a.pdf">
+                                    <span class="txt-nous-soutenir">Nous soutenir<br></span>
+                                    <span class="txt-nous-soutenir-small">(PDF formulaire d'adhésion)</span>
+                                </a>
                             </div>
-                            <div class="modal-body">
-                                <ul>
-                                    <li>Mardi 20 janvier 2015 à 20h et mercredi 21 janvier à 12h45 /// Fabrique Arts, Culture, Toulouse (31)</li>
-                                    <li>Samedi 21 février à 20h30 /// Le Préau /// La Salvetat Saint Gilles (31)</li> 
-                                    <li>Samedi 7 mars à 20h30  /// Salle des Fêtes /// Lapanouse de Séverac (12)</li>
-                                    <li>Samedi 28 mars à 21h /// Salle du Foyer de la Mairie /// Clarac (31)</li> 
-                                    <li>Samed 4 avril à 20h30 /// Les Halles /// Villasavary (11)</li> 
-                                    <li>Samedi 6 juin à 21h /// Le Kiosque /// Villefranche de Rouergue (12)</li> 
-                                    <li>Samedi 13 juin à 21h30 /// La Halle du Café-Théâtre /// Le Burgaud (31)</li> 
-                                    <li>Vendredi 21 août /// Cour d'honneur /// Séverac le Château (12)</li> 
-                                    <li>Vendredi 2 octobre /// Toulouse (31)</li> 
-                                    <li>Mercredi 14 octobre /// Saint Gaudens (31)</li>
-                                    <li>Samedi 17 octobre /// La Canourgue (48)</li>
-                                    <li>Samedi 14 novembre /// Salle des fêtes /// Labastide Saint Sernin (31)</li>
-                                    <li>Jeudi 10 mars 2016 /// Scène des Trois Ponts /// Castelnaudary (11)</li>
-                                </ul>
-
-                            </div>
+                            <p class="reduction-dimpots center-block">
+                                Profitez d'une réduction d'impôts: un don de 35€ par exemple revient à moins de 12€ après impots.
+                            </p>
                         </div>
-
                     </div>
                 </div>
-
-            </p>
-        </div>
-
-        <div class="creations satyre" >
-            <h2>Le Satyre</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-             <iframe class="embed-responsive-item" src='http://www.mativi-toulouse.fr/mativi-embed.php?file=http://mativi.vod.amp-i.net/i/toulouse/2430-512dcb183881b_,270p,360p,480p,540p,720p,.mp4.csmil/master.m3u8&thumb=http://www.mativi-toulouse.fr/medias/images/midi-pyrenees/thumbs/2430-512dcb183881b.jpg' ></iframe>
-         </div>
-         <p>Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.<br>
-            Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.
-            Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
-
-            <h3>Équipe de création</h3>
-            <p class="equip-crea">
-                <i>Mise en scène &amp; costumes /</i> Alice Tabart<br>
-                <i>Interprétation /</i> Coline Lubin &amp; Simon Giesbert<br>
-                <i>Création musicale /</i> Simon Giesbert<br>
-                <i>Stagiaire /</i> Charline Daligaud<br>
-                <i>Création affiche /</i> Cécile Vallade<br>
-            </p>
-
-            <h3>Production</h3>
-            <p class="production">
-                Une production de l’Association Mesdames A, avec le soutien de l’association ACT-Mirail et du collectif Mix’art Myrys.<br>
-                <br>
-                Plus de details sur l’équipe et la production dans:<br>
-                <ul class="production">
-                    <li>le <a href="spectateurs">Dossier de communication</a></li>
-                    <li>la <a href="">Revue de presse</a></li>
-                    <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
-                </ul>
-
-            </div>
-
-
-            <h2>Le Monologue d'une tueuse</h2>
-            <h2>Le Satyre</h2>
-
-
-        </div>
-    </div>
-</div>
-</section>
-<!-- Creation Section -->
-<section id="compagnie" class="compagnie-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Compagnie</h1>
-                <h1>Les acteurs</h1>
-                <h2>Le Monologue d'une tueuse</h2>
-                <h2>Le Satyre</h2>
-                <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-                <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-
             </div>
         </div>
-    </div>
-</section>
-<!-- Creation Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-               <h1>Contact</h1>
-               <h2>Le Monologue d'une tueuse</h2>
-               <h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2><h2>Le Satyre</h2>
-               <h2>Le Monologue d'une tueuse</h2>
-           </div>
-       </div>
-   </div>
-</section>
+    </section>
+    <!-- Actualites Section -->
+    <section id="actu" class="actu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                    <h1>Actualites</h1>
+                    <p>
+                        La compagnie Mesdames prépare la rentrée de <a href="#spectateurs">Spectateur(s)</a> après deux mois passés à Sévérac avec La citee des dragons et pioupioupiou.
+                    </p>
+                    <h2>Prochaines dates</h2>
+                    <ul class="list-group prochaines-dates">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                    <span class="pull-xs-right"><span class="date-jour">18</span>
+                                    <br><span class="date-mois">OCT</span></span>
+                                </div>
+                                <div class="col-xs-12 col-md-7">
+                                    <p class="date">
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> SPECTATEUR(S), un accident de théâtre</span>
+                                        <br>
+                                        <span class="date-date">mardi 18 oct - 21h00</span> / <span class="date-lieu">Theatre du Grand Rond</span> <span class="date-infos-carte"> (<a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">map</a>) - <a href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">réservation</a></span>
+                                    </p>
+                                </div>
+                                <div class="col-xs-12 col-md-3">
+                                    <span class="addtocalendar atc-style-blue">
+                                                    <a class="atcb-link">Ajouter au calendrier</a>
+                                                    <var class="atc_event">
+                                                    <var class="atc_date_start">2016-10-18 21:00:00</var>
+                                                    <var class="atc_date_end">2016-10-18 22:30:00</var>
+                                                    <var class="atc_timezone">Europe/Paris</var>
+                                                    <var class="atc_title">Spectateur(s), un accident de théâtre</var>
+                                                    <var class="atc_description">Mesdames A  pour la première fois au Grand Rond avec ce Spectateur(s), un accident  de théâtre qui nous a enchanté [...]. A sa tête, Alice Tabart (Autrice et Metteuse en scène) nous propose un spectacle qui interroge notre rapport au monde dans ce qu’il a de plus sombre, mais tellement rempli d’humanité et d’humour qu’on est happé jusqu’à la fin. Un texte  affuté, précis, une mise en abime du théâtre dans le théâtre, tout est réuni pour vous faire découvrir une écriture actuelle, contemporaine et … toulousaine !</var>
+                                                    <var class="atc_location">Théâtre du Grand Rond, 23 rue des Potiers, 31000 Toulouse, Tél. : 05 61 62 14 85</var>
+                                                    <var class="atc_organizer">Compagnie Mesdames A</var>
+                                                    <var class="atc_organizer_email">cie.mesdames.a@gmail.com</var>
+                                                    </var>
+                                                </span>
 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Creation Section -->
+    <section id="creations" class="creations-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                    <!--<h1>Créations</h1>-->
+                    <div class="creations spectateurs">
+                        <h2>Spectateur(s) - un accident de théâtre</h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/119352016"></iframe>
+                        </div>
+                        <p>Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une fable contemporaine, quelque part entre l'Inde, New-York et la France.
+                            <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle : sommes nous acteurs ou spectateurs de nos vies ?
+                            <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage : ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
+                            <br>
+                        </p>
+                        <br>
+                        <h3>Équipe de création</h3>
+                        <p class="equip-crea">
+                            <i>Écriture, mise en scène &amp; costumes /</i> Alice Tabart
+                            <br>
+                            <i>Interprétation /</i> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez
+                            <br>
+                            <i>Chorégraphies /</i> Joël Sitbon &amp; Elsa Sanchez
+                            <br>
+                            <i>Création musicale /</i> Simon Giesbert
+                            <br>
+                            <i>Création lumière /</i> Damien Peray &amp; Serena Andreasi
+                            <br>
+                        </p>
+                        <h3>Gallerie</h3>
+                        <h3>Production</h3>
+                        <p class="production">
+                            Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
+                            <br>
+                            <br> Plus de details sur l’équipe et la production dans:
+                            <br>
+                            <ul class="production">
+                                <li>le <a href="media/spectateurs/pdf/dossier-spectateur.pdf">Dossier de communication</a></li>
+                                <li>la <a href="">Revue de presse</a></li>
+                                <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
+                            </ul>
+                            <!-- Modal dates passees -->
+                            <div id="modal-dates-spectateur" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Dates passées - Spectateur(s)</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>Mardi 20 janvier 2015 à 20h et mercredi 21 janvier à 12h45 /// Fabrique Arts, Culture, Toulouse (31)</li>
+                                                <li>Samedi 21 février à 20h30 /// Le Préau /// La Salvetat Saint Gilles (31)</li>
+                                                <li>Samedi 7 mars à 20h30 /// Salle des Fêtes /// Lapanouse de Séverac (12)</li>
+                                                <li>Samedi 28 mars à 21h /// Salle du Foyer de la Mairie /// Clarac (31)</li>
+                                                <li>Samed 4 avril à 20h30 /// Les Halles /// Villasavary (11)</li>
+                                                <li>Samedi 6 juin à 21h /// Le Kiosque /// Villefranche de Rouergue (12)</li>
+                                                <li>Samedi 13 juin à 21h30 /// La Halle du Café-Théâtre /// Le Burgaud (31)</li>
+                                                <li>Vendredi 21 août /// Cour d'honneur /// Séverac le Château (12)</li>
+                                                <li>Vendredi 2 octobre /// Toulouse (31)</li>
+                                                <li>Mercredi 14 octobre /// Saint Gaudens (31)</li>
+                                                <li>Samedi 17 octobre /// La Canourgue (48)</li>
+                                                <li>Samedi 14 novembre /// Salle des fêtes /// Labastide Saint Sernin (31)</li>
+                                                <li>Jeudi 10 mars 2016 /// Scène des Trois Ponts /// Castelnaudary (11)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="creations satyre">
+                        <h2>Le Satyre</h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src='http://www.mativi-toulouse.fr/mativi-embed.php?file=http://mativi.vod.amp-i.net/i/toulouse/2430-512dcb183881b_,270p,360p,480p,540p,720p,.mp4.csmil/master.m3u8&thumb=http://www.mativi-toulouse.fr/medias/images/midi-pyrenees/thumbs/2430-512dcb183881b.jpg'></iframe>
+                        </div>
+                        <p>Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
+                            <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe. Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
+                        <h3>Équipe de création</h3>
+                        <p class="equip-crea">
+                            <i>Mise en scène &amp; costumes /</i> Alice Tabart
+                            <br>
+                            <i>Interprétation /</i> Coline Lubin &amp; Simon Giesbert
+                            <br>
+                            <i>Création musicale /</i> Simon Giesbert
+                            <br>
+                            <i>Stagiaire /</i> Charline Daligaud
+                            <br>
+                            <i>Création affiche /</i> Cécile Vallade
+                            <br>
+                        </p>
+                        <h3>Production</h3>
+                        <p class="production">
+                            Une production de l’Association Mesdames A, avec le soutien de l’association ACT-Mirail et du collectif Mix’art Myrys.
+                            <br>
+                            <br> Plus de details sur l’équipe et la production dans:
+                            <br>
+                            <ul class="production">
+                                <li>le <a href="spectateurs">Dossier de communication</a></li>
+                                <li>la <a href="">Revue de presse</a></li>
+                                <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
+                            </ul>
+                    </div>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Creation Section -->
+    <section id="compagnie" class="compagnie-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                    <h1>Compagnie</h1>
+                    <h1>Les acteurs</h1>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Creation Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                    <h1>Contact</h1>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                    <h2>Le Satyre</h2>
+                    <h2>Le Monologue d'une tueuse</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-
 
 </html>

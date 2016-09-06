@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- body {
+body {
     width: 100%;
     height: 100%;
 }
@@ -22,37 +22,26 @@ html {
 .navbar-inverse .navbar-nav > .active > a, 
 .navbar-inverse .navbar-nav > .active > a:hover{}*/
 
-
-.navbar-brand img#logo{
- max-height:148px;
- position:relative;
- right:-53px;
- -webkit-transition: all 0.5s;
- -moz-transition: all 0.5s;
- -ms-transition: all 0.5s;
- -o-transition: all 0.5s;
- transition: all 0.5s;
+.navbar-brand img#logo {
+    max-height: 148px;
+    position: relative;
+    right: -53px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .navbar-brand.smaller img#logo {
- max-height:40px;
- padding: 0;
+    max-height: 40px;
+    padding: 0;
 }
 
 
-/*full widht banner end of home page*/
-.banner{
-    position: absolute;
-    bottom: 0;
-    height: 28%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.67); 
-    /* text-align: center;*/
-}
 
-
-p.intro-text{
-    font-family:  "Avenir Next" !important;
+p.intro-text {
+    font-family: "Avenir Next" !important;
     font-size: 24px;
     letter-spacing: -1px;
     text-align: center;
@@ -66,7 +55,7 @@ p.intro-text{
     height: 50px;
     border: none;
     border-radius: 2px;
-    background-color: #ffffff;  
+    background-color: #ffffff;
     padding-top: 5px;
     margin-top: 66px;
     color: #000000;
@@ -74,27 +63,25 @@ p.intro-text{
 
 .btn-nous-soutenir:hover {
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.4);
     padding-top: 5px;
     margin-top: 66px;
     color: #fff;
 }
 
-.txt-nous-soutenir{
+.txt-nous-soutenir {
     font-family: "Microsoft Tai Le" !important;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-
     line-height: 90%;
-
 }
-.txt-nous-soutenir-small{
-   font-family: "Microsoft Tai Le" !important;
-   font-size: 13px;
-   font-weight: 400;
-   text-align: center;
 
+.txt-nous-soutenir-small {
+    font-family: "Microsoft Tai Le" !important;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
 }
 
 p.reduction-dimpots {
@@ -104,48 +91,60 @@ p.reduction-dimpots {
     font-size: 13px;
     color: #ffffff;
 }
+
+
 /*ENDOF full widht banner end of home page*/
 
-
-p{
+p {
     font-family: "Avenir Next" !important;
     font-size: 20px;
     object-fit: contain;
     letter-spacing: -0.83px;
-    text-align: justify;
+    text-align: left;
     color: #ffffff;
     padding-top: 5px;
 }
 
-
-.date, .date-lieu, .date-piece, .date-date, .date-lieu, .date-infos-carte {
+.date,
+.date-lieu,
+.date-piece,
+.date-date,
+.date-lieu,
+.date-infos-carte {
     font-family: "Avenir Next";
     font-size: 14px;
     color: #000;
 }
 
-.date-jour-mois{
+.date-jour-mois {
     text-align: center;
 }
-.date-jour{
-     font-family: "Avenir Next";
+
+.date-jour {
+    margin-top: 12px;
+    font-family: "Avenir Next";
     font-size: 24px;
     color: #000;
-       font-weight: 600;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
 }
 
-.date-mois{
-        font-family: "Avenir Next";
+.date-mois {
+    ;
+    font-family: "Avenir Next";
     font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
     color: #f83131;
-       font-weight: 600; 
+    text-align: center;
 }
 
-ul.production  li{
-margin: 5px;
+ul.production li {
+    margin: 5px;
 }
 
-ul.production{
+ul.production {
     font-family: "Avenir Next" !important;
     font-size: 18px;
     object-fit: contain;
@@ -153,54 +152,51 @@ ul.production{
     text-align: justify;
     color: #ffffff;
     padding-top: 0px;
-
 }
 
-ul.production a{
-     color: #fff;
-    text-decoration: none;
-    border-bottom: 1px white dashed;
-}
-
-ul.production a:hover{
-    color: #ddd;
-    text-decoration: none;
-    border-bottom: 1px #ddd solid;
-}
-
-p.equip-crea{
-    font-size: 18px;
-}
-
-p.production{
-    font-size: 18px;
-}
-
-p a{
+ul.production a {
     color: #fff;
     text-decoration: none;
     border-bottom: 1px white dashed;
 }
 
-p a:hover{
+ul.production a:hover {
     color: #ddd;
     text-decoration: none;
     border-bottom: 1px #ddd solid;
 }
 
-
-p a:visited{
-    color: #aaa;
-        border-bottom: 1px #aaa dashed;
+p.equip-crea {
+    font-size: 18px;
 }
 
+p.production {
+    font-size: 18px;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+p a:hover {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+p a:visited {
+    color: #aaa;
+    border-bottom: 1px #aaa dashed;
+}
 
 h1 {
     font-family: "Avenir Next" !important;
     font-size: 26px;
     letter-spacing: -0.83px;
     font-weight: 600;
-    color: #eee;   
+    color: #eee;
     text-align: left;
     padding-top: 10px;
 }
@@ -209,8 +205,8 @@ h2 {
     font-family: "Avenir Next" !important;
     font-size: 24px;
     font-weight: 600;
-    color: #eee;  
-    text-align: left; 
+    color: #eee;
+    text-align: left;
     padding-top: 10px;
 }
 
@@ -218,52 +214,53 @@ h3 {
     font-family: "Avenir Next" !important;
     font-size: 20px;
     font-weight: 600;
-    color: #eee;  
-    text-align: left; 
+    color: #eee;
+    text-align: left;
     padding-top: 10px;
 }
 
-
 @media (max-width: 768px) {
     /* For mobile phones: */
-
-    .navbar-brand img#logo{
-     max-height:100px;
-     position:relative;
-     right:-53px;
-     -webkit-transition: all 0.5s;
-     -moz-transition: all 0.5s;
-     -ms-transition: all 0.5s;
-     -o-transition: all 0.5s;
-     transition: all 0.5s;
+    .navbar-brand img#logo {
+        max-height: 100px;
+        position: relative;
+        right: -53px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
     }
-
     .navbar-brand.smaller img#logo {
-     max-height:40px;
-     padding: 0;
-    }
-    .banner{
-        height: 33%;
+        max-height: 40px;
+        padding: 0;
     }
 
-    p.intro-text{
-        font-family:  "Avenir Next" !important;
+    .home-section {
+    background: url('./../media/image/back.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+
+}
+    .banner {
+        height: 35%;
+    }
+    p.intro-text {
+        font-family: "Avenir Next" !important;
         font-size: 21px;
         letter-spacing: -1px;
         text-align: center;
         color: #ffffff;
         margin-top: 10px;
     }
-
     .btn-nous-soutenir {
-    width: 190px;
-    margin-top: 5px;
-}
-
-.btn-nous-soutenir:hover {
-    margin-top: 5px;
-}
-
+        width: 190px;
+        margin-top: 5px;
+    }
+    .btn-nous-soutenir:hover {
+        margin-top: 5px;
+    }
     p {
         font-size: 16px;
         letter-spacing: -0.6px;
@@ -271,54 +268,72 @@ h3 {
 }
 
 
+@media(min-width:768px) {
+/* For bigger than 768: */
+
+.banner {
+    position: absolute;
+    bottom: 0;
+    height: 33%;
+    min-height: 28%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    /* text-align: center;*/
+}
+    }
+
+    .home-section {
+    background-attachment: fixed;
+}
+
 @media(min-width:992px) {
-   /* For bigger than 1200: */
-   .navbar, .navbar-inverse, .navbar-fixed-top{
-    background-color: rgba(0, 0, 0, 0.85);
-    border:none;
+    /* For bigger than 1200: */
+    .navbar,
+    .navbar-inverse,
+    .navbar-fixed-top {
+        background-color: rgba(0, 0, 0, 0.85);
+        border: none;
+    }
+    .navbar .nav > li > a {
+        color: white;
+    }
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+    .nav li {
+        float: left;
+        width: 145px;
+        /*Fixes the width of all elements*/
+        padding-left: 0px;
+        padding-right: 0px;
+        font-family: "Microsoft Tai Le" !important;
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .nav li a:link {
+        display: block;
+        width: 100%;
+    }
+    .nav li a:hover {
+        /*background-color: rgba(0, 0, 0);*/
+        border-bottom: 3px solid #fafafa;
+    }
+    .navbar-inverse .navbar-nav > .active {
+        /*background: rgba(0, 0, 0);*/
+        border-bottom: 3px solid white;
+    }
+
+    /*full widht banner end of home page*/
+
 }
 
-.navbar .nav > li > a {
-    color: white;
-}
-.navbar {
-    padding: 10px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
-
-.top-nav-collapse {
-    padding: 0;
-}
-
-
-.nav li {
-    float:left;
-    width:145px; /*Fixes the width of all elements*/
-    padding-left:0px; 
-    padding-right:0px;
-    font-family: "Microsoft Tai Le" !important;
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.nav li a:link {
-    display: block;
-    width: 100%;    
-}
-
-.nav li a:hover {
-    /*background-color: rgba(0, 0, 0);*/
-    border-bottom: 3px solid #fafafa;
-}
-
-.navbar-inverse .navbar-nav > .active {
-   /*background: rgba(0, 0, 0);*/
-   border-bottom: 3px solid white;
-}
-}
 
 /*
 @media (max-width: 1199px) {
@@ -354,7 +369,11 @@ h3 {
     float: none;
     margin: 15px 0;
 }*/
+
+
 /* since 3.1.0 */
+
+
 /*.navbar-collapse.collapse.in { 
     display: block!important;
 }
@@ -362,6 +381,7 @@ h3 {
     overflow: hidden!important;
 }
 }*/
+
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -373,7 +393,6 @@ of those sections to manage the look and feel of the site. */
     background: url('./../media/image/back.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -381,29 +400,162 @@ of those sections to manage the look and feel of the site. */
 }
 
 .actu-section {
-    height: 100%;
+  
     padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .creations-section {
- height: 100%;
- padding-top: 40px;
- text-align: center;
- background: #000;
+   
+    padding-top: 40px;
+    text-align: center;
+    background: #000;
 }
 
 .compagnie-section {
-    height: 100%;
+ 
     padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .contact-section {
-    height: 100%;
+
     padding-top: 40px;
     text-align: center;
     background: #000;
+}
+
+
+/**
+ * AddToCalendar Blue Style
+ * http://addtocalendar.com
+ */
+
+
+/* Base */
+
+.addtocalendar var {
+    display: none;
+}
+
+.addtocalendar {
+    /** position: relative;*/
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    background: transparent!important;
+}
+
+.atcb-link {
+    display: block;
+    outline: none!important;
+    cursor: pointer;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover {
+    visibility: visible;
+}
+
+.atcb-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    z-index: 900;
+}
+
+.atcb-list,
+.atcb-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.atcb-item {
+    float: none;
+    text-align: left;
+}
+
+.atcb-item-link {
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.atcb-item.hover,
+.atcb-item:hover {
+    position: relative;
+    z-index: 900;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+
+/* blue red in fact now */
+
+.atc-style-blue .atcb-link,
+.atc-style-blue .atcb-link:hover,
+.atc-style-blue .atcb-link:active,
+.atc-style-blue .atcb-link:focus {
+    margin: 0;
+    padding: 7px 20px 6px 20px;
+    color: #fff;
+    font-family: "Avenir Next";
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    line-height: 20px;
+    vertical-align: middle;
+    background: #f33128;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-list {
+    width: 137px;
+    height: 29px;
+    border-radius: 2px;
+}
+
+.atc-style-blue .atcb-list,
+.atc-style-blue .atcb-item {
+    background: #fff;
+    color: #000;
+}
+
+.atc-style-blue .atcb-item,
+.atc-style-blue .atcb-item-link {
+    line-height: 1.3em;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-item-link,
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #000;
+    font-family: "Verdana";
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #fff;
+}
+
+.atc-style-blue .atcb-item.hover,
+.atc-style-blue .atcb-item:hover {
+    background: #f33128;
 }
