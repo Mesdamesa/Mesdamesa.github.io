@@ -55,7 +55,7 @@ p.intro-text {
     height: 50px;
     border: none;
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding-top: 5px;
     margin-top: 66px;
     color: #000000;
@@ -63,10 +63,10 @@ p.intro-text {
 
 .btn-nous-soutenir:hover {
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 1);
     padding-top: 5px;
     margin-top: 66px;
-    color: #fff;
+    color: #000;
 }
 
 .txt-nous-soutenir {
@@ -138,6 +138,21 @@ p {
     letter-spacing: -0.6px;
     color: #f83131;
     text-align: center;
+}
+
+p.date a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+p.date a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+p.date a:visited {
+    color: #333;
+    border-bottom: 1px #aaa dashed;
 }
 
 ul.production li {
@@ -265,6 +280,14 @@ h3 {
         font-size: 16px;
         letter-spacing: -0.6px;
     }
+
+p.equip-crea {
+    font-size: 14px;
+}
+
+p.production {
+    font-size: 14px;
+}
 }
 
 
@@ -274,7 +297,7 @@ h3 {
 .banner {
     position: absolute;
     bottom: 0;
-    height: 33%;
+    height: 28%;
     min-height: 28%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.67);
