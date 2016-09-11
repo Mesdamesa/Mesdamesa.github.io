@@ -1,8 +1,8 @@
 /*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+* Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
 
 body {
     width: 100%;
@@ -16,10 +16,10 @@ html {
 
 
 /* .navbar-inverse .navbar-nav > .active > a:focus {
-          background: rgba(0, 0, 0);
-          border-bottom: 3px solid white;
- }
-.navbar-inverse .navbar-nav > .active > a, 
+background: rgba(0, 0, 0);
+border-bottom: 3px solid white;
+}
+.navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover{}*/
 
 .navbar-brand img#logo {
@@ -37,8 +37,6 @@ html {
     max-height: 40px;
     padding: 0;
 }
-
-
 
 p.intro-text {
     font-family: "Avenir Next" !important;
@@ -140,16 +138,22 @@ p {
     text-align: center;
 }
 
+.date-lieu {
+    font-weight: 600;
+}
+
 p.date a {
     color: #333;
     text-decoration: none;
     border-bottom: 1px white dashed;
 }
+
 p.date a:hover {
     color: #000;
     text-decoration: none;
     border-bottom: 1px #ddd solid;
 }
+
 p.date a:visited {
     color: #333;
     border-bottom: 1px #aaa dashed;
@@ -187,6 +191,11 @@ p.equip-crea {
 
 p.production {
     font-size: 18px;
+}
+
+.label-equipe-crea{
+font-weight: bold;
+font-style: italic;
 }
 
 p a {
@@ -250,14 +259,12 @@ h3 {
         max-height: 40px;
         padding: 0;
     }
-
     .home-section {
-    background: url('./../media/image/back.jpg');
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-
-}
+        background: url('./../media/image/back.jpg');
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+    }
     .banner {
         height: 35%;
     }
@@ -280,32 +287,31 @@ h3 {
         font-size: 16px;
         letter-spacing: -0.6px;
     }
-
-p.equip-crea {
-    font-size: 14px;
+    p.date {
+        text-align: center;
+    }
+    p.equip-crea {
+        font-size: 14px;
+    }
+    p.production {
+        font-size: 14px;
+    }
 }
-
-p.production {
-    font-size: 14px;
-}
-}
-
 
 @media(min-width:768px) {
-/* For bigger than 768: */
-
-.banner {
-    position: absolute;
-    bottom: 0;
-    height: 28%;
-    min-height: 28%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.67);
-    /* text-align: center;*/
-}
+    /* For bigger than 768: */
+    .banner {
+        position: absolute;
+        bottom: 0;
+        height: 28%;
+        min-height: 28%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.67);
+        /* text-align: center;*/
     }
+}
 
-    .home-section {
+.home-section {
     background-attachment: fixed;
 }
 
@@ -352,62 +358,60 @@ p.production {
         /*background: rgba(0, 0, 0);*/
         border-bottom: 3px solid white;
     }
-
     /*full widht banner end of home page*/
-
 }
 
 
 /*
 @media (max-width: 1199px) {
-    .navbar-brand img#logo {
-     max-height:40px;
-     padding: 0;
- }
- .navbar-header {
-    float: none;
+.navbar-brand img#logo {
+max-height:40px;
+padding: 0;
+}
+.navbar-header {
+float: none;
 }
 .navbar-toggle {
-    display: block;
+display: block;
 }
 .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 }
 .navbar-collapse.collapse {
-    display: none!important;
+display: none!important;
 }
 .navbar-nav {
-    float: none!important;
-    margin: 7.5px -15px;
+float: none!important;
+margin: 7.5px -15px;
 }
 .navbar-nav>li {
-    float: none;
+float: none;
 }
 .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 .navbar-text {
-    float: none;
-    margin: 15px 0;
+float: none;
+margin: 15px 0;
 }*/
 
 
 /* since 3.1.0 */
 
 
-/*.navbar-collapse.collapse.in { 
-    display: block!important;
+/*.navbar-collapse.collapse.in {
+display: block!important;
 }
 .collapsing {
-    overflow: hidden!important;
+overflow: hidden!important;
 }
 }*/
 
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .home-section {
@@ -423,28 +427,24 @@ of those sections to manage the look and feel of the site. */
 }
 
 .actu-section {
-  
     padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .creations-section {
-   
     padding-top: 40px;
     text-align: center;
     background: #000;
 }
 
 .compagnie-section {
- 
     padding-top: 40px;
     text-align: center;
     background: #050505;
 }
 
 .contact-section {
-
     padding-top: 40px;
     text-align: center;
     background: #000;
@@ -452,9 +452,9 @@ of those sections to manage the look and feel of the site. */
 
 
 /**
- * AddToCalendar Blue Style
- * http://addtocalendar.com
- */
+* AddToCalendar Blue Style
+* http://addtocalendar.com
+*/
 
 
 /* Base */
@@ -549,7 +549,7 @@ of those sections to manage the look and feel of the site. */
 
 .atc-style-blue .atcb-list,
 .atc-style-blue .atcb-item {
-    background: #fff;
+    background: #eee;
     color: #000;
 }
 
@@ -580,5 +580,5 @@ of those sections to manage the look and feel of the site. */
 
 .atc-style-blue .atcb-item.hover,
 .atc-style-blue .atcb-item:hover {
-    background: #f33128;
+    background: #d31108;
 }
