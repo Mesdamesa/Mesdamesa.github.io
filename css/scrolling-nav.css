@@ -243,6 +243,17 @@ h3 {
     padding-top: 10px;
 }
 
+/**
+.modal-dialog {
+  width: 80%;
+  height: 100%;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+}*/
+
 @media (max-width: 768px) {
     /* For mobile phones: */
     .navbar-brand img#logo {
