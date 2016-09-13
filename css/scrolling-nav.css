@@ -271,7 +271,7 @@ h3 {
         padding: 0;
     }
     .home-section {
-        background: url('./../media/image/back.jpg');
+        background: url('./../media/image/back-sm.jpg');
         background-attachment: scroll;
         background-size: cover;
         background-position: center center;
@@ -306,6 +306,9 @@ h3 {
     }
     p.production {
         font-size: 14px;
+    }
+    ul.production {
+font-size: 16px;
     }
 }
 
