@@ -24,8 +24,19 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <!--Tooltip init-->
-    <script>
+    <script async>
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
@@ -38,6 +49,14 @@
         }
     });
     </script>
+    <!--Navbar dropdown-->
+    <script>
+    $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+    });
+    </script>
+
+
     <!-- Fonts stuff -->
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -100,8 +119,18 @@
                                     <li>
                                         <a class="page-scroll link-nav" href="#actu">Actualités</a>
                                     </li>
-                                    <li>
-                                        <a class="page-scroll link-nav" href="#creations">Créations</a>
+                                    <!-- <li>
+                                            <a class="page-scroll link-nav" href="#creations">Créations</a>
+                                        </li>-->
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Créations
+                                                <span class="caret"></span>
+                                            </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="page-scroll link-nav" href="#spectateurs">Spectateur(s)</a></li>
+                                            <li><a class="page-scroll link-nav" href="#satyre">Le Satyre</a></li>
+                                            <li><a class="page-scroll link-nav" href="#monologue">Le Monologue<br>d'une tueuse</a></li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
@@ -407,25 +436,42 @@
                             <br>
                         </p>
                         <h3>Gallerie</h3>
-                            <div class="row">
-                                <a href="http://41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" data-toggle="lightbox" data-gallery="hiddenimages" data-title="People walking down stairs" class="col-sm-4">
-                                    <img src="//41.media.tumblr.com/f37ac708134914c471073e4c0b47328d/tumblr_mrn3dc10Wa1r1thfzo8_1280.jpg" class="img-responsive">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="danseuse sur cercle de terre " class="img-responsive">
                                 </a>
-                                <a href="http://41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" data-toggle="lightbox" data-gallery="hiddenimages" data-title="Man getting wet" class="col-sm-4">
-                                    <img src="//41.media.tumblr.com/838b44224e39c30cd43490deb11b919d/tumblr_mrn3dc10Wa1r1thfzo1_1280.jpg" class="img-responsive">
-                                </a>
-                                <a href="http://41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" data-toggle="lightbox" data-gallery="hiddenimages" data-title="Someone lost their dress" class="col-sm-4">
-                                    <img src="//41.media.tumblr.com/e06a3513b0b36843f54bee99aeac689a/tumblr_mrn3dc10Wa1r1thfzo2_1280.jpg" class="img-responsive">
-                                </a>
-                                <!-- elements not showing, use data-remote -->
-                                <div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" data-title="Hidden item 1"></div>
-                                <div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="//www.youtube.com/embed/b0jqPvpn3sY" data-title="Hidden item 2"></div>
-                                <div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="http://41.media.tumblr.com/9d3e6a9c89a856a2ad0be3ab4ca598b2/tumblr_mrn3dc10Wa1r1thfzo4_1280.jpg" data-title="Hidden item 3"></div>
-                                <div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="http://40.media.tumblr.com/f9fcf4cae3468d96a324cae301c00998/tumblr_mrn3dc10Wa1r1thfzo3_1280.jpg" data-title="Hidden item 4"></div>
-                                <div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="http://36.media.tumblr.com/de356cd6570d7c26e73979467f296f67/tumblr_mrn3dc10Wa1r1thfzo6_1280.jpg" data-title="Hidden item 5"></div>
                             </div>
-
-
+                            <div class="col-xs-4">
+                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="danseuse sur cercle de terre 2" class="img-responsive"></a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="journalistes" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <div class="hidden">
+                            <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="cartonNB" class="img-responsive"></a>
+                            <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="chanson" class="img-responsive"></a>
+                            <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="pyramide" class="img-responsive"></a>
+                            <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_tousLucas.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_tousLucas.jpg" alt="tousLucas" class="img-responsive"></a>
+                            <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="danseuse theatre" class="img-responsive"></a>
+                        </div>
+                            <script>
+    $(".fancyboxSpectateurs")
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding: 0
+        });
+    </script>
+        <script type="text/javascript">
+    $('.image').fancyboxSpectateurs({
+        padding: 0,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+    });
+    </script>
                         <h3>Production</h3>
                         <p class="production">
                             Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
@@ -447,7 +493,7 @@
                                             <h4 class="modal-title">Revue de presse - Spectateur(s)</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
                                                 <!-- Wrapper for slides -->
                                                 <div class="carousel-inner">
                                                     <div class="item active">
@@ -481,17 +527,17 @@
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                     <div class="embed-responsive embed-responsive-16by9">
-                                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3OvblKSkcpc?html5=1"></iframe>
-                                                         </div>
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3OvblKSkcpc?html5=1"></iframe>
+                                                        </div>
                                                         <div class="carousel-caption">
                                                             Interview sur Campus
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                     <div class="embed-responsive embed-responsive-16by9">
-                                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v9Wc4HJnqTo?html5=1"></iframe>
-                                                          </div>
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v9Wc4HJnqTo?html5=1"></iframe>
+                                                        </div>
                                                         <div class="carousel-caption">
                                                             Chronique sur Canal Sud
                                                         </div>
@@ -509,6 +555,14 @@
                                     </div>
                                 </div>
                             </div>
+                                <!--stop video when close modal-->
+    <script async>
+    $("#revue-presse-spectateurs-modal-lg").on('hidden.bs.modal', function(e) {
+        var $this = $(this);
+        var $frame = $this.find('iframe');
+        $frame.attr("src", $frame.attr("src"));
+    });
+    </script>
                             <!-- Modal dossier de presse -->
                             <!--<div id="modal-dossier-presse-spectateur" class="modal fade" role="dialog">
                                         <div class="modal-dialog">-->
@@ -535,11 +589,14 @@
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             <h4 class="modal-title">Dates passées - Spectateur(s)</h4>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body dates-passees">
                                             <ul>
-                                                <li>Mardi 20 janvier 2015 à 20h et mercredi 21 janvier à 12h45 <br> Fabrique Arts, Culture, Toulouse (31)</li>
-                                                <li>Samedi 21 février à 20h30 <br> Le Préau /// La Salvetat Saint Gilles (31)</li>
-                                                <li>Samedi 7 mars à 20h30 <br>  Salle des Fêtes /// Lapanouse de Séverac (12)</li>
+                                                <li>Mardi 20 janvier 2015 à 20h et mercredi 21 janvier à 12h45
+                                                    <br> Fabrique Arts, Culture, Toulouse (31)</li>
+                                                <li>Samedi 21 février à 20h30
+                                                    <br> Le Préau /// La Salvetat Saint Gilles (31)</li>
+                                                <li>Samedi 7 mars à 20h30
+                                                    <br> Salle des Fêtes /// Lapanouse de Séverac (12)</li>
                                                 <li>Samedi 28 mars à 21h /// Salle du Foyer de la Mairie /// Clarac (31)</li>
                                                 <li>Samed 4 avril à 20h30 /// Les Halles /// Villasavary (11)</li>
                                                 <li>Samedi 6 juin à 21h /// Le Kiosque /// Villefranche de Rouergue (12)</li>
@@ -560,12 +617,11 @@
                     <div class="creations satyre" id="satyre">
                         <h2>Le Satyre</h2>
                         <div class="embed-responsive embed-responsive-16by9">
-                               <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182463716"></iframe>
-                          </div>
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182463716"></iframe>
+                        </div>
                         <p>Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
-                            <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.<br>
-                            Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
-
+                            <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.
+                            <br> Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
                         <h3>Équipe de création</h3>
                         <p class="equip-crea">
                             <span class="label-equipe-crea">Mise en scène &amp; costumes /</span> Alice Tabart

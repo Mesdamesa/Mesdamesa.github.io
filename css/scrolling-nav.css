@@ -198,6 +198,26 @@ font-weight: bold;
 font-style: italic;
 }
 
+.modal-header {
+    background-color: rgba(0, 0, 0, 1);
+   color: #fff;
+}
+
+.modal-body {
+    background-color: rgba(0, 0, 0, 1);
+       color: #fff;
+}
+
+.dates-passees ul{
+        list-style: none;
+        text-align: left;
+}
+
+.close {
+    color: #fff; 
+    opacity: 1;
+}
+
 p a {
     color: #fff;
     text-decoration: none;
@@ -242,6 +262,8 @@ h3 {
     text-align: left;
     padding-top: 10px;
 }
+
+
 
 /**
 .modal-dialog {
@@ -360,6 +382,9 @@ font-size: 16px;
         text-align: center;
         color: #ffffff;
     }
+    .nav li.dropdown a:hover{
+        border-bottom: none;
+    }
     .nav li a:link {
         display: block;
         width: 100%;
@@ -372,6 +397,15 @@ font-size: 16px;
         /*background: rgba(0, 0, 0);*/
         border-bottom: 3px solid white;
     }
+.dropdown-menu>li>a, .dropdown-menu {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown-menu{
+    width: 140px !important;
+}
+
     /*full widht banner end of home page*/
 }
 
@@ -464,6 +498,10 @@ of those sections to manage the look and feel of the site. */
     background: #000;
 }
 
+/* Fancybox */
+.hidden {
+    display: none;
+}
 
 /**
 * AddToCalendar Blue Style
