@@ -236,7 +236,6 @@ span.name-autres {
 .circle-avatar{
 /* make it responsive */
 
-
 height:auto;
 display:block;
 /* div height to be the same as width*/
@@ -259,6 +258,16 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
+}
+
+.logo-partner{
+ height:auto;
+max-width: 150px;
+margin-bottom: 50px;   
+}
+
+.caption-partenaire{
+    text-align: center;
 }
 
 p a {
