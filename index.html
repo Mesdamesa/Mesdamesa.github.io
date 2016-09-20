@@ -28,11 +28,12 @@
     <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+   <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
     <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
+   <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>-->
     <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <!--Tooltip init-->
@@ -409,7 +410,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-                    <!--<h1>Créations</h1>-->
+                    
+
+                    <!--SPECTATEUR>-->
                     <div class="creations spectateurs" id="spectateurs">
                         <h2>Spectateur(s) - un accident de théâtre</h2>
                         <p><small>Saisons 2014-2015 et 2015-2016</small></p>
@@ -436,52 +439,56 @@
                             <br>
                         </p>
                         <h3>Gallerie</h3>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="danseuse sur cercle de terre " class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="cartonNB" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="journalistes" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="pyramide" class="img-responsive"></a>
-                            </div>
+                        <div class="imglist row">
+
+                        
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="danseuse sur cercle de terre 2" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="chanson" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="tousLucas" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-3">
-                                <a class="fancyboxSpectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="danseuse theatre" class="img-responsive"></a>
-                            </div>
+                     <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
                         </div>
-                        <script>
-                        $(".fancyboxSpectateurs")
-                            .attr('rel', 'gallery')
-                            .fancybox({
-                                padding: 0
+                          <div class="clearfix visible-xs-block"></div>
+  <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson "><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
+                        </div>
+                                  <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="ALT_TITLE" class="img-responsive"></a>
+                        </div>
+                    
+  <div class="clearfix visible-xs-block"></div>
+                     <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe" "><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
+                        </div>
+             
+                         <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
+                        </div>  
+ <div class="clearfix visible-xs-block"></div>
+                          <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="ALT_TITLE" class="img-responsive"></a>
+                        </div>
+         <div class="col-xs-6 col-sm-4 col-md-3">
+                            <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes" "><img src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="ALT_TITLE"  class="img-responsive"></a>
+                        </div>
+
+         <div class="clearfix visible-xs-block"></div>
+                        </div>
+                                                 <script type="text/javascript">
+                        $(document).ready(function() {
+                            $("[rel='fancybox-thumb']").fancybox({
+                                caption: {
+                                    type: 'outside'
+                                },
+                                openEffect: 'elastic',
+                                closeEffect: 'none',
+                                nextEffect: 'none'
                             });
-                        </script>
-                        <script type="text/javascript">
-                        $('.image').fancyboxSpectateurs({
-                            padding: 0,
-                            helpers: {
-                                overlay: {
-                                    locked: false
-                                }
-                            }
                         });
                         </script>
+
+
+                    
                         <h3>Production</h3>
                         <p class="production">
                             Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
@@ -490,7 +497,6 @@
                             <br>
                             <ul class="production">
                                 <li>le <a href="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf">Dossier de communication</a>
-                                    <!-- <li>le <a data-toggle="modal" href="#modal-dossier-presse-spectateur">Dossier de communication</a>-->
                                 </li>
                                 <li>la <a data-toggle="modal" href="#revue-presse-spectateurs-modal-lg">Revue de presse</a></li>
                                 <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
@@ -573,23 +579,6 @@
                                 $frame.attr("src", $frame.attr("src"));
                             });
                             </script>
-                            <!-- Modal dossier de presse -->
-                            <!--<div id="modal-dossier-presse-spectateur" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">-->
-                            <!-- Modal content-->
-                            <!--<div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Dossier de presse - Spectateur(s)</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <object data="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf" type="application/pdf" height=100%>
-                                                    alt : <a href="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf">dossier-spectateur.pdf</a>
-                                                    </object>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>-->
                             <!-- Modal dates passees -->
                             <div id="modal-dates-spectateur" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -624,6 +613,9 @@
                             </div>
                         </p>
                     </div>
+
+
+                    <!--SATYRE-->
                     <div class="creations satyre" id="satyre">
                         <h2>Le Satyre</h2>
                         <p><small>Saisons 2012-2013 et 2013-2014</small></p>
@@ -678,18 +670,18 @@
                     <h1>Compagnie</h1>
                     <p>
                         La Compagnie Mesdames a est une troupe de théâtre née à Toulouse en juin 2009 sous forme d'association - loi 1901. <small>Voir les <a href="media/pdf/statuts1901-mesdames-a.pdf">statuts de l'association</a> et les <a href="#admin-collapse" data-toggle="collapse">détails administratifs</a>. </small> </p>
-                         <div id="admin-collapse" class="collapse">
+                    <div id="admin-collapse" class="collapse">
                         <p> Présidente : Floriane Rascle
-                        <br> Trésorière : Cécile Courtin
-                        <br> Siège social : 23 avenue Lamartine, 31620 Labastide Saint Sernin, France
-                        <br> N° siret : 539 558 304 00017
-                        <br> Licence d'entrepreneur : n° 2-1050123
+                            <br> Trésorière : Cécile Courtin
+                            <br> Siège social : 23 avenue Lamartine, 31620 Labastide Saint Sernin, France
+                            <br> N° siret : 539 558 304 00017
+                            <br> Licence d'entrepreneur : n° 2-1050123
                         </p>
-                        </div>                     
-                        <p>Ouverte aux échanges et avide d'expérimentations interdisciplinaires, la compagnie est particulièrement encline à partager ses créations avec des publics diversifiés (milieux ruraux avec accès culturel limité, etc.).
+                    </div>
+                    <p>Ouverte aux échanges et avide d'expérimentations interdisciplinaires, la compagnie est particulièrement encline à partager ses créations avec des publics diversifiés (milieux ruraux avec accès culturel limité, etc.).
                         <br> Notre but est de créer des spectacles de théâtre mêlant danse, musique, écriture originale, gestion de l'espace visuel et plastique. Nos spectacles se veulent à la fois inventifs et populaires. Tel est notre cahier des charges : un théâtre exigeant mais abordable, ludique mais réflexif!
                         <br>
-                        </p>
+                    </p>
                     </p>
                     <h2>L'équipe</h2>
                     <p>
@@ -699,17 +691,17 @@
                             <a href="#alice-bio" data-toggle="collapse">
                                 <div class="circle-avatar" style="background-image:url(media/images/alice-square.jpg)">
                                 </div>
-                                 <p class="text-center"><strong>Alice Tabart</strong></p>
-                             <p class="text-center">Mise en scène et écriture</p>
+                                <p class="text-center"><strong>Alice Tabart</strong></p>
+                                <p class="text-center">Mise en scène et écriture</p>
                             </a>
                             <div id="alice-bio" class="collapse">
                                 <p class="text-center">
-                                     <a data-toggle="modal" href="#modal-bio-alice">Biographie</a><br> </p>
-                                    <ul class="social-network social-circle">
-                                        <li><a href="https://plus.google.com/102383458121799726687" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                    
+                                    <a data-toggle="modal" href="#modal-bio-alice">Biographie</a>
+                                    <br> </p>
+                                <ul class="social-network social-circle">
+                                    <li><a href="https://plus.google.com/102383458121799726687" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
                             </div>
                             <!-- Modal bio Alice -->
                             <div id="modal-bio-alice" class="modal fade" role="dialog">
@@ -746,16 +738,16 @@
                         <div class="col-xs-6 col-sm-4">
                             <a href="#coline-bio" data-toggle="collapse">
                                 <div class="circle-avatar" style="background-image:url(media/images/coline-square.jpg)"></div>
-                            <p class="text-center"><strong>Coline Lubin</strong></p>
+                                <p class="text-center"><strong>Coline Lubin</strong></p>
                                 <p class="text-center">Interprétation</p>
                             </a>
                             <div id="coline-bio" class="collapse">
-                                 <p class="text-center"> <a data-toggle="modal" href="#modal-bio-coline">Biographie</a><br> </p>
-                                    <ul class="social-network social-circle">
-                                        <li><a href="https://fr-fr.facebook.com/coline.lubin" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://fr.linkedin.com/in/coline-lubin-1b6b1036" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                    
+                                <p class="text-center"> <a data-toggle="modal" href="#modal-bio-coline">Biographie</a>
+                                    <br> </p>
+                                <ul class="social-network social-circle">
+                                    <li><a href="https://fr-fr.facebook.com/coline.lubin" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://fr.linkedin.com/in/coline-lubin-1b6b1036" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
                             </div>
                             <!-- Modal bio Coline -->
                             <div id="modal-bio-coline" class="modal fade" role="dialog">
@@ -776,16 +768,15 @@
                                 </div>
                             </div>
                         </div>
-<div class="clearfix visible-xs-block"></div>
+                        <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-6 col-sm-4">
                             <a href="#simon-bio" data-toggle="collapse">
                                 <div class="circle-avatar" style="background-image:url(media/images/simon-square.jpg)"></div>
-                            <p class="text-center"><strong>Simon Giesbert</strong></p>
+                                <p class="text-center"><strong>Simon Giesbert</strong></p>
                                 <p class="text-center">Interprétation</p>
                             </a>
                             <div id="simon-bio" class="collapse">
-                                                            <p class="text-center"> <a data-toggle="modal" href="#modal-bio-simon">Biographie</a></p>
-
+                                <p class="text-center"> <a data-toggle="modal" href="#modal-bio-simon">Biographie</a></p>
                                 <p class="text-center">
                                     <ul class="social-network social-circle">
                                         <li><a href="https://fr.linkedin.com/in/simon-giesbert-844b7999" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
@@ -802,23 +793,23 @@
                                             <h4 class="modal-title">Simon Giesbert</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p class="bio"> 
-Il a suivi les enseignements d’art dramatique des Conservatoires de Rennes et de Grenoble puis la formation de l’Académie de l’Union à Limoges.<br>
-A Grenoble, il a joué dans Le Songe d’une nuit d’été, mis en scène par L. Pelly, et dans Le Suicidé, mis en scène par P. Sire.<br>
-A Limoges, il a notamment travaillé avec Radu Pinciulescu, Matthias Langhoff, Gabor Tompas et Paul Chiributa, avant de jouer dans Rich’hard experience mis en scène par Olivier Berthelot.<br>
-Il rejoint la Compagnie Mesdames a pour Le <a href="#satyre">Satyre</a>, puis <a href="#spectateurs">Spectateur(s), un accident de théâtre</a>. En 2013, il retrouve la compagnie Petit Bois pour Quel petit vélo...  de G. Perec mis en scène par J.J. Mateu.<br>
-Il est modèle, joue pour le cinéma dans des courts et longs métrages et fait de la figuration pour l’opéra. Il est également musicien de folk et de blue grass.
+                                            <p class="bio">
+                                                Il a suivi les enseignements d’art dramatique des Conservatoires de Rennes et de Grenoble puis la formation de l’Académie de l’Union à Limoges.
+                                                <br> A Grenoble, il a joué dans Le Songe d’une nuit d’été, mis en scène par L. Pelly, et dans Le Suicidé, mis en scène par P. Sire.
+                                                <br> A Limoges, il a notamment travaillé avec Radu Pinciulescu, Matthias Langhoff, Gabor Tompas et Paul Chiributa, avant de jouer dans Rich’hard experience mis en scène par Olivier Berthelot.
+                                                <br> Il rejoint la Compagnie Mesdames a pour Le <a href="#satyre">Satyre</a>, puis <a href="#spectateurs">Spectateur(s), un accident de théâtre</a>. En 2013, il retrouve la compagnie Petit Bois pour Quel petit vélo... de G. Perec mis en scène par J.J. Mateu.
+                                                <br> Il est modèle, joue pour le cinéma dans des courts et longs métrages et fait de la figuration pour l’opéra. Il est également musicien de folk et de blue grass.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-<div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+                        <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
                         <div class="col-xs-6 col-sm-4">
                             <a href="#elsa-bio" data-toggle="collapse">
                                 <div class="circle-avatar" style="background-image:url(media/images/elsa-square.jpg)"></div>
-                            <p class="text-center"><strong>Elsa Sanchez</strong></p>
+                                <p class="text-center"><strong>Elsa Sanchez</strong></p>
                                 <p class="text-center">Interprétation</p>
                             </a>
                             <div id="elsa-bio" class="collapse">
@@ -834,13 +825,12 @@ Il est modèle, joue pour le cinéma dans des courts et longs métrages et fait 
                                             <h4 class="modal-title">Elsa Sanchez</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p class="bio"> 
-Elle a débuté avec la danse au Conservatoire National de Danse de Lisbonne.<br>
-En parallèle avec ses études supérieures en Arts du Spectacle et en Médiation Culturelle, elle continue la danse à Toulouse (tango, claquettes, contemporain, classique) et suit la formation professionnelle de comédien au Théâtre du Hangar.<br>
-Elle participe à des ateliers de théâtre avec Francis Azéma (Atelier du Misanthrope), Jean-Pierre Agazar 
-(Théâtre de l’Improviste) ou Laurent Perez et Sylvie Maury pendant deux saisons (2014/2015/2016) au TPN.<br>
-Diplômée du Centre Art Danse International, elle participe à de nombreux projets mêlant danse et théâtre.<br>
-Elle a travaillé dans le groupe Hortense (free théâtre : improvisation) jusqu'à 2016.
+                                            <p class="bio">
+                                                Elle a débuté avec la danse au Conservatoire National de Danse de Lisbonne.
+                                                <br> En parallèle avec ses études supérieures en Arts du Spectacle et en Médiation Culturelle, elle continue la danse à Toulouse (tango, claquettes, contemporain, classique) et suit la formation professionnelle de comédien au Théâtre du Hangar.
+                                                <br> Elle participe à des ateliers de théâtre avec Francis Azéma (Atelier du Misanthrope), Jean-Pierre Agazar (Théâtre de l’Improviste) ou Laurent Perez et Sylvie Maury pendant deux saisons (2014/2015/2016) au TPN.
+                                                <br> Diplômée du Centre Art Danse International, elle participe à de nombreux projets mêlant danse et théâtre.
+                                                <br> Elle a travaillé dans le groupe Hortense (free théâtre : improvisation) jusqu'à 2016.
                                             </p>
                                         </div>
                                     </div>
@@ -851,18 +841,20 @@ Elle a travaillé dans le groupe Hortense (free théâtre : improvisation) jusqu
                         <div class="col-xs-6 col-sm-4">
                             <a href="#lucas-bio" data-toggle="collapse">
                                 <div class="circle-avatar" style="background-image:url(media/images/lucas-square.jpg)"></div>
-                            <p class="text-center"><strong>Lucas Lemauff</strong></p>
+                                <p class="text-center"><strong>Lucas Lemauff</strong></p>
                                 <p class="text-center">Interprétation</p>
                             </a>
                             <div id="lucas-bio" class="collapse">
                                 <p class="text-center">
-                                 <p class="text-center"> <a data-toggle="modal" href="#modal-bio-lucas">Biographie</a></p>
+                                    <p class="text-center"> <a data-toggle="modal" href="#modal-bio-lucas">Biographie</a></p>
                                     <ul class="social-network social-circle">
-                        <li><a href="https://fr-fr.facebook.com/lucas.lemauff" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/lucas_lemauff" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.youtube.com/c/LucasLemauff" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://plus.google.com/+LucasLemauff" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        </i></a></li>
+                                        <li><a href="https://fr-fr.facebook.com/lucas.lemauff" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/lucas_lemauff" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.youtube.com/c/LucasLemauff" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="https://plus.google.com/+LucasLemauff" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                        </i>
+                                        </a>
+                                        </li>
                                     </ul>
                                 </p>
                             </div>
@@ -876,14 +868,14 @@ Elle a travaillé dans le groupe Hortense (free théâtre : improvisation) jusqu
                                             <h4 class="modal-title">Lucas Lemauff</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p class="bio"> 
-S’initiant jeune au saxophone puis au piano, il suit également des cours de théâtre.<br>
-Il monte son premier quartet de jazz  «Take Five» en 2005 avant d’intégrer «Les Carottes sont Cuites».<br>
-Il crée en 2009 les «Pauvres Martins», avec qui vit une aventure de cinq ans, dans la tradition de la chanson à texte.<br>
-En 2011, sa Licence de Musicologie Jazz et sa pratique du chant l’amènent à intégrer le chœur «Archipels» dirigé par Joël Suhubiette, puis l’équipe de «Voix Express» en compagnie d’Hervé Suhubiette. Il participe également à l’élaboration de cabarets au Théâtre du Pavé en collaboration avec le Conservatoire de théâtre.<br>
-En 2012, il intègre le collectif «Les fils de ta mère».<br>
-En 2013, il travaille avec Piérick, ex-chanteur des «Malpolis», pendant deux ans et participe en 2014 à la tournée française de  Keith Kouna, chanteur québécois.<br>
-Il joue dans le spectacle All’arrabbiata, un cabaret politico-satirique d’Ascanio Celestini. On peut le retrouver dans Virage à droite ou encore dans B. comme Fontaine, récital de chansons de Brigitte Fontaine.
+                                            <p class="bio">
+                                                S’initiant jeune au saxophone puis au piano, il suit également des cours de théâtre.
+                                                <br> Il monte son premier quartet de jazz «Take Five» en 2005 avant d’intégrer «Les Carottes sont Cuites».
+                                                <br> Il crée en 2009 les «Pauvres Martins», avec qui vit une aventure de cinq ans, dans la tradition de la chanson à texte.
+                                                <br> En 2011, sa Licence de Musicologie Jazz et sa pratique du chant l’amènent à intégrer le chœur «Archipels» dirigé par Joël Suhubiette, puis l’équipe de «Voix Express» en compagnie d’Hervé Suhubiette. Il participe également à l’élaboration de cabarets au Théâtre du Pavé en collaboration avec le Conservatoire de théâtre.
+                                                <br> En 2012, il intègre le collectif «Les fils de ta mère».
+                                                <br> En 2013, il travaille avec Piérick, ex-chanteur des «Malpolis», pendant deux ans et participe en 2014 à la tournée française de Keith Kouna, chanteur québécois.
+                                                <br> Il joue dans le spectacle All’arrabbiata, un cabaret politico-satirique d’Ascanio Celestini. On peut le retrouver dans Virage à droite ou encore dans B. comme Fontaine, récital de chansons de Brigitte Fontaine.
                                             </p>
                                         </div>
                                     </div>
@@ -891,106 +883,122 @@ Il joue dans le spectacle All’arrabbiata, un cabaret politico-satirique d’As
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-4">
-                        <a href="#modal-autres" data-toggle="modal">
+                            <a href="#modal-autres" data-toggle="modal">
                                 <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
-                            <p class="text-center"><strong>Les autres</strong><br>
-                            Un aperçu de l'équipe au fil du temps</p>
-                           </a>
-                       </div>
+                                <p class="text-center"><strong>Les autres</strong>
+                                    <br> Un aperçu de l'équipe au fil du temps</p>
+                            </a>
+                        </div>
                         <!-- Modal autres -->
-                            <div id="modal-autres" class="modal fade" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">L'équipe au fil du temps</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p class="autres"> 
-La troupe a eu la chance de croiser le chemin de nombreux artistes ou techniciens, dont voici un bref aperçu :<br><br>
-<span class="name-autres">Olivier Marchepoil</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Spectateur(s).<br><br>
-<span class="name-autres">Juliette Nogera</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion sur Spectateur(s).<br>
-<span class="name-autres">Nadia Ouali</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion et communication sur Spectateur(s).<br>
-<span class="name-autres">Laura Trujillo</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire scénographie sur Faust et Spectateur(s).<br>
-<span class="name-autres">Joël Sitbon</span>&nbsp;&nbsp;/&nbsp;&nbsp;assistant chorégraphe sur Spectateur(s).<br>
-<span class="name-autres">Marion Guinot</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).<br>
-<span class="name-autres">Pauline Lattaque</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).<br><br>
-<span class="name-autres">Charline Daligaud</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire assistante à la mise en scène sur Le Satyre et Les Farces médiévales.<br><br>
-<span class="name-autres">Romain Di Sante</span>&nbsp;&nbsp;/&nbsp;&nbsp;conception décors de Stranded yet, d'En Route pour la joie et du Satyre.<br><br>
-<span class="name-autres">Malik Pavaux</span>&nbsp;&nbsp;/&nbsp;&nbsp;création lumière du spectacle Stranded yet et du Monologue d'une tueuse.<br><br>
-<span class="name-autres">Thomas Dupeyron</span>&nbsp;&nbsp;/&nbsp;&nbsp;régie lumière sur En Route pour la joie et création lumière pour le Satyre.<br><br>
-<span class="name-autres">Nils Grauerholz</span>&nbsp;&nbsp;/&nbsp;&nbsp;graphiste, créateur du logo de la Compagnie ainsi que de l'Affiche d'En Route pour la joie.<br><br>
-<span class="name-autres">Julien Botella</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.<br>
-<span class="name-autres">Samuel Pivot</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.<br>
-<span class="name-autres">Samuel Segura</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien / danseur dans En Route pour la joie et Stranded yet.<br>
-<span class="name-autres">Claire Cittone</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédienne et musicienne dans En Route pour la joie. <br>
-<span class="name-autres">Emmanuel Rogez</span>&nbsp;&nbsp;/&nbsp;&nbsp;musicien (saxophone, clarinette, guitare), décorateur et comédien dans En Route pour la joie.<br>
-<span class="name-autres">Mathilde Chamoux &amp; Thibault Condy</span>&nbsp;&nbsp;/&nbsp;&nbsp;créateurs lumière et régisseurs lors de la tournée 2009/ 2010 d'En Route pour la joie.<br>
-<span class="name-autres">Armony Moulis</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en scénographie sur En Route pour la joie.<br><br>
-<span class="name-autres">Audrey Gary</span>&nbsp;&nbsp;/&nbsp;&nbsp;co-créatrice de la Compagnie.
-                                            </p>
-                                        </div>
+                        <div id="modal-autres" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">L'équipe au fil du temps</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="autres">
+                                            La troupe a eu la chance de croiser le chemin de nombreux artistes ou techniciens, dont voici un bref aperçu :
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Olivier Marchepoil</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Spectateur(s).
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Juliette Nogera</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion sur Spectateur(s).
+                                            <br>
+                                            <span class="name-autres">Nadia Ouali</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion et communication sur Spectateur(s).
+                                            <br>
+                                            <span class="name-autres">Laura Trujillo</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire scénographie sur Faust et Spectateur(s).
+                                            <br>
+                                            <span class="name-autres">Joël Sitbon</span>&nbsp;&nbsp;/&nbsp;&nbsp;assistant chorégraphe sur Spectateur(s).
+                                            <br>
+                                            <span class="name-autres">Marion Guinot</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).
+                                            <br>
+                                            <span class="name-autres">Pauline Lattaque</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Charline Daligaud</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire assistante à la mise en scène sur Le Satyre et Les Farces médiévales.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Romain Di Sante</span>&nbsp;&nbsp;/&nbsp;&nbsp;conception décors de Stranded yet, d'En Route pour la joie et du Satyre.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Malik Pavaux</span>&nbsp;&nbsp;/&nbsp;&nbsp;création lumière du spectacle Stranded yet et du Monologue d'une tueuse.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Thomas Dupeyron</span>&nbsp;&nbsp;/&nbsp;&nbsp;régie lumière sur En Route pour la joie et création lumière pour le Satyre.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Nils Grauerholz</span>&nbsp;&nbsp;/&nbsp;&nbsp;graphiste, créateur du logo de la Compagnie ainsi que de l'Affiche d'En Route pour la joie.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Julien Botella</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.
+                                            <br>
+                                            <span class="name-autres">Samuel Pivot</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.
+                                            <br>
+                                            <span class="name-autres">Samuel Segura</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien / danseur dans En Route pour la joie et Stranded yet.
+                                            <br>
+                                            <span class="name-autres">Claire Cittone</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédienne et musicienne dans En Route pour la joie.
+                                            <br>
+                                            <span class="name-autres">Emmanuel Rogez</span>&nbsp;&nbsp;/&nbsp;&nbsp;musicien (saxophone, clarinette, guitare), décorateur et comédien dans En Route pour la joie.
+                                            <br>
+                                            <span class="name-autres">Mathilde Chamoux &amp; Thibault Condy</span>&nbsp;&nbsp;/&nbsp;&nbsp;créateurs lumière et régisseurs lors de la tournée 2009/ 2010 d'En Route pour la joie.
+                                            <br>
+                                            <span class="name-autres">Armony Moulis</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en scénographie sur En Route pour la joie.
+                                            <br>
+                                            <br>
+                                            <span class="name-autres">Audrey Gary</span>&nbsp;&nbsp;/&nbsp;&nbsp;co-créatrice de la Compagnie.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                   
                     <h1>Partenaires</h1>
-                     <br>
-                     <p>
-                    <div class="row">
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/1-haute-garonne.png" alt="logo Haute Garonne" class="img-responsive logo-partner">
-                                <p class="caption-partenaire">Aide à la création</p>
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/2-aveyron.jpg" alt="logo aveyron" class="img-responsive logo-partner">                               <p class="caption-partenaire">Aide à la résidence</p>
-
-                            </div>
-                            <div class="clearfix visible-xs-block"></div>
-
-                              <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/3-severac.jpg" alt="logo Severac" class="img-responsive logo-partner">
-                            </div>
-
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/4-ciam.png" alt="logo CIAM" class="img-responsive logo-partner">
-                            </div>
-                                                        <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
-
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/5-ACT.png" alt="logo ACT" class="img-responsive logo-partner">
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/6-mixart.png" alt="logo Mixart Myris" class="img-responsive logo-partner">
-                            </div>
-
-                                                        <div class="clearfix visible-xs-block"></div>
-
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/7-europe-jeunesse.jpg" alt="logo Juenesse en action" class="img-responsive logo-partner">
-                            </div>
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/8-grand-rond.png" alt="logo Theatre du Grand Rond" class="img-responsive logo-partner">
-                            </div>
-                            <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
-
-                            <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/9-burgaud.png" alt="logo Cafe du Burgaud" class="img-responsive logo-partner">
-                            </div>
-                        
-                               <div class="col-xs-6 col-sm-3">
-                                <img src="media/images/partenaires/10-st-gaudens.png" alt="logo St Gaudens" class="img-responsive logo-partner">
-                            </div>
-                                                                                    <div class="clearfix visible-xs-block"></div>
-
+                    <br>
+                    <div class="row center-block">
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/1-haute-garonne.png" alt="logo Haute Garonne" class="img-responsive logo-partner">
+                            <p class="caption-partenaire">Aide à la création</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/2-aveyron.jpg" alt="logo aveyron" class="img-responsive logo-partner">
+                            <p class="caption-partenaire">Aide à la résidence</p>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/3-severac.jpg" alt="logo Severac" class="img-responsive logo-partner">
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/4-ciam.png" alt="logo CIAM" class="img-responsive logo-partner">
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/5-ACT.png" alt="logo ACT" class="img-responsive logo-partner">
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/6-mixart.png" alt="logo Mixart Myris" class="img-responsive logo-partner">
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/7-europe-jeunesse.jpg" alt="logo Juenesse en action" class="img-responsive logo-partner">
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/8-grand-rond.png" alt="logo Theatre du Grand Rond" class="img-responsive logo-partner">
+                        </div>
+                        <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/9-burgaud.png" alt="logo Cafe du Burgaud" class="img-responsive logo-partner">
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <img src="media/images/partenaires/10-st-gaudens.png" alt="logo St Gaudens" class="img-responsive logo-partner">
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
                     </div>
-                    </p>
-                    </div>
-                    </div>
-
-    
+                </div>
+            </div>
         </div>
     </section>
     <!-- Creation Section -->
@@ -1001,13 +1009,12 @@ La troupe a eu la chance de croiser le chemin de nombreux artistes ou technicien
                     <h1>Contact</h1>
                     <p>
                         Mail : cie.mesdames.a {at} gmail.com</p>
-                              <p>www.mesdames-a.fr
+                    <p>www.mesdames-a.fr
                     </p>
-                        <ul class="social-network social-circle">
-                                        <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    </ul>
-                  
+                    <ul class="social-network social-circle">
+                        <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>

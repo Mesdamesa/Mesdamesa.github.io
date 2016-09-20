@@ -262,12 +262,12 @@ bottom: 0;
 
 .logo-partner{
  height:auto;
-max-width: 100px;
-margin-bottom: 25px;   
+ max-width: 100px;
+ padding-top: 20px;
 }
 
 .caption-partenaire{
-    text-align: center;
+    font-size: 14px;
 }
 
 p a {
@@ -637,6 +637,21 @@ of those sections to manage the look and feel of the site. */
 .hidden {
     display: none;
 }
+
+.imglist {
+            overflow: hidden;
+        }
+
+        .imglist a {
+            float: left;
+            margin: 4px;
+        }
+
+        .imglist a img {
+            vertical-align: top;
+            padding: 1px;
+            border: 1px solid #ccc;
+        }
 
 /**
 * AddToCalendar Blue Style
