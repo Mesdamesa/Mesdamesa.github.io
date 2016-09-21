@@ -653,6 +653,10 @@ of those sections to manage the look and feel of the site. */
             border: 1px solid #ccc;
         }
 
+.affiche-satyre{
+    margin-top: 20px;
+}
+
 /**
 * AddToCalendar Blue Style
 * http://addtocalendar.com
