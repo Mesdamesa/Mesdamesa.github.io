@@ -40,7 +40,7 @@ border-bottom: 3px solid white;
 
 p.intro-text {
     font-family: "Avenir Next" !important;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: -1px;
     text-align: center;
     color: #ffffff;
@@ -83,10 +83,9 @@ p.intro-text {
 }
 
 p.reduction-dimpots {
-    width: 220px;
     margin-top: 5px;
     font-family: "Helvetica";
-    font-size: 13px;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -139,6 +138,10 @@ p {
 }
 
 .date-lieu {
+   font-weight: 600;
+}
+
+.date-heure{
     font-weight: 600;
 }
 

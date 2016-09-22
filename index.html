@@ -8,7 +8,7 @@
     <meta name="description" content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse. Dirigée par Alice Tabart.">
     <meta name="author" content="Alice et Gilles Tabart">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="théâtre, contemporain, Toulouse, Alice Tabart, spectacle, danse, compagnie, mesdames a">
+    <meta name="keywords" content="théâtre, contemporain, art, Toulouse, Alice Tabart, spectacle, chant, danse, compagnie, mesdames a">
     <title>Compagnie Mesdames A - Théâtre contemporain Toulouse</title>
     <!-- Bootstrap CSS and JS
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -24,18 +24,25 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>
-    <!-- Add fancyBox -->
+
+<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+    <!-- Add mousewheel plugin (this is optional) 
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
+    <!-- Add fancyBox 
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
     <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
     <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
     <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
         <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>-->
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
     <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
+
+
     <!--Tooltip init-->
     <script async>
     $(document).ready(function() {
@@ -87,6 +94,42 @@
         }
     })();
     </script>
+
+    <!-- IMAGE GALLERY-->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -155,22 +198,42 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-2 col-xs-12">
                             <p class="intro-text center-block">
-                                La Cie Mesdames A aime faire discuter jeu, danse et musique sur scène.
+                                La Compagnie Mesdames A propose un théâtre contemporain faisant discuter jeu, danse et musique sur scène.<br>
                                 <br>
-                                <br>Nos créations questionnent souvent la place de l'individu dans la société.
+                                Découvrez <i><a href="#spectateurs">SPECTATEUR(S), un accident de théâtre</a></i> qui, comme la plupart de nos créations, questionne la place de l'individu dans la société.
                             </p>
                         </div>
                         <div class="col-md-3 center-block col-xs-12">
                             <div class="button">
-                                <a class="btn btn-nous-soutenir center-block" href="media/pdf/bulletin-adhesion-mesdames-a.pdf">
+                                <a class="btn btn-nous-soutenir center-block" type="button" data-toggle="modal" data-target="#modal-soutenir-adhesion">
                                     <span class="txt-nous-soutenir">Nous soutenir<br></span>
-                                    <span class="txt-nous-soutenir-small">(PDF formulaire d'adhésion)</span>
+                                    <span class="txt-nous-soutenir-small">(Info soutien &amp; adhésion)</span>
                                 </a>
                             </div>
-                            <p class="reduction-dimpots center-block" data-toggle="tooltip" data-placement="bottom" title="A la réception de votre don, nous vous enverrons un reçu fiscal : 66% du montant est déductible d'impôts (dans la limite de 20% de votre revenu imposable).">
-                                Profitez d'une réduction d'impôts: un don de 35€ par exemple revient à moins de 12€ après impots.
+                            <p class="reduction-dimpots center-block" data-toggle="tooltip" data-placement="bottom" title="">
+                                
                             </p>
                         </div>
+                         <div id="modal-soutenir-adhesion" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Nous soutenir - plus d'infos</h4>
+                                        </div>
+                                        <div class="modal-body dates-passees">
+                                            <p class="reduction-dimpots">
+                                            Si vous souhaitez nous soutenir, le <b><a href="media/pdf/bulletin-adhesion-mesdames-a.pdf">bulletin d'adhésion</a></b> vous permettra de devenir membre de la compagnie.<br><br>
+                                            <i>Info</i>: Si vous êtes imposables, vos dons ouvrent droit à une réduction d'impôts...<br>
+                                            Cochez la case dans le bulletin d'adhésion et nous vous enverrons un reçu fiscal.<br>
+                                            <br>
+                                            <small>66% du montant de vos dons est déductible d'impôts (dans la limite de 20% de votre revenu imposable).
+                                            Par exemple après impots, un don de 35€ revient à moins de 12€.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -182,11 +245,13 @@
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
                     <h1>Actualités et dates</h1>
-                    <p>
-                        La compagnie a présenté <i>La Cité des Dragons</i> ainsi que des animations médiévales à Sévérac (Aveyron) durant les mois de Juillet et Août. Elle prépare désormais la rentrée de <a href="#spectateurs">Spectateur(s)</a> pour la nouvelle saison 2016-2017.
+                    <p>Après avoir partagé <i>La Cité des Dragons</i> avec près de 1000 spectateurs cet été, la Compagnie Mesdames A se prépare pour les deux belles programmations de <i><a href="#spectateurs">SPECTATEUR(S)</a>...</i> dans sa nouvelle distribution.
                     </p>
-                    <h2>Prochaines dates</h2>
+                
+                    <h3>Dates pour <i>SPECTATEUR(S), un accident de théâtre</i></h3>
                     <!-- liste dates -->
+                    <div class="row">
+                    <div class="col-xs-12 col-md-10 col-md-offset-1">
                     <ul class="list-group prochaines-dates">
                         <li class="list-group-item">
                             <div class="row">
@@ -194,14 +259,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">18</span>
                                     <br><span class="date-mois">OCT</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7 date-details">
+                                <div class="col-xs-12 col-md-6 date-details">
                                     <p class="date">
-                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">mardi 18 oct. à 21h00</span>, <span class="date-lieu">Théâtre du Grand Rond</span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-date">mardi 18 oct.</span> à 
+                                        <span class="date-heure">21h00</span> <br>
+                                        <span class="date-lieu">Théâtre du Grand Rond</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -224,14 +289,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">19</span>
                                     <br><span class="date-mois">OCT</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">mercredi 19 oct. à 21h00</span>, <span class="date-lieu">Théâtre du Grand Rond </span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-date">mercredi 19 oct.</span> à 
+                                        <span class="date-heure">21h00</span> <br>
+                                        <span class="date-lieu">Théâtre du Grand Rond</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -254,14 +319,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">20</span>
                                     <br><span class="date-mois">OCT</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">jeudi 20 oct. à 21h00</span>, <span class="date-lieu">Théâtre du Grand Rond </span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-date">jeudi 20 oct.</span> à 
+                                        <span class="date-heure">21h00</span> <br>
+                                        <span class="date-lieu">Théâtre du Grand Rond</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -284,14 +349,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">21</span>
                                     <br><span class="date-mois">OCT</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">vendredi 21 oct. à 21h00</span>, <span class="date-lieu">Théâtre du Grand Rond </span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-date">vendredi 21 oct.</span> à 
+                                        <span class="date-heure">21h00</span> <br>
+                                        <span class="date-lieu">Théâtre du Grand Rond</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -314,14 +379,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">22</span>
                                     <br><span class="date-mois">OCT</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">samedi 22 oct. à 21h00</span>, <span class="date-lieu">Théâtre du Grand Rond </span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
+                                        <span class="date-lieu">TOULOUSE</span> - <span class="date-date">samedi 22 oct.</span> à 
+                                        <span class="date-heure">21h00</span> <br>
+                                         <span class="date-lieu">Théâtre du Grand Rond</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/HGfk8gCa6aP2">Accès</a> - <a class="reservation" href="http://www.grand-rond.org/index.php/grandrond/spectacle?Number=1459">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -346,14 +411,13 @@
                                     <span class="pull-xs-right"><span class="date-jour">10</span>
                                     <br><span class="date-mois">NOV</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">LONDON</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">jeudi 10 nov. à 8:30pm</span>, <span class="date-lieu">The Cockpit Theatre</span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/Fzw7ssbgBgP2">Accès</a> - <a class="reservation" href="http://tickets.thecockpit.org.uk/Sales/Shows/Voila-2016/SPECTATEURS-un-accident-de-th%C3%A9%C3%A2tre#book">Réservations</a></span>
+                                        <span class="date-lieu">LONDON</span> - <span class="date-date">jeudi 10 nov.</span> à <span class="date-heure">8:30pm</span><br>
+                                        <span class="date-lieu">The Cockpit Theatre</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/Fzw7ssbgBgP2">Accès</a> - <a class="reservation" href="http://tickets.thecockpit.org.uk/Sales/Shows/Voila-2016/SPECTATEURS-un-accident-de-th%C3%A9%C3%A2tre#book">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -376,14 +440,14 @@
                                     <span class="pull-xs-right"><span class="date-jour">11</span>
                                     <br><span class="date-mois">NOV</span></span>
                                 </div>
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-xs-12 col-md-6">
                                     <p class="date">
-                                        <span class="date-lieu">LONDON</span> - <span class="date-piece"> <a href="#spectateurs">SPECTATEUR(S)</a>, un accident de théâtre</span>
-                                        <br>
-                                        <span class="date-date">vendredi 11 nov. à 7:00pm</span>, <span class="date-lieu">The Cockpit Theatre</span> <span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/Fzw7ssbgBgP2">Accès</a> - <a class="reservation" href="http://tickets.thecockpit.org.uk/Sales/Shows/Voila-2016/SPECTATEURS-un-accident-de-th%C3%A9%C3%A2tre#book">Réservations</a></span>
+                                        <span class="date-lieu">LONDON</span> - <span class="date-date">vendredi 11 nov.</span> à <span class="date-heure">7:00pm</span><br>
+                                        <span class="date-lieu">The Cockpit Theatre</span> <span class="date-i
+                                        nfos-carte">&nbsp; &nbsp;<a class="map" href="https://goo.gl/maps/Fzw7ssbgBgP2">Accès</a> - <a class="reservation" href="http://tickets.thecockpit.org.uk/Sales/Shows/Voila-2016/SPECTATEURS-un-accident-de-th%C3%A9%C3%A2tre#book">Réservations</a></span>
                                     </p>
                                 </div>
-                                <div class="col-xs-12 col-md-3">
+                                <div class="col-xs-12 col-md-4">
                                     <span class="addtocalendar atc-style-blue">
                                                     <a class="atcb-link">Ajouter au calendrier</a>
                                                     <var class="atc_event">
@@ -401,6 +465,8 @@
                             </div>
                         </li>
                     </ul>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,24 +490,32 @@
                             <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage : ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
                             <br>
                         </p>
-                        <br>
-                        <h3>Équipe de création</h3>
-                        <p class="equip-crea">
-                            <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
-                            <br>
-                            <span class="label-equipe-crea">Interprétation /</span> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez
-                            <br>
-                            <span class="label-equipe-crea">Chorégraphies /</span> Joël Sitbon &amp; Elsa Sanchez
-                            <br>
-                            <span class="label-equipe-crea">Création musicale /</span> Simon Giesbert
-                            <br>
-                            <span class="label-equipe-crea">Création lumière /</span> Damien Peray &amp; Serena Andreasi
-                            <br>
-                        </p>
                         <h3>Gallerie</h3>
+
+<div id="links">
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse" data-gallery>
+        <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="Spectateur(s) - Danse">
+    </a>
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B" data-gallery>
+        <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="Spectateur(s) - Carton N&amp;B">
+    </a>
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson" data-gallery>
+        <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="Spectateur(s) - Chanson">
+    </a>
+     <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="ALT_TITLE" ></a>
+                                                       
+                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="ALT_TITLE"></a>
+                           
+                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="ALT_TITLE"></a>
+                           
+                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="ALT_TITLE"></a>
+                        
+                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="ALT_TITLE"></a>
+</div>
+
                         <div class="imglist row">
                             <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="ALT_TITLE" class="img-responsive"></a>
+                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="Spectateur(s) - Danse" class="img-responsive"></a>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3">
                                 <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="ALT_TITLE" class="img-responsive"></a>
@@ -482,7 +556,24 @@
                             });
                         });
                         </script>
-                        <h3>Production</h3>
+                          
+                
+                        <h3>Production et Équipe de création</h3>
+                        <p>Voir <a href="#equipe-crea-spectateurs-collapse" data-toggle="collapse">l'équipe de création</a>.</p>
+                    <div id="equipe-crea-spectateurs-collapse"" class="collapse">
+                                <p class="equip-crea">
+                            <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
+                            <br>
+                            <span class="label-equipe-crea">Interprétation /</span> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez
+                            <br>
+                            <span class="label-equipe-crea">Chorégraphies /</span> Joël Sitbon &amp; Elsa Sanchez
+                            <br>
+                            <span class="label-equipe-crea">Création musicale /</span> Simon Giesbert
+                            <br>
+                            <span class="label-equipe-crea">Création lumière /</span> Damien Peray &amp; Serena Andreasi
+                            <br>
+                        </p>
+                    </div>
                         <p class="production">
                             Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
                             <br>
@@ -1180,6 +1271,19 @@
             </div>
         </div>
     </section>
+
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
 </body>
 
 </html>
