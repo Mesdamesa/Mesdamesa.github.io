@@ -15,6 +15,17 @@ html {
 }
 
 
+@import url(//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le);
+
+
+@font-face {font-family: "Microsoft Tai Le";
+    src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot");
+    src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg");
+}
 /* .navbar-inverse .navbar-nav > .active > a:focus {
 background: rgba(0, 0, 0);
 border-bottom: 3px solid white;
