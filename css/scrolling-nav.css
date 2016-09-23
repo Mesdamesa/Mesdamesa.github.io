@@ -59,6 +59,10 @@ p.intro-text {
     word-wrap: break-word;
 }
 
+p.center{
+      text-align: center;
+}
+
 .btn-nous-soutenir {
     width: 220px;
     height: 50px;
