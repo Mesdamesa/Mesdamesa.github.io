@@ -21,10 +21,7 @@ html {
 @font-face {font-family: "Microsoft Tai Le";
     src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot");
     src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg");
+    url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype");
 }
 /* .navbar-inverse .navbar-nav > .active > a:focus {
 background: rgba(0, 0, 0);
@@ -59,9 +56,6 @@ p.intro-text {
     word-wrap: break-word;
 }
 
-p.center{
-      text-align: center;
-}
 
 .btn-nous-soutenir {
     width: 220px;
@@ -312,7 +306,7 @@ h1 {
     font-weight: 600;
     color: #eee;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 h2 {
@@ -321,7 +315,7 @@ h2 {
     font-weight: 600;
     color: #eee;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 h3 {
@@ -330,7 +324,7 @@ h3 {
     font-weight: 600;
     color: #eee;
     text-align: left;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 
@@ -650,6 +644,8 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #000;
 }
+
+
 
 /* Fancybox */
 .hidden {

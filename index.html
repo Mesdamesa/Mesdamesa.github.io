@@ -27,7 +27,6 @@
 
 <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
 <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <!-- Add mousewheel plugin (this is optional) 
     <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
@@ -97,38 +96,15 @@
     </script>
 
     <!-- IMAGE GALLERY-->
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <!-- The container for the modal slides -->
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
     <h3 class="title"></h3>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                        <i class="glyphicon glyphicon-chevron-left"></i>
-                        Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                        Next
-                        <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
     <!-- Navigation -->
@@ -493,74 +469,40 @@
                         </p>
                         <h3>Gallerie</h3>
 
-<div id="links">
-    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse" data-gallery>
+<div id="galspectateurs">
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse" data-gallery="#blueimp-gallery-galspectateurs">
         <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="Spectateur(s) - Danse">
     </a>
-    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B" data-gallery>
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B" data-gallery="#blueimp-gallery-galspectateurs">
         <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="Spectateur(s) - Carton N&amp;B">
     </a>
-    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson" data-gallery>
+    <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson" data-gallery="#blueimp-gallery-galspectateurs">
         <img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="Spectateur(s) - Chanson">
     </a>
-     <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="ALT_TITLE" ></a>
+     <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="ALT_TITLE" ></a>
                                                        
-                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="ALT_TITLE"></a>
+                                <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="ALT_TITLE"></a>
                            
-                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="ALT_TITLE"></a>
+                                <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="ALT_TITLE"></a>
                            
-                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="ALT_TITLE"></a>
+                                <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="ALT_TITLE"></a>
                         
-                                <a data-gallery href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="ALT_TITLE"></a>
+                                <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="ALT_TITLE"></a>
 </div>
+<script>
+blueimp.Gallery(
+    document.getElementById('galspectateurs').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>
+          
+                        <p>
+                        <br>
+                        Plus <a href="#equipe-crea-spectateurs-collapse" data-toggle="collapse">d'infos&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>.</p>
 
-<!--                         <div class="imglist row">
-                            <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="Spectateur(s) - Danse" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="ALT_TITLE" class="img-responsive"></a>
-                            </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="ALT_TITLE" class="img-responsive"></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="ALT_TITLE" class="img-responsive"></a>
-                            </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-6 col-sm-4 col-md-3">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="ALT_TITLE "  class="img-responsive "></a>
-                            </div>
-                                            
-                            <div class="col-xs-6 col-sm-4 col-md-3 ">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="ALT_TITLE "  class="img-responsive "></a>
-                            </div>
-                            <div class="clearfix visible-xs-block "></div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 ">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="ALT_TITLE" class="img-responsive "></a>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 ">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes"><img src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="ALT_TITLE" class="img-responsive"></a>
-                            </div>
-                            <div class="clearfix visible-xs-block"></div>
-                        </div>
-                        <script type="text/javascript">
-                        $(document).ready(function() {
-                            $("[rel='fancybox-thumb']").fancybox({
-                                caption: {
-                                    type: 'outside'
-                                },
-                                openEffect: 'elastic',
-                                closeEffect: 'none',
-                                nextEffect: 'none'
-                            });
-                        });
-                        </script> -->
-                          
-                
-                      
-                        <p>Plus <a href="#equipe-crea-spectateurs-collapse" data-toggle="collapse">d'infos&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>.</p>
                     <div id="equipe-crea-spectateurs-collapse"" class="collapse">
                       <h3>Équipe de création</h3>
                                 <p class="equip-crea">
@@ -575,11 +517,12 @@
                             <span class="label-equipe-crea">Création lumière /</span> Damien Peray &amp; Serena Andreasi
                             <br>
                         </p>
+
                     <h3>Production</h3>
                         <p class="production">
                             Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
                             <br>
-                            <br> Plus de details sur l’équipe et la production dans:
+                            <br> Encore plus de détails avec :
                             <br>
                             <ul class="production">
                                 <li>le <a href="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf">Dossier de communication</a>
@@ -701,6 +644,163 @@
                         </div>  
                     </div>
 
+ <!--DRAGONS-->
+                    <div class="creations dragons" id="dragons">
+                        <h2>La Cité des Dragons</h2>
+                        <p><small>Eté 2015 et 2016</small></p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/119352016"></iframe>
+                        </div>
+                        <p>Après les Farces médiévales en 2012, la Commune de Sévérac-le-Château nous accueille pour une nouvelle expérience théâtrale hors les murs.<br>
+                            <br> Spectacle total : marionnettes géantes, musique, théâtre, projections, déambulation ; cette nouvelle forme partira à la recherche des dragons endormis dans les ruelles de la cité.<br>
+<br>
+Partant d'une rencontre inopinée entre orient et occident, nous irons explorer, non sans humour, le monde des monstres et des chimères.<br>
+<br>
+    Vous ne le savez sans doute pas encore mais la cité de Sévérac le Château abrite de drôles de personnages. Il y a La Bestiole qui a été créée de toutes pièces, il y a la magicienne dévoreuse de chamalow et il y a ceux qui se cachent. Il paraît que dans la magie des ruelles gît un dragon solitaire qui ne se laisse apercevoir que par qui veut bien y croire. Ouvrez grands vos yeux et vos oreilles, peut-être en rencontrerez-vous un plus vite que prévu.<br>
+    Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons de la cité de Sévérac. Une déambulation pleine de surprises qui vous fera voyager dans le temps et de par le monde. Magie et musique vous accompagneront tout le long de cette soirée fantastique dont vous vous souviendrez encore longtemps.<br>
+
+                            <br>
+                        </p>
+                        <h3>Gallerie</h3>
+
+<div id="galdragons">
+    <a href="creations/dragons/media/images/14030603_10209962267075557_920340036_n.jpg" title="La Cité des Dragons - Porte" data-gallery="#blueimp-gallery-galdragons">
+        <img src="creations/dragons/media/images/14030603_10209962267075557_920340036_n.jpg" alt="La Cité des Dragons - Porte">
+    </a>
+    <a href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" title="La Cité des Dragons - Bestiole début" data-gallery="#blueimp-gallery-galdragons">
+        <img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" alt="La Cité des Dragons - Bestiole début">
+    </a>
+    <a href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" title="La Cité des Dragons - Bestiole final" data-gallery="#blueimp-gallery-galdragons">
+        <img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" alt="La Cité des Dragons - Bestiole final">
+    </a>
+     <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" title="La Cité des Dragons - Bestiolle &amp; Magicienne"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" alt="Bestiolle &amp; Magicienne" ></a>
+                                                       
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" title="La Cité des Dragons - Silhouette Bestiole"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" alt="Silhouette Bestiole"></a>
+                           
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut"></a>
+                           
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" title="La Cité des Dragons - Bestiole et tour"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" alt="Bestiole et tour"></a>
+                        
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg" title="La Cité des Dragons - Dragon chinois"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg" alt="La Cité des Dragons - Dragon chinois"></a>
+
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_dragongros.jpg" title="La Cité des Dragons - Dragon géant"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_dragongros.jpg" alt="La Cité des Dragons - Dragon géant"></a>
+
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" title="La Cité des Dragons - Dragon profil"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" alt="La Cité des Dragons - Dragon profil"></a>
+
+     <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg" title="La Cité des Dragons - Magicienne"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg" alt="La Cité des Dragons - Magicienne"></a>
+
+     <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" title="La Cité des Dragons - Magicienne"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" alt="La Cité des Dragons - Magicienne"></a>
+
+    <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" title="La Cité des Dragons - Projection"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" alt="La Cité des Dragons - Projection"></a>
+</div>                           
+              <script>
+blueimp.Gallery(
+    document.getElementById('galdragons').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
+</script>  
+                      
+                        <p>Plus <a href="#equipe-crea-dragons-collapse" data-toggle="collapse">d'infos&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>.</p>
+                    <div id="equipe-crea-dragons-collapse"" class="collapse">
+                      <h3>Équipe de création</h3>
+                                <p class="equip-crea">
+                            <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
+                            <br>
+                            <span class="label-equipe-crea">Interprétation /</span> Coline Lubin, Joël Sitbon &amp; Alice Tabart
+                            <br>
+                            <span class="label-equipe-crea">Création musicale /</span> Kristen Annequin
+                            <br>
+                            <span class="label-equipe-crea">Création vidéo, lumière et soutien technique /</span> Christian Vialaret
+                            <br>
+                            <span class="label-equipe-crea">Aide à la création des créatures /</span> Emmanuel Borgetto
+                            <br>
+                             <span class="label-equipe-crea">Stagiaires /</span> Marion Guinot (administration), Pauline Lattaque (assitante mise en scène)
+                            <br>
+                        </p>
+                    <h3>Production</h3>
+                        <p class="production">
+                            Ce spectacle est créé avec le soutien du Conseil Départemental de l'Aveyron (aide à la résidence). <br>
+                            Nous remercions l'Ecole de Danse Virginie Gonzales ainsi que l'association Sévérac-Vidéo-Son.
+                            <br>
+                            <br> Plus de details sur l’équipe et la production dans:
+                            <br>
+                            <ul class="production">
+                                <li>la <a data-toggle="modal" href="#revue-presse-dragons-modal-lg">Revue de presse</a></li>
+                                <li>la <a data-toggle="modal" href="#modal-dates-dragons">liste des dates passées</a></li>
+                            </ul>
+                            <div id="revue-presse-dragons-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Revue de presse - La Cité des Dragons</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carousel-example-dragon" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <!-- Wrapper for slides -->
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img class="img-responsive" src="creations/dragons/media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre ">
+                                                        <div class="carousel-caption">
+                                                            01-08-2015
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-responsive" src="creations/dragons/media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche">
+                                                        <div class="carousel-caption">
+                                                            La Dépêche 17-08-2015
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Controls -->
+                                                <a class="left carousel-control" href="#carousel-example-dragon" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#carousel-example-dragon" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--stop video when close modal-->
+                            <script async>
+                            $("#revue-presse-dragons-modal-lg").on('hidden.bs.modal', function(e) {
+                                var $this = $(this);
+                                var $frame = $this.find('iframe');
+                                $frame.attr("src", $frame.attr("src"));
+                            });
+                            </script>
+                            <!-- Modal dates passees -->
+                            <div id="modal-dates-dragons" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Dates passées - La Cité des Dragons</h4>
+                                        </div>
+                                        <div class="modal-body dates-passees">
+                                            <ul>
+                                                <li><b>2016</b></li>
+                                                <li>- lundi 18 et 25 juillet / Sévérac le Château</li>
+                                                <li>-  lundis 8 et 22 août / Sévérac le Château</li>
+                                                <br>
+                                                <li><b>2015</b></li>
+                                               <li>- lundi 20 juillet/ Sévérac le Château</li>
+                                                <li>-  lundis 3, 17 et 24 août / Sévérac le Château</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                        </div>  
+                    </div>
 
 
                     <!--SATYRE-->
@@ -735,7 +835,7 @@
                         </div>
                         </div>
                         <h3>Gallerie</h3>
-                        <div class="imglist row">
+                       <!--  <div class="imglist row">
                             <div class="col-xs-6 col-sm-4">
                                 <a class="fancybox-thumb" rel="fancybox-thumb" href="creations/Satyre/media/images/CIE_MESDAMES_A_2012_Satyre_épaules.jpg" title="Le Satyre - "><img src="creations/Satyre/media/images/sm_CIE_MESDAMES_A_2012_Satyre_épaules.jpg" alt="ALT_TITLE" class="img-responsive"></a>
                             </div>
@@ -771,7 +871,7 @@
                                 nextEffect: 'none'
                             });
                         });
-                        </script>
+                        </script> -->
 
                         <h3>Production</h3>
                         <p class="production">
@@ -946,7 +1046,7 @@
                     </p>
                     <h2>L'équipe</h2>
                     <p>
-                        Comme toute compagnie, elle vit au rythme des projets et son équipe se modifie selon les besoins de la création en cours. Vous trouverez ci-dessous une bio des membres actuels, ainsi qu'une liste des personnes ayant collaborés aux projets par le passé.</p>
+                        Comme toute compagnie, Medasmes A vit au rythme des projets et son équipe se modifie selon les besoins de la création en cours. Vous trouverez ci-dessous une bio des membres actuels, ainsi qu'une liste des personnes ayant collaborés aux projets par le passé.</p>
                     <div class="row">
                         <div class="col-xs-6 col-sm-4">
                             <a href="#alice-bio" data-toggle="collapse">
@@ -1146,8 +1246,8 @@
                         <div class="col-xs-6 col-sm-4">
                             <a href="#modal-autres" data-toggle="modal">
                                 <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
-                                <p class="text-center"><strong>Les autres</strong>
-                                    <br> Un aperçu de l'équipe au fil du temps</p>
+                                <p class="text-center"><strong>L'équipe au fil du temps</strong></p>
+                                <p class="text-center">Collaborations passées</p>
                             </a>
                         </div>
                         <!-- Modal autres -->
@@ -1269,21 +1369,23 @@
                 <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
                     <h1>Contact</h1>
                     <p>
-                        Mail <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; : cie.mesdames.a {at} gmail.com</p>
-                    <p class="text-center">www.mesdames-a.fr
-                    </p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; e-mail : cie.mesdames.a {at} gmail.com<br>
+                    <br>
+                    Retrouvez nous aussi sur les réseaux sociaux :<br></p>
+                    
                     <ul class="social-network social-circle">
                         <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                     </ul>
-                    <br><br><br>
+                    <p class="text-center">
+                    <a href="http://mesdames-a.fr">www.mesdames-a.fr</a></p>
+                    <br>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
 </body>
 
 </html>
