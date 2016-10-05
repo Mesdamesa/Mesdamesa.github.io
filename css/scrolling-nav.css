@@ -669,6 +669,7 @@ of those sections to manage the look and feel of the site. */
 
 .affiche-satyre{
     margin-top: 20px;
+    max-height: 420px;
 }
 
 /**
