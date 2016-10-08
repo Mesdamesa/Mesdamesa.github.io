@@ -65,7 +65,11 @@
     <!-- Fonts stuff -->
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css"/>
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -173,7 +177,7 @@
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-2 col-xs-12">
+                        <div class="col-md-7 col-md-offset-2 col-xs-12">
                             <p class="intro-text center-block">
                                 La Compagnie Mesdames A propose un théâtre contemporain faisant discuter jeu, danse et musique sur scène.<br>
                                 <br>
@@ -463,8 +467,8 @@
                             <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/119352016"></iframe>
                         </div>
                         <p>Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une fable contemporaine, quelque part entre l'Inde, New-York et la France.
-                            <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle : sommes nous acteurs ou spectateurs de nos vies ?
-                            <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage : ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
+                            <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle&nbsp;: sommes nous acteurs ou spectateurs de nos vies ?
+                            <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage&nbsp;: ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
                             <br>
                         </p>
                         <h3>Gallerie</h3>
@@ -522,7 +526,7 @@ blueimp.Gallery(
                         <p class="production">
                             Une production de l’Association Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
                             <br>
-                            <br> Encore plus de détails avec :
+                            <br> Encore plus de détails avec&nbsp;:
                             <br>
                             <ul class="production">
                                 <li>le <a href="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf">Dossier de communication</a>
@@ -634,7 +638,7 @@ blueimp.Gallery(
                                                 <li>- 28 mars: Salle du Foyer de la Mairie - Clarac (31)</li>
                                                 <li>- 7 mars: Salle des Fêtes - Lapanouse de Séverac (12)</li>
                                                 <li>- 21 février: Le Préau - La Salvetat Saint Gilles (31)</li>
-                                                <li>- 20 et 21 janvier 2015 : Fabrique Arts, Culture - Toulouse (31)</li>
+                                                <li>- 20 et 21 janvier 2015&nbsp;: Fabrique Arts, Culture - Toulouse (31)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -644,13 +648,16 @@ blueimp.Gallery(
                         </div>  
                     </div>
 
+<br>
+<hr>
+
  <!--DRAGONS-->
                     <div class="creations dragons" id="dragons">
                         <h2>La Cité des Dragons</h2>
-                        <p><small>Eté 2015 et 2016</small></p>
+                        <p><small>Étés 2015 et 2016</small></p>
                       <img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_main.jpg" alt="La Cité des Dragons - Magicienne" class="img-responsive">
 
-                        <p>Spectacle total : marionnettes géantes, musique, théâtre, projections ; cette nouvelle expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles de la cité de Sévérac-le-Château.<br>
+                        <p>Spectacle total&nbsp;: marionnettes géantes, musique, théâtre, projections ; cette nouvelle expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles de la cité de Sévérac-le-Château.<br>
 Partant d'une rencontre inopinée entre orient et occident, lors de cette déambulation nous explorons, non sans humour, le monde des monstres et des chimères.<br>
                         </p>
                         <h3>Gallerie</h3>
@@ -801,6 +808,8 @@ Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons
                         </div>  
                     </div>
 
+<br>
+<hr>
 
                     <!--SATYRE-->
                     <div class="creations satyre" id="satyre">
@@ -830,9 +839,39 @@ Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons
                         </p>
                         </div>
                         <div class="col-xs-12 col-md-4">
+                         <div class="animation-element slide-left">
                             <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-responsive affiche-satyre"></a>
+                            </div>
                         </div>
                         </div>
+                        <script type="text/javascript">
+                            var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+                        </script>
                         <h3>Gallerie</h3>
                         <div id="galsatyre">
 <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" title="Le Satyre - Poursuite" data-gallery="#blueimp-gallery-galsatyre">
@@ -842,9 +881,9 @@ Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons
         <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_épaules.jpg" alt="Le Satyre - Epaules" width="130">
     </a>
    
-    <a href="creations/satyre/media/images/affiche-satyre.jpg" title="Le Satyre - Affiche" data-gallery="#blueimp-gallery-galsatyre">
+<!--     <a href="creations/satyre/media/images/affiche-satyre.jpg" title="Le Satyre - Affiche" data-gallery="#blueimp-gallery-galsatyre">
         <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Le Satyre - Affiche" width="130">
-    </a>
+    </a> -->
 
        <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" title="Le Satyre - Guerre" data-gallery="#blueimp-gallery-galsatyre">
         <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" alt="Le Satyre - Guerre" width="130">
@@ -875,7 +914,7 @@ blueimp.Gallery(
                             <br> Plus de details sur l’équipe et la production dans:
                             <br>
                           <ul class="production">
-                                <li>le <a href="creations/Satyre/media/PDF/dossier-presse-satyre.pdf">Dossier de communication</a>
+                                <li>le <a href="creations/satyre/media/PDF/dossier-presse-satyre.pdf">Dossier de communication</a>
                                 </li>
                                 <li>la <a data-toggle="modal" href="#revue-presse-satyre-modal-lg">Revue de presse</a></li>
                                 <li>la <a data-toggle="modal" href="#modal-dates-satyre">liste des dates passées</a></li>
@@ -984,7 +1023,7 @@ blueimp.Gallery(
                                                 <li>- 28 mars: Salle du Foyer de la Mairie - Clarac (31)</li>
                                                 <li>- 7 mars: Salle des Fêtes - Lapanouse de Séverac (12)</li>
                                                 <li>- 21 février: Le Préau - La Salvetat Saint Gilles (31)</li>
-                                                <li>- 20 et 21 janvier 2015 : Fabrique Arts, Culture - Toulouse (31)</li>
+                                                <li>- 20 et 21 janvier 2015&nbsp;: Fabrique Arts, Culture - Toulouse (31)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -994,10 +1033,16 @@ blueimp.Gallery(
     
 
                        </div>
+                       <br>
+<hr>
+
                     <div class="creations monologue" id="monologue">
                         <h2>Le Monologue d'une tueuse</h2>
                         <p><small>Saison 2010-2011</small></p>
                     </div>
+                    <br>
+<hr>
+
                     <div class="creations ERPLJ" id="ERPLJ">
                         <h2>En Route pour la joie</h2>
                         <p><small>Saison 2009-2010</small></p>
@@ -1021,7 +1066,7 @@ blueimp.Gallery(
                     <p>
                         La Compagnie Mesdames a est une troupe de théâtre née à Toulouse en juin 2009.
 <br> Son but est de créer des spectacles de théâtre mêlant danse, musique, écriture originale et gestion de l'espace visuel.<br>
- Nos spectacles, que nous partageons avec des publics diversifiés, se veulent à la fois inventifs et populaires. Tel est notre cahier des charges :<br></p>
+ Nos spectacles, que nous partageons avec des publics diversifiés, se veulent à la fois inventifs et populaires. Tel est notre cahier des charges&nbsp;:<br></p>
  <p class="text-center">Un théâtre exigeant mais abordable, ludique mais réflexif!<br></p>
  <p>
                         <br>
@@ -1029,11 +1074,11 @@ blueimp.Gallery(
                     <div id="admin-collapse" class="collapse">
                         <p> 
                         Télécharger les <a href="media/pdf/statuts1901-mesdames-a.pdf">statuts de l'association</a> (association - loi 1901).<br>
-                        Présidente : Floriane Rascle
-                            <br> Trésorière : Cécile Courtin
-                            <br> Siège social : 23 avenue Lamartine, 31620 Labastide Saint Sernin, France
-                            <br> N° siret : 539 558 304 00017
-                            <br> Licence d'entrepreneur : n° 2-1050123
+                        Présidente&nbsp;: Floriane Rascle
+                            <br> Trésorière&nbsp;: Cécile Courtin
+                            <br> Siège social&nbsp;: 23 avenue Lamartine, 31620 Labastide Saint Sernin, France
+                            <br> N° siret&nbsp;: 539 558 304 00017
+                            <br> Licence d'entrepreneur&nbsp;: n° 2-1050123
                         </p>
                     </div>
                         
@@ -1186,7 +1231,7 @@ blueimp.Gallery(
                                                 <br> En parallèle avec ses études supérieures en Arts du Spectacle et en Médiation Culturelle, elle continue la danse à Toulouse (tango, claquettes, contemporain, classique) et suit la formation professionnelle de comédien au Théâtre du Hangar.
                                                 <br> Elle participe à des ateliers de théâtre avec Francis Azéma (Atelier du Misanthrope), Jean-Pierre Agazar (Théâtre de l’Improviste) ou Laurent Perez et Sylvie Maury pendant deux saisons (2014/2015/2016) au TPN.
                                                 <br> Diplômée du Centre Art Danse International, elle participe à de nombreux projets mêlant danse et théâtre.
-                                                <br> Elle a travaillé dans le groupe Hortense (free théâtre : improvisation) jusqu'à 2016.
+                                                <br> Elle a travaillé dans le groupe Hortense (free théâtre&nbsp;: improvisation) jusqu'à 2016.
                                             </p>
                                         </div>
                                     </div>
@@ -1256,7 +1301,7 @@ blueimp.Gallery(
                                     </div>
                                     <div class="modal-body">
                                         <p class="autres">
-                                            La troupe a eu la chance de croiser le chemin de nombreux artistes ou techniciens, dont voici un bref aperçu :
+                                            La troupe a eu la chance de croiser le chemin de nombreux artistes ou techniciens, dont voici un bref aperçu&nbsp;:
                                             <br>
                                             <br>
                                             <span class="name-autres">Olivier Marchepoil</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Spectateur(s).
@@ -1364,9 +1409,24 @@ blueimp.Gallery(
                 <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
                     <h1>Contact</h1>
                     <p>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; e-mail : cie.mesdames.a {at} gmail.com<br>
-                    <br>
-                    Retrouvez nous aussi sur les réseaux sociaux :<br></p>
+<!--                     <i class="fa fa-envelope" aria-hidden="true"></i>
+ -->                    Par e-mail&nbsp;: cie.mesdames.a&nbsp;{at}&nbsp;gmail.com <br>
+ <br>
+                    Ou en utilisant le formulaire suivant&nbsp;:</p>
+<form method="POST" action="http://formspree.io/cie.mesdames.a@gmail.com">
+  <input class="field-mail" type="email" name="email" placeholder="Votre adresse email"><br>
+  <br>
+  <textarea class="field-message" name="message" placeholder="Votre message"></textarea>
+  <br>
+  <button class="btn-envoyer" type="submit">Envoyer</button>
+  <br>
+  <input type="hidden" name="_subject" value="Compagnie Mesdames A" />
+  <input type="text" name="_gotcha" style="display:none" />
+</form>
+
+                    <p><br>
+                    Retrouvez nous aussi sur les réseaux sociaux&nbsp;:<br>
+                    </p>
                     
                     <ul class="social-network social-circle">
                         <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
