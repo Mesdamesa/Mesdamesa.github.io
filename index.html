@@ -177,23 +177,21 @@
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <div class="row">
-                        <div class="col-md-7 col-md-offset-2 col-xs-12">
+                        <div class="col-xs-12 col-sm-9  col-lg-7 col-lg-offset-2 ">
                             <p class="intro-text center-block">
                                 La Compagnie Mesdames A propose un théâtre contemporain faisant discuter jeu, danse et musique sur scène.<br>
                                 <br>
-                                Découvrez <i><a href="#spectateurs">SPECTATEUR(S), un accident de théâtre</a></i> qui, comme la plupart de nos créations, questionne la place de l'individu dans la société.
+                                Découvrez notre derniere création:&nbsp;<i><a href="#spectateurs">SPECTATEUR(S), un accident de théâtre</a></i>.
                             </p>
                         </div>
-                        <div class="col-md-3 center-block col-xs-12">
+                        <div class="col-xs-12 col-sm-3 col-lg-3 center-block ">
                             <div class="button">
                                 <a class="btn btn-nous-soutenir center-block" type="button" data-toggle="modal" data-target="#modal-soutenir-adhesion">
                                     <span class="txt-nous-soutenir">Nous soutenir<br></span>
                                     <span class="txt-nous-soutenir-small">(Info soutien &amp; adhésion)</span>
                                 </a>
                             </div>
-                            <p class="reduction-dimpots center-block" data-toggle="tooltip" data-placement="bottom" title="">
-                                
-                            </p>
+                         
                         </div>
                          <div id="modal-soutenir-adhesion" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -215,14 +213,54 @@
                                     </div>
                                 </div>
                             </div>
-                    </div>
+                            </div>
+
                 </div>
-            </div>
-        </div>
+                   </div>
+                   </div>
+
+
+                    </div>
+         
     </section>
+
     <!-- Actualites Section -->
     <section id="actu" class="actu-section">
+
         <div class="container">
+         <div class="row">
+                            <div class="col-xs-12">
+
+<a class="arrow-wrap page-scroll" href="#actu">
+<span class="arrow"></span>
+<!--<span class="hint">scroll</span>-->
+</a>
+<script type="text/javascript">
+    //this is where we apply opacity to the arrow
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
+
+});
+</script>
+
+
+</div>
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
                     <h1>Actualités et dates</h1>
