@@ -631,6 +631,10 @@ ul.social-network li {
     margin: 0 5px;
 }
 
+.logo-contact{
+    text-align: center;
+}
+
 
 /* footer social icons */
 .social-network a.icoRss:hover {
