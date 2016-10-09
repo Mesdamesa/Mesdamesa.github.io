@@ -387,7 +387,7 @@ h3 {
         padding: 0;
     }
     .home-section {
-          height:calc(100% - 2em);
+          height:calc(100% - 3em);
     padding-top: 150px;
     background: url('./../media/images/back-sm.jpg');
     background-repeat: no-repeat;
@@ -452,7 +452,7 @@ font-size: 16px;
     /* For bigger than 768: */
 
     .home-section {
-   height:calc(100% - 2em);
+   height:calc(100% - 3em);
     padding-top: 150px;
     background: url('./../media/images/back-md.jpg');
     background-repeat: no-repeat;
