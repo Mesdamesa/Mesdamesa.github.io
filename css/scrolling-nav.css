@@ -30,7 +30,7 @@ border-bottom: 3px solid white;
 .navbar-inverse .navbar-nav > .active > a:hover{}*/
 
 .navbar-brand img#logo {
-    max-height: 148px;
+    max-height: 140px;
     position: relative;
     right: -53px;
     -webkit-transition: all 0.5s;
