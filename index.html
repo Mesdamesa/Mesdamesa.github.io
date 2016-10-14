@@ -65,6 +65,13 @@
         $('.dropdown-toggle').dropdown();
     });
     </script>
+
+ <!-- load and instantiate ScrollReveal first -->
+<!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script>
+window.sr = ScrollReveal({ distance: '0px', reset });
+    </script> -->
+
     <!-- Fonts stuff -->
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -543,6 +550,7 @@ blueimp.Gallery(
     }
 );
 </script>
+
           
                         <p>
                         <br>
@@ -729,7 +737,7 @@ Partant d'une rencontre inopinée entre orient et occident, lors de cette déamb
 
 <div id="galdragons">
 
-     <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a>
+     <div class="img-gallerie"><a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a></div>
       <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" title="La Cité des Dragons - Projection"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" alt="La Cité des Dragons - Projection" width="130"></a>
       <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" title="La Cité des Dragons - Dragon profil"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" alt="La Cité des Dragons - Dragon profil" width="130"></a>
             <a href="creations/dragons/media/images/14030603_10209962267075557_920340036_n.jpg" title="La Cité des Dragons - Porte" data-gallery="#blueimp-gallery-galdragons">
@@ -1097,11 +1105,14 @@ blueimp.Gallery(
                     <div class="creations monologue" id="monologue">
                         <h2>Le Monologue d'une Tueuse</h2>
                         <p><small>Saisons 2010-2011</small></p>
-                        <div align="center" class="embed-responsive embed-responsive-16by9">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182462293"></iframe>
+                        </div>
+                     <!--  --Video lue depuis le site--  <div align="center" class="embed-responsive embed-responsive-16by9">
                             <video controls class="embed-responsive-item" poster="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_dueldiapo.jpg">
                                     <source src="creations/monologue/media/videos/Teaser-Monologue.mp4" type="video/mp4">
                                 </video>
-                        </div>
+                        </div> -->
                         <p><i><br>Le Monologue d'une Tueuse</i>, sous titré « Apologie d'un acte », est une pièce écrite en réaction à la représentation parfois assez basique des tueurs dans les séries télévisées ou au cinéma.<br>
                         Face à ces représentations éloignées du réel profil des tueurs en série, cette pièce met en scène la figure fantasmée d'un personnage criminel à la fois plausible, fort et rebelle : <b>une tueuse</b>.<br>
                         </p>
@@ -1289,9 +1300,10 @@ Souvent, aussi, elle nous traite de moutons.<br>
                     <h1>Compagnie</h1>
                     <p>
                         La Compagnie de théâtre Mesdames A est née à Toulouse en juin 2009.
-<br> Nos spectacles mêlent jeu, danse, musique et chant. Ils sont souvent basés sur une écriture originale. Dans son travail sur l'espace visuel, la compagnie cherche à surprendre et à proposer des mises en scène inventives.<br>
-Notre théâtre se veut populaire, nous aimons aller à la rencontre de publics diversifiés. <br>
-Notre but est de créer un théâtre exigeant mais abordable, ludique mais invitant à la réflexion.<br></p>
+<br> Nos spectacles mêlent jeu, danse, musique et chant. La plupart sont basés sur une écriture originale. Nous cherchons à surprendre par notre travail sur l'espace visuel et dnas nos mises en scène inventives.<br>
+<br>
+Nous souhaitons notre théâtre populaire et le faisons aller à la rencontre de publics diversifiés.<br>
+Notre but est de créer un théâtre exigeant mais abordable&nbsp;: nos créations invitent à la réflexion tout en restant ludiques.<br></p>
  <p>
                 <h3>Statuts de la compagnie</h3>
                         <p> 
@@ -1667,8 +1679,8 @@ Notre but est de créer un théâtre exigeant mais abordable, ludique mais invit
             </div>
         </div>
     </section>
-
-<script src="js/jquery.blueimp-gallery.min.js"></script>
+<!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
+ --><script src="js/jquery.blueimp-gallery.min.js"></script>
 </body>
 
 </html>
