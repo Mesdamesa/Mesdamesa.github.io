@@ -636,8 +636,12 @@ ul.social-network li {
     background-color: #33ccff;
 }
 
-.social-network a.icoGoogle:hover {
+.social-network a.icoGoogle:hover  {
     background-color: #BD3518;
+}
+
+.social-network a.icoYoutube:hover{
+    background-color: #e62117;
 }
 
 .social-network a.icoVimeo:hover {
@@ -653,7 +657,8 @@ ul.social-network li {
 .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i,
 .social-network a.icoVimeo:hover i,
-.social-network a.icoLinkedin:hover i {
+.social-network a.icoLinkedin:hover i
+.social-network a.icoYoutube:hover i {
     color: #fff;
 }
 
@@ -683,10 +688,10 @@ a.socialIcon:hover,
 
 .social-circle li a:hover i,
 .triggeredHover {
-    -moz-transform: rotate(360deg);
+/*    -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: rotate(360deg);*/
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
