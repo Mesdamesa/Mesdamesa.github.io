@@ -24,8 +24,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <!-- Add mousewheel plugin (this is optional)
@@ -40,12 +39,46 @@
         <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
         <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
-    <!--Tooltip init-->
-    <script async>
+
+
+
+    <!--Tooltip init
+        <script async>
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
-    </script>
+    </script>-->
+
+<!--//scrolling-nav.js-->
+<script type="text/javascript">
+    //jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+        if ($(".navbar").offset().top > 50) {
+        $(".navbar-brand").addClass("smaller");
+    } else {
+        $(".navbar-brand").removeClass("smaller");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+</script>
+
+
     <!--Navbar collapse when one item selected-->
     <script>
     $(document).on('click', '.navbar-collapse.in', function(e) {
@@ -66,8 +99,8 @@
         window.sr = ScrollReveal({ distance: '0px', reset });
         </script> -->
     <!-- Fonts stuff -->
-    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
