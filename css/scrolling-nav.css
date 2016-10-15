@@ -30,8 +30,6 @@ border-bottom: 3px solid white;
 
 .navbar-brand img#logo {
     max-height: 140px;
-    position: relative;
-    right: -53px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -40,8 +38,7 @@ border-bottom: 3px solid white;
 }
 
 .navbar-brand.smaller img#logo {
-    max-height: 40px;
-    padding: 0;
+    max-height: 45px;
 }
 
 p.intro-text {
@@ -55,7 +52,7 @@ p.intro-text {
 }
 
 .btn-nous-soutenir {
-    width: 220px;
+    width: 200px;
     height: 50px;
     border: none;
     border-radius: 2px;
