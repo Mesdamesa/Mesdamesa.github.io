@@ -641,6 +641,10 @@ ul.social-network li {
     background-color: #e62117;
 }
 
+.social-network a.icoYoutube{
+font-size: 30px;
+}
+
 .social-network a.icoVimeo:hover {
     background-color: #0590B8;
 }
