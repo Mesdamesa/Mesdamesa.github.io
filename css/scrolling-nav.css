@@ -4,11 +4,12 @@
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 */
 
+/*
 @font-face {
     font-family: "Microsoft Tai Le";
     src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot");
     src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg");
-}
+}*/
 
 body {
     width: 100%;
@@ -71,7 +72,8 @@ p.intro-text {
 }
 
 .txt-nous-soutenir {
-    font-family: "Microsoft Tai Le" !important;
+    /* font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Muli', sans-serif !important;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -79,7 +81,8 @@ p.intro-text {
 }
 
 .txt-nous-soutenir-small {
-    font-family: "Microsoft Tai Le" !important;
+   /* font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Muli', sans-serif !important;
     font-size: 13px;
     font-weight: 400;
     text-align: center;
@@ -343,7 +346,10 @@ h3 {
     width: 80px;
     height: 30px;
     color: #fff;
-    font-family: "Microsoft Tai Le" !important;
+    /*
+    font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Muli', sans-serif !important;
+
     font-size: 14px;
     text-decoration: none;
     outline: none;
@@ -515,7 +521,8 @@ min-height: 100%;
         /*Fixes the width of all elements*/
         padding-left: 0px;
         padding-right: 0px;
-        font-family: "Microsoft Tai Le" !important;
+         font-family: 'Muli', sans-serif !important;
+        /*font-family: "Microsoft Tai Le" !important;*/
         font-size: 18px;
         text-align: center;
         color: #ffffff;
