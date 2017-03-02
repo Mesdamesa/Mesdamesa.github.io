@@ -496,7 +496,7 @@ min-height: 100%;
 }
 
 @media(min-width:992px) {
-    /* For bigger than 1200: */
+    /* For bigger than 1200 ou 992 en fait: */
     .navbar,
     .navbar-inverse,
     .navbar-fixed-top {
@@ -517,7 +517,7 @@ min-height: 100%;
     }
     .nav li {
         float: left;
-        width: 145px;
+        width: 151px;
         /*Fixes the width of all elements*/
         padding-left: 0px;
         padding-right: 0px;
