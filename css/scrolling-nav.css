@@ -333,11 +333,13 @@ h3 {
 .field-mail {
     width: 70%;
     float: left;
+    color: #000;
 }
 
 .field-message {
     width: 100%;
     min-height: 100px;
+    color: #000;
 }
 
 .btn-envoyer {
