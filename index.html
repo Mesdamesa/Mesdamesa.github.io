@@ -35,87 +35,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <!-- <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css" />-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-    
-    <!-- Add mousewheel plugin (this is optional)
-        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
-    
-    <!-- Add fancyBox
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
-    <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
-    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
-    <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
-
-    <!--Tooltip init
-        <script async>
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    </script>-->
-
-    <!--//scrolling-nav.js-->
-    <script type="text/javascript">
-        //jQuery to collapse the navbar on scroll
-        $(window).scroll(function() {
-            if ($(".navbar").offset().top > 50) {
-                $(".navbar-fixed-top").addClass("top-nav-collapse");
-            } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
-            }
-                if ($(".navbar").offset().top > 50) {
-                $(".navbar-brand").addClass("smaller");
-            } else {
-                $(".navbar-brand").removeClass("smaller");
-            }
-        });
-        //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
-    </script>
-
-
-    <!--Navbar collapse when one item selected-->
-    <script>
-        $(document).on('click', '.navbar-collapse.in', function(e) {
-            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                $(this).collapse('hide');
-            }
-        });
-    </script>
-    <!--Navbar dropdown-->
-    <script>
-        $(document).ready(function() {
-            $('.dropdown-toggle').dropdown();
-        });
-    </script>
-    <!-- load and instantiate ScrollReveal first -->
-    <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-        <script>
-        window.sr = ScrollReveal({ distance: '0px', reset });
-        </script> -->
     
 </head>
 
@@ -214,7 +133,7 @@
                         <div class="col-xs-12 col-sm-9  col-lg-7 col-lg-offset-2">
                             <p class="intro-text center-block">
                                 Mesdames A est une compagnie de spectacle vivant. Elle fait discuter musique, danse et théâtre dans ses créations.<br>
-                                <br> Découvrez <a class="page-scroll link-nav" href="#actu">nos dernières actualités</a>.
+                                <br> Découvrez <a class="page-scroll link-nav" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
                             </p>
                         </div>
                         <div class="col-xs-12 col-sm-3 col-lg-3 center-block">
@@ -2225,4 +2144,78 @@
 --><script src="js/jquery.blueimp-gallery.min.js"></script>
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Scrolling Nav JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    
+    <!-- Add mousewheel plugin (this is optional)
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
+    
+    <!-- Add fancyBox
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
+    <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
+    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
+    <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
+
+    <!--Tooltip init
+        <script async>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>-->
+
+    <!--//scrolling-nav.js-->
+    <script type="text/javascript">
+        //jQuery to collapse the navbar on scroll
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+                if ($(".navbar").offset().top > 50) {
+                $(".navbar-brand").addClass("smaller");
+            } else {
+                $(".navbar-brand").removeClass("smaller");
+            }
+        });
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+    </script>
+
+
+    <!--Navbar collapse when one item selected-->
+    <script>
+        $(document).on('click', '.navbar-collapse.in', function(e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
+    <!--Navbar dropdown-->
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+    <!-- load and instantiate ScrollReveal first -->
+    <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        <script>
+        window.sr = ScrollReveal({ distance: '0px', reset });
+        </script> -->
 </html>
