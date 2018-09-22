@@ -373,8 +373,8 @@ height: auto;
 min-height: 100%;
 }*/
 
-@media (max-width: 768px) {
-    /* For mobile phones: */
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
     .navbar-brand img#logo {
         max-height: 100px;
         position: relative;
@@ -447,8 +447,8 @@ min-height: 100%;
     }
 }
 
+/*Medium devices (tablets, 768px and up)*/ 
 @media(min-width:768px) {
-    /* For bigger than 768: */
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
@@ -500,8 +500,9 @@ min-height: 100%;
     }
 }
 
+/*Large devices (desktops, 992px and up)
+or Extra large devices (large desktops, 1200px and up)*/
 @media(min-width:992px) {
-    /* For bigger than 1200 ou 992 en fait: */
     .navbar,
     .navbar-inverse,
     .navbar-fixed-top {
@@ -755,10 +756,10 @@ of those sections to manage the look and feel of the site. */
     background: #000;
 }
 
-address {
+/*address {
     display: block;
     font-style: italic;
-}
+}*/
 
 
 /* Fancybox */
