@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse. Dirigée par Alice Tabart.">
+    <meta name="author" content="Alice et Gilles Tabart">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="mesdames a, théâtre, theatre, contemporain, spectacle, art, Toulouse, Alice Tabart, Tabart, spectacle, chant, danse, compagnie, troupe">
+    <title>Compagnie Mesdames A - Théâtre contemporain Toulouse</title>
+    <meta name="google-site-verification" content="5KhJKZQOuIzVJuw2kGENQR5YWA-Hu2F0FrGr0b3JeNg" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Bootstrap CSS and JS
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Fonts stuff -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <!-- <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css" />-->
+    
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!--Add to Calendar button (atc) init-->
+    <script type="text/javascript">
+    (function() {
+        if (window.addtocalendar)
+            if (typeof window.addtocalendar.start == "function") return;
+        if (window.ifaddtocalendar == undefined) {
+            window.ifaddtocalendar = 1;
+            var d = document,
+                s = d.createElement('script'),
+                g = 'getElementsByTagName';
+            s.type = 'text/javascript';
+            s.charset = 'UTF-8';
+            s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+            var h = d[g]('body')[0];
+            h.appendChild(s);
+        }
+    })();
+    </script>
+    <!-- IMAGE GALLERY-->
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <div class="container">
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-miniature-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top" title="logo Mesdames a">
+                        <img id="logo" src="media/images/LogoCompagnieMa.svg">
+                    </a>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-miniature-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden">
+                                <a class="page-scroll link-nav" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll link-nav" class="active" href="#home">Mesdames a</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll link-nav" href="#actu">Actualités</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll link-nav" href="#creations">Créations</a>
+                            </li>
+                            <!--   <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Créations
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="page-scroll link-nav" href="#spectateurs">Spectateur(s)</a></li>
+                                    <li><a class="page-scroll link-nav" href="#satyre">Le Satyre</a></li>
+                                    <li><a class="page-scroll link-nav" href="#monologue">Le Monologue<br>d'une tueuse</a></li>
+                                    <li><a class="page-scroll link-nav" href="#ERPLJ">En Route<br>pour la joie</a></li>
+                                </ul>
+                            </li> -->
+                            <li>
+                                <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll link-nav" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+                </div>
+                </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container-fluid banner">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <div class="row">
+                        <div class="col-12 col-sm-9  col-lg-7 offset-lg-2">
+                            <p class="intro-text center-block">
+                                Mesdames A est une compagnie de spectacle vivant. Elle fait discuter musique, danse et théâtre dans ses créations.<br>
+                                <br> Découvrez <a class="page-scroll link-nav" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-3 col-lg-3 center-block">
+                            <div class="button">
+                                <a class="btn btn-nous-soutenir center-block" type="button" data-toggle="modal" data-target="#modal-soutenir-adhesion">
+                                    <span class="txt-nous-soutenir">Nous soutenir<br></span>
+                                    <span class="txt-nous-soutenir-small">(Soutien et adhésion)</span>
+                                </a>
+                            </div>
+                        </div>
+
+                       
+
+                        <div id="modal-soutenir-adhesion" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Soutien et adhésion</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                         <iframe id="haWidget" src="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-association-mesdames-a/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, document.querySelector('iframe').offsetTop)"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <!-- Actualites Section -->
+    <section id="actu" class="actu-section">
+        <div class="container-fluid">
+            <div class="row flechedefile">
+                <div class="col-12">
+                    <a class="arrow-wrap page-scroll" href="#actu">
+                        <span class="arrow"></span>
+                        <!--<span class="hint">scroll</span>-->
+                    </a>
+                    <script type="text/javascript">
+                    //this is where we apply opacity to the arrow
+                    $(window).scroll(function() {
+                        //get scroll position
+                        var topWindow = $(window).scrollTop();
+                        //multipl by 1.5 so the arrow will become transparent half-way up the page
+                        var topWindow = topWindow * 1.5;
+
+                        //get height of window
+                        var windowHeight = $(window).height();
+                        //set position as percentage of how far the user has scrolled
+                        var position = topWindow / windowHeight;
+                        //invert the percentage
+                        position = 1 - position;
+                        //define arrow opacity as based on how far up the page the user has scrolled
+                        //no scrolling = 1, half-way up the page = 0
+                        $('.arrow-wrap').css('opacity', position);
+                    });
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                    <h1>Actualités et dates</h1>
+                    <p>Pour la rentrée 2018, nous présentons <i>ÉCLAIRS</i>, notre dernière création, au théâtre Le Pari à Tarbes, ainsi qu'à Lapanouse et Villasavary. En 2019, nous vous retrouverons à Escalquens, puis au théâtre Le Ring à Toulouse.</p>
+                    
+                    <div class="row tweets">
+                        <div class="col-11 col-sm-9 col-md-8 col-lg-7">
+                            <p><a class="twitter-timeline" data-theme="dark" href="https://twitter.com/Mesdames_A"  data-chrome="nofooter noborders noheader transparent" data-tweet-limit="3" data-show-replies="false">Nos tweets récents</a></p>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+
+                    <h3>Dates 2018-2019 pour <i>ÉCLAIRS</i></h3>
+                    <br>
+                   
+                    <div class="row listedates">
+                        <div class="col-12 col-md-10 offset-md-1">
+                            <ul class="list-group prochaines-dates">
+                                 <!--<li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">20</span>
+                                            <br><span class="date-mois">AOÛT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Sévérac d'Aveyron</span> - <span class="date-date">lundi 20 août</span> à
+                                                <span class="date-heure">21h30</span>
+                                                <br>
+                                                <span class="date-lieu">Cité médiévale</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LkPNLMEZrtt">Accès</a> - <a class="reservation" href="http://www.aveyron-tourisme.fr/Infospratiques/Contactetacc%C3%A8s/tabid/66/language/fr-FR/Default.aspx">Informations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-08-20 21:30:00</var>
+                                                <var class="atc_date_end">2018-08-20 23:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">La Nouvelle Cité des Dragons</var>
+                                                <var class="atc_description">Spectacle total : marionnettes géantes, musique, théâtre, projections.
+
+                                                Vous  ne  le savez sans doute pas encore mais la cité abrite de drôles de personnages : il y a la Bestiole, il y a une magicienne et il y a les autres... qui vivent cachés. Il paraît que, dans la magie des ruelles, gît un dragon solitaire qui ne se laisse apercevoir que par qui veut bien y croire. Laissez-vous  guider  par  La  Bestiole  et  découvrez l’histoire folle des dragons de la cité de Sévérac. Une déambulation pleine de surprises qui vous fera voyager dans le temps et l’imaginaire. Magie et musique vous accompagneront tout le long de cette soirée fantastique dont vous vous souviendrez longtemps.
+
+                                                Prix libre
+                                                </var>
+                                                <var class="atc_location">Cité médiévale de Sévérac-le-Château</var>
+                                                <var class="atc_organizer">Compagnie Mesdames A</var>
+                                                <var class="atc_organizer_email">contact@tourisme-severaclechateau.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>  -->
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">09</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">mardi 09 octobre</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-09 20:30:00</var>
+                                                <var class="atc_date_end">2018-10-09 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS, avant première</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">10</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">mercredi 10 octobre</span> à
+                                                <span class="date-heure">19h00</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-10 19:00:00</var>
+                                                <var class="atc_date_end">2018-10-10 20:30:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">11</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">jeudi 11 octobre</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-11 20:30:00</var>
+                                                <var class="atc_date_end">2018-10-11 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">12</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">vendredi 12 octobre</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-12 20:30:00</var>
+                                                <var class="atc_date_end">2018-10-12 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">13</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">samedi 13 octobre</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-13 20:30:00</var>
+                                                <var class="atc_date_end">2018-10-13 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">14</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Tarbes</span> - <span class="date-date">dimanche 14 octobre</span> à
+                                                <span class="date-heure">16h00</span>
+                                                <br>
+                                                <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-14 16:00:00</var>
+                                                <var class="atc_date_end">2018-10-14 17:30:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Le Pari, Tarbes</var>
+                                                <var class="atc_organizer">Le Pari</var>
+                                                <var class="atc_organizer_email">lepari@mairie-tarbes.fr</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="list-group prochaines-dates">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">27</span>
+                                            <br><span class="date-mois">OCT</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Lapanouse (12)</span> - <span class="date-date">samedi 27 octobre</span> à
+                                                <span class="date-heure">21h00</span>
+                                                <br>
+                                                <span class="date-lieu">Salle de Lapanouse</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LefPr38jxw72">Accès</a> - <a class="reservation" href="http://mesdames-a.fr">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-10-27 21:00:00</var>
+                                                <var class="atc_date_end">2018-10-27 22:30:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Salle de Lapanouse</var>
+                                                <var class="atc_organizer">Cie Mesdames A</var>
+                                                <var class="atc_organizer_email">cie.mesdames.a@gmail.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="list-group prochaines-dates">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">08</span>
+                                            <br><span class="date-mois">DEC</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Villasavary (11)</span> - <span class="date-date">samedi 08 décembre</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Halle de Villasavary</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/k3AxE7Pzbzw">Accès</a> - <a class="reservation" href="http://mesdames-a.fr">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2018-12-08 20:30:00</var>
+                                                <var class="atc_date_end">2018-12-08 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Halle municipale Villasavary</var>
+                                                <var class="atc_organizer">Cie Mesdames A</var>
+                                                <var class="atc_organizer_email">cie.mesdames.a@gmail.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="list-group prochaines-dates">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">25</span>
+                                            <br><span class="date-mois">JAN</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Escalquens (31)</span> - <span class="date-date">vendredi 25 janvier</span> à
+                                                <span class="date-heure">20h00</span>
+                                                <br>
+                                                <span class="date-lieu">Théâtre de l'Enclos (MJC)</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/9Nmri25pPFu">Accès</a> - <a class="reservation" href="https://www.mjcescalquens.fr/">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2019-01-25 20:00:00</var>
+                                                <var class="atc_date_end">2019-01-25 21:30:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Théâtre de l'Enclos (MJC) - Escalquens</var>
+                                                <var class="atc_organizer">Cie Mesdames A</var>
+                                                <var class="atc_organizer_email">cie.mesdames.a@gmail.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="list-group prochaines-dates">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">11</span>
+                                            <br><span class="date-mois">AVR</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Toulouse</span> - <span class="date-date">jeudi 11 avril</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2019-04-11 20:30:00</var>
+                                                <var class="atc_date_end">2019-04-11 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Le Ring - Toulouse</var>
+                                                <var class="atc_organizer">Le Ring-Toulouse</var>
+                                                <var class="atc_organizer_email">contact@thea­tre2­lacte.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">12</span>
+                                            <br><span class="date-mois">AVR</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Toulouse</span> - <span class="date-date">vendredi 12 avril</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2019-04-12 20:30:00</var>
+                                                <var class="atc_date_end">2019-04-12 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Le Ring - Toulouse</var>
+                                                <var class="atc_organizer">Le Ring-Toulouse</var>
+                                                <var class="atc_organizer_email">contact@thea­tre2­lacte.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
+                                            <span class="pull-xs-right"><span class="date-jour">13</span>
+                                            <br><span class="date-mois">AVR</span></span>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p class="date">
+                                                <span class="date-lieu">Toulouse</span> - <span class="date-date">samedi 13 avril</span> à
+                                                <span class="date-heure">20h30</span>
+                                                <br>
+                                                <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-4 text-center">
+                                            <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
+                                                <a class="atcb-link">Ajouter au calendrier</a>
+                                                <var class="atc_event">
+                                                <var class="atc_date_start">2019-04-13 20:30:00</var>
+                                                <var class="atc_date_end">2019-04-13 22:00:00</var>
+                                                <var class="atc_timezone">Europe/Paris</var>
+                                                <var class="atc_title">ÉCLAIRS - Cie Mesdames A</var>
+                                                <var class="atc_description">Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.
+
+                                                A partir de 10-12 ans
+                                                </var>
+                                                <var class="atc_location">Le Ring - Toulouse</var>
+                                                <var class="atc_organizer">Le Ring-Toulouse</var>
+                                                <var class="atc_organizer_email">contact@thea­tre2­lacte.com</var>
+                                                </var>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Creation Section -->
+    <section id="creations" class="creations-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+                <h1>Créations</h1>
+
+                    <!--ECLAIRS-->
+                    <div class="creations eclairs" id="eclairs">
+                        <h2><i class="fas fa-bolt" style="color: #f33128;" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt" aria-hidden="true" style="color: #f33128;"></i></h2>
+                        <p><small>Saison 2018-2019</small></p>
+                        <img src="creations/eclairs/media/images/affiche_sm.jpg" alt="ÉCLAIRS - Affiche" class="img-fluid">
+                        <p><br>théâtre-concert-danse<br><br>
+                            Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.<br>
+                        </p>
+                        <h3>Galerie</h3>
+                        <div id="galeclairs">
+                            
+                            <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/affiche-blanc.jpg" title="ÉCLAIRS affiche blanc">
+                            <img src="creations/eclairs/media/images/affiche-blanc-sm.jpg" alt="ÉCLAIRS affiche blanc" width="130" class="img-thumbnail"></a>
+                            
+                            <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/affiche-noir.jpg" title="ÉCLAIRS affiche noir">
+                            <img src="creations/eclairs/media/images/affiche-noir-sm.jpg" alt="ÉCLAIRS affiche noir" width="130" class="img-thumbnail"></a>
+
+                            <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/eclair-coline-dos.jpg" title="ÉCLAIRS grenier souvenir">
+                            <img src="creations/eclairs/media/images/eclair-coline-dos-sm.jpg" alt="ÉCLAIRS grenier souvenir" width="130" class="img-thumbnail"></a>
+
+                            <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/eclair-coline-dos-telephone.jpg" title="ÉCLAIRS grenier">
+                            <img src="creations/eclairs/media/images/eclair-coline-dos-telephone-sm.jpg" alt="ÉCLAIRS grenier" width="130" class="img-thumbnail"></a>
+
+                            <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/elsa-jambe-nb.jpg" title="ÉCLAIRS danse">
+                            <img src="creations/eclairs/media/images/elsa-jambe-nb-sm.jpg" alt="ÉCLAIRS danse" width="130" class="img-thumbnail"></a>
+                            <!--<div style="display: none;">
+                                <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a>
+                            </div>-->
+                             
+                        </div>
+                        
+                        <p><br><a href="#equipe-crea-eclairs-collapse" data-toggle="collapse">Plus d'infos&nbsp;et&nbsp;d'images&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.</p>
+
+                        <div id="equipe-crea-eclairs-collapse" class="collapse">
+                            <!--
+                            <div id="galeclairs">
+                                <OUVRIR-- <div class="img-gallerie"> </div> --FERMER>
+                                  
+                                 <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" title="La Cité des Dragons - Dragon profil"><img src="creations/eclairs/media/images/sm_Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" alt="La Cité des Dragons - Dragon profil" width="130"></a>
+                                <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" title="La Cité des Dragons - Projection"><img src="creations/eclairs/media/images/sm_Cie_Mesdames_A_Dragons_2015_projection.jpg" alt="La Cité des Dragons - Projection" width="130"></a>
+                               
+                            </div>
+                            <script>
+                            blueimp.Gallery(
+                                document.getElementById('galeclairs').getElementsByTagName('a'), {
+                                    container: '#blueimp-gallery-carousel',
+                                    carousel: true
+                                }
+                            );
+                            </script>
+                        -->
+                            <h3>Le spectacle</h3>
+                            <p>
+                            ÉCLAIRS propose un écrin onirique dans lequel nous suivons la quête d’une jeune femme (interprétée par la danseuse Elsa Sanchez) sur les pas de sa grand-mère, fantôme bienveillant joué par Coline Lubin. Elle y découvre sa lutte de femme libre et la folie douce de son grand-père, interprété par Éric Leclerc, comédien et slameur... Car ÉCLAIRS, c’est aussi un concert, avec une dizaine de compositions originales interprétées en direct par Aladin Chaboche, guitariste, Jean-Marc Serpin, contrebassiste, et Alice Tabart, au chant, à l’écriture et la mise en scène. Cette dernière a écrit les morceaux en même temps que la pièce, notes et mots se répondant, s’opposant, se complétant afin de créer le deuxième pôle d’énergie nécessaire à cette décharge vitale tant recherchée par les personnages.<br><br>
+                            Théâtre - musique<br>
+                            Tout public à partir de 12 ans<br>
+                            Durée envisagée 1h30<br>
+                            </p>
+                            <h3>Équipe de création</h3>
+                            <p class="equip-crea">
+                                <span class="label-equipe-crea">Écriture, mise en scène /</span> Alice Tabart
+                                <br>
+                                <span class="label-equipe-crea">Interprétation /</span> Aladin Chaboche, Éric Leclerc, Coline Lubin, Elsa Sanchez, Jean-Marc Serpin &amp; Alice Tabart
+                                <br>
+                                <span class="label-equipe-crea">Scénographie et accessoires /</span> Claire Balerdi &amp; Emmanuel Borgetto
+                                <br>
+                                <span class="label-equipe-crea">Stagiaires scénographie /</span> Lucie Chauvin
+                                <br>
+                                <span class="label-equipe-crea">Costumes /</span> Charlotte Pecquenard
+                                <br>
+                                <span class="label-equipe-crea">Création lumière /</span> Serena Andreasi
+                                <br>
+                                <span class="label-equipe-crea">Création sonore /</span> Tom Hatcher
+                                <br>
+                                <span class="label-equipe-crea">Affiche /</span> Kämy Dobï
+                                <br>
+                                <span class="label-equipe-crea">Attachée à l’administration et à la production /</span> Mathilde Ratajczyk
+                                <br>
+
+                            </p>
+                            <h3>Production</h3>
+                            <p class="production">
+                                Une production de la Compagnie Mesdames A avec le soutien de Tarbes en scène, du Théâtre du Ring, de La Mairie de Toulouse (aide au projet), de la Commune de Sévérac d'Aveyron, du Conseil Départemental de la Haute-Garonne (aide à la création) et du Conseil Régional de l’Occitanie (aide à la création). Ainsi que le soutien de la SPEDIDAM (aide à la à la création de spectacle dramatique et de la bande originale).
+                                <br>
+                                <br> Plus de details sur l’équipe et la production dans:
+                                <br>
+                                <ul class="production">
+                                    <!--<li>la <a data-toggle="modal" href="#revue-presse-eclairs-modal-lg">Revue de presse</a></li>-->
+                                    <li>le <a href="creations/eclairs/media/PDF/dossier-ECLAIRS-cie-mesdames-a.pdf">Dossier de communication</a>
+                                    </li>
+                                    <li>la <a data-toggle="modal" href="#modal-dates-eclairs">liste des dates</a></li>
+                                </ul>
+                                <!--
+                                <div id="revue-presse-eclairs-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Revue de presse - ÉCLAIRS</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="carousel-example-eclairs" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                    <OUVRIR-- Wrapper for slides --FERMER>
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <img class="img-fluid" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2016">
+                                                            <div class="carousel-caption">
+                                                                La Dépêche 25-08-2016
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2015">
+                                                            <div class="carousel-caption">
+                                                                La Dépêche 17-08-2015
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <OUVRIR-- Controls --FERMER>
+                                                    <a class="left carousel-control" href="#carousel-example-dragon" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#carousel-example-dragon" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <OUVRIR--stop video when close modal--FERMER>
+                                <script async>
+                                $("#revue-presse-eclairs-modal-lg").on('hidden.bs.modal', function(e) {
+                                    var $this = $(this);
+                                    var $frame = $this.find('iframe');
+                                    $frame.attr("src", $frame.attr("src"));
+                                });
+                                </script>
+                                -->
+                                <!-- Modal dates passees -->
+                                <div id="modal-dates-eclairs" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Dates - <i>ÉCLAIRS</i></h4>
+                                            </div>
+                                            <div class="modal-body dates-passees">
+                                                <ul>
+                                                    <li><b>2018</b></li>
+                                                    <li>- 09 au 14 octobre, Le Pari, Tarbes (81)</li>
+                                                    <li>- 27 octobre, Lapanouse (12)</li>
+                                                    <li>- 08 décembre, Villasavary (11)</li>
+                                                    <li><b>2019</b></li>
+                                                    <li>- 25 janvier, Escalquens (31)</li>
+                                                    <li>- 11 au 13 avril, Le Ring, Toulouse (31)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <!--DRAGONS-->
+                    <div class="creations dragons" id="dragons">
+                        <h2>La Cité des Dragons</h2>
+                        <p><small>Juillet/août 2015 à 2018</small></p>
+                        <img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_main.jpg" alt="La Cité des Dragons - Magicienne" class="img-fluid">
+                        <p><Br>Spectacle total&nbsp;: marionnettes géantes, musique, théâtre, projections ; cette nouvelle expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles de la cité de Sévérac-le-Château.<br>
+                            Partant d'une rencontre inopinée entre orient et occident, lors de cette déambulation nous explorons, non sans humour, le monde des monstres et des chimères.<br>
+                        </p>
+                        <h3>Galerie</h3>
+                        <div id="galdragons">
+                            
+                            <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" title="La Cité des Dragons - Bestiole &amp; Magicienne">
+                            <img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" alt="Bestiole &amp; Magicienne" width="130"></a>
+                            
+                            <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" title="La Cité des Dragons - Silhouette Bestiole"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" alt="Silhouette Bestiole" width="130"></a>
+                            <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_dragongros.jpg" title="La Cité des Dragons - Dragon géant"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_dragongros.jpg" alt="La Cité des Dragons - Dragon géant" width="130"></a>
+                            <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" title="La Cité des Dragons - Bestiole et tour"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" alt="Bestiole et tour" width="130"></a>
+                            
+                            <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" title="La Cité des Dragons - Magicienne"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" alt="La Cité des Dragons - Magicienne" width="130"></a>
+                              <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a>
+
+                            <!-- <div style="display: none;">
+                                <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a>
+                            </div> -->
+                        </div>
+                        
+                        <p><br><a href="#equipe-crea-dragons-collapse" data-toggle="collapse">Plus d'infos&nbsp;et&nbsp;d'images&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.</p>
+
+                        <div id="equipe-crea-dragons-collapse" class="collapse">
+                            <div id="galdragons">
+                                <!-- <div class="img-gallerie"> </div> -->
+                                  
+                                 <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" title="La Cité des Dragons - Dragon profil"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" alt="La Cité des Dragons - Dragon profil" width="130"></a>
+                                <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" title="La Cité des Dragons - Projection"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_projection.jpg" alt="La Cité des Dragons - Projection" width="130"></a>
+                               
+                                <a href="creations/dragons/media/images/14030603_10209962267075557_920340036_n.jpg" title="La Cité des Dragons - Porte" data-gallery="#blueimp-gallery-galdragons">
+                                    <img src="creations/dragons/media/images/sm_14030603_10209962267075557_920340036_n.jpg" alt="La Cité des Dragons - Porte" width="130">
+                                </a>
+                                <a href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" title="La Cité des Dragons - Bestiole final" data-gallery="#blueimp-gallery-galdragons">
+                                    <img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" alt="La Cité des Dragons - Bestiole final" width="130">
+                                </a>
+                                <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg" title="La Cité des Dragons - Magicienne"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne.jpg" alt="La Cité des Dragons - Magicienne" width="130"></a>
+                                <a href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" title="La Cité des Dragons - Bestiole début" data-gallery="#blueimp-gallery-galdragons">
+                                    <img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" alt="La Cité des Dragons - Bestiole début" width="130">
+                                </a>
+                                <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg" title="La Cité des Dragons - Dragon chinois"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_chinois.jpg" alt="La Cité des Dragons - Dragon chinois" width="130"></a>
+                            </div>
+                            <script>
+                            blueimp.Gallery(
+                                document.getElementById('galdragons').getElementsByTagName('a'), {
+                                    container: '#blueimp-gallery-carousel',
+                                    carousel: true
+                                }
+                            );
+                            </script>
+                            <h3>Le spectacle</h3>
+                            <p>Vous ne le savez sans doute pas Encore mais la cité de Sévérac le Château abrite de drôles de personnages. Il y a La Bestiole créée de toutes pièces, il y a aussi la magicienne dévoreuse de chamalow, mais il y a surtout ceux qui se cachent. Il paraît que dans la magie des ruelles gît un dragon solitaire qui ne se laisse apercevoir que par qui veut bien y croire. Ouvrez grands vos yeux et vos oreilles, peut-être en rencontrerez-vous un plus vite que prévu.
+                                <br> Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons de la cité de Sévérac. Une déambulation pleine de surprises qui vous fera voyager dans le temps et de par le monde. Magie et musique vous accompagneront tout le long de cette soirée fantastique dont vous vous souviendrez encore longtemps.</p>
+                            <h3>Équipe de création</h3>
+                            <p class="equip-crea">
+                                <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
+                                <br>
+                                <span class="label-equipe-crea">Interprétation /</span> Coline Lubin, Joël Sitbon &amp; Alice Tabart
+                                <br>
+                                <span class="label-equipe-crea">Création musicale /</span> Kristen Annequin
+                                <br>
+                                <span class="label-equipe-crea">Création vidéo, lumière et soutien technique /</span> Christian Vialaret
+                                <br>
+                                <span class="label-equipe-crea">Aide à la création des créatures /</span> Emmanuel Borgetto
+                                <br>
+                                <span class="label-equipe-crea">Stagiaires /</span> Marion Guinot (administration), Pauline Lattaque (assitante mise en scène)
+                                <br>
+                            </p>
+                            <h3>Production</h3>
+                            <p class="production">
+                                Ce spectacle est créé avec le soutien du Conseil Départemental de l'Aveyron (aide à la résidence).
+                                <br> Nous remercions l'Ecole de Danse Virginie Gonzales ainsi que l'association Sévérac-Vidéo-Son.
+                                <br>
+                                <br> Plus de details sur l’équipe et la production dans:
+                                <br>
+                                <ul class="production">
+                                    <li>la <a data-toggle="modal" href="#revue-presse-dragons-modal-lg">Revue de presse</a></li>
+                                    <li>la <a data-toggle="modal" href="#modal-dates-dragons">liste des dates passées</a></li>
+                                </ul>
+                                <div id="revue-presse-dragons-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Revue de presse - La Cité des Dragons</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="carousel-example-dragon" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner">
+                                                    <div class="item active">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/depeche-dragons-2016.jpg" alt="La Dépêche - 2016">
+                                                            <div class="carousel-caption">
+                                                                La Dépêche 25-08-2016
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre">
+                                                            <div class="carousel-caption">
+                                                                Midi Libre 01-08-2015
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche - 2015">
+                                                            <div class="carousel-caption">
+                                                                La Dépêche 17-08-2015
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#carousel-example-dragon" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#carousel-example-dragon" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--stop video when close modal-->
+                                <script async>
+                                $("#revue-presse-dragons-modal-lg").on('hidden.bs.modal', function(e) {
+                                    var $this = $(this);
+                                    var $frame = $this.find('iframe');
+                                    $frame.attr("src", $frame.attr("src"));
+                                });
+                                </script>
+                                <!-- Modal dates passees -->
+                                <div id="modal-dates-dragons" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Dates passées - La Cité des Dragons</h4>
+                                            </div>
+                                            <div class="modal-body dates-passees">
+                                                <ul>
+                                                    <li><b>2018</b></li>
+                                                    <li>- lundis 16 et 23 juillet / Sévérac le Château</li>
+                                                    <li>- lundis 13 et 20 août / Sévérac le Château</li>
+                                                    <br>
+                                                    <li><b>2017</b></li>
+                                                    <li>- 2 lundis en juillet / Sévérac le Château</li>
+                                                    <li>- 2 lundis en août / Sévérac le Château</li>                    
+                                                    <br>
+                                                    <li><b>2016</b></li>
+                                                    <li>- lundis 18 et 25 juillet / Sévérac le Château</li>
+                                                    <li>- lundis 8 et 22 août / Sévérac le Château</li>
+                                                    <br>
+                                                    <li><b>2015</b></li>
+                                                    <li>- lundi 20 juillet/ Sévérac le Château</li>
+                                                    <li>- lundis 3, 17 et 24 août / Sévérac le Château</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <!--SPECTATEUR>-->
+                    <div class="creations spectateurs" id="spectateurs">
+                        <h2>Spectateur(s) - un accident de théâtre</h2>
+                        <p><small>Saisons 2014-2015 et 2015-2016</small></p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/119352016"></iframe>
+                        </div>
+                        <p>Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une fable contemporaine, quelque part entre l'Inde, New-York et la France.
+                            <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle&nbsp;: sommes nous acteurs ou spectateurs de nos vies ?
+                            <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage&nbsp;: ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
+                            <br>
+                        </p>
+                        <h3>Galerie</h3>
+                        <div id="galspectateurs">
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_eau.jpg" title="Spectateur(s) - Bras" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_eau.jpg" alt="Spectateur(s) - Bras">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" title="Spectateur(s) - Danse" data-gallery="#blueimp-gallery-galspectateurs">
+                                <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg" alt="Spectateur(s) - Danse">
+                            </a>
+
+                             <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg" title="Spectateur(s) - Danse Inde. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg" alt="Spectateur(s) - Danse Inde">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3621c.jpg" title="Spectateur(s) - Lucas. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3621c.jpg" alt="Spectateur(s) - Lucas">
+                            </a>
+
+                            <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" title="Spectateur(s) - Toute la troupe"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_all.jpg" alt="Spectateur(s) - Troupe"></a>
+
+                            <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" title="Spectateur(s) - Danse"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre2.jpg" alt="Spectateur(s) - Danse"></a>
+
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Simon_toge.jpg" title="Spectateur(s) - Simon toge. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Simon_toge.jpg" alt="Spectateur(s) - Simon_toge">
+                            </a>
+
+                            <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" title="Spectateur(s) - Journalistes"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_Journalistes.jpg" alt="Spectateur(s) - Journalistes"></a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.jpg" title="Spectateur(s) - Coline et Lucas. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.jpg" alt="Spectateur(s) - Coline et Lucas">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Elsa_cercle.jpg" title="Spectateur(s) - Cercle. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Elsa_cercle.jpg" alt="Spectateur(s) - Elsa_cercle">
+                            </a>
+
+                        </div>
+                            <br>
+
+                           <p> <a href="#equipe-crea-spectateurs-collapse" data-toggle="collapse">Plus d'infos&nbsp;et&nbsp;d'images&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.</p>
+                        <div id="equipe-crea-spectateurs-collapse" class="collapse">
+
+                        <div id="galspectateurs">
+                         <div style="display: none;">
+                            <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="Spectateur(s) - "></a>
+                            </div>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Map_Monde.jpg" title="Spectateur(s) - Carte Monde. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Map_Monde.jpg" alt="Spectateur(s) - Map_Monde">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Simon-Lucas_explication.jpg" title="Spectateur(s) - Simon et Lucas explication. Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Simon-Lucas_explication.jpg" alt="Spectateur(s) - Simon-Lucas_explication">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3646.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3646.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3660.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3660.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3663.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3663.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3685.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3685.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3691.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3691.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3718b.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3718b.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3861.jpg" title="Spectateur(s) - . Crédit photo&nbsp;: Fanny Moulin" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_3861.jpg" alt="Spectateur(s) - ">
+                            </a>
+
+                            <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateur(s) - Pyramide"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="Spectateur(s) - Pyramide"></a>
+                            
+                            <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateur(s) - Carton N&amp;B" data-gallery="#blueimp-gallery-galspectateurs">
+                                <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="Spectateur(s) - Carton N&amp;B">
+                            </a>
+
+                             <a href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" title="Spectateur(s) - Chanson" data-gallery="#blueimp-gallery-galspectateurs">
+                            <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="Spectateur(s) - Chanson">
+                            </a>
+                        </div>
+                        <script>
+                        blueimp.Gallery(
+                            document.getElementById('galspectateurs').getElementsByTagName('a'), {
+                                container: '#blueimp-gallery-carousel',
+                                carousel: true
+                            }
+                        );
+                        </script>
+                                <h3>Équipe de création</h3>
+                                <p class="equip-crea">
+                                    <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
+                                    <br>
+                                    <span class="label-equipe-crea">Interprétation /</span> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez
+                                    <br>
+                                    <span class="label-equipe-crea">Chorégraphies /</span> Joël Sitbon &amp; Elsa Sanchez
+                                    <br>
+                                    <span class="label-equipe-crea">Création musicale /</span> Simon Giesbert
+                                    <br>
+                                    <span class="label-equipe-crea">Création lumière /</span> Damien Peray &amp; Serena Andreasi
+                                    <br>
+                                </p>
+                                <h3>Production</h3>
+                                <p class="production">
+                                    Une production de la compagnie Mesdames A, avec le soutien de la Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
+                                    <br>
+                                    <br> Encore plus de détails avec&nbsp;:
+                                    <br>
+                                    <ul class="production">
+                                        <li>le <a href="creations/SPECTATEURS/media/PDF/dossier-presse-spectateurs.pdf">Dossier de communication</a>
+                                    </li>
+                                    <li>la <a data-toggle="modal" href="#revue-presse-spectateurs-modal-lg">Revue de presse</a></li>
+                                    <li>la <a data-toggle="modal" href="#modal-dates-spectateur">liste des dates passées</a></li>
+                                </ul>
+                                <div id="revue-presse-spectateurs-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Revue de presse - Spectateur(s)</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div id="carousel-spectateurs-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LeBrigadier.jpg" alt="Le Brigadier">
+                                                            <div class="carousel-caption">
+                                                                Le Brigadier, revue des Arts de la scène
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/Le_clou_dans_la_planche_octobre_2016_Suzanne_Beaujour.jpg" alt="...">
+                                                            <div class="carousel-caption">
+                                                                Le clou dans la planche - Octobre 2016 par Suzanne Beaujour
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/Journal-de-Millau-7mars.jpg" alt="...">
+                                                            <div class="carousel-caption">
+                                                                Journal de Millau
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LaGazette-28mars.jpg" alt="...">
+                                                            <div class="carousel-caption">
+                                                                La Gazette du Comminge
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/29-avril-La-Depeche-Villasavary.jpg" alt="...">
+                                                            <div class="carousel-caption">
+                                                                La Dépêche / Aude
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LIndependant-10 avril.jpg" alt="...">
+                                                            <div class="carousel-caption">
+                                                                L'Indépendant
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="embed-responsive embed-responsive-16by9">
+                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3OvblKSkcpc?html5=1"></iframe>
+                                                            </div>
+                                                            <div class="carousel-caption">
+                                                                Interview sur Campus
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="embed-responsive embed-responsive-16by9">
+                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v9Wc4HJnqTo?html5=1"></iframe>
+                                                            </div>
+                                                            <div class="carousel-caption">
+                                                                Chronique sur Canal Sud
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#carousel-spectateurs-generic" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#carousel-spectateurs-generic" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--stop video when close modal-->
+                                <script async>
+                                $("#revue-presse-spectateurs-modal-lg").on('hidden.bs.modal', function(e) {
+                                var $this = $(this);
+                                var $frame = $this.find('iframe');
+                                $frame.attr("src", $frame.attr("src"));
+                                });
+                                </script>
+                                <!-- Modal dates passees -->
+                                <div id="modal-dates-spectateur" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Dates passées - Spectateur(s)</h4>
+                                            </div>
+                                            <div class="modal-body dates-passees">
+                                                <ul>
+                                                    <li><b>2016</b></li>
+                                                    <li>- 10 et 11 novembre: THE COCKPIT Theatre - Londres, UK</li>
+                                                    <li>- du 18 au 22 octobre: Théâtre du Grand Rond - Toulouse (31)</li>
+                                                    <li>- 10 mars: Scène des Trois Ponts - Castelnaudary (11)</li>
+                                                    <br>
+                                                    <li><b>2015</b></li>
+                                                    <li>- 14 novembre: Salle des fêtes - Labastide Saint Sernin (31)</li>
+                                                    <li>- 17 octobre: La Canourgue (48)</li>
+                                                    <li>- 14 octobre: Saint Gaudens (31)</li>
+                                                    <li>- 2 octobre: Toulouse (31)</li>
+                                                    <li>- 21 août: Cour d'honneur - Séverac le Château (12)</li>
+                                                    <li>- 13 juin: La Halle du Café-Théâtre - Le Burgaud (31)</li>
+                                                    <li>- 6 juin: Le Kiosque - Villefranche de Rouergue (12)</li>
+                                                    <li>- 4 avril: Les Halles - Villasavary (11)</li>
+                                                    <li>- 28 mars: Salle du Foyer de la Mairie - Clarac (31)</li>
+                                                    <li>- 7 mars: Salle des Fêtes - Lapanouse de Séverac (12)</li>
+                                                    <li>- 21 février: Le Préau - La Salvetat Saint Gilles (31)</li>
+                                                    <li>- 20 et 21 janvier 2015&nbsp;: Fabrique Arts, Culture - Toulouse (31)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <!--SATYRE-->
+                    <div class="creations satyre" id="satyre">
+                        <h2>Le Satyre</h2>
+                        <p><small>Saisons 2012-2013 et 2013-2014</small></p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182463716"></iframe>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <p>
+                                    <br>Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
+                                    <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.
+                                    <br>
+                                    <br> Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
+                                <h3>Équipe de création</h3>
+                                <p class="equip-crea">
+                                    <span class="label-equipe-crea">Mise en scène &amp; costumes /</span> Alice Tabart
+                                    <br>
+                                    <span class="label-equipe-crea">Interprétation /</span> Coline Lubin &amp; Simon Giesbert
+                                    <br>
+                                    <span class="label-equipe-crea">Création musicale /</span> Simon Giesbert
+                                    <br>
+                                    <span class="label-equipe-crea">Stagiaire /</span> Charline Daligaud
+                                    <br>
+                                    <span class="label-equipe-crea">Création affiche /</span> Cécile Vallade
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <div class="animation-element slide-left">
+                                    <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-fluid affiche-satyre"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                        var $animation_elements = $('.animation-element');
+                        var $window = $(window);
+
+                        function check_if_in_view() {
+                            var window_height = $window.height();
+                            var window_top_position = $window.scrollTop();
+                            var window_bottom_position = (window_top_position + window_height);
+
+                            $.each($animation_elements, function() {
+                                var $element = $(this);
+                                var element_height = $element.outerHeight();
+                                var element_top_position = $element.offset().top;
+                                var element_bottom_position = (element_top_position + element_height);
+
+                                //check to see if this current container is within viewport
+                                if ((element_bottom_position >= window_top_position) &&
+                                    (element_top_position <= window_bottom_position)) {
+                                    $element.addClass('in-view');
+                                } else {
+                                    $element.removeClass('in-view');
+                                }
+                            });
+                        }
+                        $window.on('scroll resize', check_if_in_view);
+                        $window.trigger('scroll');
+                        </script>
+                        <h3>Galerie</h3>
+                        <div id="galsatyre">
+                            <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" title="Le Satyre - Poursuite" data-gallery="#blueimp-gallery-galsatyre">
+                                <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" alt="Le Satyre - Poursuite" width="130">
+                            </a>
+                            <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg" title="Le Satyre - Epaules" data-gallery="#blueimp-gallery-galsatyre">
+                                <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg" alt="Le Satyre - Epaules" width="130">
+                            </a>
+                            <!--     <a href="creations/satyre/media/images/affiche-satyre.jpg" title="Le Satyre - Affiche" data-gallery="#blueimp-gallery-galsatyre">
+                            <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Le Satyre - Affiche" width="130">
+                        </a> -->
+                            <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" title="Le Satyre - Guerre" data-gallery="#blueimp-gallery-galsatyre">
+                                <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" alt="Le Satyre - Guerre" width="130">
+                            </a>
+                            <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.jpg" title="Le Satyre - Psyché" data-gallery="#blueimp-gallery-galsatyre">
+                                <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.jpg" alt="Le Satyre - Psyché" width="130">
+                            </a>
+                            <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Faune.jpg" title="Le Satyre - Faune" data-gallery="#blueimp-gallery-galsatyre">
+                                <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Faune.jpg" alt="Le Satyre - Faune" width="130">
+                            </a>
+                        </div>
+                        <script>
+                        blueimp.Gallery(
+                            document.getElementById('galdragons').getElementsByTagName('a'), {
+                                container: '#blueimp-gallery-carousel',
+                                carousel: true
+                            }
+                        );
+                        </script>
+                        <h3>Production</h3>
+                        <p class="production">
+                            Une production de la compagnie Mesdames A, avec le soutien de l’association ACT-Mirail et du collectif Mix’art Myrys.
+                            <br>
+                            <br> Plus de details sur l’équipe et la production dans:
+                            <br>
+                            <ul class="production">
+                                <li>le <a href="creations/satyre/media/PDF/dossier-presse-satyre.pdf">Dossier de communication</a>
+                                </li>
+                                <li>la <a data-toggle="modal" href="#revue-presse-satyre-modal-lg">Revue de presse</a></li>
+                                <li>la <a data-toggle="modal" href="#modal-dates-satyre">liste des dates passées</a></li>
+                            </ul>
+                            <div id="revue-presse-satyre-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Revue de presse - Le Satyre</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carousel-satyre-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <!-- Wrapper for slides -->
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Clou-dans-la-planche-Satyre-03-mars-2013.jpg" alt="Le Clou dans la Planche - mars 2013">
+                                                        <div class="carousel-caption">
+                                                            Le Clou dans la Planche - mars 2013
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-18-avril-2012-Lucienne-Kaminski.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            La Dépêche - Avril 2012 par Lucienne Kaminski
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-11-mars-2014.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            La Dépêche - Mars 2014
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-9-juin-2013.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            La Dépêche - Juin 2013
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ah_V9SA-HoQ?html5=1"></iframe>
+                                                        </div>
+                                                        <div class="carousel-caption">
+                                                            Emission Radio Mon Païs, agenda culturel par Claire Balerdi
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/MidiLibre-20-juin-2012-Celine-Grousset.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            Midi Libre - Juin 2012- par Céline Grousset
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/MidiLibre-22-aout-2012-Michel-Molinié.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            Midi Libre - Aout 2012- par Michel Molinié
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/l-independant-18-avril-2012-Jean-Christophe-Sannicolas.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            L'Indépendant- Avril 2012- par Jean-Christophe Sannicolas
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Controls -->
+                                                <a class="left carousel-control" href="#carousel-satyre-generic" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#carousel-satyre-generic" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--stop video when close modal-->
+                            <script async>
+                            $("#revue-presse-satyre-modal-lg").on('hidden.bs.modal', function(e) {
+                                var $this = $(this);
+                                var $frame = $this.find('iframe');
+                                $frame.attr("src", $frame.attr("src"));
+                            });
+                            </script>
+                            <!-- Modal dates passees -->
+                            <div id="modal-dates-satyre" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Dates passées - Le Satyre</h4>
+                                        </div>
+                                        <div class="modal-body dates-passees">
+                                            <ul>
+                                                <li><b style="color: #f72c2f;">2014</b></li>
+                                                <li>- MJC L'Isle-Jourdain - Gers</li>
+                                                <br>
+                                                <li><b style="color: #f72c2f;">2013</b></li>
+                                                <li>- 1er juin: Halles de Villasavary - Aude</li>
+                                                <li>- 30 mars: Salle du Foyer Rural - CLARAC</li>
+                                                <li>- 22 mars: Mix'art Myrys - Toulouse (31) - Soirée Grèce et Démocratie avec le Collectif Ciné 2000</li>
+                                                <li>- 21 février au 2 mars: Théâtre de la Violette - Toulouse (31)</li>
+                                                <br>
+                                                <li><b style="color: #f72c2f;">2012</b></li>
+                                                <li>- 24 août: Cour d'honneur - Séverac le Château (12)</li>
+                                                <li>- 16 juin: Lapanouse - Aveyron (12)</li>
+                                                <li>- 13 avril: Théâtre des Trois Ponts - Castelnaudary</li>
+                                                <li>- 31 mars : La Maison de la Terre à 21h - Poucharramet</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <!--Monologue-->
+                    <div class="creations monologue" id="monologue">
+                        <h2>Le Monologue d'une Tueuse</h2>
+                        <p><small>Saisons 2010-2011</small></p>
+                        <div class="embed-responsive embed-responsive-16by9">
+
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182462293">
+                                
+                            </iframe>
+                        </div>
+
+                        <p>
+                        <i><br>Le Monologue d'une Tueuse</i>, sous titré « Apologie d'un acte », est une pièce écrite en réaction à la représentation parfois assez basique des tueurs dans les séries télévisées ou au cinéma.
+                            <br> Face à ces représentations éloignées du réel profil des tueurs en série, cette pièce met en scène la figure fantasmée d'un personnage criminel à la fois plausible, fort et rebelle : <b>une tueuse</b>.
+                            <br>
+                        </p>
+                        <h3>Galerie</h3>
+                        <div id="galmonologue">
+                            <a href="creations/monologue/media/images/Affiche_Monologue_.jpg" title="Le Monologue d'une Tueuse - Affiche" data-gallery="#blueimp-gallery-galmonologue">
+                                <img width="130" src="creations/monologue/media/images/sm_Affiche_Monologue_.jpg" alt="Le Monologue d'une Tueuse - Danse">
+                            </a>
+                            <a href="creations/monologue/media/images/5381261285_fde770cfbe_b.jpg" title="Le Monologue d'une Tueuse - Danse" data-gallery="#blueimp-gallery-galmonologue">
+                                <img width="130" src="creations/monologue/media/images/sm_5381261285_fde770cfbe_b.jpg" alt="Le Monologue d'une Tueuse - Danse">
+                            </a>
+                            <a href="creations/monologue/media/images/5381813292_1456f98f48_b.jpg" title="Le Monologue d'une Tueuse - Double" data-gallery="#blueimp-gallery-galmonologue">
+                                <img width="130" src="creations/monologue/media/images/sm_5381813292_1456f98f48_b.jpg" alt="Le Monologue d'une Tueuse - Double">
+                            </a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_Colinemicro.jpg" title="Le Monologue d'une Tueuse - Monologue"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_Colinemicro.jpg" alt="Le Monologue d'une Tueuse - Monologue"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_ColineNikita.jpg" title="Le Monologue d'une Tueuse - Coline"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_ColineNikita.jpg" alt="Le Monologue d'une Tueuse - Coline"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_dueldiapo.jpg" title="Le Monologue d'une Tueuse - Duel"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_dueldiapo.jpg" alt="Le Monologue d'une Tueuse - Duel"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_duelfantome.jpg" title="Le Monologue d'une Tueuse - Duel fantome"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_duelfantome.jpg" alt="Le Monologue d'une Tueuse - Duel fantome"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_projection2.jpg" title="Le Monologue d'une Tueuse - Projection"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_projection2.jpg" alt="Le Monologue d'une Tueuse - Projection"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_scene.jpg" title="Le Monologue d'une Tueuse - Scene"><img width="130" src="creations/monologue/media/images/sm_CIE_MESDAMES_A_2011_Monologue_scene.jpg" alt="Le Monologue d'une Tueuse - Scene"></a>
+                            <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/1.jpg" title="Le Monologue d'une Tueuse - Double de la Tueuse, ombre et projection"><img width="130" src="creations/monologue/media/images/sm_1.jpg" alt="Le Monologue d'une Tueuse - Double de la Tueuse, ombre et projection"></a>
+                        </div>
+
+                        <script>
+                        blueimp.Gallery(
+                            document.getElementById('galmonologue').getElementsByTagName('a'), {
+                                container: '#blueimp-gallery-carousel',
+                                carousel: true
+                            }
+                        );
+                        </script>
+                        <p>
+                            <br>
+                            <a href="#equipe-crea-monologue-collapse" data-toggle="collapse">Plus d'infos&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.
+                            </p>
+
+                        <div id="equipe-crea-monologue-collapse" class="collapse">
+                            <h3>Le spectacle</h3>
+                                <p>Comme elle est femme, sa présence devient inattendue et loin des évidences, elle nous permet d'aller plus loin, dans la pensée meurtrière quotidienne : dans les sources "raisonnables" de ses pulsions criminelles.<br>
+                                    <br>
+                                La forme du monologue évite à cette figure d'être le faire-valoir d'un héros ou d'une institution quelconque. Elle est simplement accompagnée d'une ombre, une conscience, personnage  manipulateur-manipulé qui l'assiste tout au long de ses aveux. Ainsi, dans sa parole solitaire, la tueuse nous révèle plus profondément son rapport au monde.</p>
+                                
+                                <p class="text-center"><small><i>Une femme seule, fait face à sa conscience (personnifiée) et à nos jugements.<br>
+                                    Elle nous dit qui elle a tué et pourquoi.<br>
+                                    Elle nous dit son absence de colère et sa paix intérieure. Simplement.<br>
+                                    Mais elle ne nous dit pas comment elle tue.<br>
+                                    Elle nous questionne : qui sommes-nous, nous à qui elle parle ?<br>
+                                    Sommes-nous là ? Sommes-nous elle ?<br>
+                                    Pouvons nous accepter ses raisons et ses motivations ?<br>
+                                    Souvent, aussi, elle nous traite de moutons.<br>
+                                </i></small></p>
+
+                            <h3>Équipe de création</h3>
+                                <p class="equip-crea">
+                                    <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
+                                    <br>
+                                    <span class="label-equipe-crea">Interprétation /</span> Coline Lubin &amp; Alice Tabart
+                                    <br>
+                                    <span class="label-equipe-crea">Création lumière /</span> Malik Pavaux
+                                    <br>
+                                </p>
+                            <h3>Production</h3>
+                            <p class="production">
+                                Une production de la compagnie Mesdames A. Retrouvez plus de détails&nbsp;:
+                                <br>
+                                <ul class="production">
+                                    <li>le <a href="creations/monologue/media/PDF/dossier-presse-monologue-tueuse.pdf">Dossier de communication</a>
+                                    </li>
+                                    <li>la <a data-toggle="modal" href="#revue-presse-monologue-modal-lg">Revue de presse</a></li>
+                                    <li>la <a data-toggle="modal" href="#modal-dates-monologue">liste des dates passées</a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div id="revue-presse-monologue-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Revue de presse - Le Monologue d'une Tueuse</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="carousel-monologue-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <!-- Wrapper for slides -->
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img class="img-fluid" src="creations/monologue/media/images/revue-presse/Clou-dans-la-planche-31-janvier-2011.jpg" alt="Le Clou dans la Planche">
+                                                        <div class="carousel-caption">
+                                                            Le Clou dans la Planche par Mathilde Lacroix, janvier 2011
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img class="img-fluid" src="creations/monologue/media/images/revue-presse/actu-toulouse-15-fevrier-2011-Fany-Moulin.jpg" alt="Le Brigadier">
+                                                        <div class="carousel-caption">
+                                                            Actu Toulouse par Fany Moulin, fev. 2011
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V9N2njPPUkg?html5=1"></iframe>
+                                                        </div>
+                                                        <div class="carousel-caption">
+                                                            l'émission de Radio : Le Mag culturel sur Campus FM le lundi 24 janvier 2011
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Controls -->
+                                                <a class="left carousel-control" href="#carousel-monologue-generic" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#carousel-monologue-generic" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--stop video when close modal-->
+                            <script async>
+                            $("#revue-presse-monologue-modal-lg").on('hidden.bs.modal', function(e) {
+                            var $this = $(this);
+                            var $frame = $this.find('iframe');
+                            $frame.attr("src", $frame.attr("src"));
+                            });
+                            </script>
+                            <!-- Modal dates passees -->
+                            <div id="modal-dates-monologue" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Dates passées - Le Monologue d'une Tueuse</h4>
+                                        </div>
+                                        <div class="modal-body dates-passees">
+                                            <ul>
+                                                <li><b>2011</b></li>
+                                                <li>- Du 28 juin au 2 juillet: Théâtre le Fil à Plomb - Toulouse (31)</li>
+                                                <li>- 18 février: Le Préau - La Salvetat Saint Gilles</li>
+                                                <li>- 30 janvier: Théâtre du Fil à Plomb - Toulouse(31)</li>
+                                                <br>
+                                                <li><b>2010</b></li>
+                                                <li>- 3 et 4 décembre: Café théâtre - Le Burgaud </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                         </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <!--ERPLJ-->
+                    <div class="creations ERPLJ" id="ERPLJ">
+                        <h2>En Route pour la joie</h2>
+                        <p><small>Saison 2009-2010</small></p>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Compagnie Section -->
+<section id="compagnie" class="compagnie-section">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+        <h1>La Compagnie</h1>
+
+        <div class="row text-center">
+        <img id="logo" src="media/images/LogoCompagnieMaDark.svg">
+        </div>
+        <p>
+        La Compagnie de théâtre Mesdames A est née à Toulouse en juin 2009.
+            La plupart de nos spectacles sont basés sur une écriture originale. Ils mêlent jeu, danse, musique et chant.
+            Ils invitent à la réflexion, tout en restant ludiques grâce à des mises en scène et à une utilisation de l'espace visuel surprenantes. Nous souhaitons un théâtre exigeant mais abordable (et populaire!). C'est pourquoi nous le faisons aller à la rencontre de publics diversifiés.<br>
+            </p>
+
+            <h2>L'équipe</h2>
+            <p>
+                Comme toute compagnie, Mesdames A vit au rythme des projets et son équipe se modifie selon les besoins de la création en cours.
+                <!--    <br>
+                Ci-dessous une bio des membres actuels, ainsi qu'une liste des personnes ayant collaborés aux projets par le passé: -->
+            </p>
+            <div class="row">
+                <div class="col-6 col-sm-4">
+                    <a data-toggle="modal" href="#modal-bio-alice">
+                                        <!--<a href="#alice-bio" data-toggle="collapse">-->
+
+                        <div class="circle-avatar" style="background-image:url(media/images/alice-square.jpg)">
+                        </div>
+                        <p class="text-center"><strong>Alice Tabart</strong></p>
+                        <p class="text-center">Mise en scène et écriture</p>
+                    </a>
+                   <!-- <div id="alice-bio" class="collapse">
+                        <p class="text-center">
+                            <a data-toggle="modal" href="#modal-bio-alice">Biographie</a>
+                            <br>
+                             <div class="logo-contact">
+                            <ul class="social-network social-circle">
+                                <li><a href="https://plus.google.com/102383458121799726687" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                                <li><a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                            </div>
+                        </p>
+                    </div>-->
+                    <!-- Modal bio Alice -->
+                    <div id="modal-bio-alice" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Alice Tabart</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                <div class="logo-contact">
+                            <ul class="social-network social-circle">
+                                <li><a href="https://plus.google.com/102383458121799726687" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                                <li><a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                            </div>
+                             <h5>Biographie</h5>
+                                    <p class="bio"> Née en 1986,
+                                        <br> après 10 ans de danse classique pendant son enfance, elle se dirige vers le théâtre.
+                                        <br> D'abord initiée au jeu par Michel Genniaux à Millau, elle participe à ses côtés à un échange avec l'École d'Art de Tulcea en Roumanie en 2003.
+                                        <br> Elle intègre, par la suite, les classes hypokhâgne et khâgne au lycée Fermat en Études Théâtrales avec Sébastien Bournac. Elle est titulaire d'une licence de Lettres Modernes ainsi que d'un Master Arts du spectacle et médias (sur la Représentation des lieux de pouvoir au théâtre).
+                                        <br> Simultanément, elle se forme lors de plusieurs stages (Théâtre Tatoo, Groupe Merci, Arnaud Rykner, Cie Pupella Noguès, etc.) et joue dans quelques courts-métrages.
+                                        <br> Elle consacre ses périodes estivales, depuis 2008, à la pratique régulière d'ateliers et de spectacles médiévaux de rue qui représentent un terrain d'improvisation et d'expérimentations quasi intarissables.
+                                        <br> Elle suit en 2009 la formation mêlant chant (Michelle Zini), danse (Patricia Ferrara) et jeu (Virginie Baes) au Théâtre de la Digue. A l'issue de cette formation, elle crée avec Audrey Gary (aujourd'hui, Cie Juste Ici), la compagnie MESDAMES A.
+                                        <br> En 2010, Alice participe à la création de Mille francs de récompense de Victor Hugo, mis en scène par Laurent Pelly au TNT, en tant que stagiaire assistante à la mise en scène auprès de Sabrina Ahmed.
+                                        <br> Elle a ensuite écrit, co-mis en scène et joué <a href="#ERPLJ">En Route pour la joie</a> en 2010, tourné en France et en Suisse.
+                                        <br> En 2010-2011, elle a mis en scène et joué un autre de ses textes, <a href="#monologue">Le Monologue d'une tueuse</a>, tourné en Haute-Garonne.
+                                        <br> En 2011-2012, elle crée sa propre salle de répétions pour la mise en scène du <a href="#satyre">Satyre</a> de Victor Hugo et devient professeur de pratique théâtrale à l'Université de Toulouse II - Le Mirail.
+                                        <br> Déjà interprète au sein du <a href="http://www.collectifcocktail.fr/">Collectif Cocktail</a>, dans Cocktail en 2008, elle retrouve ce collectif féminin en 2013 pour la création de <a href="http://www.collectifcocktail.fr/productions/spectacles/lucioles">Lucioles</a>(2014) et la reprise de Carnations (déambulation et performance).
+                                        <br> En 2013, elle a mis en scène une partie de <a href="#labo-opera">La Traviata</a> en partenariat avec le CIAM et le Théâtre du Capitole.
+                                        <br> Elle a également coréalisé le film documentaire <a href="http://dedale.cine2000.org/a-propos-du-film/note-d-intention">Dédale, un fil vers la démocratie</a>, produit par le collectif Ciné 2000, sorti en mars 2013.
+                                        <br> En 2014, elle a dirigé une nouvelle mise en scène d'opéra, <a href="#labo-opera">Faust</a> de Gounod, dans la poursuite du partenariat avec le CIAM et le Théâtre du Capitole.
+                                        <br> En 2015, elle renoue avec la mise en scène de ses propres textes avec <a href="#spectateurs">Spectateur(s), un accident de théâtre</a> et <a href="#dragons">La Cité des Dragons</a>.
+                                        <br> En 2016, Alice travaille à la mise en scène du spectacle théâtre-jazz Le Paradis des Chats avec <a href="http://www.pulcinellamusic.com/">Pulcinella</a>, reprend son travail de comédienne et pose les bases de futures créations...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <a data-toggle="modal" href="#modal-bio-coline">
+
+                        <!--<a href="#coline-bio" data-toggle="collapse">-->
+                            <div class="circle-avatar" style="background-image:url(media/images/coline-square-2018.jpg)"></div>
+                            <p class="text-center"><strong>Coline Lubin</strong></p>
+                            <p class="text-center">Interprétation</p>
+                        </a>
+                        <!--<div id="coline-bio" class="collapse">
+                            <p class="text-center"> <a data-toggle="modal" href="#modal-bio-coline">Biographie</a>
+                        <br> </p>
+                        <div class="logo-contact">
+                        <ul class="social-network social-circle">
+                            <li><a href="https://fr-fr.facebook.com/coline.lubin" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://fr.linkedin.com/in/coline-lubin-1b6b1036" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>-->
+                    </div>
+                    <!-- Modal bio Coline -->
+                    <div id="modal-bio-coline" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Coline Lubin</h4>
+                                </div>
+                                <div class="modal-body">
+                                <div class="logo-contact">
+                        <ul class="social-network social-circle">
+                            <li><a href="https://fr-fr.facebook.com/coline.lubin" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://fr.linkedin.com/in/coline-lubin-1b6b1036" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                        </div>
+                        <h5>Biographie</h5>
+                                    <p class="bio"> Après avoir commencé le théâtre très jeune, elle renforce sa pratique d’année en année et se forme auprès de Virginie Baes et Sébastien Bournac au Théâtre de la Digue. Ensuite, elle suit la formation professionnelle au Théâtre Le Hangar et s’ouvre au théâtre classique en participant à des stages dirigés par Bernard Guittet.
+                                        <br> Coline a été stagiaire au Théâtre du soleil et au stage du second tour du TNB dirigé par Stanislas Nordey, au printemps 2009. Elle fait partie du groupe Hortense (free théâtre), joue pour Trilce Théâtre et la CLAK compagnie.
+                                        <br> Au sein de Mesdames a, elle a participé à la création de En Route pour la joie, du <a href="#monologue">Monologue d'une tueuse</a>, des Farces médiévales, du <a href="#satyre">Satyre</a>, de <a href="#spectateurs">Spectateur(s), un accident de théâtre</a> et de La Cité des Dragons.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="clearfix d-block"></div>
+
+                <div class="col-6 col-sm-4">
+                    <a data-toggle="modal" href="#modal-bio-simon">
+                        <div class="circle-avatar" style="background-image:url(media/images/simon-square.jpg)"></div>
+                        <p class="text-center"><strong>Simon Giesbert</strong></p>
+                        <p class="text-center">Interprétation</p>
+                    </a>
+                    </div>
+                    <!-- Modal bio Simon -->
+                    <div id="modal-bio-simon" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Simon Giesbert</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="bio">
+                                    <div class="logo-contact">
+                            <ul class="social-network social-circle">
+                                <li><a href="https://fr.linkedin.com/in/simon-giesbert-844b7999" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                            </div>
+                                    <h5>Biographie</h5>
+                                        Il a suivi les enseignements d’art dramatique des Conservatoires de Rennes et de Grenoble puis la formation de l’Académie de l’Union à Limoges.
+                                        <br> A Grenoble, il a joué dans Le Songe d’une nuit d’été, mis en scène par L. Pelly, et dans Le Suicidé, mis en scène par P. Sire.
+                                        <br> A Limoges, il a notamment travaillé avec Radu Pinciulescu, Matthias Langhoff, Gabor Tompas et Paul Chiributa, avant de jouer dans Rich’hard experience mis en scène par Olivier Berthelot.
+                                        <br> Il rejoint la Compagnie Mesdames a pour Le <a href="#satyre">Satyre</a>, puis <a href="#spectateurs">Spectateur(s), un accident de théâtre</a>. En 2013, il retrouve la compagnie Petit Bois pour Quel petit vélo... de G. Perec mis en scène par J.J. Mateu.
+                                        <br> Il est modèle, joue pour le cinéma dans des courts et longs métrages et fait de la figuration pour l’opéra. Il est également musicien de folk et de blue grass.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="clearfix d-sm-block d-md-block d-lg-block"></div>
+
+                <div class="col-6 col-sm-4">
+                    <a data-toggle="modal" href="#modal-bio-elsa">
+                        <div class="circle-avatar" style="background-image:url(media/images/elsa-square.jpg)"></div>
+                        <p class="text-center"><strong>Elsa Sanchez</strong></p>
+                        <p class="text-center">Interprétation</p>
+                    </a>
+                    <!-- Modal bio Elsa -->
+                    <div id="modal-bio-elsa" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Elsa Sanchez</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="bio">
+                                    <h5>Biographie</h5>
+                                        Elle a débuté avec la danse au Conservatoire National de Danse de Lisbonne.
+                                        <br> En parallèle avec ses études supérieures en Arts du Spectacle et en Médiation Culturelle, elle continue la danse à Toulouse (tango, claquettes, contemporain, classique) et suit la formation professionnelle de comédien au Théâtre du Hangar.
+                                        <br> Elle participe à des ateliers de théâtre avec Francis Azéma (Atelier du Misanthrope), Jean-Pierre Agazar (Théâtre de l’Improviste) ou Laurent Perez et Sylvie Maury pendant deux saisons (2014/2015/2016) au TPN.
+                                        <br> Diplômée du Centre Art Danse International, elle participe à de nombreux projets mêlant danse et théâtre.
+                                        <br> Elle a travaillé dans le groupe Hortense (free théâtre&nbsp;: improvisation) jusqu'à 2016.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix d-block"></div>
+
+                <div class="col-6 col-sm-4">
+                    <a data-toggle="modal" href="#modal-bio-lucas">
+                        <div class="circle-avatar" style="background-image:url(media/images/lucas-square.jpg)"></div>
+                        <p class="text-center"><strong>Lucas Lemauff</strong></p>
+                        <p class="text-center">Interprétation</p>
+                    </a>
+              
+            </div>
+            <!-- Modal bio Lucas -->
+            <div id="modal-bio-lucas" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Lucas Lemauff</h4>
+                        </div>
+                    </div>
+                        <div class="modal-body">
+                            <p class="bio">
+                            <div class="logo-contact">
+                            <ul class="social-network social-circle">
+                                <li><a href="https://fr-fr.facebook.com/lucas.lemauff" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/lucas_lemauff" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/LucasLemauff" class="icoYoutube" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://plus.google.com/+LucasLemauff" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                            </ul>
+                            </div>
+                            <h5>Biographie</h5>
+                                S’initiant jeune au saxophone puis au piano, il suit également des cours de théâtre.
+                                <br> Il monte son premier quartet de jazz «Take Five» en 2005 avant d’intégrer «Les Carottes sont Cuites».
+                                <br> Il crée en 2009 les «Pauvres Martins», avec qui vit une aventure de cinq ans, dans la tradition de la chanson à texte.
+                                <br> En 2011, sa Licence de Musicologie Jazz et sa pratique du chant l’amènent à intégrer le chœur «Archipels» dirigé par Joël Suhubiette, puis l’équipe de «Voix Express» en compagnie d’Hervé Suhubiette. Il participe également à l’élaboration de cabarets au Théâtre du Pavé en collaboration avec le Conservatoire de théâtre.
+                                <br> En 2012, il intègre le collectif «Les fils de ta mère».
+                                <br> En 2013, il travaille avec Piérick, ex-chanteur des «Malpolis», pendant deux ans et participe en 2014 à la tournée française de Keith Kouna, chanteur québécois.
+                                <br> Il joue dans le spectacle All’arrabbiata, un cabaret politico-satirique d’Ascanio Celestini. On peut le retrouver dans Virage à droite ou encore dans B. comme Fontaine, récital de chansons de Brigitte Fontaine.
+                            </p>
+                        </div>
+                    </div>
+                
+            </div>
+
+        <div class="col-6 col-sm-4">
+            <a href="#modal-autres" data-toggle="modal">
+                <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
+                <p class="text-center"><strong>L'équipe au fil du temps</strong></p>
+                <p class="text-center">Collaborations passées</p>
+            </a>
+        </div>
+        <!-- Modal autres -->
+        <div id="modal-autres" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">L'équipe au fil du temps</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="autres">
+                            La troupe a eu la chance de croiser le chemin de nombreux artistes ou techniciens, dont voici un bref aperçu&nbsp;:
+                            <br>
+                            <br>
+                            <span class="name-autres">Simon Giesbert</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Les Farces, Le Satyre et Spectateur(s).
+                            <br>
+                            <br>
+                            <span class="name-autres">Lucas Lemauff</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Spectateur(s).
+                            <br>
+                            <span class="name-autres">Olivier Marchepoil</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans Spectateur(s).
+                            <br>
+                            <span class="name-autres">Juliette Nogera</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion sur Spectateur(s).
+                            <br>
+                            <span class="name-autres">Nadia Ouali</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en diffusion et communication sur Spectateur(s).
+                            <br>
+                            <span class="name-autres">Laura Trujillo</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire scénographie sur Faust et Spectateur(s).
+                            <br>
+                            <span class="name-autres">Joël Sitbon</span>&nbsp;&nbsp;/&nbsp;&nbsp;assistant chorégraphe sur Spectateur(s).
+                            <br>
+                            <span class="name-autres">Marion Guinot</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).
+                            <br>
+                            <span class="name-autres">Pauline Lattaque</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire sur Spectateur(s).
+                            <br>
+                            <br>
+                            <span class="name-autres">Charline Daligaud</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire assistante à la mise en scène sur Le Satyre et Les Farces médiévales.
+                            <br>
+                            <br>
+                            <span class="name-autres">Romain Di Sante</span>&nbsp;&nbsp;/&nbsp;&nbsp;conception décors de Stranded yet, d'En Route pour la joie et du Satyre.
+                            <br>
+                            <br>
+                            <span class="name-autres">Malik Pavaux</span>&nbsp;&nbsp;/&nbsp;&nbsp;création lumière du spectacle Stranded yet et du Monologue d'une tueuse.
+                            <br>
+                            <br>
+                            <span class="name-autres">Thomas Dupeyron</span>&nbsp;&nbsp;/&nbsp;&nbsp;régie lumière sur En Route pour la joie et création lumière pour le Satyre.
+                            <br>
+                            <br>
+                            <span class="name-autres">Nils Grauerholz</span>&nbsp;&nbsp;/&nbsp;&nbsp;graphiste, créateur du logo de la Compagnie ainsi que de l'Affiche d'En Route pour la joie.
+                            <br>
+                            <br>
+                            <span class="name-autres">Julien Botella</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.
+                            <br>
+                            <span class="name-autres">Samuel Pivot</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien dans En Route pour la joie.
+                            <br>
+                            <span class="name-autres">Samuel Segura</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédien / danseur dans En Route pour la joie et Stranded yet.
+                            <br>
+                            <span class="name-autres">Claire Cittone</span>&nbsp;&nbsp;/&nbsp;&nbsp;comédienne et musicienne dans En Route pour la joie.
+                            <br>
+                            <span class="name-autres">Emmanuel Rogez</span>&nbsp;&nbsp;/&nbsp;&nbsp;musicien (saxophone, clarinette, guitare), décorateur et comédien dans En Route pour la joie.
+                            <br>
+                            <span class="name-autres">Mathilde Chamoux &amp; Thibault Condy</span>&nbsp;&nbsp;/&nbsp;&nbsp;créateurs lumière et régisseurs lors de la tournée 2009/ 2010 d'En Route pour la joie.
+                            <br>
+                            <span class="name-autres">Armony Moulis</span>&nbsp;&nbsp;/&nbsp;&nbsp;stagiaire en scénographie sur En Route pour la joie.
+                            <br>
+                            <br>
+                            <span class="name-autres">Audrey Gary</span>&nbsp;&nbsp;/&nbsp;&nbsp;co-créatrice de la Compagnie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Partenaires</h2>
+    <br>
+    <div class="row center-block text-center">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/0-logo-occitanie.jpg" alt="logo occitanie" class="img-fluid logo-partner">
+            <p class="caption-partenaire">Soutien à la création artistique</p>
+        </div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/1-haute-garonne.png" alt="logo Haute Garonne" class="img-fluid logo-partner">
+            <p class="caption-partenaire">Aide à la création</p>
+        </div>
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/2-aveyron.jpg" alt="logo aveyron" class="img-fluid logo-partner">
+            <p class="caption-partenaire">Aide à la résidence</p>
+        </div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/3-severac-d-a.png" alt="logo Severac" class="img-fluid logo-partner">
+            <p class="caption-partenaire">Sévérac d'Aveyron</p>
+        </div>
+        <div class="clearfix d-block d-sm-block d-md-block d-lg-block"></div>
+        <div class="col-6 col-sm-3">
+           <img src="media/images/partenaires/10-opep.png" alt="logo OPEP" class="img-fluid logo-partner">
+        </div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/5-ACT.png" alt="logo ACT" class="img-fluid logo-partner">
+        </div>
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/11-spedidam.png" alt="logo SPEDIDAM" class="img-fluid logo-partner">
+        </div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/7-dla.jpg" alt="logo DLA" class="img-fluid logo-partner">
+        </div>
+        <div class="clearfix d-block d-sm-block d-md-block d-lg-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/8-grand-rond.png" alt="logo Theatre du Grand Rond" class="img-fluid logo-partner">
+        </div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/9-mairie-toulouse.png" alt="logo Mairie Toulouse" class="img-fluid logo-partner">
+        </div>
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+             <img src="media/images/partenaires/6-le-pari.jpg" alt="logo Le Pari" class="img-fluid logo-partner">
+        </div>
+        <div class="clearfix d-block"></div>
+    </div>
+
+    <h2>Statuts et siège social</h2>
+            <p>
+                <i class="fas fa-file-pdf">&nbsp;</i><a href="media/pdf/statuts1901-mesdames-a.pdf">Statuts (association - loi 1901)</a><br>
+                No&nbsp;licence&nbsp;entrepreneur&nbsp;:&nbsp;n°&nbsp;2-1107142&nbsp;<br>
+                No&nbsp;siret&nbsp;:&nbsp;539&nbsp;558&nbsp;304&nbsp;00017<br><br>
+                <b>Siège</b><br>
+            </p>
+            <address>
+                <p>Compagnie Mesdames A<br>
+                17, rue Jean Pascal<br>
+                31620 Labastide-Saint-Sernin, France</p>
+            </address>
+            <p><b>Bureau</b></p>
+            <address>
+                <p>6, rue Moquin Tandon<br>
+                31500 Toulouse, France</p>
+            </address>
+            
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+<div class="container-fluid">
+<div class="row">
+<div class="col-10 offset-1 col-lg-8 offset-lg-2">
+    <h1>Contact</h1>
+    
+        <!--                     <i class="fas fa-envelope" aria-hidden="true"></i>
+        -->
+        <p> Vous pouvez nous contacter&nbsp;:<br></p>
+    <ul class="production">
+    <li>par mail&nbsp;:&nbsp;&nbsp;<i class="fas fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;cie.mesdames.a&nbsp;<i class="fas fa-at"></i>&nbsp;gmail.com <br>
+    </li>
+    <li>ou en utilisant le formulaire suivant&nbsp;:</li>
+    <br>
+    <form method="POST" action="http://formspree.io/cie.mesdames.a@gmail.com">
+        <input class="field-mail" type="email" name="email" placeholder="Votre adresse email"><br>
+        <br>
+        <textarea class="field-message" name="message" placeholder="Votre message"></textarea>
+        <br>
+        <button class="btn-envoyer" type="submit">Envoyer</button>
+        <br>
+        <input type="hidden" name="_subject" value="Compagnie Mesdames A" />
+        <input type="text" name="_gotcha" style="display:none" />
+    </form>
+    </ul>
+     <br>
+    <p>
+        Retrouvez nous aussi sur les réseaux sociaux&nbsp;:<br>
+    </p>
+    <div class="logo-contact">
+        <ul class="social-network social-circle">
+            <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="adresse-internet">
+        <p class="text-center">
+            <a href="http://mesdames-a.fr">www.mesdames-a.fr</a>
+        </p>
+    </div>
+    <br>
+</div>
+</div>
+</div>
+</section>
+</body>
+<!-- jQuery, popper, bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
+--><script src="js/jquery.blueimp-gallery.min.js"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Scrolling Nav JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    
+    <!-- Add mousewheel plugin (this is optional)
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
+    
+    <!-- Add fancyBox
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
+    <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
+    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
+    <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
+
+    <!--Tooltip init
+        <script async>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>-->
+
+    <!--//scrolling-nav.js-->
+    <script type="text/javascript">
+        //jQuery to collapse the navbar on scroll
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+                if ($(".navbar").offset().top > 50) {
+                $(".navbar-brand").addClass("smaller");
+            } else {
+                $(".navbar-brand").removeClass("smaller");
+            }
+        });
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+    </script>
+
+
+    <!--Navbar collapse when one item selected-->
+    <script>
+        $(document).on('click', '.navbar-collapse.in', function(e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
+    <!--Navbar dropdown-->
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+    <!-- load and instantiate ScrollReveal first -->
+    <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        <script>
+        window.sr = ScrollReveal({ distance: '0px', reset });
+        </script> -->
+</html>
