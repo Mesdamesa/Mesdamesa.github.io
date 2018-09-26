@@ -32,7 +32,7 @@
     
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".fixed-top">
     <!--Add to Calendar button (atc) init-->
     <script type="text/javascript">
     (function() {
@@ -73,6 +73,10 @@
 
         <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="nav-link page-scroll" href="#page-top"></a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
                 </li>
@@ -2145,9 +2149,9 @@
         //jQuery to collapse the navbar on scroll
         $(window).scroll(function() {
             if ($(".navbar").offset().top > 50) {
-                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $(".fixed-top").addClass("top-nav-collapse");
             } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $(".fixed-top").removeClass("top-nav-collapse");
             }
                 if ($(".navbar").offset().top > 50) {
                 $(".navbar-brand").addClass("smaller");
@@ -2168,6 +2172,14 @@
 
     </script>
 
+    <!--Manage class active -->
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '.nav-item a', function (e) {
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
 
     <!--Navbar collapse when one item selected-->
     <script>

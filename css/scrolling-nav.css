@@ -42,6 +42,18 @@ border-bottom: 3px solid white;
     max-height: 45px;
 }
 
+.home-section {
+        height: calc(100% - 3em);
+        padding-top: 150px;
+        background: url('./../media/images/back-sm.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
 p.intro-text {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
@@ -373,16 +385,6 @@ height: auto;
 min-height: 100%;
 }*/
 
- .home-section {
-        height: calc(100% - 3em);
-        padding-top: 150px;
-        background: url('./../media/images/back-sm.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
     }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -520,7 +522,18 @@ or Extra large devices (large desktops, 1200px and up)*/
         background-color: rgba(0, 0, 0, 0.85);
         border: none;
     }
+
+    .navbar,
+    .fixed-top {
+        background-color: rgba(0, 0, 0, 0.85);
+        border: none;
+    }
+
     .navbar .nav > li > a {
+        color: white;
+    } 
+
+    .navbar-nav > li.nav-item > a.nav-link {
         color: white;
     }
     .navbar {
@@ -544,19 +557,51 @@ or Extra large devices (large desktops, 1200px and up)*/
         text-align: center;
         color: #ffffff;
     }
+    .navbar-nav > li.nav-item {
+        float: left;
+        width: 151px;
+        /Fixes the width of all elements/
+        padding-left: 0px;
+        padding-right: 0px;
+         font-family: 'Open Sans', sans-serif !important;
+        /font-family: "Microsoft Tai Le" !important;/
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+    }
     .nav li.dropdown a:hover {
         border-bottom: none;
     }
+    .navbar-nav > li.dropdown > a.nav-link:hover {
+        border-bottom: none;
+    }
+
     .nav li a:link {
         display: block;
         width: 100%;
     }
+
+    .navbar-nav > li.dropdown > a.nav-link:link {
+        display: block;
+        width: 100%;
+    }
+
     .nav li a:hover {
         border-bottom: 3px solid #fafafa;
     }
+
+    .navbar-nav > li.dropdown > a.nav-link:hover {
+        border-bottom: 3px solid #fafafa;
+    }
+
     .navbar-inverse .navbar-nav > .active {
         border-bottom: 3px solid white;
     }
+
+    .navbar-nav > .active {
+        border-bottom: 3px solid white;
+    }
+
     .dropdown-menu>li>a,
     .dropdown-menu {
         background-color: #000;
