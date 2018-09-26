@@ -63,61 +63,35 @@
         <a class="play-pause"></a>
         <ol class="indicator"></ol>
     </div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <div class="container">
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-miniature-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top" title="logo Mesdames a">
-                        <img id="logo" src="media/images/LogoCompagnieMa.svg">
-                    </a>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-miniature-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                            <li class="hidden">
-                                <a class="page-scroll link-nav" href="#page-top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" class="active" href="#home">Mesdames a</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#actu">Actualités</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#creations">Créations</a>
-                            </li>
-                            <!--   <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Créations
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="page-scroll link-nav" href="#spectateurs">Spectateur(s)</a></li>
-                                    <li><a class="page-scroll link-nav" href="#satyre">Le Satyre</a></li>
-                                    <li><a class="page-scroll link-nav" href="#monologue">Le Monologue<br>d'une tueuse</a></li>
-                                    <li><a class="page-scroll link-nav" href="#ERPLJ">En Route<br>pour la joie</a></li>
-                                </ul>
-                            </li> -->
-                            <li>
-                                <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container -->
-                </div>
-                </div>
+    <nav class="navbar fixed-top navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><img  id="logo" src="media/images/LogoCompagnieMa.svg"></a>
+
+        <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#actu">Actualités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#creations">Créations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#compagnie">La Compagnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="container-fluid banner">

@@ -373,6 +373,17 @@ height: auto;
 min-height: 100%;
 }*/
 
+ .home-section {
+        height: calc(100% - 3em);
+        padding-top: 150px;
+        background: url('./../media/images/back-sm.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .navbar-brand img#logo {
@@ -524,11 +535,11 @@ or Extra large devices (large desktops, 1200px and up)*/
     .nav li {
         float: left;
         width: 151px;
-        /*Fixes the width of all elements*/
+        /Fixes the width of all elements/
         padding-left: 0px;
         padding-right: 0px;
          font-family: 'Open Sans', sans-serif !important;
-        /*font-family: "Microsoft Tai Le" !important;*/
+        /font-family: "Microsoft Tai Le" !important;/
         font-size: 18px;
         text-align: center;
         color: #ffffff;
@@ -541,11 +552,9 @@ or Extra large devices (large desktops, 1200px and up)*/
         width: 100%;
     }
     .nav li a:hover {
-        /*background-color: rgba(0, 0, 0);*/
         border-bottom: 3px solid #fafafa;
     }
     .navbar-inverse .navbar-nav > .active {
-        /*background: rgba(0, 0, 0);*/
         border-bottom: 3px solid white;
     }
     .dropdown-menu>li>a,
