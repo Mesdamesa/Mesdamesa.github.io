@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse. Dirigée par Alice Tabart.">
     <meta name="author" content="Alice et Gilles Tabart">
     <meta name="robots" content="index, follow">
@@ -21,15 +21,9 @@
     <!-- Bootstrap CSS and JS
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <!--   <link href="css/the-big-picture.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
-        -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/scrolling-nav2.css" rel="stylesheet">
 
     <!-- Fonts stuff -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
@@ -38,7 +32,8 @@
     
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target="#navbarMesdamesA">
+
     <!--Add to Calendar button (atc) init-->
     <script type="text/javascript">
     (function() {
@@ -69,81 +64,57 @@
         <a class="play-pause"></a>
         <ol class="indicator"></ol>
     </div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <div class="container">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-miniature-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top" title="logo Mesdames a">
-                        <img id="logo" src="media/images/LogoCompagnieMa.svg">
-                    </a>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-miniature-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                            <li class="hidden">
-                                <a class="page-scroll link-nav" href="#page-top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" class="active" href="#home">Mesdames a</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#actu">Actualités</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#creations">Créations</a>
-                            </li>
-                            <!--   <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Créations
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="page-scroll link-nav" href="#spectateurs">Spectateur(s)</a></li>
-                                    <li><a class="page-scroll link-nav" href="#satyre">Le Satyre</a></li>
-                                    <li><a class="page-scroll link-nav" href="#monologue">Le Monologue<br>d'une tueuse</a></li>
-                                    <li><a class="page-scroll link-nav" href="#ERPLJ">En Route<br>pour la joie</a></li>
-                                </ul>
-                            </li> -->
-                            <li>
-                                <a class="page-scroll link-nav" href="#compagnie">La Compagnie</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll link-nav" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container -->
-                </div>
-                </div>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMesdamesA" aria-controls="navbarMesdamesA" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><img  id="logo" src="media/images/LogoCompagnieMa.svg"></a>
+
+        <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarMesdamesA">
+            <ul class="navbar-nav smooth-scrool mr-auto mt-2 mt-lg-0">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="nav-item hidden">
+                    <a class="nav-link page-scroll" href="#page-top"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#actu">Actualités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#creations">Créations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#compagnie">La Compagnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="container-fluid banner">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-10 offset-1">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-9  col-lg-7 col-lg-offset-2">
+                        <div class="col-12 col-sm-9  col-lg-7 offset-lg-2">
                             <p class="intro-text center-block">
                                 Mesdames A est une compagnie de spectacle vivant. Elle fait discuter musique, danse et théâtre dans ses créations.<br>
-                                <br> Découvrez <a class="page-scroll link-nav" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
+                                <br> Découvrez <a class="page-scroll" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
                             </p>
                         </div>
-                        <div class="col-xs-12 col-sm-3 col-lg-3 center-block">
+                        <div class="col-12 col-sm-3 col-lg-3 center-block">
                             <div class="button">
                                 <a class="btn btn-nous-soutenir center-block" type="button" data-toggle="modal" data-target="#modal-soutenir-adhesion">
                                     <span class="txt-nous-soutenir">Nous soutenir<br></span>
                                     <span class="txt-nous-soutenir-small">(Soutien et adhésion)</span>
                                 </a>
-                                <br>
-                                <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" style="border: none;"></iframe>
                             </div>
                         </div>
 
@@ -173,7 +144,7 @@
     <section id="actu" class="actu-section">
         <div class="container-fluid">
             <div class="row flechedefile">
-                <div class="col-xs-12">
+                <div class="col-12">
                     <a class="arrow-wrap page-scroll" href="#actu">
                         <span class="arrow"></span>
                         <!--<span class="hint">scroll</span>-->
@@ -200,12 +171,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h1>Actualités et dates</h1>
                     <p>Pour la rentrée 2018, nous présentons <i>ÉCLAIRS</i>, notre dernière création, au théâtre Le Pari à Tarbes, ainsi qu'à Lapanouse et Villasavary. En 2019, nous vous retrouverons à Escalquens, puis au théâtre Le Ring à Toulouse.</p>
                     
                     <div class="row tweets">
-                        <div class="col-xs-11 col-sm-9 col-md-8 col-lg-7">
+                        <div class="col-11 col-sm-9 col-md-8 col-lg-7">
                             <p><a class="twitter-timeline" data-theme="dark" href="https://twitter.com/Mesdames_A"  data-chrome="nofooter noborders noheader transparent" data-tweet-limit="3" data-show-replies="false">Nos tweets récents</a></p>
                             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
@@ -215,15 +186,15 @@
                     <br>
                    
                     <div class="row listedates">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <div class="col-12 col-md-10 offset-md-1">
                             <ul class="list-group prochaines-dates">
                                  <!--<li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">20</span>
                                             <br><span class="date-mois">AOÛT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Sévérac d'Aveyron</span> - <span class="date-date">lundi 20 août</span> à
                                                 <span class="date-heure">21h30</span>
@@ -231,7 +202,7 @@
                                                 <span class="date-lieu">Cité médiévale</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LkPNLMEZrtt">Accès</a> - <a class="reservation" href="http://www.aveyron-tourisme.fr/Infospratiques/Contactetacc%C3%A8s/tabid/66/language/fr-FR/Default.aspx">Informations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -256,11 +227,11 @@
 
                                  <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">09</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">mardi 09 octobre</span> à
                                                 <span class="date-heure">20h30</span>
@@ -268,7 +239,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -292,11 +263,11 @@
 
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">10</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">mercredi 10 octobre</span> à
                                                 <span class="date-heure">19h00</span>
@@ -304,7 +275,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -329,11 +300,11 @@
 
                                  <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">11</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">jeudi 11 octobre</span> à
                                                 <span class="date-heure">20h30</span>
@@ -341,7 +312,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -365,11 +336,11 @@
 
                                  <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">12</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">vendredi 12 octobre</span> à
                                                 <span class="date-heure">20h30</span>
@@ -377,7 +348,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -402,11 +373,11 @@
 
                                  <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">13</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">samedi 13 octobre</span> à
                                                 <span class="date-heure">20h30</span>
@@ -414,7 +385,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -437,11 +408,11 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">14</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Tarbes</span> - <span class="date-date">dimanche 14 octobre</span> à
                                                 <span class="date-heure">16h00</span>
@@ -449,7 +420,7 @@
                                                 <span class="date-lieu">Le Pari</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/qtmK3CLCS4v">Accès</a> - <a class="reservation" href="http://lepari-tarbes.fr/residences/fiche/161/presentation">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -474,11 +445,11 @@
                             <ul class="list-group prochaines-dates">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">27</span>
                                             <br><span class="date-mois">OCT</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Lapanouse (12)</span> - <span class="date-date">samedi 27 octobre</span> à
                                                 <span class="date-heure">21h00</span>
@@ -486,7 +457,7 @@
                                                 <span class="date-lieu">Salle de Lapanouse</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LefPr38jxw72">Accès</a> - <a class="reservation" href="http://mesdames-a.fr">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -510,11 +481,11 @@
                             <ul class="list-group prochaines-dates">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">08</span>
                                             <br><span class="date-mois">DEC</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Villasavary (11)</span> - <span class="date-date">samedi 08 décembre</span> à
                                                 <span class="date-heure">20h30</span>
@@ -522,7 +493,7 @@
                                                 <span class="date-lieu">Halle de Villasavary</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/k3AxE7Pzbzw">Accès</a> - <a class="reservation" href="http://mesdames-a.fr">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -546,11 +517,11 @@
                             <ul class="list-group prochaines-dates">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">25</span>
                                             <br><span class="date-mois">JAN</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Escalquens (31)</span> - <span class="date-date">vendredi 25 janvier</span> à
                                                 <span class="date-heure">20h00</span>
@@ -558,7 +529,7 @@
                                                 <span class="date-lieu">Théâtre de l'Enclos (MJC)</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/9Nmri25pPFu">Accès</a> - <a class="reservation" href="https://www.mjcescalquens.fr/">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -583,11 +554,11 @@
                             <ul class="list-group prochaines-dates">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">11</span>
                                             <br><span class="date-mois">AVR</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Toulouse</span> - <span class="date-date">jeudi 11 avril</span> à
                                                 <span class="date-heure">20h30</span>
@@ -595,7 +566,7 @@
                                                 <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -617,11 +588,11 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">12</span>
                                             <br><span class="date-mois">AVR</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Toulouse</span> - <span class="date-date">vendredi 12 avril</span> à
                                                 <span class="date-heure">20h30</span>
@@ -629,7 +600,7 @@
                                                 <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -651,11 +622,11 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-xs-12 col-md-2 date-jour-mois text-center">
+                                        <div class="col-12 col-md-2 date-jour-mois text-center">
                                             <span class="pull-xs-right"><span class="date-jour">13</span>
                                             <br><span class="date-mois">AVR</span></span>
                                         </div>
-                                        <div class="col-xs-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <p class="date">
                                                 <span class="date-lieu">Toulouse</span> - <span class="date-date">samedi 13 avril</span> à
                                                 <span class="date-heure">20h30</span>
@@ -663,7 +634,7 @@
                                                 <span class="date-lieu">Le Ring</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/ycbqJBitTMN2">Accès</a> - <a class="reservation" href="http://www.theatre2lacte-lering.com/lering/a-venir/">Réservations</a></span>
                                             </p>
                                         </div>
-                                        <div class="col-xs-12 col-md-4 text-center">
+                                        <div class="col-12 col-md-4 text-center">
                                             <span class="addtocalendar atc-style-blue" data-calendars="iCalendar, Google Calendar, Outlook">
                                                 <a class="atcb-link">Ajouter au calendrier</a>
                                                 <var class="atc_event">
@@ -696,15 +667,14 @@
     <section id="creations" class="creations-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                 <h1>Créations</h1>
 
                     <!--ECLAIRS-->
                     <div class="creations eclairs" id="eclairs">
                         <h2><i class="fas fa-bolt" style="color: #f33128;" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt" aria-hidden="true" style="color: #f33128;"></i></h2>
                         <p><small>Saison 2018-2019</small></p>
-                        <img src="creations/eclairs/media/images/affiche_sm.jpg" alt="ÉCLAIRS - Affiche" class="img-responsive">
-
+                        <img src="creations/eclairs/media/images/affiche_sm.jpg" alt="ÉCLAIRS - Affiche" class="img-fluid">
                         <p><br>théâtre-concert-danse<br><br>
                             Une jeune femme fait face au fantôme sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.<br>
                         </p>
@@ -712,30 +682,24 @@
                         <div id="galeclairs">
                             
                             <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/affiche-blanc.jpg" title="ÉCLAIRS affiche blanc">
-                            <img src="creations/eclairs/media/images/affiche-blanc-sm.jpg" alt="ÉCLAIRS affiche blanc" width="130"></a>
+                            <img src="creations/eclairs/media/images/affiche-blanc-sm.jpg" alt="ÉCLAIRS affiche blanc" width="130" class="img-thumbnail"></a>
                             
                             <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/affiche-noir.jpg" title="ÉCLAIRS affiche noir">
-                            <img src="creations/eclairs/media/images/affiche-noir-sm.jpg" alt="ÉCLAIRS affiche noir" width="130"></a>
+                            <img src="creations/eclairs/media/images/affiche-noir-sm.jpg" alt="ÉCLAIRS affiche noir" width="130" class="img-thumbnail"></a>
 
                             <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/eclair-coline-dos.jpg" title="ÉCLAIRS grenier souvenir">
-                            <img src="creations/eclairs/media/images/eclair-coline-dos-sm.jpg" alt="ÉCLAIRS grenier souvenir" width="130"></a>
+                            <img src="creations/eclairs/media/images/eclair-coline-dos-sm.jpg" alt="ÉCLAIRS grenier souvenir" width="130" class="img-thumbnail"></a>
 
                             <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/eclair-coline-dos-telephone.jpg" title="ÉCLAIRS grenier">
-                            <img src="creations/eclairs/media/images/eclair-coline-dos-telephone-sm.jpg" alt="ÉCLAIRS grenier" width="130"></a>
+                            <img src="creations/eclairs/media/images/eclair-coline-dos-telephone-sm.jpg" alt="ÉCLAIRS grenier" width="130" class="img-thumbnail"></a>
 
                             <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/elsa-jambe-nb.jpg" title="ÉCLAIRS danse">
-                            <img src="creations/eclairs/media/images/elsa-jambe-nb-sm.jpg" alt="ÉCLAIRS danse" width="130"></a>
+                            <img src="creations/eclairs/media/images/elsa-jambe-nb-sm.jpg" alt="ÉCLAIRS danse" width="130" class="img-thumbnail"></a>
                             <!--<div style="display: none;">
                                 <a data-gallery="#blueimp-gallery-galeclairs" href="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="130"></a>
                             </div>-->
                              
-<<<<<<< HEAD
-                        </div>-->
-                        <br>
-                         <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" style="border: none;"></iframe>
-=======
                         </div>
->>>>>>> 665fb23dcdddc7e06d9aa8c02b14508aaca24e51
                         
                         <p><br><a href="#equipe-crea-eclairs-collapse" data-toggle="collapse">Plus d'infos&nbsp;et&nbsp;d'images&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.</p>
 
@@ -811,13 +775,13 @@
                                                     <OUVRIR-- Wrapper for slides --FERMER>
                                                     <div class="carousel-inner">
                                                         <div class="item active">
-                                                            <img class="img-responsive" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2016">
+                                                            <img class="img-fluid" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2016">
                                                             <div class="carousel-caption">
                                                                 La Dépêche 25-08-2016
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2015">
+                                                            <img class="img-fluid" src="creations/eclairs/media/images/revue-presse/......jpg" alt="La Dépêche - 2015">
                                                             <div class="carousel-caption">
                                                                 La Dépêche 17-08-2015
                                                             </div>
@@ -878,7 +842,7 @@
                     <div class="creations dragons" id="dragons">
                         <h2>La Cité des Dragons</h2>
                         <p><small>Juillet/août 2015 à 2018</small></p>
-                        <img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_main.jpg" alt="La Cité des Dragons - Magicienne" class="img-responsive">
+                        <img src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_main.jpg" alt="La Cité des Dragons - Magicienne" class="img-fluid">
                         <p><Br>Spectacle total&nbsp;: marionnettes géantes, musique, théâtre, projections ; cette nouvelle expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles de la cité de Sévérac-le-Château.<br>
                             Partant d'une rencontre inopinée entre orient et occident, lors de cette déambulation nous explorons, non sans humour, le monde des monstres et des chimères.<br>
                         </p>
@@ -970,19 +934,19 @@
                                                     <!-- Wrapper for slides -->
                                                     <div class="carousel-inner">
                                                     <div class="item active">
-                                                            <img class="img-responsive" src="creations/dragons/media/images/revue-presse/depeche-dragons-2016.jpg" alt="La Dépêche - 2016">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/depeche-dragons-2016.jpg" alt="La Dépêche - 2016">
                                                             <div class="carousel-caption">
                                                                 La Dépêche 25-08-2016
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/dragons/media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre">
                                                             <div class="carousel-caption">
                                                                 Midi Libre 01-08-2015
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/dragons/media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche - 2015">
+                                                            <img class="img-fluid" src="creations/dragons/media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche - 2015">
                                                             <div class="carousel-caption">
                                                                 La Dépêche 17-08-2015
                                                             </div>
@@ -1196,37 +1160,37 @@
                                                     <!-- Wrapper for slides -->
                                                     <div class="carousel-inner">
                                                         <div class="item active">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/LeBrigadier.jpg" alt="Le Brigadier">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LeBrigadier.jpg" alt="Le Brigadier">
                                                             <div class="carousel-caption">
                                                                 Le Brigadier, revue des Arts de la scène
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/Le_clou_dans_la_planche_octobre_2016_Suzanne_Beaujour.jpg" alt="...">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/Le_clou_dans_la_planche_octobre_2016_Suzanne_Beaujour.jpg" alt="...">
                                                             <div class="carousel-caption">
                                                                 Le clou dans la planche - Octobre 2016 par Suzanne Beaujour
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/Journal-de-Millau-7mars.jpg" alt="...">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/Journal-de-Millau-7mars.jpg" alt="...">
                                                             <div class="carousel-caption">
                                                                 Journal de Millau
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/LaGazette-28mars.jpg" alt="...">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LaGazette-28mars.jpg" alt="...">
                                                             <div class="carousel-caption">
                                                                 La Gazette du Comminge
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/29-avril-La-Depeche-Villasavary.jpg" alt="...">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/29-avril-La-Depeche-Villasavary.jpg" alt="...">
                                                             <div class="carousel-caption">
                                                                 La Dépêche / Aude
                                                             </div>
                                                         </div>
                                                         <div class="item">
-                                                            <img class="img-responsive" src="creations/SPECTATEURS/media/images/revue-presse/LIndependant-10 avril.jpg" alt="...">
+                                                            <img class="img-fluid" src="creations/SPECTATEURS/media/images/revue-presse/LIndependant-10 avril.jpg" alt="...">
                                                             <div class="carousel-caption">
                                                                 L'Indépendant
                                                             </div>
@@ -1316,7 +1280,7 @@
                             <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182463716"></iframe>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-md-8">
+                            <div class="col-12 col-md-8">
                                 <p>
                                     <br>Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
                                     <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.
@@ -1336,9 +1300,9 @@
                                     <br>
                                 </p>
                             </div>
-                            <div class="col-xs-12 col-md-4 text-center">
+                            <div class="col-12 col-md-4 text-center">
                                 <div class="animation-element slide-left">
-                                    <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-responsive affiche-satyre"></a>
+                                    <img src="creations/satyre/media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-fluid affiche-satyre"></a>
                                 </div>
                             </div>
                         </div>
@@ -1422,25 +1386,25 @@
                                                 <!-- Wrapper for slides -->
                                                 <div class="carousel-inner">
                                                     <div class="item active">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/Clou-dans-la-planche-Satyre-03-mars-2013.jpg" alt="Le Clou dans la Planche - mars 2013">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Clou-dans-la-planche-Satyre-03-mars-2013.jpg" alt="Le Clou dans la Planche - mars 2013">
                                                         <div class="carousel-caption">
                                                             Le Clou dans la Planche - mars 2013
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/Depeche-18-avril-2012-Lucienne-Kaminski.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-18-avril-2012-Lucienne-Kaminski.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             La Dépêche - Avril 2012 par Lucienne Kaminski
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/Depeche-11-mars-2014.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-11-mars-2014.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             La Dépêche - Mars 2014
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/Depeche-9-juin-2013.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/Depeche-9-juin-2013.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             La Dépêche - Juin 2013
                                                         </div>
@@ -1454,19 +1418,19 @@
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/MidiLibre-20-juin-2012-Celine-Grousset.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/MidiLibre-20-juin-2012-Celine-Grousset.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             Midi Libre - Juin 2012- par Céline Grousset
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/MidiLibre-22-aout-2012-Michel-Molinié.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/MidiLibre-22-aout-2012-Michel-Molinié.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             Midi Libre - Aout 2012- par Michel Molinié
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/satyre/media/images/revue-presse/l-independant-18-avril-2012-Jean-Christophe-Sannicolas.jpg" alt="...">
+                                                        <img class="img-fluid" src="creations/satyre/media/images/revue-presse/l-independant-18-avril-2012-Jean-Christophe-Sannicolas.jpg" alt="...">
                                                         <div class="carousel-caption">
                                                             L'Indépendant- Avril 2012- par Jean-Christophe Sannicolas
                                                         </div>
@@ -1626,13 +1590,13 @@
                                                 <!-- Wrapper for slides -->
                                                 <div class="carousel-inner">
                                                     <div class="item active">
-                                                        <img class="img-responsive" src="creations/monologue/media/images/revue-presse/Clou-dans-la-planche-31-janvier-2011.jpg" alt="Le Clou dans la Planche">
+                                                        <img class="img-fluid" src="creations/monologue/media/images/revue-presse/Clou-dans-la-planche-31-janvier-2011.jpg" alt="Le Clou dans la Planche">
                                                         <div class="carousel-caption">
                                                             Le Clou dans la Planche par Mathilde Lacroix, janvier 2011
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img class="img-responsive" src="creations/monologue/media/images/revue-presse/actu-toulouse-15-fevrier-2011-Fany-Moulin.jpg" alt="Le Brigadier">
+                                                        <img class="img-fluid" src="creations/monologue/media/images/revue-presse/actu-toulouse-15-fevrier-2011-Fany-Moulin.jpg" alt="Le Brigadier">
                                                         <div class="carousel-caption">
                                                             Actu Toulouse par Fany Moulin, fev. 2011
                                                         </div>
@@ -1712,7 +1676,7 @@
 <section id="compagnie" class="compagnie-section">
 <div class="container-fluid">
 <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+    <div class="col-10 offset-1 col-lg-8 offset-lg-2">
         <h1>La Compagnie</h1>
 
         <div class="row text-center">
@@ -1731,7 +1695,7 @@
                 Ci-dessous une bio des membres actuels, ainsi qu'une liste des personnes ayant collaborés aux projets par le passé: -->
             </p>
             <div class="row">
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-alice">
                                         <!--<a href="#alice-bio" data-toggle="collapse">-->
 
@@ -1792,7 +1756,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-4">
+                    <div class="col-6 col-sm-4">
                         <a data-toggle="modal" href="#modal-bio-coline">
 
                         <!--<a href="#coline-bio" data-toggle="collapse">-->
@@ -1837,9 +1801,9 @@
                         </div>
                     </div>
                 
-                <div class="clearfix visible-xs-block"></div>
+                <div class="clearfix d-block"></div>
 
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-simon">
                         <div class="circle-avatar" style="background-image:url(media/images/simon-square.jpg)"></div>
                         <p class="text-center"><strong>Simon Giesbert</strong></p>
@@ -1875,9 +1839,9 @@
                     </div>
                 
 
-                <div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>
+                <div class="clearfix d-sm-block d-md-block d-lg-block"></div>
 
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-elsa">
                         <div class="circle-avatar" style="background-image:url(media/images/elsa-square.jpg)"></div>
                         <p class="text-center"><strong>Elsa Sanchez</strong></p>
@@ -1907,9 +1871,9 @@
                     </div>
                 </div>
 
-                <div class="clearfix visible-xs-block"></div>
+                <div class="clearfix d-block"></div>
 
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-lucas">
                         <div class="circle-avatar" style="background-image:url(media/images/lucas-square.jpg)"></div>
                         <p class="text-center"><strong>Lucas Lemauff</strong></p>
@@ -1951,7 +1915,7 @@
                 
             </div>
 
-        <div class="col-xs-6 col-sm-4">
+        <div class="col-6 col-sm-4">
             <a href="#modal-autres" data-toggle="modal">
                 <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
                 <p class="text-center"><strong>L'équipe au fil du temps</strong></p>
@@ -2033,49 +1997,49 @@
     <h2>Partenaires</h2>
     <br>
     <div class="row center-block text-center">
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/0-logo-occitanie.jpg" alt="logo occitanie" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/0-logo-occitanie.jpg" alt="logo occitanie" class="img-fluid logo-partner">
             <p class="caption-partenaire">Soutien à la création artistique</p>
         </div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/1-haute-garonne.png" alt="logo Haute Garonne" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/1-haute-garonne.png" alt="logo Haute Garonne" class="img-fluid logo-partner">
             <p class="caption-partenaire">Aide à la création</p>
         </div>
-        <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/2-aveyron.jpg" alt="logo aveyron" class="img-responsive logo-partner">
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/2-aveyron.jpg" alt="logo aveyron" class="img-fluid logo-partner">
             <p class="caption-partenaire">Aide à la résidence</p>
         </div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/3-severac-d-a.png" alt="logo Severac" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/3-severac-d-a.png" alt="logo Severac" class="img-fluid logo-partner">
             <p class="caption-partenaire">Sévérac d'Aveyron</p>
         </div>
-        <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
-        <div class="col-xs-6 col-sm-3">
-           <img src="media/images/partenaires/10-opep.png" alt="logo OPEP" class="img-responsive logo-partner">
+        <div class="clearfix d-block d-sm-block d-md-block d-lg-block"></div>
+        <div class="col-6 col-sm-3">
+           <img src="media/images/partenaires/10-opep.png" alt="logo OPEP" class="img-fluid logo-partner">
         </div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/5-ACT.png" alt="logo ACT" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/5-ACT.png" alt="logo ACT" class="img-fluid logo-partner">
         </div>
-        <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/11-spedidam.png" alt="logo SPEDIDAM" class="img-responsive logo-partner">
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/11-spedidam.png" alt="logo SPEDIDAM" class="img-fluid logo-partner">
         </div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/7-dla.jpg" alt="logo DLA" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/7-dla.jpg" alt="logo DLA" class="img-fluid logo-partner">
         </div>
-        <div class="clearfix visible-xs-block visible-sm-block visible-md-block visible-lg-block"></div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/8-grand-rond.png" alt="logo Theatre du Grand Rond" class="img-responsive logo-partner">
+        <div class="clearfix d-block d-sm-block d-md-block d-lg-block"></div>
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/8-grand-rond.png" alt="logo Theatre du Grand Rond" class="img-fluid logo-partner">
         </div>
-        <div class="col-xs-6 col-sm-3">
-            <img src="media/images/partenaires/9-mairie-toulouse.png" alt="logo Mairie Toulouse" class="img-responsive logo-partner">
+        <div class="col-6 col-sm-3">
+            <img src="media/images/partenaires/9-mairie-toulouse.png" alt="logo Mairie Toulouse" class="img-fluid logo-partner">
         </div>
-        <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-3">
-             <img src="media/images/partenaires/6-le-pari.jpg" alt="logo Le Pari" class="img-responsive logo-partner">
+        <div class="clearfix d-block"></div>
+        <div class="col-6 col-sm-3">
+             <img src="media/images/partenaires/6-le-pari.jpg" alt="logo Le Pari" class="img-fluid logo-partner">
         </div>
-        <div class="clearfix visible-xs-block"></div>
+        <div class="clearfix d-block"></div>
     </div>
 
     <h2>Statuts et siège social</h2>
@@ -2083,14 +2047,14 @@
                 <i class="fas fa-file-pdf">&nbsp;</i><a href="media/pdf/statuts1901-mesdames-a.pdf">Statuts (association - loi 1901)</a><br>
                 No&nbsp;licence&nbsp;entrepreneur&nbsp;:&nbsp;n°&nbsp;2-1107142&nbsp;<br>
                 No&nbsp;siret&nbsp;:&nbsp;539&nbsp;558&nbsp;304&nbsp;00017<br><br>
-                Siège<br>
+                <b>Siège</b><br>
             </p>
             <address>
                 <p>Compagnie Mesdames A<br>
                 17, rue Jean Pascal<br>
                 31620 Labastide-Saint-Sernin, France</p>
             </address>
-            <p>Bureau</p>
+            <p><b>Bureau</b></p>
             <address>
                 <p>6, rue Moquin Tandon<br>
                 31500 Toulouse, France</p>
@@ -2104,7 +2068,7 @@
 <section id="contact" class="contact-section">
 <div class="container-fluid">
 <div class="row">
-<div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+<div class="col-10 offset-1 col-lg-8 offset-lg-2">
     <h1>Contact</h1>
     
         <!--                     <i class="fas fa-envelope" aria-hidden="true"></i>
@@ -2146,45 +2110,38 @@
 </div>
 </div>
 </section>
+
 </body>
-<!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
---><script src="js/jquery.blueimp-gallery.min.js"></script>
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <!-- Scrolling Nav JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- jQuery, popper, bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- SmoothScroll - always latest version (was 14.0.0 au debut) -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- blueimp-->
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+<!--font-awesome">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!-- Scrolling Nav JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>   
  
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-    
-    <!-- Add mousewheel plugin (this is optional)
-        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
-    
-    <!-- Add fancyBox
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
-    <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
-    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
-    <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
-
-    <!--Tooltip init
-        <script async>
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    </script>-->
-
     <!--//scrolling-nav.js-->
     <script type="text/javascript">
         //jQuery to collapse the navbar on scroll
         $(window).scroll(function() {
             if ($(".navbar").offset().top > 50) {
-                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                $(".fixed-top").addClass("top-nav-collapse");
             } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+                $(".fixed-top").removeClass("top-nav-collapse");
             }
                 if ($(".navbar").offset().top > 50) {
                 $(".navbar-brand").addClass("smaller");
@@ -2220,9 +2177,5 @@
             $('.dropdown-toggle').dropdown();
         });
     </script>
-    <!-- load and instantiate ScrollReveal first -->
-    <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-        <script>
-        window.sr = ScrollReveal({ distance: '0px', reset });
-        </script> -->
-</html>
+
+ </html>
