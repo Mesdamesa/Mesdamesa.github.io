@@ -523,7 +523,7 @@ or Extra large devices (large desktops, 1200px and up)*/
         border: none;
     }
 
-    .navbar, .navbar-dark
+    .navbar,
     .fixed-top {
         background-color: rgba(0, 0, 0, 0.85);
         border: none;
@@ -601,10 +601,6 @@ or Extra large devices (large desktops, 1200px and up)*/
     .navbar-nav > .active {
         border-bottom: 3px solid white;
     }
-    
-    .navbar-nav > .nav-item .active {
-        border-bottom: 3px solid white;
-    }
 
     .dropdown-menu>li>a,
     .dropdown-menu {
@@ -627,7 +623,7 @@ padding: 0;
 .navbar-header {
 float: none;
 }
-.navbar-toggler {
+.navbar-toggle {
 display: block;
 }
 .navbar-collapse {

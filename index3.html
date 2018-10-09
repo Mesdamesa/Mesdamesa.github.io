@@ -23,7 +23,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav2.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Fonts stuff -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
@@ -32,8 +32,7 @@
     
 </head>
 
-<body id="page-top" data-spy="scroll" data-target="#navbarMesdamesA">
-
+<body id="page-top" data-spy="scroll" data-target=".fixed-top">
     <!--Add to Calendar button (atc) init-->
     <script type="text/javascript">
     (function() {
@@ -66,19 +65,19 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMesdamesA" aria-controls="navbarMesdamesA" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand page-scroll" href="#page-top"><img  id="logo" src="media/images/LogoCompagnieMa.svg"></a>
 
-        <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarMesdamesA">
-            <ul class="navbar-nav smooth-scrool mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="nav-item hidden">
+                <li class="hidden">
                     <a class="nav-link page-scroll" href="#page-top"></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -106,7 +105,7 @@
                         <div class="col-12 col-sm-9  col-lg-7 offset-lg-2">
                             <p class="intro-text center-block">
                                 Mesdames A est une compagnie de spectacle vivant. Elle fait discuter musique, danse et théâtre dans ses créations.<br>
-                                <br> Découvrez <a class="page-scroll" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
+                                <br> Découvrez <a class="page-scroll link-nav" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
                             </p>
                         </div>
                         <div class="col-12 col-sm-3 col-lg-3 center-block">
@@ -2110,30 +2109,41 @@
 </div>
 </div>
 </section>
-
 </body>
 <!-- jQuery, popper, bootstrap JS-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<!-- SmoothScroll - always latest version (was 14.0.0 au debut) -->
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
-<!-- blueimp-->
-<script src="js/jquery.blueimp-gallery.min.js"></script>
-<link rel="stylesheet" href="css/blueimp-gallery.min.css">
-
-<!--font-awesome">-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-<!-- Scrolling Nav JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-</script>   
+<!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
+--><script src="js/jquery.blueimp-gallery.min.js"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Scrolling Nav JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
  
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    
+    <!-- Add mousewheel plugin (this is optional)
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js" async></script>-->
+    
+    <!-- Add fancyBox
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>-->
+    <!-- old v2 -- <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script> -->
+    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
+    <!-- old v2 <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>-->
+
+    <!--Tooltip init
+        <script async>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>-->
+
     <!--//scrolling-nav.js-->
     <script type="text/javascript">
         //jQuery to collapse the navbar on scroll
@@ -2162,6 +2172,14 @@
 
     </script>
 
+    <!--Manage class active -->
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '.nav-item a', function (e) {
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
 
     <!--Navbar collapse when one item selected-->
     <script>
@@ -2177,5 +2195,9 @@
             $('.dropdown-toggle').dropdown();
         });
     </script>
-
- </html>
+    <!-- load and instantiate ScrollReveal first -->
+    <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        <script>
+        window.sr = ScrollReveal({ distance: '0px', reset });
+        </script> -->
+</html>
