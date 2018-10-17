@@ -1,0 +1,1028 @@
+/*!
+* Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
+
+/*
+@font-face {
+    font-family: "Microsoft Tai Le";
+    src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot");
+    src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg");
+}*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .navbar-inverse .navbar-nav > .active > a:focus {
+background: rgba(0, 0, 0);
+border-bottom: 3px solid white;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover{}*/
+
+.navbar-brand img#logo {
+    max-height: 140px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-brand.smaller img#logo {
+    max-height: 45px;
+}
+
+.home-section {
+        height: calc(100% - 3em);
+        padding-top: 150px;
+        background: url('./../media/images/back-sm.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+p.intro-text {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+     font-weight: 400;
+    /*letter-spacing: -1px;*/
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+.btn-nous-soutenir {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding-top: 5px;
+    margin-top: 66px;
+    color: #000000;
+}
+
+.btn-nous-soutenir:hover {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 5px;
+    margin-top: 66px;
+    color: #000;
+}
+
+.txt-nous-soutenir {
+    /* font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90%;
+}
+
+.txt-nous-soutenir-small {
+   /* font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p.reduction-dimpots {
+    margin-top: 5px;
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+/*ENDOF full widht banner end of home page*/
+
+p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    font-weight: 300;
+    object-fit: contain;
+    /*letter-spacing: -0.00px;*/
+    text-align: left;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+span.etplus {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    object-fit: contain;
+    /*letter-spacing: -0.83px;*/
+    color: #ffffff;
+}
+
+.date,
+.date-lieu,
+.date-piece,
+.date-date,
+.date-lieu,
+.date-infos-carte {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    color: #000;
+}
+
+.date-jour-mois {
+    text-align: center;
+}
+
+.date-jour {
+    margin-top: 12px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+
+.date-mois {
+    ;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #f83131;
+    text-align: center;
+}
+
+.date-lieu {
+    font-weight: 600;
+}
+
+.date-heure {
+    font-weight: 600;
+}
+
+p.date a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+p.date a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+p.date a:visited {
+    color: #333;
+    border-bottom: 1px #aaa dashed;
+}
+
+ul.production li {
+    margin: 5px;
+}
+
+ul.production {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+    object-fit: contain;
+    /*letter-spacing: -0.83px;*/
+    text-align: justify;
+    color: #ffffff;
+    padding-top: 0px;
+}
+
+ul.production a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+ul.production a:hover {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+p.equip-crea {
+    font-size: 18px;
+}
+
+p.production {
+    font-size: 18px;
+}
+
+.label-equipe-crea {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.modal-header {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+.modal-body {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+.dates-passees ul {
+    color: #fff;
+    list-style: none;
+    text-align: left;
+}
+
+p.bio {
+    font-size: 14px;
+}
+
+p.autres {
+    font-size: 15px;
+}
+
+span.name-autres {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(220, 35, 35, 1);
+}
+
+
+/*modal close button*/
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+.circle-avatar {
+    /* make it responsive */
+    height: auto;
+    display: block;
+    /* div height to be the same as width*/
+    padding-top: 100%;
+    /* make it a cirkle */
+    border-radius: 50%;
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    /* it makes the clue thing, takes smaller dimention to fill div */
+    background-size: cover;
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.logo-partner {
+    height: auto;
+    max-width: 100px;
+    padding-top: 20px;
+}
+
+.caption-partenaire {
+    font-size: 14px;
+    word-wrap: break-word; width: 120px;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+p a:hover {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+p a:visited {
+    color: #aaa;
+    border-bottom: 1px #aaa dashed;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 36px;
+  /*letter-spacing: -0.83px;*/
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 24px;
+    font-weight: 600;
+    color: #eee;
+    text-align: left;
+    padding-top: 30px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    font-weight: 600;
+    color: #eee;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.field-mail {
+    width: 70%;
+    float: left;
+    color: #000;
+}
+
+.field-message {
+    width: 100%;
+    min-height: 100px;
+    color: #000;
+}
+
+.btn-envoyer {
+    float: left;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    /*
+    font-family: "Microsoft Tai Le" !important;*/
+    font-family: 'Open Sans', sans-serif !important;
+
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    background: #f72c2f;
+}
+
+
+/**
+.modal-dialog {
+width: 80%;
+height: 100%;
+}
+.modal-content {
+height: auto;
+min-height: 100%;
+}*/
+
+    }
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .navbar-brand img#logo {
+        max-height: 100px;
+        position: relative;
+        right: -53px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .navbar-brand.smaller img#logo {
+        max-height: 40px;
+        padding: 0;
+    }
+    .home-section {
+        height: calc(100% - 3em);
+        padding-top: 150px;
+        background: url('./../media/images/back-sm.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .banner {
+        height: 40%;
+    }
+    p.intro-text {
+        font-family: 'Open Sans', sans-serif !important;
+        font-size: 20px;
+        /*letter-spacing: -1px;*/
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+    .btn-nous-soutenir {
+        width: 190px;
+        margin-top: 5px;
+    }
+    .btn-nous-soutenir:hover {
+        margin-top: 5px;
+    }
+    p {
+        font-size: 16px;
+        /*letter-spacing: -0.6px;*/
+    }
+    p.date {
+        text-align: center;
+    }
+    p.equip-crea {
+        font-size: 14px;
+    }
+    p.production {
+        font-size: 14px;
+    }
+    ul.production {
+        font-size: 16px;
+    }
+    .affiche-satyre {
+        max-height: 420px;
+        display: block;
+        margin: 20 auto;
+    }
+    .field-mail {
+        width: 100%;
+    }
+    .field-message {
+        width: 100%;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/ 
+@media(min-width:768px) {
+    .home-section {
+        height: calc(100% - 3em);
+        padding-top: 150px;
+        background: url('./../media/images/back-md.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .banner {
+        position: absolute;
+        bottom: 0;
+        height: 35%;
+        min-height: 33%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.67);
+        /* text-align: center;*/
+    }
+    .affiche-satyre {
+        max-height: 420px;
+        margin-top: 20;
+    }
+    .animation-element {
+        opacity: 0;
+        position: relative;
+    }
+    /*animation element sliding left*/
+    .animation-element.slide-left {
+        opacity: 0.5;
+        -moz-transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        transition: all 300ms linear;
+        -moz-transform: translate3d(80px, 0px, 0px);
+        -webkit-transform: translate3d(80px, 0px, 0px);
+        -o-transform: translate(80px, 0px);
+        -ms-transform: translate(80px, 0px);
+        transform: translate3d(80px, 0px, 0px);
+    }
+    .animation-element.slide-left.in-view {
+        opacity: 1;
+        -moz-transform: translate3d(0px, 0px, 0px);
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+/*Large devices (desktops, 992px and up)
+or Extra large devices (large desktops, 1200px and up)*/
+@media(min-width:992px) {
+
+    .navbar, .navbar-dark
+    .fixed-top {
+        background-color: rgba(0, 0, 0, 0.85);
+        border: none;
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link {
+        color: white;
+    }
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+    }
+   
+    .navbar-nav > li.nav-item {
+        float: left;
+        width: 151px;
+        /Fixes the width of all elements/
+        padding-left: 0px;
+        padding-right: 0px;
+         font-family: 'Open Sans', sans-serif !important;
+        /font-family: "Microsoft Tai Le" !important;/
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+    }
+ 
+    .navbar-nav > li.dropdown > a.nav-link:hover {
+        border-bottom: none;
+    }
+
+   
+    .navbar-nav > li.dropdown > a.nav-link:link {
+        display: block;
+        width: 100%;
+    }
+
+    .nav li a:hover {
+        border-bottom: 3px solid #fafafa;
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link:hover {
+        border-bottom: 3px solid #fafafa;
+    }
+    
+    .navbar-nav > .nav-item .active {
+        border-bottom: 3px solid white;
+    }
+
+    .dropdown-menu>li>a,
+    .dropdown-menu {
+        background-color: #000;
+        color: #fff;
+    }
+    .dropdown-menu {
+        width: 140px !important;
+    }
+    /*full widht banner end of home page*/
+}
+
+
+/*
+@media (max-width: 1199px) {
+.navbar-brand img#logo {
+max-height:40px;
+padding: 0;
+}
+.navbar-header {
+float: none;
+}
+.navbar-toggler {
+display: block;
+}
+.navbar-collapse {
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+display: none!important;
+}
+.navbar-nav {
+float: none!important;
+margin: 7.5px -15px;
+}
+.navbar-nav>li {
+float: none;
+}
+.navbar-nav>li>a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.navbar-text {
+float: none;
+margin: 15px 0;
+}*/
+
+
+/* since 3.1.0 */
+
+
+/*.navbar-collapse.collapse.in {
+display: block!important;
+}
+.collapsing {
+overflow: hidden!important;
+}
+}*/
+
+
+/*=========================
+Icons
+================= */
+
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.logo-contact {
+    text-align: center;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover  {
+    background-color: #BD3518;
+}
+
+.social-network a.icoYoutube:hover{
+    background-color: #e62117;
+}
+
+.social-network a.icoYoutube{
+font-size: 30px;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i
+.social-network a.icoYoutube:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+/*    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+
+/*.home-section {
+background-attachment: fixed;
+}*/
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+.actu-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #020202;
+}
+
+.creations-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+}
+
+.compagnie-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #020202;
+}
+
+.contact-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #000;
+}
+
+/*address {
+    display: block;
+    font-style: italic;
+}*/
+
+
+/* Fancybox */
+
+.hidden {
+    display: none;
+}
+
+.imglist {
+    overflow: hidden;
+}
+
+.imglist a {
+    float: left;
+    margin: 4px;
+}
+
+.imglist a img {
+    vertical-align: top;
+    padding: 1px;
+    border: 1px solid #ccc;
+}
+
+
+/**
+* AddToCalendar Blue Style
+* http://addtocalendar.com
+*/
+
+
+/* Base */
+
+.addtocalendar var {
+    display: none;
+}
+
+.addtocalendar {
+    /** position: relative;*/
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    background: transparent!important;
+}
+
+.atcb-link {
+    display: block;
+    outline: none!important;
+    cursor: pointer;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover {
+    visibility: visible;
+}
+
+.atcb-list {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    z-index: 900;
+}
+
+.atcb-list,
+.atcb-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.atcb-item {
+    float: none;
+    text-align: left;
+}
+
+.atcb-item-link {
+    text-decoration: none;
+    outline: none;
+    display: block;
+}
+
+.atcb-item.hover,
+.atcb-item:hover {
+    position: relative;
+    z-index: 900;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+
+/* blue red in fact now */
+
+.atc-style-blue .atcb-link,
+.atc-style-blue .atcb-link:hover,
+.atc-style-blue .atcb-link:active,
+.atc-style-blue .atcb-link:focus {
+    margin: 0;
+    padding: 7px 20px 6px 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    line-height: 20px;
+    vertical-align: middle;
+    background: #f33128;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-list {
+    width: 137px;
+    height: 29px;
+    border-radius: 2px;
+}
+
+.atc-style-blue .atcb-list,
+.atc-style-blue .atcb-item {
+    background: #eee;
+    color: #000;
+}
+
+.atc-style-blue .atcb-item,
+.atc-style-blue .atcb-item-link {
+    line-height: 1.3em;
+    vertical-align: middle;
+    zoom: 1;
+}
+
+.atc-style-blue .atcb-item-link,
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #000;
+    font-family: "Verdana";
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.atc-style-blue .atcb-item-link:hover,
+.atc-style-blue .atcb-item-link:active,
+.atc-style-blue .atcb-item-link:focus {
+    color: #fff;
+}
+
+.atc-style-blue .atcb-item.hover,
+.atc-style-blue .atcb-item:hover {
+    background: #d31108;
+}
+
+
+/* arrow scroll */
+
+.arrow-wrap {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -5em;
+    margin-left: -5em;
+    background: #111111;
+    width: 10em;
+    height: 10em;
+    padding: 4em 2em;
+    border-radius: 50%;
+    font-size: 0.5em;
+    display: block;
+    box-shadow: 0px 0px 5px 0px #333;
+}
+
+.arrow {
+    float: left;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #ffffff transparent transparent transparent;
+    -webkit-transform: rotate(360deg)
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    top: -3.2em;
+    left: -3em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #111111 transparent transparent transparent;
+    -webkit-transform: rotate(360deg)
+}
+
+.arrow-wrap:hover .hint {
+    opacity: 1;
+}
+
+@-webkit-keyframes arrows {
+    0% {
+        top: 0;
+    }
+    10% {
+        top: 12%;
+    }
+    20% {
+        top: 0;
+    }
+    30% {
+        top: 12%;
+    }
+    40% {
+        top: -12%;
+    }
+    50% {
+        top: 12%;
+    }
+    60% {
+        top: 0;
+    }
+    70% {
+        top: 12%;
+    }
+    80% {
+        top: -12%;
+    }
+    90% {
+        top: 12%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+}
