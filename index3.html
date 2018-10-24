@@ -65,14 +65,14 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-md" id="MA-navbar">
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md" id="MA-navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon mr-auto"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top"><img  id="logo" src="media/images/LogoCompagnieMa.svg"></a>
+        <a class="navbar-brand page-scroll" href="#page-top"><img class=img-fluid id="logo" src="media/images/LogoCompagnieMa.svg"></a>
 
         <div class="collapse navbar-collapse navbar-miniature-collapse" id="navbarToggler">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 smooth-scroll">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 smooth-scroll">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li class="hidden">
                     <a class="nav-link page-scroll" href="#page-top"></a>
@@ -105,7 +105,7 @@
                         <div class="col-md-9 col-xl-7 offset-xl-2">
                             <p class="intro-text text-center">
                                 Mesdames A est une compagnie de spectacle vivant. Elle fait discuter musique, danse et théâtre dans ses créations.<br>
-                                <br> Découvrez <a class="page-scroll link-nav" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
+                                <br> Découvrez <a class="page-scroll" href="#creations"><i>ÉCLAIRS</i>, notre dernière création</a>.
                             </p>
                         </div>
 
@@ -144,7 +144,7 @@
         <div class="container-fluid">
             <div class="row flechedefile">
                 <div class="col-12">
-                    <a class="arrow-wrap page-scroll" href="#actu">
+                    <a class="arrow-wrap page-scroll nav-link" href="#actu">
                         <span class="arrow"></span>
                         <!--<span class="hint">scroll</span>-->
                     </a>
@@ -1966,6 +1966,12 @@
                 $(".navbar-brand").removeClass("smaller");
             }
         });
+
+        //jQuery to collapse the navbar on click
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+
         //jQuery for page scrolling feature - requires jQuery Easing plugin
         $(function() {
             $('a.page-scroll').bind('click', function(event) {
@@ -1978,11 +1984,11 @@
         });
 
 
-            $('.nav-link').click(function() {
+            $('.page-scroll').click(function() {
                 var sectionTo = $(this).attr('href');
                 $('html, body').animate({
                   scrollTop: $(sectionTo).offset().top
-                }, 1500);
+                }, 750);
             });
 
     </script>

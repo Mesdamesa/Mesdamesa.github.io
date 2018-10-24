@@ -31,8 +31,14 @@ border-bottom: 3px solid white;
 .navbar-inverse .navbar-nav > .active > a:hover{}*/
 
 
+.navbar, .navbar-dark, .fixed-top {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: none;
+}
+
 .navbar-brand img#logo {
-    max-height: 140px;
+    padding-left: 7rem;
+    max-height: 80px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -43,6 +49,12 @@ border-bottom: 3px solid white;
 .navbar-brand.smaller img#logo {
     max-height: 45px;
 }
+
+.navbar-nav {
+    padding-right: 10%;
+}
+
+
 
 .home-section {
         height: calc(100% - 3em);
@@ -378,6 +390,7 @@ min-height: 100%;
     }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+
     .navbar-brand img#logo {
         max-height: 100px;
         position: relative;
