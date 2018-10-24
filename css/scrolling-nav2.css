@@ -79,22 +79,17 @@ p.intro-text {
     word-wrap: break-word;
 }
 
-.btn-light {
-    min-width: 180px;
-    margin-top: 66px;
-}
 
-
-span.txt-nous-soutenir {
+.txt-nous-soutenir {
     /* font-family: "Microsoft Tai Le" !important;*/
     font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    line-height: 90%;
+    /*line-height: 90%;*/
 }
 
-span.txt-nous-soutenir-small {
+.txt-nous-soutenir-small {
    /* font-family: "Microsoft Tai Le" !important;*/
     font-family: 'Open Sans', sans-serif !important;
     font-size: 13px;
@@ -421,31 +416,24 @@ min-height: 100%;
     }
     p.intro-text {
         font-family: 'Open Sans', sans-serif !important;
-        font-size: 20px;
         /*letter-spacing: -1px;*/
         text-align: center;
         color: #ffffff;
         margin-top: 10px;
     }
-    .btn-light {
-        width: 180px;
-    }
 
     p {
-        font-size: 16px;
         /*letter-spacing: -0.6px;*/
     }
     p.date {
         text-align: center;
     }
     p.equip-crea {
-        font-size: 14px;
     }
     p.production {
-        font-size: 14px;
+  
     }
     ul.production {
-        font-size: 16px;
     }
     .affiche-satyre {
         max-height: 420px;
@@ -457,6 +445,10 @@ min-height: 100%;
     }
     .field-message {
         width: 100%;
+    }
+
+    .btn.boutton-soutien {
+        margin: auto;
     }
 }
 
@@ -510,6 +502,10 @@ min-height: 100%;
         -o-transform: translate(0px, 0px);
         -ms-transform: translate(0px, 0px);
         transform: translate3d(0px, 0px, 0px);
+    }
+
+    .btn-light {
+    margin-top: 66px;
     }
 }
 
@@ -578,6 +574,10 @@ or Extra large devices (large desktops, 1200px and up)*/
     }
     .dropdown-menu {
         width: 140px !important;
+    }
+
+    .btn-light {
+    margin-top: 66px;
     }
     /*full widht banner end of home page*/
 }
