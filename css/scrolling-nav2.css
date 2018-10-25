@@ -239,6 +239,7 @@ p.production {
     color: #fff;
     list-style: none;
     text-align: left;
+    font-size: 1rem;
 }
 
 p.bio {
@@ -259,9 +260,10 @@ span.name-autres {
 /*modal close button*/
 
 .close {
-    color: #fff;
-    opacity: 1;
+    color: #ddd;
+    opacity: 0.8;
 }
+
 
 .circle-avatar {
     /* make it responsive */
@@ -356,15 +358,10 @@ h3 {
 
 .btn-envoyer {
     float: left;
-    border-radius: 3px;
-    width: 80px;
-    height: 30px;
     color: #fff;
     /*
     font-family: "Microsoft Tai Le" !important;*/
     font-family: 'Open Sans', sans-serif !important;
-
-    font-size: 14px;
     text-decoration: none;
     outline: none;
     vertical-align: middle;
@@ -389,7 +386,7 @@ min-height: 100%;
     .navbar-brand img#logo {
         max-height: 100px;
         position: relative;
-        right: -53px;
+        /*right: -53px;*/
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
@@ -535,16 +532,28 @@ or Extra large devices (large desktops, 1200px and up)*/
     .navbar-nav > li.nav-item {
         float: left;
         width: 151px;
-        /Fixes the width of all elements/
+        /*/Fixes the width of all elements/*/
         padding-left: 0px;
         padding-right: 0px;
          font-family: 'Open Sans', sans-serif !important;
-        /font-family: "Microsoft Tai Le" !important;/
+        /*/font-family: "Microsoft Tai Le" !important;/*/
         font-size: 18px;
         text-align: center;
         color: #ffffff;
     }
  
+    .navbar-nav > li.nav-item.back-to-creations {
+        float: left;
+        /*/Fixes the width of all elements/*/
+        padding-left: 0px;
+        padding-right: 0px;
+         font-family: 'Open Sans', sans-serif !important;
+        /*/font-family: "Microsoft Tai Le" !important;/*/
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+    }
+
     .navbar-nav > li.dropdown > a.nav-link:hover {
         border-bottom: none;
     }
@@ -777,6 +786,24 @@ of those sections to manage the look and feel of the site. */
     padding-top: 20px;
     padding-bottom: 20px;
     background: #000;
+}
+
+.home-creation {
+    padding-top: 3rem;
+    padding-bottom: 15%;
+    background: #111;
+}
+
+.nav-back {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.85);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 4rem;
 }
 
 /*address {
