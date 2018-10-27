@@ -256,8 +256,19 @@
                     </div>
                     <br>
                     <hr>
+                     <hr> <hr> <hr> <hr> <hr> <hr> <hr>
                     <br>
-
+    <div class="logo-contact">
+        <ul class="social-network social-circle">
+            <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="adresse-internet">
+        <p class="text-center">
+            <a href="http://mesdames-a.fr">www.mesdames-a.fr</a>
+        </p>
+    </div>
                 </div>
             </div>
         </div>
@@ -320,16 +331,6 @@
         });
 
         //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 750, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
 
             $('.page-scroll').click(function() {
                 var sectionTo = $(this).attr('href');

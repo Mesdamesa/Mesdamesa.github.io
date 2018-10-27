@@ -59,7 +59,7 @@ border-bottom: 3px solid white;
 .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('./../media/images/back-sm.jpg');
+        background: url('./../media/images/back-smmm.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
@@ -323,7 +323,7 @@ h1 {
     font-weight: 600;
     color: #fff;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 h2 {
@@ -332,7 +332,7 @@ h2 {
     font-weight: 600;
     color: #eee;
     text-align: left;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 h3 {
@@ -341,7 +341,7 @@ h3 {
     font-weight: 600;
     color: #eee;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .field-mail {
@@ -368,6 +368,11 @@ h3 {
     background: #f72c2f;
 }
 
+
+    .btn-light {
+        display: block;
+        margin: auto;
+    }
 
 /**
 .modal-dialog {
@@ -400,7 +405,7 @@ min-height: 100%;
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('./../media/images/back-sm.jpg');
+        background: url('./../creations/eclairs/media/images/eclairs-sur-scene.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
@@ -444,9 +449,6 @@ min-height: 100%;
         width: 100%;
     }
 
-    .btn.boutton-soutien {
-        margin: auto;
-    }
 }
 
 /*Medium devices (tablets, 768px and up)*/ 
@@ -454,7 +456,7 @@ min-height: 100%;
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('./../media/images/back-md.jpg');
+        background: url('./../creations/eclairs/media/images/eclairs-sur-scene.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;

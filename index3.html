@@ -109,8 +109,8 @@
                             </p>
                         </div>
 
-                        <div class="col-md-3 col-xl-3">
-                                <button type="button" class="btn btn-light boutton-soutien"  data-toggle="modal" data-target="#modal-soutenir-adhesion">
+                        <div class="col-md-3 col-xl-3 bouttonsoutien">
+                                <button type="button" class="btn btn-light"  data-toggle="modal" data-target="#modal-soutenir-adhesion">
                                     <span class="txt-nous-soutenir">Nous soutenir</span><br>
                                     <span class="txt-nous-soutenir-small">(Soutien et adhésion)</span>
                                 </button>
@@ -236,7 +236,7 @@
                                                 <span class="date-lieu">Lapanouse (12)</span> - <span class="date-date">samedi 27 octobre</span> à
                                                 <span class="date-heure">21h00</span>
                                                 <br>
-                                                <span class="date-lieu">Salle de Lapanouse</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LefPr38jxw72">Accès</a> - <a class="reservation" href="http://mesdames-a.fr">Réservations</a></span>
+                                                <span class="date-lieu">Salle de Lapanouse</span>&nbsp; &nbsp;<span class="date-infos-carte"> <a class="map" href="https://goo.gl/maps/LefPr38jxw72">Accès</a> - <a class="reservation" href="https://www.facebook.com/events/185318715694539/">Réservations</a></span>
                                             </p>
                                         </div>
                                         <div class="col-12 col-md-4 text-center">
@@ -1127,7 +1127,7 @@
                                         <p class="card-text">Marionnettes géantes, cirque, chants et danses ; cette  expérience théâtrale part à la recherche de dragons endormis dans la cité de Sévérac-le-Château.</p>
                                     </div>
                                     <div class="card-footer bg-transparent">
-                                        <a class="link-creation" href="creations/stranded/index-mt.html">Voir plus</a> 
+                                        <a class="link-creation" href="creations/stranded/index.html">Voir plus</a> 
                                     </div>
                                 </div>
                             </div>
@@ -1724,16 +1724,6 @@
         });
 
         //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
 
             $('.page-scroll').click(function() {
                 var sectionTo = $(this).attr('href');
