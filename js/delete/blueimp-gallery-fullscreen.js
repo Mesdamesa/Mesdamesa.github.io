@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * https://opensource.org/licenses/MIT
+ * http://www.opensource.org/licenses/MIT
  */
 
 /* global define, window, document */
@@ -15,12 +15,18 @@
   'use strict'
   if (typeof define === 'function' && define.amd) {
     // Register as an anonymous AMD module:
-    define(['./blueimp-helper', './blueimp-gallery'], factory)
+    define([
+      './blueimp-helper',
+      './blueimp-gallery'
+    ], factory)
   } else {
     // Browser globals:
-    factory(window.blueimp.helper || window.jQuery, window.blueimp.Gallery)
+    factory(
+      window.blueimp.helper || window.jQuery,
+      window.blueimp.Gallery
+    )
   }
-})(function ($, Gallery) {
+}(function ($, Gallery) {
   'use strict'
 
   $.extend(Gallery.prototype.options, {
@@ -33,12 +39,10 @@
 
   $.extend(Gallery.prototype, {
     getFullScreenElement: function () {
-      return (
-        document.fullscreenElement ||
-        document.webkitFullscreenElement ||
-        document.mozFullScreenElement ||
-        document.msFullscreenElement
-      )
+      return document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement
     },
 
     requestFullScreen: function (element) {
@@ -78,7 +82,8 @@
       }
       close.call(this)
     }
+
   })
 
   return Gallery
-})
+}))

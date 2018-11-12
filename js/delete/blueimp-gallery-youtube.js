@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * https://opensource.org/licenses/MIT
+ * http://www.opensource.org/licenses/MIT
  */
 
 /* global define, window, document, YT */
@@ -15,12 +15,18 @@
   'use strict'
   if (typeof define === 'function' && define.amd) {
     // Register as an anonymous AMD module:
-    define(['./blueimp-helper', './blueimp-gallery-video'], factory)
+    define([
+      './blueimp-helper',
+      './blueimp-gallery-video'
+    ], factory)
   } else {
     // Browser globals:
-    factory(window.blueimp.helper || window.jQuery, window.blueimp.Gallery)
+    factory(
+      window.blueimp.helper || window.jQuery,
+      window.blueimp.Gallery
+    )
   }
-})(function ($, Gallery) {
+}(function ($, Gallery) {
   'use strict'
 
   if (!window.postMessage) {
@@ -39,8 +45,8 @@
     youTubeClickToPlay: true
   })
 
-  var textFactory =
-    Gallery.prototype.textFactory || Gallery.prototype.imageFactory
+  var textFactory = Gallery.prototype.textFactory ||
+                      Gallery.prototype.imageFactory
   var YouTubePlayer = function (videoId, playerVars, clickToPlay) {
     this.videoId = videoId
     this.playerVars = playerVars
@@ -100,14 +106,17 @@
     },
 
     onPause: function () {
-      Gallery.prototype.setTimeout.call(this, this.checkSeek, null, 2000)
+      Gallery.prototype.setTimeout.call(
+        this,
+        this.checkSeek,
+        null,
+        2000
+      )
     },
 
     checkSeek: function () {
-      if (
-        this.stateChange === YT.PlayerState.PAUSED ||
-        this.stateChange === YT.PlayerState.ENDED
-      ) {
+      if (this.stateChange === YT.PlayerState.PAUSED ||
+        this.stateChange === YT.PlayerState.ENDED) {
         // check if current state change is actually paused
         this.listeners.pause()
         delete this.playStatus
@@ -140,12 +149,8 @@
         this.playStatus = 1
       }
       if (this.ready) {
-        if (
-          !this.hasPlayed &&
-          (this.clickToPlay ||
-            (window.navigator &&
-              /iP(hone|od|ad)/.test(window.navigator.platform)))
-        ) {
+        if (!this.hasPlayed && (this.clickToPlay || (window.navigator &&
+          /iP(hone|od|ad)/.test(window.navigator.platform)))) {
           // Manually trigger the playing callback if clickToPlay
           // is enabled and to workaround a limitation in iOS,
           // which requires synchronous user interaction to start
@@ -187,6 +192,7 @@
         delete this.playStatus
       }
     }
+
   })
 
   $.extend(Gallery.prototype, {
@@ -199,11 +205,9 @@
         if (this.getItemProperty(obj, options.urlProperty) === undefined) {
           obj[options.urlProperty] = '//www.youtube.com/watch?v=' + videoId
         }
-        if (
-          this.getItemProperty(obj, options.videoPosterProperty) === undefined
-        ) {
-          obj[options.videoPosterProperty] =
-            '//img.youtube.com/vi/' + videoId + '/maxresdefault.jpg'
+        if (this.getItemProperty(obj, options.videoPosterProperty) === undefined) {
+          obj[options.videoPosterProperty] = '//img.youtube.com/vi/' + videoId +
+            '/maxresdefault.jpg'
         }
         return this.videoFactory(
           obj,
@@ -217,7 +221,8 @@
       }
       return textFactory.call(this, obj, callback)
     }
+
   })
 
   return Gallery
-})
+}))

@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * https://opensource.org/licenses/MIT
+ * http://www.opensource.org/licenses/MIT
  */
 
 /* global define, window, document */
@@ -14,11 +14,17 @@
 ;(function (factory) {
   'use strict'
   if (typeof define === 'function' && define.amd) {
-    define(['jquery', './blueimp-gallery'], factory)
+    define([
+      'jquery',
+      './blueimp-gallery'
+    ], factory)
   } else {
-    factory(window.jQuery, window.blueimp.Gallery)
+    factory(
+      window.jQuery,
+      window.blueimp.Gallery
+    )
   }
-})(function ($, Gallery) {
+}(function ($, Gallery) {
   'use strict'
 
   // Global click handler to open links with data-gallery attribute
@@ -27,11 +33,13 @@
     // Get the container id from the data-gallery attribute:
     var id = $(this).data('gallery')
     var widget = $(id)
-    var container =
-      (widget.length && widget) || $(Gallery.prototype.options.container)
+    var container = (widget.length && widget) ||
+          $(Gallery.prototype.options.container)
     var callbacks = {
       onopen: function () {
-        container.data('gallery', this).trigger('open')
+        container
+          .data('gallery', this)
+          .trigger('open')
       },
       onopened: function () {
         container.trigger('opened')
@@ -49,7 +57,9 @@
         container.trigger('close')
       },
       onclosed: function () {
-        container.trigger('closed').removeData('gallery')
+        container
+          .trigger('closed')
+          .removeData('gallery')
       }
     }
     var options = $.extend(
@@ -64,12 +74,10 @@
       callbacks
     )
     // Select all links with the same data-gallery attribute:
-    var links = $(this)
-      .closest('[data-gallery-group], body')
-      .find('[data-gallery="' + id + '"]')
+    var links = $('[data-gallery="' + id + '"]')
     if (options.filter) {
       links = links.filter(options.filter)
     }
     return new Gallery(links, options)
   })
-})
+}))
