@@ -779,7 +779,7 @@ of those sections to manage the look and feel of the site. */
 .creations-section {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #000;
+    background: #020202;
 }
 
 .compagnie-section {
@@ -794,10 +794,14 @@ of those sections to manage the look and feel of the site. */
     background: #000;
 }
 
+/*p.contact-section li.contact-section {
+    color: #333;
+}*/
+
 .home-creation {
     padding-top: 3rem;
     padding-bottom: 15%;
-    background: #111;
+    background: #020202;
 }
 
 .nav-back {
