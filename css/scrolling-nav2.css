@@ -316,6 +316,10 @@ p a:visited {
     border-bottom: 1px #aaa dashed;
 }
 
+hr {
+  border-top: 1px solid white;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 36px;
@@ -456,7 +460,7 @@ min-height: 100%;
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('./../creations/eclairs/media/images/eclairs-sur-scene.jpg');
+        background: url('./../creations/eclairs/media/images/eclairs-calin-sur-scene.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
