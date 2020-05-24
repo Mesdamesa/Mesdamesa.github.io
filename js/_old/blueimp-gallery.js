@@ -12,9 +12,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define, DocumentTouch */
-
-/* eslint-disable no-param-reassign */
+/* global define, window, document, DocumentTouch */
 
 ;(function (factory) {
   'use strict'
@@ -29,15 +27,7 @@
 })(function ($) {
   'use strict'
 
-  /**
-   * Gallery constructor
-   *
-   * @class
-   * @param {Array|NodeList} list Gallery content
-   * @param {object} [options] Gallery options
-   * @returns {object} Gallery object
-   */
-  function Gallery(list, options) {
+  function Gallery (list, options) {
     if (document.body.style.maxHeight === undefined) {
       // document.body.style.maxHeight is undefined on IE6 and lower
       return null
@@ -134,8 +124,6 @@
       closeOnSlideClick: true,
       // Close the gallery by swiping up or down:
       closeOnSwipeUpOrDown: true,
-      // Close the gallery when URL changes:
-      closeOnHashChange: true,
       // Emulate touch events on mouse-pointer devices such as desktop browsers:
       emulateTouchEvents: true,
       // Stop touch events from bubbling up to ancestor elements of the Gallery:
@@ -155,19 +143,17 @@
       startSlideshow: false,
       // Delay in milliseconds between slides for the automatic slideshow:
       slideshowInterval: 5000,
-      // The direction the slides are moving: ltr=LeftToRight or rtl=RightToLeft
-      slideshowDirection: 'ltr',
       // The starting index as integer.
       // Can also be an object of the given list,
       // or an equal object with the same url property:
       index: 0,
       // The number of elements to load around the current index:
       preloadRange: 2,
-      // The transition duration between slide changes in milliseconds:
-      transitionDuration: 300,
-      // The transition duration for automatic slide changes, set to an integer
-      // greater 0 to override the default transition duration:
-      slideshowTransitionDuration: 500,
+      // The transition speed between slide changes in milliseconds:
+      transitionSpeed: 400,
+      // The transition speed for automatic slide changes, set to an integer
+      // greater 0 to override the default transition speed:
+      slideshowTransitionSpeed: undefined,
       // The event object for which the default action will be canceled
       // on Gallery initialization (e.g. the click event to open the Gallery):
       event: undefined,
@@ -244,7 +230,7 @@
       var prop
       for (prop in transitions) {
         if (
-          Object.prototype.hasOwnProperty.call(transitions, prop) &&
+          transitions.hasOwnProperty(prop) &&
           element.style[prop] !== undefined
         ) {
           support.transition = transitions[prop]
@@ -252,10 +238,7 @@
           break
         }
       }
-      /**
-       * Tests browser support
-       */
-      function elementTests() {
+      function elementTests () {
         var transition = support.transition
         var prop
         var translateZ
@@ -327,7 +310,7 @@
       }
     },
 
-    slide: function (to, duration) {
+    slide: function (to, speed) {
       window.clearTimeout(this.timeout)
       var index = this.index
       var direction
@@ -336,8 +319,8 @@
       if (index === to || this.num === 1) {
         return
       }
-      if (!duration) {
-        duration = this.options.transitionDuration
+      if (!speed) {
+        speed = this.options.transitionSpeed
       }
       if (this.support.transform) {
         if (!this.options.continuous) {
@@ -366,8 +349,8 @@
           )
         }
         to = this.circle(to)
-        this.move(index, this.slideWidth * direction, duration)
-        this.move(to, 0, duration)
+        this.move(index, this.slideWidth * direction, speed)
+        this.move(to, 0, speed)
         if (this.options.continuous) {
           this.move(
             this.circle(to - direction),
@@ -377,7 +360,7 @@
         }
       } else {
         to = this.circle(to)
-        this.animate(index * -this.slideWidth, to * -this.slideWidth, duration)
+        this.animate(index * -this.slideWidth, to * -this.slideWidth, speed)
       }
       this.onslide(to)
     },
@@ -404,22 +387,20 @@
 
     play: function (time) {
       var that = this
-      var nextIndex =
-        this.index + (this.options.slideshowDirection === 'rtl' ? -1 : 1)
       window.clearTimeout(this.timeout)
       this.interval = time || this.options.slideshowInterval
       if (this.elements[this.index] > 1) {
         this.timeout = this.setTimeout(
           (!this.requestAnimationFrame && this.slide) ||
-            function (to, duration) {
+            function (to, speed) {
               that.animationFrameId = that.requestAnimationFrame.call(
                 window,
                 function () {
-                  that.slide(to, duration)
+                  that.slide(to, speed)
                 }
               )
             },
-          [nextIndex, this.options.slideshowTransitionDuration],
+          [this.index + 1, this.options.slideshowTransitionSpeed],
           this.interval
         )
       }
@@ -493,12 +474,7 @@
 
     close: function () {
       var that = this
-      /**
-       * Close handler
-       *
-       * @param {event} event Close event
-       */
-      function closeHandler(event) {
+      function closeHandler (event) {
         if (event.target === that.container[0]) {
           that.container.off(that.support.transition.end, closeHandler)
           that.handleClose()
@@ -517,20 +493,19 @@
 
     circle: function (index) {
       // Always return a number inside of the slides index range:
-      return (this.num + (index % this.num)) % this.num
+      return (this.num + index % this.num) % this.num
     },
 
-    move: function (index, dist, duration) {
-      this.translateX(index, dist, duration)
+    move: function (index, dist, speed) {
+      this.translateX(index, dist, speed)
       this.positions[index] = dist
     },
 
-    translate: function (index, x, y, duration) {
-      if (!this.slides[index]) return
+    translate: function (index, x, y, speed) {
       var style = this.slides[index].style
       var transition = this.support.transition
       var transform = this.support.transform
-      style[transition.name + 'Duration'] = duration + 'ms'
+      style[transition.name + 'Duration'] = speed + 'ms'
       style[transform.name] =
         'translate(' +
         x +
@@ -540,16 +515,16 @@
         (transform.translateZ ? ' translateZ(0)' : '')
     },
 
-    translateX: function (index, x, duration) {
-      this.translate(index, x, 0, duration)
+    translateX: function (index, x, speed) {
+      this.translate(index, x, 0, speed)
     },
 
-    translateY: function (index, y, duration) {
-      this.translate(index, 0, y, duration)
+    translateY: function (index, y, speed) {
+      this.translate(index, 0, y, speed)
     },
 
-    animate: function (from, to, duration) {
-      if (!duration) {
+    animate: function (from, to, speed) {
+      if (!speed) {
         this.slidesContainer[0].style.left = to + 'px'
         return
       }
@@ -557,16 +532,14 @@
       var start = new Date().getTime()
       var timer = window.setInterval(function () {
         var timeElap = new Date().getTime() - start
-        if (timeElap > duration) {
+        if (timeElap > speed) {
           that.slidesContainer[0].style.left = to + 'px'
           that.ontransitionend()
           window.clearInterval(timer)
           return
         }
         that.slidesContainer[0].style.left =
-          (to - from) * (Math.floor((timeElap / duration) * 100) / 100) +
-          from +
-          'px'
+          (to - from) * (Math.floor(timeElap / speed * 100) / 100) + from + 'px'
       }, 4)
     },
 
@@ -588,12 +561,6 @@
 
     onresize: function () {
       this.initSlides(true)
-    },
-
-    onhashchange: function () {
-      if (this.options.closeOnHashChange) {
-        this.close()
-      }
     },
 
     onmousedown: function (event) {
@@ -653,11 +620,11 @@
       }
       // jQuery doesn't copy touch event properties by default,
       // so we have to access the originalEvent object:
-      var touch = (event.originalEvent || event).touches[0]
+      var touches = (event.originalEvent || event).touches[0]
       this.touchStart = {
         // Remember the initial touch coordinates:
-        x: touch.pageX,
-        y: touch.pageY,
+        x: touches.pageX,
+        y: touches.pageY,
         // Store the time to determine touch duration:
         time: Date.now()
       }
@@ -673,8 +640,7 @@
       }
       // jQuery doesn't copy touch event properties by default,
       // so we have to access the originalEvent object:
-      var touches = (event.originalEvent || event).touches
-      var touch = touches[0]
+      var touches = (event.originalEvent || event).touches[0]
       var scale = (event.originalEvent || event).scale
       var index = this.index
       var touchDeltaX
@@ -688,8 +654,8 @@
       }
       // Measure change in x and y coordinates:
       this.touchDelta = {
-        x: touch.pageX - this.touchStart.x,
-        y: touch.pageY - this.touchStart.y
+        x: touches.pageX - this.touchStart.x,
+        y: touches.pageY - this.touchStart.y
       }
       touchDeltaX = this.touchDelta.x
       // Detect if this is a vertical scroll movement (run only once per touch):
@@ -726,7 +692,7 @@
           index = indices.pop()
           this.translateX(index, touchDeltaX + this.positions[index], 0)
         }
-      } else if (!this.options.carousel) {
+      } else {
         this.translateY(index, this.touchDelta.y + this.positions[index], 0)
       }
     },
@@ -736,14 +702,13 @@
         this.stopPropagation(event)
       }
       var index = this.index
-      var absTouchDeltaX = Math.abs(this.touchDelta.x)
+      var speed = this.options.transitionSpeed
       var slideWidth = this.slideWidth
-      var duration = Math.ceil(
-        (this.options.transitionDuration * (1 - absTouchDeltaX / slideWidth)) /
-          2
-      )
+      var isShortDuration = Number(Date.now() - this.touchStart.time) < 250
       // Determine if slide attempt triggers next/prev slide:
-      var isValidSlide = absTouchDeltaX > 20
+      var isValidSlide =
+        (isShortDuration && Math.abs(this.touchDelta.x) > 20) ||
+        Math.abs(this.touchDelta.x) > slideWidth / 2
       // Determine if slide attempt is past start or end:
       var isPastBounds =
         (!index && this.touchDelta.x > 0) ||
@@ -751,7 +716,8 @@
       var isValidClose =
         !isValidSlide &&
         this.options.closeOnSwipeUpOrDown &&
-        Math.abs(this.touchDelta.y) > 20
+        ((isShortDuration && Math.abs(this.touchDelta.y) > 20) ||
+          Math.abs(this.touchDelta.y) > this.slideHeight / 2)
       var direction
       var indexForward
       var indexBackward
@@ -774,27 +740,27 @@
           } else if (indexForward >= 0 && indexForward < this.num) {
             this.move(indexForward, distanceForward, 0)
           }
-          this.move(index, this.positions[index] + distanceForward, duration)
+          this.move(index, this.positions[index] + distanceForward, speed)
           this.move(
             this.circle(indexBackward),
             this.positions[this.circle(indexBackward)] + distanceForward,
-            duration
+            speed
           )
           index = this.circle(indexBackward)
           this.onslide(index)
         } else {
           // Move back into position
           if (this.options.continuous) {
-            this.move(this.circle(index - 1), -slideWidth, duration)
-            this.move(index, 0, duration)
-            this.move(this.circle(index + 1), slideWidth, duration)
+            this.move(this.circle(index - 1), -slideWidth, speed)
+            this.move(index, 0, speed)
+            this.move(this.circle(index + 1), slideWidth, speed)
           } else {
             if (index) {
-              this.move(index - 1, -slideWidth, duration)
+              this.move(index - 1, -slideWidth, speed)
             }
-            this.move(index, 0, duration)
+            this.move(index, 0, speed)
             if (index < this.num - 1) {
-              this.move(index + 1, slideWidth, duration)
+              this.move(index + 1, slideWidth, speed)
             }
           }
         }
@@ -803,7 +769,7 @@
           this.close()
         } else {
           // Move back into position
-          this.translateY(index, 0, duration)
+          this.translateY(index, 0, speed)
         }
       }
     },
@@ -898,13 +864,7 @@
       var options = this.options
       var target = event.target || event.srcElement
       var parent = target.parentNode
-      /**
-       * Checks if the target from the close has the given class
-       *
-       * @param {string} className Class name
-       * @returns {boolean} Returns true if the target has the class name
-       */
-      function isTarget(className) {
+      function isTarget (className) {
         return $(target).hasClass(className) || $(parent).hasClass(className)
       }
       if (isTarget(options.toggleClass)) {
@@ -1021,13 +981,7 @@
       var element
       var title
       var altText
-      /**
-       * Wraps the callback function for the load/error event
-       *
-       * @param {event} event load/error event
-       * @returns {number} timeout ID
-       */
-      function callbackWrapper(event) {
+      function callbackWrapper (event) {
         if (!called) {
           event = {
             type: event.type,
@@ -1140,7 +1094,7 @@
     unloadElements: function (index) {
       var i, diff
       for (i in this.elements) {
-        if (Object.prototype.hasOwnProperty.call(this.elements, i)) {
+        if (this.elements.hasOwnProperty(i)) {
           diff = Math.abs(index - i)
           if (
             diff > this.options.preloadRange &&
@@ -1169,9 +1123,7 @@
           index,
           this.index > index
             ? -this.slideWidth
-            : this.index < index
-            ? this.slideWidth
-            : 0,
+            : this.index < index ? this.slideWidth : 0,
           0
         )
       }
@@ -1291,9 +1243,7 @@
         ) {
           try {
             return $.parseJSON(prop)
-          } catch (ignore) {
-            // ignore JSON parsing errors
-          }
+          } catch (ignore) {}
         }
         return prop
       }
@@ -1334,12 +1284,7 @@
     initEventListeners: function () {
       var that = this
       var slidesContainer = this.slidesContainer
-      /**
-       * Proxy listener
-       *
-       * @param {event} event original event
-       */
-      function proxyListener(event) {
+      function proxyListener (event) {
         var type =
           that.support.transition && that.support.transition.end === event.type
             ? 'transitionend'
@@ -1347,7 +1292,6 @@
         that['on' + type](event)
       }
       $(window).on('resize', proxyListener)
-      $(window).on('hashchange', proxyListener)
       $(document.body).on('keydown', proxyListener)
       this.container.on('click', proxyListener)
       if (this.support.touch) {
@@ -1397,12 +1341,7 @@
 
     initWidget: function () {
       var that = this
-      /**
-       * Open handler
-       *
-       * @param {event} event Gallery open event
-       */
-      function openHandler(event) {
+      function openHandler (event) {
         if (event.target === that.container[0]) {
           that.container.off(that.support.transition.end, openHandler)
           that.handleOpen()

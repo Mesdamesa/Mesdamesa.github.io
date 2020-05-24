@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define, YT */
+/* global define, window, document, YT */
 
 ;(function (factory) {
   'use strict'
@@ -27,9 +27,7 @@
     return Gallery
   }
 
-  var galleryPrototype = Gallery.prototype
-
-  $.extend(galleryPrototype.options, {
+  $.extend(Gallery.prototype.options, {
     // The list object property (or data attribute) with the YouTube video id:
     youTubeVideoIdProperty: 'youtube',
     // Optional object with parameters passed to the YouTube video player:
@@ -42,7 +40,7 @@
   })
 
   var textFactory =
-    galleryPrototype.textFactory || galleryPrototype.imageFactory
+    Gallery.prototype.textFactory || Gallery.prototype.imageFactory
   var YouTubePlayer = function (videoId, playerVars, clickToPlay) {
     this.videoId = videoId
     this.playerVars = playerVars
@@ -102,7 +100,7 @@
     },
 
     onPause: function () {
-      galleryPrototype.setTimeout.call(this, this.checkSeek, null, 2000)
+      Gallery.prototype.setTimeout.call(this, this.checkSeek, null, 2000)
     },
 
     checkSeek: function () {
@@ -191,7 +189,7 @@
     }
   })
 
-  $.extend(galleryPrototype, {
+  $.extend(Gallery.prototype, {
     YouTubePlayer: YouTubePlayer,
 
     textFactory: function (obj, callback) {

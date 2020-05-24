@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define */
+/* global define, window, document */
 
 ;(function (factory) {
   'use strict'
@@ -23,9 +23,7 @@
 })(function ($, Gallery) {
   'use strict'
 
-  var galleryPrototype = Gallery.prototype
-
-  $.extend(galleryPrototype.options, {
+  $.extend(Gallery.prototype.options, {
     // The tag name, Id, element or querySelector of the indicator container:
     indicatorContainer: 'ol',
     // The class for the active indicator:
@@ -37,14 +35,14 @@
     thumbnailIndicators: true
   })
 
-  var initSlides = galleryPrototype.initSlides
-  var addSlide = galleryPrototype.addSlide
-  var resetSlides = galleryPrototype.resetSlides
-  var handleClick = galleryPrototype.handleClick
-  var handleSlide = galleryPrototype.handleSlide
-  var handleClose = galleryPrototype.handleClose
+  var initSlides = Gallery.prototype.initSlides
+  var addSlide = Gallery.prototype.addSlide
+  var resetSlides = Gallery.prototype.resetSlides
+  var handleClick = Gallery.prototype.handleClick
+  var handleSlide = Gallery.prototype.handleSlide
+  var handleClose = Gallery.prototype.handleClose
 
-  $.extend(galleryPrototype, {
+  $.extend(Gallery.prototype, {
     createIndicator: function (obj) {
       var indicator = this.indicatorPrototype.cloneNode(false)
       var title = this.getItemProperty(obj, this.options.titleProperty)

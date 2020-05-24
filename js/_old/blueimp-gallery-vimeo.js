@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define, $f */
+/* global define, window, document, $f */
 
 ;(function (factory) {
   'use strict'
@@ -27,9 +27,7 @@
     return Gallery
   }
 
-  var galleryPrototype = Gallery.prototype
-
-  $.extend(galleryPrototype.options, {
+  $.extend(Gallery.prototype.options, {
     // The list object property (or data attribute) with the Vimeo video id:
     vimeoVideoIdProperty: 'vimeo',
     // The URL for the Vimeo video player, can be extended with custom parameters:
@@ -43,7 +41,7 @@
   })
 
   var textFactory =
-    galleryPrototype.textFactory || galleryPrototype.imageFactory
+    Gallery.prototype.textFactory || Gallery.prototype.imageFactory
   var VimeoPlayer = function (url, videoId, playerId, clickToPlay) {
     this.url = url
     this.videoId = videoId
@@ -71,10 +69,7 @@
       var i = scriptTags.length
       var scriptTag
       var called
-      /**
-       * Callback function
-       */
-      function callback() {
+      function callback () {
         if (!called && that.playOnReady) {
           that.play()
         }
@@ -185,7 +180,7 @@
     }
   })
 
-  $.extend(galleryPrototype, {
+  $.extend(Gallery.prototype, {
     VimeoPlayer: VimeoPlayer,
 
     textFactory: function (obj, callback) {

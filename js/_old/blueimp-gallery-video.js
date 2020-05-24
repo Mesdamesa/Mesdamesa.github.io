@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define */
+/* global define, window, document */
 
 ;(function (factory) {
   'use strict'
@@ -23,9 +23,7 @@
 })(function ($, Gallery) {
   'use strict'
 
-  var galleryPrototype = Gallery.prototype
-
-  $.extend(galleryPrototype.options, {
+  $.extend(Gallery.prototype.options, {
     // The class for video content elements:
     videoContentClass: 'video-content',
     // The class for video when it is loading:
@@ -38,9 +36,9 @@
     videoSourcesProperty: 'sources'
   })
 
-  var handleSlide = galleryPrototype.handleSlide
+  var handleSlide = Gallery.prototype.handleSlide
 
-  $.extend(galleryPrototype, {
+  $.extend(Gallery.prototype, {
     handleSlide: function (index) {
       handleSlide.call(this, index)
       if (this.playingVideo) {

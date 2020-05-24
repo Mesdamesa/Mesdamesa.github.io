@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define */
+/* global define, window, document */
 
 ;(function (factory) {
   'use strict'

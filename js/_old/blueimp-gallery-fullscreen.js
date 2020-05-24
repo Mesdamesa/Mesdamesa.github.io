@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define */
+/* global define, window, document */
 
 ;(function (factory) {
   'use strict'
@@ -23,17 +23,15 @@
 })(function ($, Gallery) {
   'use strict'
 
-  var galleryPrototype = Gallery.prototype
-
-  $.extend(galleryPrototype.options, {
+  $.extend(Gallery.prototype.options, {
     // Defines if the gallery should open in fullscreen mode:
     fullScreen: false
   })
 
-  var initialize = galleryPrototype.initialize
-  var close = galleryPrototype.close
+  var initialize = Gallery.prototype.initialize
+  var close = Gallery.prototype.close
 
-  $.extend(galleryPrototype, {
+  $.extend(Gallery.prototype, {
     getFullScreenElement: function () {
       return (
         document.fullscreenElement ||
