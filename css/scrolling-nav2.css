@@ -225,6 +225,7 @@ p.production {
     font-style: italic;
 }
 
+/*
 .modal-header {
     background-color: rgba(0, 0, 0, 1);
     color: #fff;
@@ -234,6 +235,7 @@ p.production {
     background-color: rgba(0, 0, 0, 1);
     color: #fff;
 }
+*/
 
 .dates-passees ul {
     color: #fff;
@@ -257,13 +259,13 @@ span.name-autres {
 }
 
 
-/*modal close button*/
+/*modal close button
 
 .close {
     color: #ddd;
     opacity: 0.8;
 }
-
+*/
 
 .circle-avatar {
     /* make it responsive */
