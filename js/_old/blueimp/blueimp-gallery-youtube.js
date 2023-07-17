@@ -1,5 +1,5 @@
 /*
- * blueimp Gallery Vimeo Video Factory JS
+ * blueimp Gallery YouTube Video Factory JS
  * https://github.com/blueimp/Gallery
  *
  * Copyright 2013, Sebastian Tschan
@@ -9,7 +9,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global define, $f */
+/* global define, YT */
 
 ;(function (factory) {
   'use strict'
@@ -30,31 +30,32 @@
   var galleryPrototype = Gallery.prototype
 
   $.extend(galleryPrototype.options, {
-    // The list object property (or data attribute) with the Vimeo video id:
-    vimeoVideoIdProperty: 'vimeo',
-    // The URL for the Vimeo video player, can be extended with custom parameters:
-    // https://developer.vimeo.com/player/embedding
-    vimeoPlayerUrl:
-      'https://player.vimeo.com/video/VIDEO_ID?api=1&player_id=PLAYER_ID',
-    // The prefix for the Vimeo video player ID:
-    vimeoPlayerIdPrefix: 'vimeo-player-',
-    // Require a click on the native Vimeo player for the initial playback:
-    vimeoClickToPlay: false
+    // The list object property (or data attribute) with the YouTube video id:
+    youTubeVideoIdProperty: 'youtube',
+    // Optional object with parameters passed to the YouTube video player:
+    // https://developers.google.com/youtube/player_parameters
+    youTubePlayerVars: {
+      wmode: 'transparent'
+    },
+    // Require a click on the native YouTube player for the initial playback:
+    youTubeClickToPlay: true
   })
 
   var textFactory =
     galleryPrototype.textFactory || galleryPrototype.imageFactory
-  var VimeoPlayer = function (url, videoId, playerId, clickToPlay) {
-    this.url = url
+  var YouTubePlayer = function (videoId, playerVars, clickToPlay) {
     this.videoId = videoId
-    this.playerId = playerId
+    this.playerVars = playerVars
     this.clickToPlay = clickToPlay
     this.element = document.createElement('div')
     this.listeners = {}
   }
-  var counter = 0
 
-  $.extend(VimeoPlayer.prototype, {
+  $.extend(YouTubePlayer.prototype, {
+    canPlayType: function () {
+      return true
+    },
+
     on: function (type, func) {
       this.listeners[type] = func
       return this
@@ -62,52 +63,32 @@
 
     loadAPI: function () {
       var that = this
-      var apiUrl = 'https://f.vimeocdn.com/js/froogaloop2.min.js'
+      var onYouTubeIframeAPIReady = window.onYouTubeIframeAPIReady
+      var apiUrl = '//www.youtube.com/iframe_api'
       var scriptTags = document.getElementsByTagName('script')
       var i = scriptTags.length
       var scriptTag
-      var called
-      /**
-       * Callback function
-       */
-      function callback() {
-        if (!called && that.playOnReady) {
+      window.onYouTubeIframeAPIReady = function () {
+        if (onYouTubeIframeAPIReady) {
+          onYouTubeIframeAPIReady.apply(this)
+        }
+        if (that.playOnReady) {
           that.play()
         }
-        called = true
       }
       while (i) {
         i -= 1
         if (scriptTags[i].src === apiUrl) {
-          scriptTag = scriptTags[i]
-          break
+          return
         }
       }
-      if (!scriptTag) {
-        scriptTag = document.createElement('script')
-        scriptTag.src = apiUrl
-      }
-      $(scriptTag).on('load', callback)
+      scriptTag = document.createElement('script')
+      scriptTag.src = apiUrl
       scriptTags[0].parentNode.insertBefore(scriptTag, scriptTags[0])
-      // Fix for cached scripts on IE 8:
-      if (/loaded|complete/.test(scriptTag.readyState)) {
-        callback()
-      }
     },
 
     onReady: function () {
-      var that = this
       this.ready = true
-      this.player.addEvent('play', function () {
-        that.hasPlayed = true
-        that.onPlaying()
-      })
-      this.player.addEvent('pause', function () {
-        that.onPause()
-      })
-      this.player.addEvent('finish', function () {
-        that.onPause()
-      })
       if (this.playOnReady) {
         this.play()
       }
@@ -121,19 +102,37 @@
     },
 
     onPause: function () {
-      this.listeners.pause()
-      delete this.playStatus
+      galleryPrototype.setTimeout.call(this, this.checkSeek, null, 2000)
     },
 
-    insertIframe: function () {
-      var iframe = document.createElement('iframe')
-      iframe.src = this.url
-        .replace('VIDEO_ID', this.videoId)
-        .replace('PLAYER_ID', this.playerId)
-      iframe.id = this.playerId
-      iframe.allow = 'autoplay'
-      this.element.parentNode.replaceChild(iframe, this.element)
-      this.element = iframe
+    checkSeek: function () {
+      if (
+        this.stateChange === YT.PlayerState.PAUSED ||
+        this.stateChange === YT.PlayerState.ENDED
+      ) {
+        // check if current state change is actually paused
+        this.listeners.pause()
+        delete this.playStatus
+      }
+    },
+
+    onStateChange: function (event) {
+      switch (event.data) {
+        case YT.PlayerState.PLAYING:
+          this.hasPlayed = true
+          this.onPlaying()
+          break
+        case YT.PlayerState.PAUSED:
+        case YT.PlayerState.ENDED:
+          this.onPause()
+          break
+      }
+      // Save most recent state change to this.stateChange
+      this.stateChange = event.data
+    },
+
+    onError: function (event) {
+      this.listeners.error(event)
     },
 
     play: function () {
@@ -155,17 +154,27 @@
           // the video playback:
           this.onPlaying()
         } else {
-          this.player.api('play')
+          this.player.playVideo()
         }
       } else {
         this.playOnReady = true
-        if (!window.$f) {
+        if (!(window.YT && YT.Player)) {
           this.loadAPI()
         } else if (!this.player) {
-          this.insertIframe()
-          this.player = $f(this.element)
-          this.player.addEvent('ready', function () {
-            that.onReady()
+          this.player = new YT.Player(this.element, {
+            videoId: this.videoId,
+            playerVars: this.playerVars,
+            events: {
+              onReady: function () {
+                that.onReady()
+              },
+              onStateChange: function (event) {
+                that.onStateChange(event)
+              },
+              onError: function (event) {
+                that.onError(event)
+              }
+            }
           })
         }
       }
@@ -173,7 +182,7 @@
 
     pause: function () {
       if (this.ready) {
-        this.player.api('pause')
+        this.player.pauseVideo()
       } else if (this.playStatus) {
         delete this.playOnReady
         this.listeners.pause()
@@ -183,24 +192,28 @@
   })
 
   $.extend(galleryPrototype, {
-    VimeoPlayer: VimeoPlayer,
+    YouTubePlayer: YouTubePlayer,
 
     textFactory: function (obj, callback) {
       var options = this.options
-      var videoId = this.getItemProperty(obj, options.vimeoVideoIdProperty)
+      var videoId = this.getItemProperty(obj, options.youTubeVideoIdProperty)
       if (videoId) {
         if (this.getItemProperty(obj, options.urlProperty) === undefined) {
-          obj[options.urlProperty] = 'https://vimeo.com/' + videoId
+          obj[options.urlProperty] = '//www.youtube.com/watch?v=' + videoId
         }
-        counter += 1
+        if (
+          this.getItemProperty(obj, options.videoPosterProperty) === undefined
+        ) {
+          obj[options.videoPosterProperty] =
+            '//img.youtube.com/vi/' + videoId + '/maxresdefault.jpg'
+        }
         return this.videoFactory(
           obj,
           callback,
-          new VimeoPlayer(
-            options.vimeoPlayerUrl,
+          new YouTubePlayer(
             videoId,
-            options.vimeoPlayerIdPrefix + counter,
-            options.vimeoClickToPlay
+            options.youTubePlayerVars,
+            options.youTubeClickToPlay
           )
         )
       }

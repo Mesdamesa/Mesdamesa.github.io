@@ -27,7 +27,7 @@
 
   $.extend(galleryPrototype.options, {
     // Defines if the gallery should open in fullscreen mode:
-    fullscreen: false
+    fullScreen: false
   })
 
   var initialize = galleryPrototype.initialize
@@ -69,7 +69,7 @@
 
     initialize: function () {
       initialize.call(this)
-      if (this.options.fullscreen && !this.getFullScreenElement()) {
+      if (this.options.fullScreen && !this.getFullScreenElement()) {
         this.requestFullScreen(this.container[0])
       }
     },
