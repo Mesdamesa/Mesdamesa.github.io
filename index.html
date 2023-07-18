@@ -90,7 +90,7 @@
                         <div class="col-md-3 col-xl-3 bouttonsoutien">
                             <!--<br><br>
                             <iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-compagnie-mesdames-a-2021/widget-bouton" style="width:100%;height:70px;border:none;"></iframe>-->
-                            <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2022/" class="btn btn-light" role="button"> <span class="txt-nous-soutenir">Nous soutenir</span><br>
+                            <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2022/" class="btn btn-danger btn-adhesion" role="button"> <span class="txt-nous-soutenir">Nous soutenir</span><br>
                                 <span class="txt-nous-soutenir-small">(Soutien et adhésion)</span></a>
                             <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal-soutenir-adhesion">    
                             </button>-->
@@ -119,18 +119,43 @@
     <!-- Actualites Section -->
     <section id="actu" class="actu-section">
         <div class="container-fluid">
-            <div class="row flechedefile">
+            <a class="arrow-wrap page-scroll nav-link" href="#actu">
+                <div class="arrow-down">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <script type="text/javascript">
+                    //this is where we apply opacity to the arrow
+                    $(window).scroll(function() {
+                        //get scroll position
+                        var topWindow = $(window).scrollTop();
+                        //multiply by 1.5 so the arrow will become transparent half-way up the page
+                        var topWindow = topWindow * 1.5;
+
+                        //get height of window
+                        var windowHeight = $(window).height();
+                        //set position as percentage of how far the user has scrolled
+                        var position = topWindow / windowHeight;
+                        //invert the percentage
+                        position = 1 - position;
+                        //define arrow opacity as based on how far up the page the user has scrolled
+                        //no scrolling = 1, half-way up the page = 0
+                        $('.left').css('opacity', position);
+                    });
+                    </script>
+                </div>
+            </a>
+            <!--             <div class="row flechedefile">
                 <div class="col-12">
                     <a class="arrow-wrap page-scroll nav-link" href="#actu">
                         <span class="arrow"></span>
-                        <!--<span class="hint">scroll</span>-->
+                        <span class="hint">scroll</span>
                     </a>
                     <script type="text/javascript">
                     //this is where we apply opacity to the arrow
                     $(window).scroll(function() {
                         //get scroll position
                         var topWindow = $(window).scrollTop();
-                        //multipl by 1.5 so the arrow will become transparent half-way up the page
+                        //multiply by 1.5 so the arrow will become transparent half-way up the page
                         var topWindow = topWindow * 1.5;
 
                         //get height of window
@@ -145,7 +170,7 @@
                     });
                     </script>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h1>Actualités et dates</h1>
@@ -1395,33 +1420,37 @@
             <div class="row">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h1>Contact</h1>
-                    <p class="contact-section"> Vous pouvez nous contacter&nbsp;:<br></p>
-                    <ul class="production">
-                        <li class="contact-section">par mail
-                            <!-- &nbsp;<i class="fas fa-envelope" aria-hidden="true"></i>&nbsp; -->
-                            :&nbsp;&nbsp;cie.mesdames.a <i class="fas fa-at"></i>&nbsp;gmail.com<br></li>
-                        <li class="contact-section">ou en utilisant le formulaire suivant&nbsp;:</li>
-                    </ul>
-                    <form method="POST" action="http://formspree.io/cie.mesdames.a@gmail.com">
-                        <input class="field-mail" type="email" name="email" placeholder=" Votre adresse email"><br>
-                        <br>
-                        <textarea class="field-message" name="message" placeholder=" Votre message"></textarea>
-                        <button class="btn btn-small btn-envoyer" type="submit" style="margin-top:10px;">Envoyer</button>
-                        <br>
-                        <br>
-                        <br>
-                        <input type="hidden" name="_subject" value="Compagnie Mesdames A" />
-                        <input type="text" name="_gotcha" style="display:none" />
-                    </form>
-                    <br>
-                    <p class="contact-section">
-                        Retrouvez nous aussi sur les réseaux sociaux&nbsp;:<br>
-                    </p>
-                    <div class="logo-contact">
-                        <ul class="social-network social-circle">
-                            <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
+                    <div>
+                        <p class="contact-section">
+                            <!-- Vous pouvez nous contacter&nbsp;: -->
+                            <ul class="production">
+                                <li class="contact-section">par mail
+                                    <!-- &nbsp;<i class="fas fa-envelope" aria-hidden="true"></i>&nbsp; -->
+                                    :&nbsp;&nbsp;cie.mesdames.a <i class="fas fa-at"></i>&nbsp;gmail.com</li>
+                                <li class="contact-section">via le formulaire suivant&nbsp;:<br><br>
+                                    <form method="POST" action="http://formspree.io/cie.mesdames.a@gmail.com">
+                                        <input class="field-mail" type="email" name="email" placeholder=" Votre adresse email"><br>
+                                        <br>
+                                        <textarea class="field-message" name="message" placeholder=" Votre message"></textarea>
+                                        <button class="btn btn-small btn-envoyer" type="submit" style="margin-top:10px;">Envoyer</button>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <input type="hidden" name="_subject" value="Compagnie Mesdames A" />
+                                        <input type="text" name="_gotcha" style="display:none" />
+                                    </form>
+                                    <br>
+                                </li>
+                                <li>ou sur les réseaux sociaux&nbsp;:
+                                </li>
+                            </ul>
+                        </p>
+                        <div class="logo-contact">
+                            <ul class="social-network social-circle">
+                                <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="adresse-internet">
                         <p class="text-center contact-section">
