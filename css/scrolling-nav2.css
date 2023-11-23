@@ -171,7 +171,7 @@ p {
     /*letter-spacing: -0.00px;*/
     text-align: left;
     color: #ffffff;
-    padding-top: 5px;
+    padding-top: var(--08px);
 }
 
 span.etplus {
@@ -385,7 +385,7 @@ h1 {
     font-weight: 600;
     color: #fff;
     text-align: left;
-    padding-top: var(--80px);
+    padding-bottom: var(--40px);
 }
 
 h2 {
@@ -395,6 +395,7 @@ h2 {
     color: #eee;
     text-align: left;
     padding-top: var(--64px);
+    padding-bottom: var(--32px);
 }
 
 h3 {
@@ -404,6 +405,7 @@ h3 {
     color: #eee;
     text-align: left;
     padding-top: var(--56px);
+    padding-bottom: var(--32px);
 }
 
 .field-mail {
@@ -742,8 +744,13 @@ ul.social-network li {
 
 .logo-contact {
     text-align: center;
+/*    margin-top: var(--160px);*/
 }
 
+footer{
+    padding-top:    var(--80px);
+    padding-bottom: var(--80px);
+}
 
 /* footer social icons */
 
@@ -845,25 +852,26 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .actu-section {
-    padding-top: var(--32px);
-    padding-bottom: var(--32px);
+    padding-top: var(--128px);
+    padding-bottom: var(--160px);
     background: var(--background-color-dark);
 }
 
 .creations-section {
-    padding-top: var(--32px);
-    padding-bottom: var(--32px);
+    padding-top: var(--128px);
+    padding-bottom: var(--160px);
     background: var(--background-color-dark-alt);
 }
 
 .compagnie-section {
-    padding-top: var(--32px);
-    padding-bottom: var(--32px);
+    padding-top: var(--128px);
+    padding-bottom: var(--160px);
     background: var(--background-color-dark);
 }
 
 .contact-section {
-    padding-top: var(--32px);
+    padding-top: var(--128px);
+    padding-bottom: var(--160px);
     background: var(--background-color-dark-alt);
 }
 
@@ -872,7 +880,7 @@ of those sections to manage the look and feel of the site. */
 }*/
 
 .home-creation {
-    padding-top: var(--48px);
+    padding-top: var(--160px);
     padding-bottom: 15%;
     background: var(--background-color-dark-alt);
 }
