@@ -25,25 +25,6 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target="#MA-navbar-creation">
-    <!-- IMAGE GALLERY -- The Gallery as lightbox dialog, should be a child element of the document body -->
-    <!--     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div> -->
-    <!--     <div id="blueimp-gallery" class="blueimp-gallery" data-start-slideshow="false" data-filter=":even">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div> -->
     <!-- Navigation -->
     <section class="nav-back">
         <div class="container-fluid">
@@ -54,44 +35,7 @@
             </div>
         </div>
     </section>
-    <!-- <nav class="navbar navbar-dark fixed-top" id="MA-navbar-creation">
-        <a class="navbar-brand page-scroll" href="#page-top"><img class=img-fluid id="logo" src="./../../media/images/LogoCompagnieMa.svg"></a>
-
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 smooth-scroll">
-                <li class="nav-item back-to-creations">
-                     <div class="container-fluid">
-            <div class="row">
-                <div class="col-10 offset-1 col-lg-8 offset-lg-2">
-                    <a class="nav-link back-to-creations" href="./../../index.html#creations">Retour</a>
-                </div>
-            </div>
-        </div>
-                </li>
-                <li class="hidden active">
-                    <a class="nav-link page-scroll" href="#page-top"></a>
-                </li>
-                <li class="nav-item back-to-creations">
-                    <a class="nav-link" href="./../../index.html#creations">Retour aux créations</a>
-                </li>
-            </ul>
-        
-        </nav>  -->
-    <!--     <!//-- Home Section --//>
-    <section id="home-satyre" class="home-satyre">
-        <div class="container-fluid banner">
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1">
-                    <div class="row">
-
-                       
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    </section> -->
-    <!-- Creation Section -->
+    <!-- Home-creation Section -->
     <section id="home-creation" class="home-creation">
         <div class="container-fluid">
             <div class="row">
@@ -112,41 +56,7 @@
                                     <br>
                                     <br> Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
                             </div>
-                            <div class="col-12 col-md-4 text-center">
-                                <div>
-                                    <!-- class="animation-element slide-left"> -->
-                                    <a href="media/images/affiche-satyre.jpg" data-toggle="lightbox">
-                                        <img src="media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-fluid affiche-satyre"></a>
-                                </div>
-                            </div>
                         </div>
-                        <script type="text/javascript">
-                        var $animation_elements = $('.animation-element');
-                        var $window = $(window);
-
-                        function check_if_in_view() {
-                            var window_height = $window.height();
-                            var window_top_position = $window.scrollTop();
-                            var window_bottom_position = (window_top_position + window_height);
-
-                            $.each($animation_elements, function() {
-                                var $element = $(this);
-                                var element_height = $element.outerHeight();
-                                var element_top_position = $element.offset().top;
-                                var element_bottom_position = (element_top_position + element_height);
-
-                                //check to see if this current container is within viewport
-                                if ((element_bottom_position >= window_top_position) &&
-                                    (element_top_position <= window_bottom_position)) {
-                                    $element.addClass('in-view');
-                                } else {
-                                    $element.removeClass('in-view');
-                                }
-                            });
-                        }
-                        $window.on('scroll resize', check_if_in_view);
-                        $window.trigger('scroll');
-                        </script>
                         <h2>Galerie</h2>
                         <div id="galsatyre">
                             <a data-gallery="#blueimp-gallery-galsatyre" data-toggle="lightbox" href="media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" title="Le Satyre - Poursuite" class="text-white">
@@ -184,10 +94,10 @@
                         </p>
                         <h2>Production</h2>
                         <div class="production">
-                            <p>Une production de la compagnie <a href="https://mesdames-a.fr">Mesdames A</a>.
+                            <p>Une production de la Compagnie <a href="https://mesdames-a.fr">Mesdames A</a> en partenariat avec l’Association ACT-Mirail et le Collectif Mix’art Myrys.</p>
                                 <!-- <br>
                                 Retrouvez plus de détails&nbsp; dans le <a href="media/PDF/dossier-presse-satyre.pdf">dossier de communication -->
-                                </a></p>
+                            
                         </div>
                         <!-- Modal dates passees -->
                         <h2>Dates</h2>
@@ -207,6 +117,10 @@
                                 <li>- 16 juin: Lapanouse - Aveyron (12)</li>
                                 <li>- 13 avril: Théâtre des Trois Ponts - Castelnaudary</li>
                                 <li>- 31 mars : La Maison de la Terre à 21h - Poucharramet</li>
+                                <div>
+                                    <a href="media/images/affiche-satyre.jpg" data-toggle="lightbox">
+                                        <img src="media/images/affiche-satyre.jpg" alt="Satyre Affiche" class="img-fluid affiche-satyre"></a>
+                                </div>
                             </ul>
                         </div>
                         <h2>Revue de presse</h2>
