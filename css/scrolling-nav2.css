@@ -126,7 +126,7 @@ border-bottom: 3px solid white;
 
 p.intro-text {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 20px;
+    font-size: var(--20px);
     font-weight: 400;
     /*letter-spacing: -1px;*/
     text-align: center;
@@ -139,7 +139,7 @@ p.intro-text {
 .txt-nous-soutenir {
     /* font-family: "Microsoft Tai Le" !important;*/
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 20px;
+    font-size: var(--20px);
     font-weight: bold;
     text-align: center;
     /*line-height: 90%;*/
@@ -294,10 +294,10 @@ p.production {
 */
 
 .dates-passees ul {
-    color: #fff;
+/*    color: #fff;*/
     list-style: none;
     text-align: left;
-    font-size: var(--16px);
+/*    font-size: var(--16px);*/
 }
 
 p.bio {
@@ -380,7 +380,7 @@ hr {
 
 h1 {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 36px;
+    font-size: var(--36px);
     /*letter-spacing: -0.83px;*/
     font-weight: 600;
     color: #fff;
@@ -390,7 +390,7 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 24px;
+    font-size: var(--24px);
     font-weight: 600;
     color: #eee;
     text-align: left;
@@ -400,13 +400,17 @@ h2 {
 
 h3 {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 20px;
+    font-size: var(--20px);
     font-weight: 600;
     color: #eee;
     text-align: left;
     padding-top: var(--56px);
     padding-bottom: var(--32px);
 }
+
+.affiche-satyre {
+        max-height: 500px;
+    }
 
 .field-mail {
     width: 70%;
@@ -508,9 +512,9 @@ min-height: 100%;
     ul.production {}
 
     .affiche-satyre {
-/*        max-height: 420px;*/
-        display: block;
-        margin: 20 auto;
+        /*        max-height: 420px;*/
+display: block;
+/*        margin: 20 auto;*/
     }
 
     .field-mail {
@@ -549,7 +553,7 @@ min-height: 100%;
 
     .affiche-satyre {
         max-height: 420px;
-        margin-top: 20;
+/*        margin-top: 20;*/
     }
 
     .animation-element {
@@ -623,17 +627,7 @@ or Extra large devices (large desktops, 1200px and up)*/
         color: #ffffff;
     }
 
-    .navbar-nav>li.nav-item.back-to-creations {
-        float: left;
-        /*/Fixes the width of all elements/*/
-        padding-left: 0px;
-        padding-right: 0px;
-        font-family: 'Open Sans', sans-serif !important;
-        /*/font-family: "Microsoft Tai Le" !important;/*/
-        font-size: 18px;
-        text-align: center;
-        color: #ffffff;
-    }
+
 
     .navbar-nav>li.dropdown>a.nav-link:hover {
         border-bottom: none;
@@ -744,11 +738,11 @@ ul.social-network li {
 
 .logo-contact {
     text-align: center;
-/*    margin-top: var(--160px);*/
+    /*    margin-top: var(--160px);*/
 }
 
-footer{
-    padding-top:    var(--80px);
+footer {
+    padding-top: var(--80px);
     padding-bottom: var(--80px);
 }
 
@@ -897,10 +891,23 @@ of those sections to manage the look and feel of the site. */
     height: var(--64px);
 }
 
+.retour-creations p a{
+    border-bottom: unset;
+}
+
+.retour-creations p a:hover{
+    border-bottom: 1px #ddd solid;
+}
+
+.retour-creations p a:visited{
+    border-bottom: unset;
+}
+
+
 /*address {
     display: block;
     font-style: italic;
-}*/
+}*/*/*/
 
 
 /* Fancybox */
@@ -1059,74 +1066,75 @@ of those sections to manage the look and feel of the site. */
 
 
 
-.arrow-down{
-  width:var(--60px);
-  height:var(--40px);
-  margin:0 0 0 -30px;
-  position:absolute;
-  left:50%;
-  bottom:0px;
-  -webkit-animation: arrow 1.1s 6s infinite ease-out alternate;
-  
+.arrow-down {
+    width: var(--60px);
+    height: var(--40px);
+    margin: 0 0 0 -30px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-animation: arrow 1.1s 6s infinite ease-out alternate;
+
 }
 
-.arrow-down:hover{
-   -webkit-animation-play-state: paused;
+.arrow-down:hover {
+    -webkit-animation-play-state: paused;
 }
 
-.left{
-  position:absolute;
-  height:var(--10px);
-  width:var(--40px);
-  background:#bbb;
-  -webkit-transform:rotate(240deg);
-  top:10px;
-  left:10px;
-  -webkit-border-radius:4px;
-  -webkit-transform-origin:2px 50%;
-  -webkit-animation: leftArrow 1.1s 6s infinite ease-out alternate;
+.left {
+    position: absolute;
+    height: var(--10px);
+    width: var(--40px);
+    background: #bbb;
+    -webkit-transform: rotate(240deg);
+    top: 10px;
+    left: 10px;
+    -webkit-border-radius: 4px;
+    -webkit-transform-origin: 2px 50%;
+    -webkit-animation: leftArrow 1.1s 6s infinite ease-out alternate;
 }
 
-.right{
-  position:absolute;
-  height:var(--10px);
-  width:var(--40px);
-  background:#bbb;
-  -webkit-transform:rotate(-60deg);
-  top:10px;
-  left:10px;
-  -webkit-border-radius:4px;
-  -webkit-transform-origin:2px 50%;
-  -webkit-animation: rightArrow 1.1s 6s infinite ease-out alternate;
-}
-
-
-
-
-@-webkit-keyframes arrow{
-  0% {
-    bottom:0px;
-  }
-  100%{
-    bottom:40px;
-  }
+.right {
+    position: absolute;
+    height: var(--10px);
+    width: var(--40px);
+    background: #bbb;
+    -webkit-transform: rotate(-60deg);
+    top: 10px;
+    left: 10px;
+    -webkit-border-radius: 4px;
+    -webkit-transform-origin: 2px 50%;
+    -webkit-animation: rightArrow 1.1s 6s infinite ease-out alternate;
 }
 
 
-@-webkit-keyframes leftArrow{
-  0% {
-  }
-  100%{
-    -webkit-transform:rotate(225deg);
-  }
+
+
+@-webkit-keyframes arrow {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
 }
 
-@-webkit-keyframes rightArrow{
-  0% {
-  }
-  100%{
-    -webkit-transform:rotate(-45deg);
-  }
+
+@-webkit-keyframes leftArrow {
+    0% {}
+
+    100% {
+        -webkit-transform: rotate(225deg);
+    }
+}
+
+@-webkit-keyframes rightArrow {
+    0% {}
+
+    100% {
+        -webkit-transform: rotate(-45deg);
+    }
 }
 
 
