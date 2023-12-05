@@ -124,6 +124,18 @@ border-bottom: 3px solid white;
     background-size: cover;
 }
 
+.jumbotron.commencement {
+    height: calc(10%);
+    background-color: red;
+    background: url('./../creations/commencement/media/images/01-commencement-xl-jmsahuquet.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 p.intro-text {
     font-family: 'Open Sans', sans-serif !important;
     font-size: var(--20px);
@@ -240,6 +252,10 @@ p.date a:hover {
 p.date a:visited {
     color: #333;
     border-bottom: 1px #aaa dashed;
+}
+
+p.card-text {
+    text-shadow: 0 1px 0 black;
 }
 
 ul.production li {
@@ -408,6 +424,14 @@ h3 {
     padding-bottom: var(--32px);
 }
 
+h4{
+     text-shadow: 0 1px 0 black;
+}
+
+
+h5{
+     text-shadow: 0 1px 0 black;
+}
 .affiche-satyre {
         max-height: 500px;
     }
