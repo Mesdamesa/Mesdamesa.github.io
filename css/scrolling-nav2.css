@@ -136,6 +136,10 @@ border-bottom: 3px solid white;
     background-size: cover;
 }
 
+p.duree {
+    text-align: bottom;
+}
+
 p.intro-text {
     font-family: 'Open Sans', sans-serif !important;
     font-size: var(--20px);
