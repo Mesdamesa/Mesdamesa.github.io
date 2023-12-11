@@ -139,10 +139,9 @@ border-bottom: 3px solid white;
 .jumbotron.spectateurs {
     height: calc(10%);
     background-color: red;
-    background: url('./../creations/spectateurs/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg');
+    background: url('./../creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg');
     background-repeat: no-repeat;
-        background-position: center calc(25%); 
-
+     background-position: center calc(25%); 
 /*    background-position: top; center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
