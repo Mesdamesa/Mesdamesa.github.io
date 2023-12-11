@@ -129,16 +129,27 @@ border-bottom: 3px solid white;
     background-color: red;
     background: url('./../creations/commencement/media/images/01-commencement-xl-jmsahuquet.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center calc(66%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-p.duree {
-    text-align: bottom;
+.jumbotron.spectateurs {
+    height: calc(10%);
+    background-color: red;
+    background: url('./../creations/spectateurs/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg');
+    background-repeat: no-repeat;
+        background-position: center calc(25%); 
+
+/*    background-position: top; center;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 
 p.intro-text {
     font-family: 'Open Sans', sans-serif !important;
