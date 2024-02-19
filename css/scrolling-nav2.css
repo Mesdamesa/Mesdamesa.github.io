@@ -126,6 +126,18 @@ border-bottom: 3px solid white;
     background-size: cover;
 }
 
+/*.jumbotron.cromwell {
+    height: calc(10%);
+    background-color: red;
+    background: url('./../creations/cromwell/media/images/cromwell-baniere.webp');
+    background-repeat: no-repeat;
+    background-position: center calc(66%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*/
 .jumbotron.commencement {
     height: calc(10%);
     background-color: red;
