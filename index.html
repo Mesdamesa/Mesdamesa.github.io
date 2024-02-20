@@ -58,9 +58,9 @@
                     <li class="nav-item">
                         <a class="nav-link d-flex active page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                  <!--   <li class="nav-item">
                         <a class="nav-link page-scroll" href="#actu">Actualités</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#creations">Créations</a>
                     </li>
@@ -81,13 +81,15 @@
                 <div class="col-sm-10 offset-sm-1">
                     <div class="row">
                         <div class="col-md-9 col-xl-7 offset-xl-2">
-                            <p class="intro-text text-center">
-                                <br>Découvrez nos <a href="./creations/voyages/index.html"><i>Voyages dans le temps</i></a> et <a href="creations/commencement/index.html"><i>Le Commencement</i></a>.
-                                   <!-- https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/-->
+                            <p class="intro-text text-center">En 23/24, la compagnie poursuit la diffusion du <a href="creations/commencement/index.html"><i>Commencement</i></a> et se lance dans un projet-fleuve&nbsp;: monter pour la première fois <a href="creations/cromwell/index.html" class="link-creation"><i>CROMWELL</i></a> de Victor Hugo.
                             </p>
+                            <!-- <p class="intro-text text-center">
+    <br>Découvrez nos <a href="./creations/voyages/index.html"><i>Voyages dans le temps</i></a> et <a href="creations/commencement/index.html"><i>Le Commencement</i></a>.
+    https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/
+</p> -->
                         </div>
                         <div class="col-md-3 col-xl-3 bouttonsoutien">
-                            <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2022/" class="btn btn-danger btn-adhesion" role="button"> <span class="txt-nous-soutenir">Nous soutenir</span><br>
+                            <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2024/" class="btn btn-danger btn-adhesion" role="button"> <span class="txt-nous-soutenir">Nous soutenir</span><br>
                                 <span class="txt-nous-soutenir-small">(Soutien et adhésion)</span></a>
                             <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal-soutenir-adhesion">    
                             </button>-->
@@ -96,12 +98,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Actualites Section -->
-    <section id="actu" class="actu-section">
-        <div class="container-fluid">
-            <a class="arrow-wrap page-scroll nav-link" href="#actu">
+                        <a class="arrow-wrap page-scroll nav-link" href="#creations">
                 <div class="arrow-down">
                     <div class="left"></div>
                     <div class="right"></div>
@@ -126,6 +123,12 @@
                     </script>
                 </div>
             </a>
+        </div>
+    </section>
+    <!-- Actualites Section -->
+    <section id="actu" class="hidden actu-section">
+        <div class="container-fluid">
+
             <!--             <div class="row flechedefile">
                 <div class="col-12">
                     <a class="arrow-wrap page-scroll nav-link" href="#actu">
@@ -156,7 +159,7 @@
             <div class="row">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h1>Actualités et dates</h1>
-                    <p>En 23/24, la compagnie poursuit la diffusion du <a href="https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/"><i>Commencement</i></a> et se lance dans un projet-fleuve&nbsp;: monter pour la première fois <i>CROMWELL</i> de Victor Hugo.
+                    <p>En 23/24, la compagnie poursuit la diffusion du <a href="https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/"><i>Commencement</i></a> et se lance dans un projet-fleuve&nbsp;: monter pour la première fois <a href="creations/cromwell/index.html" class="link-creation"><i>CROMWELL</i></a> de Victor Hugo.
                     </p>
                 </div>
             </div>
@@ -203,7 +206,7 @@
                         </p>
                     </div>
                     <!--ECLAIRS-->
-                    <div class="creations eclairs" id="eclairs">
+                    <div class=" hidden creations eclairs" id="eclairs">
                         <h2><i class="fas fa-bolt" style="color: #f33128;" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt" aria-hidden="true" style="color: #f33128;"></i></h2>
                         <p><small>Saison 2018/19 et 2019/20</small><br>
                             <small>théâtre-concert-danse</small></p>
@@ -306,7 +309,7 @@
                                 Nous remercions également le Théâtre Jules Julien, la MJC des Ponts Jumeaux et la MJC Empalot.
                                 <br><br>
                                 <a data-bs-toggle="modal" href="#modal-dates-eclairs">Dates passées</a></p>
-                           <!--      <br>
+                            <!--      <br>
                                 <br> Plus de details sur l’équipe et la production dans:
                                 <br>
                                 <ul class="production">
@@ -394,8 +397,8 @@
                         <div class="col g-5"></div>
                     </div>
                     <div class="deck-of-cards-creations">
-                       <!--  <div class="row row-cols-1 g-4 mb-4">
-                            <div class="col">
+                        <div class="row row-cols-1 g-4 mb-4">
+                            <!-- <div class="col"> 
                              
                                 <div class="card h-100 card-commencement border-secondary bg-transparent text-white mb-3">
                                     <img class="card-img-top" src="creations/commencement/media/images/05-commencement-md-coline-slide-dsc-9666.jpg" alt="eclairs-jeu">
@@ -410,20 +413,19 @@
                                     </div>
 
                                 </div>
-                            </div>
-                        </div> -->
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                                                        <div class="col">
+                                </div>
+                            </div> -->
+                            <!-- <div class="row row-cols-1 row-cols-md-2 g-4"> -->
+                            <div class="col">
                                 <!-- cromwell -->
                                 <div class="card h-100 card-commencement border-secondary bg-transparent text-white mb-3">
-                                    <img class="card-img-top" src="creations/cromwell/media/images/cromwell-baniere.webp" alt="eclairs-jeu">
+                                    <img class="card-img-top" src="creations/cromwell/media/images/cromwell-banniere-4-3-bg.webp" alt="eclairs-jeu">
                                     <div class="card-img-overlay d-flex flex-column">
                                         <h4 class="card-title titre-creations-cards"><i>Cromwell</i></h4>
                                         <h6 class="card-subtitle mb-2"><small><i>2024/25</i></small></h6>
                                     </div>
                                     <div class="card-body">
-                                        <p class="card-text">Victor Hugo, bouffonnerie, scènes d'espionage, et coulisses politique après la révolution Anglaise...
-                                            <br>
+                                        <p class="card-text">Pièce-fleuve révolutionnaire de Victor Hugo alternant scènes intimes, bouffonneries, cour, chansons, intrigues politiques et d'espionnage...<br>
                                             <a href="creations/cromwell/index.html" class="link-creation stretched-link">Voir plus&nbsp;&nbsp;<i class="fa-solid fa-circle-right"></i></a></p>
                                     </div>
                                     <!--        <div class="card-body">
@@ -434,7 +436,7 @@
                                     </div> -->
                                 </div>
                             </div>
-                                                        <div class="col">
+                            <div class="col">
                                 <!-- commencement -->
                                 <div class="card h-100 card-commencement border-secondary bg-transparent text-white mb-3">
                                     <img class="card-img-top" src="creations/commencement/media/images/05-commencement-md-coline-slide-dsc-9666.jpg" alt="eclairs-jeu">
@@ -455,6 +457,8 @@
                                     </div> -->
                                 </div>
                             </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col">
                                 <!-- eclairs -->
                                 <div class="card h-100 card-eclairs border-secondary bg-transparent text-white mb-3">
@@ -871,10 +875,12 @@
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h1>Contact</h1>
                     <!-- <div> -->
-                    <p><b><i class="fas fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;E-mail</b></p>
-                    <p> cie.mesdames.a <i class="fas fa-at"></i>&nbsp;gmail.com</p><br>
                     <!-- <h2>Siège et statuts</h2> -->
                     <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <p><b><i class="fas fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;E-mail</b></p>
+                            <p> cie.mesdames.a <i class="fas fa-at"></i>&nbsp;gmail.com</p><br>
+                        </div>
                         <div class="col-sm-12 col-md-6">
                             <p class="align-text-top"><b>Siège</b></p>
                             <address>
@@ -883,7 +889,7 @@
                                     31500 Toulouse, France</p>
                             </address>
                         </div>
-                    <!--     <div class="col-sm-12 col-md-6 align-baseline">
+                        <!--     <div class="col-sm-12 col-md-6 align-baseline">
                             <p class="align-text-top"><b>Bureau</b></p>
                             <address>
                                 <p>
@@ -895,11 +901,11 @@
                     <br>
                     <p>
                         <!-- <i class="fas fa-file-pdf">&nbsp;</i><a href="media/pdf/statuts1901-mesdames-a.pdf">Statuts (association - loi 1901)</a><br> -->
-                        <p class="align-text-top"><h5>Association - loi 1901</h5></p>
+                        <p class="align-text-top">
+                            <h5>Association - loi 1901</h5>
+                        </p>
                         <!-- <h5>Association - loi 1901</h5> -->
-                        APE&nbsp;:&nbsp;9001Z<br>
-                        N°&nbsp;licence&nbsp;entrepreneur&nbsp;:&nbsp;n°&nbsp;L-R-21-13672&nbsp;<br>
-                        N°&nbsp;siret&nbsp;:&nbsp;539&nbsp;558&nbsp;304&nbsp;000&nbsp;33<br><br>
+                        APE&nbsp;:&nbsp;9001Z&nbsp; /// &nbsp;N°&nbsp;licence&nbsp;entrepreneur&nbsp;:&nbsp;n°&nbsp;L-R-21-13672&nbsp; /// &nbsp;N°&nbsp;siret&nbsp;:&nbsp;539&nbsp;558&nbsp;304&nbsp;000&nbsp;33<br><br>
                     </p>
                     <!-- Vous pouvez nous contacter&nbsp;: -->
                     <!-- <ul class="production">
