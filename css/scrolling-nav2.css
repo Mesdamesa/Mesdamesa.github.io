@@ -164,7 +164,7 @@ border-bottom: 3px solid white;
 }
 
 
-p.intro-text {
+.intro-text {
     font-family: 'Open Sans', sans-serif !important;
     font-size: var(--20px);
     font-weight: 400;
@@ -541,7 +541,7 @@ min-height: 100%;
         height: 40%;
     }
 
-    p.intro-text {
+    .intro-text {
         font-family: 'Open Sans', sans-serif !important;
         /*letter-spacing: -1px;*/
         text-align: center;
