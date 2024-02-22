@@ -11,14 +11,6 @@
     src: url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.woff") format("woff"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ff43e14bdcc67883fbd7a6f6223920cc.svg#Microsoft Tai Le") format("svg");
 }*/
 
-body {
-    width: 100%;
-    height: 100%;
-    position: relative;
-/*    padding-bottom: var(--80px);*/
-
-}
-
 html {
     width: 100%;
     height: 100%;
@@ -76,6 +68,15 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     height: 100%
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: var(--text-color-on-dark);
+/*    padding-bottom: var(--80px);*/
+
 }
 
 
@@ -138,6 +139,19 @@ border-bottom: 3px solid white;
     background-size: cover;
 }
 */
+.jumbotron.dragons {
+    height: calc(10%);
+    background-color: red;
+    background: url('./../creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg');
+    background-repeat: no-repeat;
+     background-position: center calc(25%); 
+/*    background-position: top; center;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .jumbotron.commencement {
     height: calc(10%);
     background-color: red;
@@ -170,7 +184,6 @@ border-bottom: 3px solid white;
     font-weight: 400;
     /*letter-spacing: -1px;*/
     text-align: center;
-    color: #ffffff;
     margin-top: 20px;
     word-wrap: break-word;
 }
@@ -197,7 +210,6 @@ p.reduction-dimpots {
     margin-top: 5px;
     font-family: "Helvetica";
     font-size: 18px;
-    color: #ffffff;
 }
 
 
@@ -210,7 +222,6 @@ p {
     object-fit: contain;
     /*letter-spacing: -0.00px;*/
     text-align: left;
-    color: #ffffff;
     padding-top: var(--08px);
 }
 
@@ -219,7 +230,6 @@ span.etplus {
     font-size: 14px;
     object-fit: contain;
     /*letter-spacing: -0.83px;*/
-    color: #ffffff;
 }
 
 .date,
@@ -286,27 +296,29 @@ p.card-text {
     text-shadow: 0 1px 0 black;
 }
 
-ul.production li {
+
+ul.liste-p li {
     margin: 5px;
 }
 
-ul.production {
+ul.liste-p {
+/*    font-family: 'Open Sans', sans-serif !important;*/
+/*    font-size: 18px;*/
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
     object-fit: contain;
     /*letter-spacing: -0.83px;*/
     text-align: justify;
-    color: #ffffff;
     padding-top: 0px;
 }
 
-ul.production a {
-    color: #fff;
+ul.liste-p a {
     text-decoration: none;
     border-bottom: 1px white dashed;
 }
 
-ul.production a:hover {
+ul.liste-p a:hover {
     color: #ddd;
     text-decoration: none;
     border-bottom: 1px #ddd solid;
@@ -320,6 +332,7 @@ p.production {
     font-size: 18px;
 }
 
+
 .label-equipe-crea {
     font-weight: bold;
     font-style: italic;
@@ -328,17 +341,14 @@ p.production {
 /*
 .modal-header {
     background-color: rgba(0, 0, 0, 1);
-    color: #fff;
 }
 
 .modal-body {
     background-color: rgba(0, 0, 0, 1);
-    color: #fff;
 }
 */
 
 .dates-passees ul {
-/*    color: #fff;*/
     list-style: none;
     text-align: left;
 /*    font-size: var(--16px);*/
@@ -402,7 +412,6 @@ span.name-autres {
 }
 
 p a {
-    color: #fff;
     text-decoration: none;
     border-bottom: 1px white dashed;
 }
@@ -418,6 +427,38 @@ p a:visited {
     border-bottom: 1px #aaa dashed;
 }
 
+a.link-creation{
+    color: var(--text-color-on-dark);
+    text-decoration: none;
+    border-bottom: 1px white dashed;
+}
+
+a.link-creation:hover {
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px #ddd solid;
+}
+
+a.link-creation:visited{
+    color: #aaa;
+    border-bottom: 1px #aaa dashed;
+}
+/*
+a.link-creation > .arrow-hide {
+    visibility: hidden;
+  opacity: 0;
+  width: 0;
+  
+}
+
+a.link-creation:hover > .arrow-hide{
+    visibility: visible;
+    width: auto;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.25s ease-in-out;
+}*/
+
+
 hr {
     border-top: 1px solid white;
 }
@@ -427,7 +468,6 @@ h1 {
     font-size: var(--36px);
     /*letter-spacing: -0.83px;*/
     font-weight: 600;
-    color: #fff;
     text-align: left;
     padding-bottom: var(--40px);
 }
@@ -478,7 +518,6 @@ h5{
 
 .btn-envoyer {
     float: left;
-    color: #fff;
     /*
     font-family: "Microsoft Tai Le" !important;*/
     font-family: 'Open Sans', sans-serif !important;
@@ -545,7 +584,6 @@ min-height: 100%;
         font-family: 'Open Sans', sans-serif !important;
         /*letter-spacing: -1px;*/
         text-align: center;
-        color: #ffffff;
         margin-top: 10px;
     }
 
@@ -676,7 +714,6 @@ or Extra large devices (large desktops, 1200px and up)*/
         /*/font-family: "Microsoft Tai Le" !important;/*/
         font-size: 18px;
         text-align: center;
-        color: #ffffff;
     }
 
 
@@ -706,7 +743,6 @@ or Extra large devices (large desktops, 1200px and up)*/
     .dropdown-menu>li>a,
     .dropdown-menu {
         background-color: #000;
-        color: #fff;
     }
 
     .dropdown-menu {

@@ -58,7 +58,7 @@
                     <li class="nav-item">
                         <a class="nav-link d-flex active page-scroll" href="#home">Mesdames a<span class="sr-only">(current)</span></a>
                     </li>
-                  <!--   <li class="nav-item">
+                    <!--   <li class="nav-item">
                         <a class="nav-link page-scroll" href="#actu">Actualités</a>
                     </li> -->
                     <li class="nav-item">
@@ -83,10 +83,10 @@
                         <div class="col-md-9 col-xl-7 offset-xl-2">
                             <p class="intro-text text-center">En 23/24, la compagnie, poursuit la diffusion du <a href="creations/commencement/index.html"><i>Commencement</i></a> et se lance dans un projet-fleuve&nbsp;: monter pour la première fois <a href="creations/cromwell/index.html" class="link-creation"><i>CROMWELL</i></a> de Victor Hugo.</p><br>
                             <!-- <p>Prochaines dates</p> -->
-                                <ul class="text-white ">
-                                    <li class=""><i>Le Commencement</i> le 18 mai à Montans (81)</li>
-                                    <li class=""><i>Cromwell</i> les 12, 14 et 16 août au Château de Sévérac (12)</li>
-                                </ul>
+                            <ul class="text-white ">
+                                <li class=""><i>Le Commencement</i> le 18 mai à Montans (81)</li>
+                                <li class=""><i>Cromwell</i> les 12, 14 et 16 août au Château de Sévérac (12)</li>
+                            </ul>
                             <!-- <p class="intro-text text-center">
     <br>Découvrez nos <a href="./creations/voyages/index.html"><i>Voyages dans le temps</i></a> et <a href="creations/commencement/index.html"><i>Le Commencement</i></a>.
     https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-                        <a class="arrow-wrap page-scroll nav-link" href="#creations">
+            <a class="arrow-wrap page-scroll nav-link" href="#creations">
                 <div class="arrow-down">
                     <div class="left"></div>
                     <div class="right"></div>
@@ -132,7 +132,6 @@
     <!-- Actualites Section -->
     <section id="actu" class="hidden actu-section">
         <div class="container-fluid">
-
             <!--             <div class="row flechedefile">
                 <div class="col-12">
                     <a class="arrow-wrap page-scroll nav-link" href="#actu">
@@ -430,7 +429,7 @@
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">Pièce-fleuve révolutionnaire de Victor Hugo alternant scènes intimes, bouffonneries, cour, chansons, intrigues politiques et d'espionnage...<br>
-                                            <a href="creations/cromwell/index.html" class="link-creation stretched-link">Voir plus&nbsp;&nbsp;<i class="fa-solid fa-circle-right"></i></a></p>
+                                            <a href="creations/cromwell/index.html" class="link-creation stretched-link">Voir plus&nbsp;&nbsp;<i class="fa-solid fa-circle-right arrow-hide"></i></a></p>
                                     </div>
                                     <!--        <div class="card-body">
                                         <p class="card-text">Un groupe d'humain.e.s du futur rescapés dans l'espace et ayant perdu tout souvenir de leur passé préparent leur atterrissage sur Terre...</p>
@@ -585,11 +584,13 @@
                     <div class="row">
                         <!--ALICE-->
                         <div class="col-6 col-md-4 col-xl-3">
-                            <a data-bs-toggle="modal" href="#modal-bio-alice">
+                            <div class="position-relative">
                                 <div class="circle-avatar" style="background-image:url(media/images/alice-square2.jpg)">
                                 </div>
-                                <p class="text-center"><strong>Alice Tabart</strong></p>
-                            </a>
+                                <p class="text-center">
+                                    <a data-bs-toggle="modal" href="#modal-bio-alice" class="link-creation stretched-link"><strong>Alice Tabart</strong></a>
+                                </p>
+                            </div>
                             <p class="text-center">Mise en scène, écriture</p>
                         </div>
                         <!-- Modal bio Alice -->
@@ -630,10 +631,13 @@
                         </div>
                         <!--COLINE-->
                         <div class="col-6 col-md-4 col-xl-3">
-                            <a data-bs-toggle="modal" href="#modal-bio-coline">
-                                <div class="circle-avatar" style="background-image:url(media/images/coline-square-2018.jpg)"></div>
-                                <p class="text-center"><strong>Coline Lubin</strong></p>
-                            </a>
+                            <div class="position-relative">
+                                <div class="circle-avatar" style="background-image:url(media/images/coline-square-2018.jpg)">
+                                </div>
+                                <p class="text-center">
+                                    <a data-bs-toggle="modal" href="#modal-bio-coline" class="link-creation stretched-link"><strong>Coline Lubin</strong></a>
+                                </p>
+                            </div>
                             <p class="text-center">Interprétation</p>
                         </div>
                         <!-- Modal bio Coline -->
@@ -669,9 +673,8 @@
                             </a>
                         </div> -->
                         <!-- Modal bio Elsa -->
-                        <div id="modal-bio-elsa" class="modal fade" role="dialog">
+                        <!--                         <div id="modal-bio-elsa" class="modal fade" role="dialog">
                             <div class="modal-dialog">
-                                <!-- Modal content-->
                                 <div class="modal-content bg-dark text-white">
                                     <div class="modal-header">
                                         <h4 class="modal-title">Elsa Sanchez</h4>
@@ -689,7 +692,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-6 col-md-4 col-xl-3">
                             <div class="circle-avatar" style="background-image:url(media/images/lea-square.jpg)">
                             </div>
@@ -737,10 +740,13 @@
                     </div> -->
                         <!-- <div class="clearfix d-block"></div> -->
                         <div class="col-6 col-md-4 col-xl-3">
-                            <a href="#modal-autres" data-bs-toggle="modal">
-                                <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
-                                <p class="text-center"><strong>L'équipe au fil du temps</strong></p>
-                            </a>
+                            <div class="position-relative">
+                                <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)">
+                                </div>
+                                <p class="text-center">
+                                    <a data-bs-toggle="modal" href="#modal-autres" class="link-creation stretched-link"><strong>L'équipe au fil du temps</strong></a>
+                                </p>
+                            </div>
                             <p class="text-center">Collaborations passées</p>
                         </div>
                         <!-- Modal autres -->
