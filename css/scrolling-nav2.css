@@ -63,6 +63,7 @@ html {
     --background-c-section-light-skin: #efedea;
     --background-c-section-light-skin-alt: #fdfbf9;
 
+    --background-c-primary-cta: #DB14B7;
 
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -531,6 +532,7 @@ h5{
 .btn-adhesion {
     display: block;
     margin: auto;
+    background-color: var(--background-c-primary-cta);
 }
 
 /**
