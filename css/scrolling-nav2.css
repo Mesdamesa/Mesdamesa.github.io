@@ -532,7 +532,7 @@ h5{
 .btn-adhesion {
     display: block;
     margin: auto;
-    background-color: var(--background-c-primary-cta);
+/*    background-color: var(--background-c-primary-cta);*/
 }
 
 /**
