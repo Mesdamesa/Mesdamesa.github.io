@@ -165,6 +165,18 @@ border-bottom: 3px solid white;
     background-size: cover;
 }
 
+.jumbotron.cromwell {
+    height: calc(10%);
+    background-color: red;
+    background: url('./../creations/cromwell/media/images/cromwell-silhouettes-coline-lubin.png_1140.webp');
+    background-repeat: no-repeat;
+    background-position: center calc(48%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .jumbotron.spectateurs {
     height: calc(10%);
     background-color: red;
