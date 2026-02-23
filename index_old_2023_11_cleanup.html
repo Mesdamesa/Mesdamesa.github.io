@@ -16,16 +16,18 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- BLUEIMP Gallery-->
     <!-- <link rel="stylesheet" href="css/blueimp-gallery.min.css" /> -->
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav2.css" rel="stylesheet">
+    <link href="/assets/css/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap-legacy-compat.css">
     <!-- Fonts stuff -->
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <!-- <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" href="/assets/css/inline-style-migrations.css">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#MA-navbar" data-bs-offset="50">
@@ -122,25 +124,7 @@
                 <div class="arrow-down">
                     <div class="left"></div>
                     <div class="right"></div>
-                    <script type="text/javascript">
-                    //this is where we apply opacity to the arrow
-                    $(window).scroll(function() {
-                        //get scroll position
-                        var topWindow = $(window).scrollTop();
-                        //multiply by 1.5 so the arrow will become transparent half-way up the page
-                        var topWindow = topWindow * 1.5;
-
-                        //get height of window
-                        var windowHeight = $(window).height();
-                        //set position as percentage of how far the user has scrolled
-                        var position = topWindow / windowHeight;
-                        //invert the percentage
-                        position = 1 - position;
-                        //define arrow opacity as based on how far up the page the user has scrolled
-                        //no scrolling = 1, half-way up the page = 0
-                        $('.left').css('opacity', position);
-                    });
-                    </script>
+                    <script type="text/javascript" src="/assets/js/inline/index_old_2023_11_cleanup.html--inline-01.js"></script>
                 </div>
             </a>
             <!--             <div class="row flechedefile">
@@ -175,7 +159,7 @@
                     <h1>Actualités et dates</h1>
                     <p>En 2022-2023, la Compagnie poursuit la diffusion de ses <a href="./creations/voyages/index.html"><i>Voyages dans le temps</i></a> et de son dernier spectacle 
                         <a href="https://www.millavois.com/2023/08/14/severac-le-commencement-un-spectacle-entre-histoire-et-science-fiction-qui-vous-fera-redecouvrir-le-chateau/"><i>Le Commencement</i></a>.</p>
-                    <p class="text-center"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMesdamesA%2Fposts%2Fpfbid0XY8xpWYkhmV5t9rr8JYH2N6UPowg3nh5L4xTwaXdhJRiqBmsHLvS4B2QTFp1NJZkl&show_text=true&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></p>
+                    <p class="text-center"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMesdamesA%2Fposts%2Fpfbid0XY8xpWYkhmV5t9rr8JYH2N6UPowg3nh5L4xTwaXdhJRiqBmsHLvS4B2QTFp1NJZkl&show_text=true&width=400" width="400" height="400" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="u-inline-245d3595a9"></iframe></p>
                     <!-- <div class="fb-post" data-href="https://www.facebook.com/pfbid0XY8xpWYkhmV5t9rr8JYH2N6UPowg3nh5L4xTwaXdhJRiqBmsHLvS4B2QTFp1NJZkl" data-width="500" data-show-text="true"></div> -->
                     <!--                     <br>
                     <br>
@@ -501,14 +485,14 @@
                     <h1>Créations</h1>
                     <!--ECLAIRS-->
                     <div class="creations eclairs" id="eclairs">
-                        <h2><i class="fas fa-bolt" style="color: #f33128;" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt" aria-hidden="true" style="color: #f33128;"></i></h2>
+                        <h2><i class="fas fa-bolt u-inline-e84f9e3ced" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt u-inline-e84f9e3ced" aria-hidden="true"></i></h2>
                         <p><small>Saison 2018-2019 and 2019-2020</small><br>
                             <small>théâtre-concert-danse</small></p>
                         <div class="ratio ratio-16x9">
                             <iframe src="https://player.vimeo.com/video/325242505"" title=" ÉCLAIRS"></iframe>
                         </div>
                         <br>
-                        <div class="row">
+                        <div class="row u-inline-f2892a2e8a">
                             <div class="col-md-8">
                                 <p>Une jeune femme fait face au fantôme de sa grand-mère, à sa lutte de femme libre et à la folie douce de son grand-père. Le récit est irisé par les interventions de trois musiciens qui viennent ajouter leurs voix à l'orage qui se prépare en elle.<br>
                                     <br>
@@ -565,7 +549,7 @@
                                     <img src="creations/eclairs/media/images/eclairs-coline-dos-telephone-sm.jpg" alt="ÉCLAIRS grenier" width="180"></a>
                                 <!-- <a data-gallery="#blueimp-gallery-galeclairs" data-toggle="lightbox" href="creations/eclairs/media/images/elsa-jambe-nb.jpg" title="ÉCLAIRS danse">
                             <img src="creations/eclairs/media/images/elsa-jambe-nb-sm.jpg" alt="ÉCLAIRS danse" width="180"></a> -->
-                                <!--<div style="display: none;">
+                                <!--<div>
                                 <a data-gallery="#blueimp-gallery-galeclairs" data-toggle="lightbox" href="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="creations/eclairs/media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="180"></a>
                             </div>-->
                             </div>
@@ -881,13 +865,7 @@
                                     </div>
                                 </div>
                                 <!--stop video when close modal-->
-                                <script async>
-                                    $("#revue-presse-spectateurs-modal-lg").on('hidden.bs.modal', function(e) {
-                                var $this = $(this);
-                                var $frame = $this.find('iframe');
-                                $frame.attr("src", $frame.attr("src"));
-                                });
-                                </script>
+                                <script async src="/assets/js/inline/index_old_2023_11_cleanup.html--inline-02.js"></script>
                                 <!-- Modal dates passees -->
                                 <div id="modal-dates-spectateur" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -1466,27 +1444,11 @@
         </div>
     </section>
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <!--Add to Calendar button (atc) init-->
-    <script type="text/javascript">
-    (function() {
-        if (window.addtocalendar)
-            if (typeof window.addtocalendar.start == "function") return;
-        if (window.ifaddtocalendar == undefined) {
-            window.ifaddtocalendar = 1;
-            var d = document,
-                s = d.createElement('script'),
-                g = 'getElementsByTagName';
-            s.type = 'text/javascript';
-            s.charset = 'UTF-8';
-            s.async = true;
-            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
-            var h = d[g]('body')[0];
-            h.appendChild(s);
-        }
-    })();
-    </script>
+    <script type="text/javascript" src="/assets/js/inline/index_old_2023_11_cleanup.html--inline-03.js"></script>
+    <script src="/assets/js/bootstrap-legacy-bridge.js"></script>
 </body>
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
@@ -1495,7 +1457,7 @@
 <!-- <script src="js/jquery.blueimp-gallery.min.js"></script> -->
 <!-- POPPER -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
 -->
 <!--//scrolling-nav.js

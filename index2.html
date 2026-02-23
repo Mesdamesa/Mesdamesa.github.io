@@ -19,9 +19,9 @@
     <meta name="theme-color" content="#000000">
 
     <!-- Bootstrap CSS and JS
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <!--   <link href="css/the-big-picture.css" rel="stylesheet">
@@ -29,35 +29,19 @@
         -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Fonts stuff -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <!-- <link href="//db.onlinewebfonts.com/c/ff43e14bdcc67883fbd7a6f6223920cc?family=Microsoft+Tai+Le" rel="stylesheet" type="text/css" />-->
     
+    <link rel="stylesheet" href="/assets/css/inline-style-migrations.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!--Add to Calendar button (atc) init-->
-    <script type="text/javascript">
-    (function() {
-        if (window.addtocalendar)
-            if (typeof window.addtocalendar.start == "function") return;
-        if (window.ifaddtocalendar == undefined) {
-            window.ifaddtocalendar = 1;
-            var d = document,
-                s = d.createElement('script'),
-                g = 'getElementsByTagName';
-            s.type = 'text/javascript';
-            s.charset = 'UTF-8';
-            s.async = true;
-            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
-            var h = d[g]('body')[0];
-            h.appendChild(s);
-        }
-    })();
-    </script>
+    <script type="text/javascript" src="/assets/js/inline/index2.html--inline-01.js"></script>
     <!-- IMAGE GALLERY-->
     <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -144,7 +128,7 @@
                                 </a>
                                 <br>
                             </div>
-                                                            <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" style="border: none;"></iframe>
+                                                            <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" class="u-inline-067d8a829f"></iframe>
                         </div>
 
                        
@@ -157,7 +141,7 @@
                                         <h4 class="modal-title">Soutien et adhésion</h4>
                                     </div>
                                     <div class="modal-body">
-                                         <iframe id="haWidget" src="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-association-mesdames-a/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, document.querySelector('iframe').offsetTop)"></iframe>
+                                         <iframe id="haWidget" src="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-association-mesdames-a/widget" onload="window.scroll(0, document.querySelector('iframe').offsetTop)" class="u-inline-196f1f68a4"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -178,25 +162,7 @@
                         <span class="arrow"></span>
                         <!--<span class="hint">scroll</span>-->
                     </a>
-                    <script type="text/javascript">
-                    //this is where we apply opacity to the arrow
-                    $(window).scroll(function() {
-                        //get scroll position
-                        var topWindow = $(window).scrollTop();
-                        //multipl by 1.5 so the arrow will become transparent half-way up the page
-                        var topWindow = topWindow * 1.5;
-
-                        //get height of window
-                        var windowHeight = $(window).height();
-                        //set position as percentage of how far the user has scrolled
-                        var position = topWindow / windowHeight;
-                        //invert the percentage
-                        position = 1 - position;
-                        //define arrow opacity as based on how far up the page the user has scrolled
-                        //no scrolling = 1, half-way up the page = 0
-                        $('.arrow-wrap').css('opacity', position);
-                    });
-                    </script>
+                    <script type="text/javascript" src="/assets/js/inline/index2.html--inline-02.js"></script>
                 </div>
             </div>
             <div class="row">
@@ -376,13 +342,13 @@
 
                     <!--ECLAIRS-->
                     <div class="creations eclairs" id="eclairs">
-                        <h2><i class="fas fa-bolt" style="color: #f33128;" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt" aria-hidden="true" style="color: #f33128;"></i></h2>
+                        <h2><i class="fas fa-bolt u-inline-e84f9e3ced" aria-hidden="true"></i> ÉCLAIRS <i class="fas fa-bolt u-inline-e84f9e3ced" aria-hidden="true"></i></h2>
                         <div class="row">
                             <div class="col-sm-6">
                                 <p><small>Saison 2018-2019</small></p>
                             </div>
                             <div class="col-sm-6">
-                             <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" style="border: none; margin: none; padding: none;"></iframe>
+                             <iframe id="haWidgetButton" src="https://www.helloasso.com/associations/compagnie-mesdames-a/paiements/souscription-cd-de-la-bande-originale-eclairs/widget-bouton" class="u-inline-cf07fa628a"></iframe>
                             </div>
                          </div>
                         <img src="creations/eclairs/media/images/affiche_sm.jpg" alt="ÉCLAIRS - Affiche" class="img-responsive">
@@ -603,14 +569,7 @@
                                 </a>
                                 <a data-gallery="#blueimp-gallery-galdragons" href="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg" title="La Cité des Dragons - Dragon chinois"><img src="creations/dragons/media/images/sm_Cie_Mesdames_A_Dragons_2015_chinois.jpg" alt="La Cité des Dragons - Dragon chinois" width="130"></a>
                             </div>
-                            <script>
-                            blueimp.Gallery(
-                                document.getElementById('galdragons').getElementsByTagName('a'), {
-                                    container: '#blueimp-gallery-carousel',
-                                    carousel: true
-                                }
-                            );
-                            </script>
+                            <script src="/assets/js/inline/index2.html--inline-03.js"></script>
                             <h3>Le spectacle</h3>
                             <p>Vous ne le savez sans doute pas Encore mais la cité de Sévérac le Château abrite de drôles de personnages. Il y a La Bestiole créée de toutes pièces, il y a aussi la magicienne dévoreuse de chamalow, mais il y a surtout ceux qui se cachent. Il paraît que dans la magie des ruelles gît un dragon solitaire qui ne se laisse apercevoir que par qui veut bien y croire. Ouvrez grands vos yeux et vos oreilles, peut-être en rencontrerez-vous un plus vite que prévu.
                                 <br> Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons de la cité de Sévérac. Une déambulation pleine de surprises qui vous fera voyager dans le temps et de par le monde. Magie et musique vous accompagneront tout le long de cette soirée fantastique dont vous vous souviendrez encore longtemps.</p>
@@ -683,13 +642,7 @@
                                     </div>
                                 </div>
                                 <!--stop video when close modal-->
-                                <script async>
-                                $("#revue-presse-dragons-modal-lg").on('hidden.bs.modal', function(e) {
-                                    var $this = $(this);
-                                    var $frame = $this.find('iframe');
-                                    $frame.attr("src", $frame.attr("src"));
-                                });
-                                </script>
+                                <script async src="/assets/js/inline/index2.html--inline-04.js"></script>
                                 <!-- Modal dates passees -->
                                 <div id="modal-dates-dragons" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -783,7 +736,7 @@
                         <div id="equipe-crea-spectateurs-collapse" class="collapse">
 
                         <div id="galspectateurs">
-                         <div style="display: none;">
+                         <div class="u-inline-f2892a2e8a">
                             <a data-gallery="#blueimp-gallery-galspectateurs" href="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateur(s) - Behind the scene"><img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="Spectateur(s) - "></a>
                             </div>
 
@@ -833,14 +786,7 @@
                             <img width="130" src="creations/SPECTATEURS/media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_palpitanteaventure.jpg" alt="Spectateur(s) - Chanson">
                             </a>
                         </div>
-                        <script>
-                        blueimp.Gallery(
-                            document.getElementById('galspectateurs').getElementsByTagName('a'), {
-                                container: '#blueimp-gallery-carousel',
-                                carousel: true
-                            }
-                        );
-                        </script>
+                        <script src="/assets/js/inline/index2.html--inline-05.js"></script>
                                 <h3>Équipe de création</h3>
                                 <p class="equip-crea">
                                     <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
@@ -943,13 +889,7 @@
                                     </div>
                                 </div>
                                 <!--stop video when close modal-->
-                                <script async>
-                                $("#revue-presse-spectateurs-modal-lg").on('hidden.bs.modal', function(e) {
-                                var $this = $(this);
-                                var $frame = $this.find('iframe');
-                                $frame.attr("src", $frame.attr("src"));
-                                });
-                                </script>
+                                <script async src="/assets/js/inline/index2.html--inline-06.js"></script>
                                 <!-- Modal dates passees -->
                                 <div id="modal-dates-spectateur" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
@@ -1024,33 +964,7 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                        var $animation_elements = $('.animation-element');
-                        var $window = $(window);
-
-                        function check_if_in_view() {
-                            var window_height = $window.height();
-                            var window_top_position = $window.scrollTop();
-                            var window_bottom_position = (window_top_position + window_height);
-
-                            $.each($animation_elements, function() {
-                                var $element = $(this);
-                                var element_height = $element.outerHeight();
-                                var element_top_position = $element.offset().top;
-                                var element_bottom_position = (element_top_position + element_height);
-
-                                //check to see if this current container is within viewport
-                                if ((element_bottom_position >= window_top_position) &&
-                                    (element_top_position <= window_bottom_position)) {
-                                    $element.addClass('in-view');
-                                } else {
-                                    $element.removeClass('in-view');
-                                }
-                            });
-                        }
-                        $window.on('scroll resize', check_if_in_view);
-                        $window.trigger('scroll');
-                        </script>
+                        <script type="text/javascript" src="/assets/js/inline/index2.html--inline-07.js"></script>
                         <h3>Galerie</h3>
                         <div id="galsatyre">
                             <a href="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" title="Le Satyre - Poursuite" data-gallery="#blueimp-gallery-galsatyre">
@@ -1072,14 +986,7 @@
                                 <img src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_Faune.jpg" alt="Le Satyre - Faune" width="130">
                             </a>
                         </div>
-                        <script>
-                        blueimp.Gallery(
-                            document.getElementById('galdragons').getElementsByTagName('a'), {
-                                container: '#blueimp-gallery-carousel',
-                                carousel: true
-                            }
-                        );
-                        </script>
+                        <script src="/assets/js/inline/index2.html--inline-08.js"></script>
                         <h3>Production</h3>
                         <p class="production">
                             Une production de la compagnie Mesdames A, avec le soutien de l’association ACT-Mirail et du collectif Mix’art Myrys.
@@ -1167,13 +1074,7 @@
                                 </div>
                             </div>
                             <!--stop video when close modal-->
-                            <script async>
-                            $("#revue-presse-satyre-modal-lg").on('hidden.bs.modal', function(e) {
-                                var $this = $(this);
-                                var $frame = $this.find('iframe');
-                                $frame.attr("src", $frame.attr("src"));
-                            });
-                            </script>
+                            <script async src="/assets/js/inline/index2.html--inline-09.js"></script>
                             <!-- Modal dates passees -->
                             <div id="modal-dates-satyre" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -1185,16 +1086,16 @@
                                         </div>
                                         <div class="modal-body dates-passees">
                                             <ul>
-                                                <li><b style="color: #f72c2f;">2014</b></li>
+                                                <li><b class="u-inline-d21a0c589b">2014</b></li>
                                                 <li>- MJC L'Isle-Jourdain - Gers</li>
                                                 <br>
-                                                <li><b style="color: #f72c2f;">2013</b></li>
+                                                <li><b class="u-inline-d21a0c589b">2013</b></li>
                                                 <li>- 1er juin: Halles de Villasavary - Aude</li>
                                                 <li>- 30 mars: Salle du Foyer Rural - CLARAC</li>
                                                 <li>- 22 mars: Mix'art Myrys - Toulouse (31) - Soirée Grèce et Démocratie avec le Collectif Ciné 2000</li>
                                                 <li>- 21 février au 2 mars: Théâtre de la Violette - Toulouse (31)</li>
                                                 <br>
-                                                <li><b style="color: #f72c2f;">2012</b></li>
+                                                <li><b class="u-inline-d21a0c589b">2012</b></li>
                                                 <li>- 24 août: Cour d'honneur - Séverac le Château (12)</li>
                                                 <li>- 16 juin: Lapanouse - Aveyron (12)</li>
                                                 <li>- 13 avril: Théâtre des Trois Ponts - Castelnaudary</li>
@@ -1246,14 +1147,7 @@
                             <a data-gallery="#blueimp-gallery-galmonologue" href="creations/monologue/media/images/1.jpg" title="Le Monologue d'une Tueuse - Double de la Tueuse, ombre et projection"><img width="130" src="creations/monologue/media/images/sm_1.jpg" alt="Le Monologue d'une Tueuse - Double de la Tueuse, ombre et projection"></a>
                         </div>
 
-                        <script>
-                        blueimp.Gallery(
-                            document.getElementById('galmonologue').getElementsByTagName('a'), {
-                                container: '#blueimp-gallery-carousel',
-                                carousel: true
-                            }
-                        );
-                        </script>
+                        <script src="/assets/js/inline/index2.html--inline-10.js"></script>
                         <p>
                             <br>
                             <a href="#equipe-crea-monologue-collapse" data-toggle="collapse">Plus d'infos&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></a>.
@@ -1341,13 +1235,7 @@
                                 </div>
                             </div>
                             <!--stop video when close modal-->
-                            <script async>
-                            $("#revue-presse-monologue-modal-lg").on('hidden.bs.modal', function(e) {
-                            var $this = $(this);
-                            var $frame = $this.find('iframe');
-                            $frame.attr("src", $frame.attr("src"));
-                            });
-                            </script>
+                            <script async src="/assets/js/inline/index2.html--inline-11.js"></script>
                             <!-- Modal dates passees -->
                             <div id="modal-dates-monologue" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -1417,7 +1305,7 @@
                     <a data-toggle="modal" href="#modal-bio-alice">
                                         <!--<a href="#alice-bio" data-toggle="collapse">-->
 
-                        <div class="circle-avatar" style="background-image:url(media/images/alice-square.jpg)">
+                        <div class="circle-avatar u-inline-db78e35f75">
                         </div>
                         <p class="text-center"><strong>Alice Tabart</strong></p>
                         <p class="text-center">Mise en scène et écriture</p>
@@ -1478,7 +1366,7 @@
                         <a data-toggle="modal" href="#modal-bio-coline">
 
                         <!--<a href="#coline-bio" data-toggle="collapse">-->
-                            <div class="circle-avatar" style="background-image:url(media/images/coline-square-2018.jpg)"></div>
+                            <div class="circle-avatar u-inline-336065945e"></div>
                             <p class="text-center"><strong>Coline Lubin</strong></p>
                             <p class="text-center">Interprétation</p>
                         </a>
@@ -1523,7 +1411,7 @@
 
                 <div class="col-xs-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-simon">
-                        <div class="circle-avatar" style="background-image:url(media/images/simon-square.jpg)"></div>
+                        <div class="circle-avatar u-inline-eb3ef67184"></div>
                         <p class="text-center"><strong>Simon Giesbert</strong></p>
                         <p class="text-center">Interprétation</p>
                     </a>
@@ -1561,7 +1449,7 @@
 
                 <div class="col-xs-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-elsa">
-                        <div class="circle-avatar" style="background-image:url(media/images/elsa-square.jpg)"></div>
+                        <div class="circle-avatar u-inline-a3b177e34a"></div>
                         <p class="text-center"><strong>Elsa Sanchez</strong></p>
                         <p class="text-center">Interprétation</p>
                     </a>
@@ -1593,7 +1481,7 @@
 
                 <div class="col-xs-6 col-sm-4">
                     <a data-toggle="modal" href="#modal-bio-lucas">
-                        <div class="circle-avatar" style="background-image:url(media/images/lucas-square.jpg)"></div>
+                        <div class="circle-avatar u-inline-9c0474cc87"></div>
                         <p class="text-center"><strong>Lucas Lemauff</strong></p>
                         <p class="text-center">Interprétation</p>
                     </a>
@@ -1635,7 +1523,7 @@
 
         <div class="col-xs-6 col-sm-4">
             <a href="#modal-autres" data-toggle="modal">
-                <div class="circle-avatar" style="background-image:url(media/images/autres-square.jpg)"></div>
+                <div class="circle-avatar u-inline-58b9c7bb1e"></div>
                 <p class="text-center"><strong>L'équipe au fil du temps</strong></p>
                 <p class="text-center">Collaborations passées</p>
             </a>
@@ -1805,7 +1693,7 @@
         <button class="btn-envoyer" type="submit">Envoyer</button>
         <br>
         <input type="hidden" name="_subject" value="Compagnie Mesdames A" />
-        <input type="text" name="_gotcha" style="display:none" />
+        <input type="text" name="_gotcha"  class="u-inline-6b99de8b69"/>
     </form>
     </ul>
      <br>
@@ -1828,6 +1716,7 @@
 </div>
 </div>
 </section>
+    <script src="/assets/js/bootstrap-legacy-bridge.js"></script>
 </body>
 <!-- <script type="text/javascript">sr.reveal('.fooReveal')</script>
 --><script src="js/jquery.blueimp-gallery.min.js"></script>
@@ -1860,48 +1749,13 @@
     </script>-->
 
     <!--//scrolling-nav.js-->
-    <script type="text/javascript">
-        //jQuery to collapse the navbar on scroll
-        $(window).scroll(function() {
-            if ($(".navbar").offset().top > 50) {
-                $(".navbar-fixed-top").addClass("top-nav-collapse");
-            } else {
-                $(".navbar-fixed-top").removeClass("top-nav-collapse");
-            }
-                if ($(".navbar").offset().top > 50) {
-                $(".navbar-brand").addClass("smaller");
-            } else {
-                $(".navbar-brand").removeClass("smaller");
-            }
-        });
-        //jQuery for page scrolling feature - requires jQuery Easing plugin
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
-    </script>
+    <script type="text/javascript" src="/assets/js/inline/index2.html--inline-12.js"></script>
 
 
     <!--Navbar collapse when one item selected-->
-    <script>
-        $(document).on('click', '.navbar-collapse.in', function(e) {
-            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                $(this).collapse('hide');
-            }
-        });
-    </script>
+    <script src="/assets/js/inline/index2.html--inline-13.js"></script>
     <!--Navbar dropdown-->
-    <script>
-        $(document).ready(function() {
-            $('.dropdown-toggle').dropdown();
-        });
-    </script>
+    <script src="/assets/js/inline/index2.html--inline-14.js"></script>
     <!-- load and instantiate ScrollReveal first -->
     <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
         <script>

@@ -4,13 +4,7 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBBDMBMJEW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-MBBDMBMJEW');
-    </script>
+    <script src="/assets/js/inline/creations__stranded__index.html--inline-01.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,11 +19,13 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <!-- Bootstrap CSS and JS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link href="./../../css/scrolling-nav2.css" rel="stylesheet">
+    <link href="/assets/css/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap-legacy-compat.css">
     <!-- Fonts stuff -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/inline-style-migrations.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target="#MA-navbar-creation">
@@ -114,33 +110,7 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                        var $animation_elements = $('.animation-element');
-                        var $window = $(window);
-
-                        function check_if_in_view() {
-                            var window_height = $window.height();
-                            var window_top_position = $window.scrollTop();
-                            var window_bottom_position = (window_top_position + window_height);
-
-                            $.each($animation_elements, function() {
-                                var $element = $(this);
-                                var element_height = $element.outerHeight();
-                                var element_top_position = $element.offset().top;
-                                var element_bottom_position = (element_top_position + element_height);
-
-                                //check to see if this current container is within viewport
-                                if ((element_bottom_position >= window_top_position) &&
-                                    (element_top_position <= window_bottom_position)) {
-                                    $element.addClass('in-view');
-                                } else {
-                                    $element.removeClass('in-view');
-                                }
-                            });
-                        }
-                        $window.on('scroll resize', check_if_in_view);
-                        $window.trigger('scroll');
-                        </script>
+                        <script type="text/javascript" src="/assets/js/inline/creations__stranded__index.html--inline-02.js"></script>
                         <h2>Galerie</h2>
                             <div id="galNEW-CREA">
                                 <a data-gallery="#blueimp-gallery-galNEW-CREA" href="media/images/..........jpg" title="NEW-CREA- Poursuite" >
@@ -153,14 +123,7 @@
                                 .
                                 ,
                             </div>
-                            <script>
-                                blueimp.Gallery(
-                                document.getElementById('galNEW-CREA).getElementsByTagName('a'), {
-                                  container: '#blueimp-gallery-carousel',
-                                  carousel: true
-                                 }
-                                 );
-                            </script>
+                            <script src="/assets/js/inline/creations__stranded__index.html--inline-03.js"></script>
 
                             
 
@@ -196,13 +159,7 @@
                                 
                             </div>
                             <!--stop video when close modal-->
-                            <script async>
-                            $("#revue-presse-NEW-CREA-modal-lg").on('hidden.bs.modal', function(e) {
-                                var $this = $(this);
-                                var $frame = $this.find('iframe');
-                                $frame.attr("src", $frame.attr("src"));
-                            });
-                            </script>
+                            <script async src="/assets/js/inline/creations__stranded__index.html--inline-04.js"></script>
                         </p>
                         <!-- Modal dates passees -->
                         <h2>Dates</h2>
@@ -243,67 +200,24 @@
         </div>
         </div>
     </section>
+    <script src="/assets/js/bootstrap-legacy-bridge.js"></script>
 </body>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="./../../css/blueimp-gallery.min.css">
 <!-- jQuery, popper, bootstrap JS-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./../../js/jquery.blueimp-gallery.min.js"></script>
 <!-- Scrolling Nav JavaScript -->
 <!--scrolling-nav.js-->
-<script type="text/javascript">
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".fixed-top").removeClass("top-nav-collapse");
-    }
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-brand").addClass("smaller");
-    } else {
-        $(".navbar-brand").removeClass("smaller");
-    }
-});
-
-//jQuery to collapse the navbar on click
-$('.navbar-nav>li>a').on('click', function() {
-    $('.navbar-collapse').collapse('hide');
-});
-
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-
-$('.page-scroll').click(function() {
-    var sectionTo = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(sectionTo).offset().top
-    }, 750);
-});
-</script>
+<script type="text/javascript" src="/assets/js/inline/creations__stranded__index.html--inline-05.js"></script>
 <!--Manage class active -->
-<script>
-$(document).ready(function() {
-    $(document).on('click', '.nav-item a', function(e) {
-        $(this).parent().addClass('active').siblings().removeClass('active');
-    });
-});
-</script>
+<script src="/assets/js/inline/creations__stranded__index.html--inline-06.js"></script>
 <!--Navbar collapse when one item selected-->
-<script>
-$(document).on('click', '.navbar-collapse.in', function(e) {
-    if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-        $(this).collapse('hide');
-    }
-});
-</script>
+<script src="/assets/js/inline/creations__stranded__index.html--inline-07.js"></script>
 <!--Navbar dropdown-->
-<script>
-$(document).ready(function() {
-    $('.dropdown-toggle').dropdown();
-});
-</script>
+<script src="/assets/js/inline/creations__stranded__index.html--inline-08.js"></script>
 <!-- load and instantiate ScrollReveal first -->
 <!-- <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
         <script>
