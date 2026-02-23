@@ -1532,3 +1532,181 @@ of those sections to manage the look and feel of the site. */
         order: -1;
     }
 }
+
+/* Homepage hero responsive hardening */
+.home-section.hero-section {
+    min-height: 100svh;
+    height: auto;
+    padding-top: clamp(90px, 11vw, 140px);
+    padding-bottom: clamp(56px, 8vw, 92px);
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.72) 100%), url('../../media/images/back-smmm.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: clamp(18px, 3vw, 32px);
+    padding-bottom: clamp(28px, 5vw, 48px);
+    background: rgba(0, 0, 0, 0.58);
+}
+
+.hero-row,
+.hero-content-row {
+    min-height: 0;
+}
+
+.hero-section .intro-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 1.15vw + 0.75rem, 1.32rem);
+    line-height: 1.45;
+}
+
+.hero-cta-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .btn-adhesion {
+    width: min(100%, 320px);
+    margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+    .home-section.hero-section {
+        min-height: auto;
+        align-items: stretch;
+        padding-top: 82px;
+        padding-bottom: 44px;
+    }
+
+    .hero-banner {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .hero-cta-col {
+        justify-content: stretch;
+    }
+
+    .hero-section .btn-adhesion {
+        max-width: none;
+    }
+}
+
+/* Homepage visual polish (content/media unchanged) */
+.home-page {
+    background: var(--background-color-dark);
+}
+
+.home-page section[id] {
+    scroll-margin-top: 96px;
+}
+
+.home-page #MA-navbar {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.home-page #MA-navbar .nav-link {
+    transition: color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.home-page #MA-navbar .nav-link:hover,
+.home-page #MA-navbar .nav-link:focus {
+    color: #fff;
+}
+
+.home-page .creations-section .card {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home-page .creations-section .card:hover,
+.home-page .creations-section .card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+    border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.home-page .creations-section .card-img-top {
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.home-page .creations-section .card:hover .card-img-top,
+.home-page .creations-section .card:focus-within .card-img-top {
+    transform: scale(1.02);
+    filter: saturate(1.05);
+}
+
+.home-page a.link-creation,
+.home-page .action-link,
+.home-page .btn,
+.home-page .social-circle li a {
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.home-page .btn-adhesion:hover,
+.home-page .btn-adhesion:focus {
+    transform: translateY(-1px);
+}
+
+.home-page .social-circle li a {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.home-page .social-circle li a:hover,
+.home-page .social-circle li a:focus {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.42);
+}
+
+.home-page footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+}
+
+.home-page .circle-avatar {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-page a:hover .circle-avatar,
+.home-page a:focus .circle-avatar {
+    transform: scale(1.02);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 767.98px) {
+    .home-page .actu-section,
+    .home-page .creations-section,
+    .home-page .compagnie-section,
+    .home-page .contact-section {
+        padding-top: var(--80px);
+        padding-bottom: var(--96px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page #MA-navbar,
+    .home-page #MA-navbar .nav-link,
+    .home-page .creations-section .card,
+    .home-page .creations-section .card-img-top,
+    .home-page a.link-creation,
+    .home-page .action-link,
+    .home-page .btn,
+    .home-page .social-circle li a,
+    .home-page .circle-avatar {
+        transition: none !important;
+    }
+}
