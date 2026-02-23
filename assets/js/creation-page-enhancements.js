@@ -124,15 +124,21 @@
   }
 
   function setupCurtainAnimation() {
+    const preOpenDelayMs = 180;
+    const openDurationMs = 1200;
+    const holdAfterOpenMs = 260;
     const curtain = document.createElement("div");
     curtain.className = "creation-curtain";
     curtain.innerHTML = `
       <span class="creation-curtain-panel creation-curtain-left"></span>
       <span class="creation-curtain-panel creation-curtain-right"></span>
     `;
+    curtain.style.setProperty("--creation-curtain-duration", `${openDurationMs}ms`);
     document.body.appendChild(curtain);
-    requestAnimationFrame(() => curtain.classList.add("is-open"));
-    window.setTimeout(() => curtain.remove(), 850);
+    window.setTimeout(() => {
+      requestAnimationFrame(() => curtain.classList.add("is-open"));
+    }, preOpenDelayMs);
+    window.setTimeout(() => curtain.remove(), preOpenDelayMs + openDurationMs + holdAfterOpenMs);
   }
 
   function setupImageLightbox() {
