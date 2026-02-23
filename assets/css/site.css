@@ -4,7 +4,7 @@
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 */
 
-@import url("/assets/css/responsive-layout.css");
+@import url("responsive-layout.css");
 
 /*
 @font-face {
@@ -121,7 +121,7 @@ border-bottom: 3px solid white;
 .home-section {
     height: calc(100% - 3em);
     padding-top: var(--160px);
-    background: url('/media/images/back-smmm.jpg');
+    background: url('../../media/images/back-smmm.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -133,7 +133,7 @@ border-bottom: 3px solid white;
 /*.jumbotron.cromwell {
     height: calc(10%);
     background-color: red;
-    background: url('/creations/cromwell/media/images/cromwell-baniere.webp');
+    background: url('../../creations/cromwell/media/images/cromwell-baniere.webp');
     background-repeat: no-repeat;
     background-position: center calc(66%);
     -webkit-background-size: cover;
@@ -145,7 +145,7 @@ border-bottom: 3px solid white;
 .jumbotron.dragons {
     height: calc(10%);
     background-color: red;
-    background: url('/creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg');
+    background: url('../../creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg');
     background-repeat: no-repeat;
      background-position: center calc(25%); 
 /*    background-position: top; center;*/
@@ -158,7 +158,7 @@ border-bottom: 3px solid white;
 .jumbotron.commencement {
     height: calc(10%);
     background-color: red;
-    background: url('/creations/commencement/media/images/01-commencement-xl-jmsahuquet.jpg');
+    background: url('../../creations/commencement/media/images/01-commencement-xl-jmsahuquet.jpg');
     background-repeat: no-repeat;
     background-position: center calc(66%);
     -webkit-background-size: cover;
@@ -170,7 +170,7 @@ border-bottom: 3px solid white;
 .jumbotron.cromwell {
     height: calc(10%);
     background-color: red;
-    background: url('/creations/cromwell/media/images/cromwell-silhouettes-coline-lubin.png_1140.webp');
+    background: url('../../creations/cromwell/media/images/cromwell-silhouettes-coline-lubin.png_1140.webp');
     background-repeat: no-repeat;
     background-position: center calc(48%);
     -webkit-background-size: cover;
@@ -182,7 +182,7 @@ border-bottom: 3px solid white;
 .jumbotron.spectateurs {
     height: calc(10%);
     background-color: red;
-    background: url('/creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg');
+    background: url('../../creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg');
     background-repeat: no-repeat;
      background-position: center calc(25%); 
 /*    background-position: top; center;*/
@@ -583,7 +583,7 @@ min-height: 100%;
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('/creations/eclairs/media/images/eclairs-sur-scene.jpg');
+        background: url('../../creations/eclairs/media/images/eclairs-sur-scene.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
@@ -638,7 +638,7 @@ display: block;
     .home-section {
         height: calc(100% - 3em);
         padding-top: 150px;
-        background: url('/creations/eclairs/media/images/eclairs-calin-sur-scene.jpg');
+        background: url('../../creations/eclairs/media/images/eclairs-calin-sur-scene.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
