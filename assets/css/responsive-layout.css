@@ -1,0 +1,30 @@
+/* Non-invasive responsive hardening for legacy layouts */
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 991.98px) {
+  .home-section,
+  .home-creation {
+    min-height: auto;
+    padding-top: 72px;
+  }
+
+  .card-date,
+  .btn-adhesion {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .circle-avatar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dates-passees ul {
+    padding-left: 1rem;
+  }
+}
