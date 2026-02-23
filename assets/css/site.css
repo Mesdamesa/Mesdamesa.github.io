@@ -1581,7 +1581,9 @@ of those sections to manage the look and feel of the site. */
 
 @media (max-width: 767.98px) {
     .home-section.hero-section {
-        min-height: auto;
+        min-height: 100vh;
+        min-height: 100svh;
+        min-height: 100dvh;
         align-items: stretch;
         padding-top: 82px;
         padding-bottom: 44px;
