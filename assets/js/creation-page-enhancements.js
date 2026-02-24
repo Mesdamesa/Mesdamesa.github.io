@@ -48,7 +48,7 @@
         <div class="container-xl">
           <div class="creation-topbar">
             <a class="creation-back-link link-creation" href="../../index.html#creations">
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;Retour aux créations
+              <span aria-hidden="true">&#8592;</span>&nbsp;&nbsp;Retour aux créations
             </a>
             <nav class="creation-sibling-nav" aria-label="Navigation entre créations">
               ${prevMarkup}

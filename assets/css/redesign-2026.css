@@ -1,0 +1,341 @@
+:root {
+  --ma-red: #d53b3b;
+  --ma-red-soft: #b92f2f;
+  --ma-bg-0: #090909;
+  --ma-bg-1: #121212;
+  --ma-bg-2: #1a1a1a;
+  --ma-line: rgba(255, 255, 255, 0.16);
+  --ma-text: rgba(255, 255, 255, 0.92);
+  --ma-text-soft: rgba(255, 255, 255, 0.76);
+  --ma-shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
+  --ma-radius: 14px;
+}
+
+body {
+  color: var(--ma-text);
+}
+
+.home-page {
+  background:
+    radial-gradient(circle at 10% -20%, rgba(213, 59, 59, 0.24) 0%, rgba(213, 59, 59, 0) 44%),
+    radial-gradient(circle at 88% 15%, rgba(213, 59, 59, 0.18) 0%, rgba(213, 59, 59, 0) 38%),
+    var(--ma-bg-0);
+}
+
+.home-page .navbar.fixed-top {
+  background: rgba(9, 9, 9, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-page #MA-navbar .navbar-nav .nav-link {
+  color: var(--ma-text-soft);
+  letter-spacing: 0.02em;
+}
+
+.home-page #MA-navbar .navbar-nav .nav-link:hover,
+.home-page #MA-navbar .navbar-nav .nav-link:focus,
+.home-page #MA-navbar .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.home-page .home-section.hero-section {
+  align-items: center;
+}
+
+.home-page .hero-banner {
+  max-width: 1220px;
+  margin: 0 auto;
+  border: 1px solid var(--ma-line);
+  border-radius: calc(var(--ma-radius) + 4px);
+  box-shadow: var(--ma-shadow);
+  background:
+    linear-gradient(135deg, rgba(10, 10, 10, 0.76) 0%, rgba(14, 14, 14, 0.7) 56%, rgba(213, 59, 59, 0.22) 100%);
+  overflow: hidden;
+}
+
+.home-page .hero-content-row {
+  padding: clamp(1.1rem, 2.2vw, 1.8rem);
+}
+
+.home-page .intro-text {
+  max-width: 62ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.home-page .hero-section .btn-adhesion {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+}
+
+.home-page .hero-section .btn-adhesion:hover,
+.home-page .hero-section .btn-adhesion:focus {
+  background-color: var(--ma-red-soft);
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
+.home-page section:not(#home) .container-fluid,
+.home-page footer {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page .actu-section,
+.home-page .creations-section,
+.home-page .compagnie-section,
+.home-page .contact-section {
+  position: relative;
+}
+
+.home-page .actu-section::before,
+.home-page .creations-section::before,
+.home-page .compagnie-section::before,
+.home-page .contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.4rem;
+  right: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-page .deck-of-cards-creations .card {
+  border-color: var(--ma-line) !important;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 52%, rgba(213, 59, 59, 0.14) 100%) !important;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.25);
+}
+
+.home-page .deck-of-cards-creations .card .card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.home-page .deck-of-cards-creations .card .card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.66) 6%, rgba(0, 0, 0, 0.1) 58%);
+}
+
+.home-page .deck-of-cards-creations .card .card-title {
+  color: #fff;
+}
+
+.home-page .deck-of-cards-creations .card .card-text {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.home-page #compagnie a {
+  display: inline-block;
+  padding: 0.34rem;
+  border-radius: 8px;
+}
+
+.home-page #compagnie .circle-avatar {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.26);
+}
+
+.home-page .social-circle li a {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.home-page .social-circle li a:hover,
+.home-page .social-circle li a:focus {
+  background: rgba(213, 59, 59, 0.36);
+}
+
+.creation-page {
+  background:
+    radial-gradient(circle at 16% -8%, rgba(213, 59, 59, 0.2) 0%, rgba(213, 59, 59, 0) 40%),
+    radial-gradient(circle at 84% 18%, rgba(213, 59, 59, 0.16) 0%, rgba(213, 59, 59, 0) 42%),
+    var(--ma-bg-0);
+  color: var(--ma-text);
+}
+
+.creation-page .nav-back--component {
+  background: rgba(8, 8, 8, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.creation-page .creation-topbar {
+  gap: 1rem;
+}
+
+.creation-page .creation-back-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.48rem 0.82rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.creation-page .creation-sibling-nav {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 0.2rem;
+}
+
+.creation-page .creation-sibling-link,
+.creation-page .creation-current-label {
+  border-radius: 999px;
+  padding: 0.38rem 0.72rem;
+}
+
+.creation-page .creation-sibling-link:hover,
+.creation-page .creation-sibling-link:focus {
+  background: rgba(213, 59, 59, 0.3);
+}
+
+.creation-page #home-creation {
+  padding-top: clamp(7.2rem, 10vw, 8.8rem);
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+}
+
+.creation-page #home-creation .container-fluid,
+.creation-page #home-creation .container-xl {
+  max-width: 1220px;
+}
+
+.creation-page #home-creation h1 {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.creation-page #home-creation h2 {
+  padding-top: clamp(2.4rem, 4vw, 3.2rem);
+  padding-bottom: clamp(1rem, 2vw, 1.2rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.creation-page #home-creation .jumbotron {
+  border-radius: var(--ma-radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  box-shadow: var(--ma-shadow);
+}
+
+.creation-page #home-creation .ratio,
+.creation-page #home-creation video,
+.creation-page #home-creation .img-thumbnail {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+}
+
+.creation-page #home-creation .img-thumbnail {
+  background: transparent;
+}
+
+.creation-page #home-creation [id^="gal"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.creation-page #home-creation #galcrocro {
+  grid-template-columns: 1fr;
+}
+
+.creation-page #home-creation [id^="gal"] a {
+  display: block;
+}
+
+.creation-page #home-creation [id^="gal"] img {
+  width: 100% !important;
+  height: auto;
+}
+
+.creation-page #home-creation .dates-passees ul {
+  margin: 0 0 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.creation-page .creation-footer {
+  margin-top: 0;
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+a.link-creation,
+a.action-link,
+button,
+.btn,
+.card,
+.img-thumbnail {
+  transition: transform 0.22s ease, opacity 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+a.link-creation:hover,
+a.action-link:hover,
+a.link-creation:focus,
+a.action-link:focus {
+  color: #fff;
+}
+
+.creation-page #home-creation [id^="gal"] a:hover,
+.creation-page #home-creation [id^="gal"] a:focus {
+  transform: translateY(-2px);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+  .home-page .hero-banner {
+    border-radius: var(--ma-radius);
+  }
+
+  .creation-page .creation-sibling-nav {
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-page .hero-content-row {
+    padding: 1rem 0.4rem;
+  }
+
+  .home-page .deck-of-cards-creations .card .card-img-top {
+    aspect-ratio: 5 / 4;
+  }
+
+  .creation-page #home-creation [id^="gal"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  a.link-creation,
+  a.action-link,
+  button,
+  .btn,
+  .card,
+  .img-thumbnail {
+    transition: none !important;
+  }
+}
