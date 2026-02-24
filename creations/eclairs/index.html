@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mesdames A. - ÉCLAIRS</title>
+    <!-- Core Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
+    <!-- The Dark Space Aesthetic -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <style>
+        /* Specific Creation Page Overrides */
+        #creation-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: var(--space-xl);
+            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
+                url('media/images/eclairs-jeu.jpg') center/cover no-repeat;
+        }
+
+        #creation-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(5, 5, 5, 0.6);
+            /* Darken hero image for text readability */
+        }
+
+        .hero-title-group {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title-group h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: var(--space-s);
+        }
+
+        .hero-title-group p {
+            font-size: 1.2rem;
+            color: var(--script-gray);
+            text-transform: uppercase;
+        }
+
+        /* Breadcrumb */
+        .page-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--space-m);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body class="dark-space">
+    <!-- 1. The Guide (Mouse Tracker) -->
+    <div id="red-dot"></div>
+
+    <header class="page-header">
+        <div class="content-wrapper">
+            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="creation-hero" class="stage-section">
+            <div class="hero-title-group">
+                <h1><i>ÉCLAIRS</i></h1>
+                <p class="mono-text">Saisons 2018/2020</p>
+            </div>
+        </section>
+
+        <!-- Core Text Content -->
+        <section id="creation-content" class="stage-section">
+            <div class="content-wrapper">
+                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
+                    <p>ÉCLAIRS propose un écrin onirique dans lequel nous suivons la quête d’une jeune femme
+                        (interprétée par la danseuse Elsa Sanchez) sur les pas de sa grand-mère, fantôme bienveillant
+                        joué par Coline Lubin. Elle y découvre sa lutte de femme libre et la folie douce de son
+                        grand-père, interprété par Éric Leclerc, comédien et slameur...</p>
+                    <p>Car ÉCLAIRS, c’est aussi un concert, avec une dizaine de compositions originales interprétées en
+                        direct par Aladin Chaboche, guitariste, Jean-Marc Serpin, contrebassiste, et Alice Tabart, au
+                        chant, à l’écriture et la mise en scène. Cette dernière a écrit les morceaux en même temps que
+                        la pièce, notes et mots se répondant, s’opposant, se complétant afin de créer le deuxième pôle
+                        d’énergie nécessaire à cette décharge vitale tant recherchée par les personnages.</p>
+                </div>
+
+                <div class="video-stage">
+                    <div class="embed-responsive">
+                        <iframe src="https://player.vimeo.com/video/325242505" title="ÉCLAIRS"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="creation-gallery" class="stage-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Galerie</h2>
+                <div class="masonry-gallery mt-l">
+                    <a data-bespoke-lightbox href="media/images/eclairs-guitare.jpg" title="ÉCLAIRS - Guitare">
+                        <img src="media/images/eclairs-guitare.jpg" alt="ÉCLAIRS">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/eclairs-sol.jpg" title="ÉCLAIRS - Sol">
+                        <img src="media/images/eclairs-sol.jpg" alt="ÉCLAIRS">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/eclairs-elsa-coline.jpg"
+                        title="ÉCLAIRS - Elsa & Coline">
+                        <img src="media/images/eclairs-elsa-coline.jpg" alt="ÉCLAIRS">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/eclairs-jeu.jpg" title="ÉCLAIRS - Jeu">
+                        <img src="media/images/eclairs-jeu.jpg" alt="ÉCLAIRS">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/eclairs-girls.jpg" title="ÉCLAIRS - Groupe">
+                        <img src="media/images/eclairs-girls.jpg" alt="ÉCLAIRS">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/eclairs-calin-sur-scene.jpg" title="ÉCLAIRS - Câlin">
+                        <img src="media/images/eclairs-calin-sur-scene.jpg" alt="ÉCLAIRS">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credits & Production Section -->
+        <section id="creation-credits" class="stage-section">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Crédits & Production</h2>
+                </div>
+                <div class="col-content">
+                    <div class="credits">
+                        <h3 class="mono-text mb-m accent">Équipe</h3>
+                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Mise en scène, écriture & chant /</strong>
+                            Alice Tabart
+                            <br><strong style="color:var(--pure-white);">Interprétation /</strong> Coline Lubin, Elsa
+                            Sanchez, Éric Leclerc
+                            <br><strong style="color:var(--pure-white);">Musique /</strong> Aladin Chaboche (Guitare),
+                            Jean-Marc Serpin (Contrebasse)
+                            <br><strong style="color:var(--pure-white);">Scénographie /</strong> Claire Balerdi
+                            <br><strong style="color:var(--pure-white);">Lumière /</strong> Serena Andreasi
+                        </p>
+                    </div>
+
+                    <div class="production mt-l">
+                        <h3 class="mono-text mb-m accent">Production</h3>
+                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:1.8;">
+                            Une production de la compagnie Mesdames A.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+        <div class="content-wrapper text-center">
+            <div class="socials mb-l">
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
+                <span class="dot-separator">•</span>
+                <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
+                <span class="dot-separator">•</span>
+                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+            </div>
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+            <p
+                style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">
+                Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+            <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

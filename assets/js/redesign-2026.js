@@ -254,12 +254,12 @@
 
     const creationTargets = isCreation
       ? unique([
-          document.querySelector(".creation-topbar"),
-          document.querySelector(".creation-main-column"),
-          ...document.querySelectorAll(".creation-page #home-creation h1, .creation-page #home-creation h2, .creation-page #home-creation .ratio, .creation-page #home-creation video"),
-          ...document.querySelectorAll(".creation-page #home-creation [id^='gal']"),
-          ...document.querySelectorAll(".creation-page #home-creation .dates-passees ul"),
-        ])
+        document.querySelector(".creation-topbar"),
+        document.querySelector(".creation-main-column"),
+        ...document.querySelectorAll(".creation-page #home-creation h1, .creation-page #home-creation h2, .creation-page #home-creation .ratio, .creation-page #home-creation video"),
+        ...document.querySelectorAll(".creation-page #home-creation [id^='gal']"),
+        ...document.querySelectorAll(".creation-page #home-creation .dates-passees ul"),
+      ])
       : [];
 
     const targets = unique([...homeTargets, ...creationTargets]);
@@ -267,9 +267,88 @@
     return targets;
   }
 
+  function setupInteractions() {
+    const btns = document.querySelectorAll(".btn-adhesion");
+    btns.forEach(btn => {
+      btn.addEventListener("mousemove", (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.02)`;
+      });
+      btn.addEventListener("mouseleave", () => {
+        btn.style.transform = `translate(0px, 0px) scale(1)`;
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      document.body.style.setProperty("--scroll-y", `${window.scrollY}px`);
+    }, { passive: true });
+  }
+
+  function applyThematicGlow() {
+    if (!document.body.classList.contains("creation-page") && document.body.dataset.creationPage !== "true") return;
+    const creationNode = document.querySelector(".creations[id]");
+    if (creationNode) {
+      document.body.classList.add(`theme-${creationNode.id}`);
+    }
+  }
+
+  function formatCredits() {
+    document.querySelectorAll(".equip-crea").forEach(p => {
+      const clone = p.cloneNode(true);
+      const rows = [];
+      let currentRow = { label: null, text: [] };
+
+      Array.from(clone.childNodes).forEach(node => {
+        if (node.nodeName === 'BR') {
+          if (currentRow.label || currentRow.text.length) {
+            rows.push(currentRow);
+            currentRow = { label: null, text: [] };
+          }
+        } else if (node.nodeType === 1 && node.classList.contains('label-equipe-crea')) {
+          currentRow.label = node.innerHTML.replace(/\s*\/\s*$/, '').trim();
+        } else if (node.nodeName === 'A') {
+          currentRow.text.push(node.outerHTML);
+        } else {
+          const content = node.nodeType === 3 ? node.textContent.trim() : node.outerHTML;
+          if (content && content !== '<br>') {
+            currentRow.text.push(content);
+          }
+        }
+      });
+      if (currentRow.label || currentRow.text.length) rows.push(currentRow);
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'theatrical-credits';
+      rows.forEach(r => {
+        if (!r.label && (!r.text.length || r.text.join('') === '')) return;
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'credit-row';
+
+        const labelDiv = document.createElement('div');
+        labelDiv.className = 'credit-label';
+        labelDiv.innerHTML = r.label || '';
+
+        const textDiv = document.createElement('div');
+        textDiv.className = 'credit-name';
+        textDiv.innerHTML = r.text.join(' ');
+
+        rowDiv.appendChild(labelDiv);
+        rowDiv.appendChild(textDiv);
+        wrapper.appendChild(rowDiv);
+      });
+
+      p.parentNode.replaceChild(wrapper, p);
+    });
+  }
+
   normalizeCreationBlocks();
   buildHomeQuickNav();
   buildCreationSectionNav();
+  applyThematicGlow();
+  formatCredits();
   const targets = markRevealTargets();
   setupRevealObserver(targets);
+  setupInteractions();
 })();

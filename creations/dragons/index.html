@@ -2,227 +2,302 @@
 <html lang="fr" data-bs-theme="dark">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBBDMBMJEW"></script>
-    <script src="../../assets/js/inline/creations__dragons__index.html--inline-01.js"></script>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="La Cité des Dragons - par Mesdames A, compagnie de théâtre contemporain basée à Toulouse, dirigée par Alice Tabart.">
-    <meta name="author" content="Alice Tabart, Gilles Tabart">
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="mesdames a, pièce, théâtre, theatre, contemporain, spectacle, art, Toulouse, Alice Tabart, Tabart, spectacle, chant, danse, compagnie, troupe">
-    <title>La Cité des Dragons - Mesdames A</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="../../favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="../../manifest.json">
-    <meta name="theme-color" content="#000000">
-    <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link href="../../assets/css/site.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/redesign-2026.css">
-    <link rel="stylesheet" href="../../assets/css/bootstrap-legacy-compat.css">
-    <!-- Fonts stuff -->
+    <title>Mesdames A. - La Cité des Dragons</title>
+    <!-- Core Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Muli:300,300i,400,400i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/inline-style-migrations.css">
+    <!-- The Dark Space Aesthetic -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <style>
+        /* Specific Creation Page Overrides */
+        #creation-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: var(--space-xl);
+            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
+                url('media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg') center/cover no-repeat;
+        }
+
+        #creation-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(5, 5, 5, 0.6);
+            /* Darken hero image for text readability */
+        }
+
+        .hero-title-group {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title-group h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: var(--space-s);
+        }
+
+        .hero-title-group p {
+            font-size: 1.2rem;
+            color: var(--script-gray);
+            text-transform: uppercase;
+        }
+
+        /* Breadcrumb */
+        .page-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--space-m);
+            z-index: 10;
+        }
+
+        /* Gallery Reset */
+        .masonry-gallery a {
+            width: auto;
+            max-width: 100%;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .masonry-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--space-s);
+            transition: transform 0.3s;
+        }
+
+        .masonry-gallery a:hover img {
+            transform: scale(1.03);
+            border: 1px solid var(--red-dot);
+        }
+
+        /* Reduce huge section padding for content blocks */
+        .stage-section {
+            min-height: auto;
+            padding: var(--space-l) var(--space-m);
+        }
+
+        #creation-hero {
+            min-height: 60vh;
+            padding-top: var(--space-xl);
+        }
+
+
+        .page-header {
+            z-index: 1000;
+        }
+
+        .stage-section {
+            background: transparent;
+        }
+
+        .footer-stage {
+            background: var(--void-black);
+            z-index: 100;
+        }
+    </style>
 </head>
 
-<body id="page-top" class="d-flex flex-column vh-100" data-spy="scroll" data-target="#MA-navbar-creation">
-    <!-- IMAGE GALLERY -- The Gallery as lightbox dialog, should be a child element of the document body -->
-    <!--     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div> -->
-    <!-- Navigation -->
-    <section class="nav-back">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-10 mx-auto">
-                    <div class="retour-creations">
-                        <p><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-creation" href="./../../index.html#creations"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Retour aux créations</a></p>
+<body class="dark-space">
+    <!-- 1. The Guide (Mouse Tracker) -->
+    <div id="red-dot"></div>
+
+
+
+    <header class="page-header">
+        <div class="content-wrapper">
+            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!-- Hero Section -->
+        <section id="creation-hero" class="stage-section">
+            <div class="hero-title-group">
+                <h1><i>La Cité des Dragons</i></h1>
+                <p class="mono-text">Etés 2015 à 2018</p>
+            </div>
+        </section>
+
+        <!-- Core Text Content -->
+        <section id="creation-content" class="stage-section">
+            <div class="content-wrapper">
+                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
+                    <div class="col mt-4">
+                        <p>Spectacle total&nbsp;: marionnettes géantes, musique, théâtre, projections ; cette nouvelle
+                            expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles
+                            de la cité de Sévérac-le-Château.<br>Partant d'une rencontre inopinée entre orient et
+                            occident, lors de cette déambulation nous explorons, non sans humour, le monde des monstres
+                            et des chimères.<br>
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="creation-gallery" class="stage-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Galerie</h2>
+                <div class="masonry-gallery mt-l" style="text-align: center;">
+
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg"
+                        title="La Cité des Dragons - Bestiole &amp; Magicienne"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg"
+                            alt="Bestiole &amp; Magicienne"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_dragongros.jpg"
+                        title="La Cité des Dragons - Dragon géant"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_dragongros.jpg"
+                            alt="La Cité des Dragons - Dragon géant"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_magicienne2.jpg"
+                        title="La Cité des Dragons - Magicienne"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne2.jpg"
+                            alt="La Cité des Dragons - Magicienne"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg"
+                        title="La Cité des Dragons - Projection"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_projection.jpg"
+                            alt="La Cité des Dragons - Projection"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg"
+                        title="La Cité des Dragons - Silhouette Bestiole"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg"
+                            alt="Silhouette Bestiole"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg"
+                        title="La Cité des Dragons - Bestiole et tour"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg"
+                            alt="Bestiole et tour"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg"
+                        title="La Cité des Dragons - Bestiole chut"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg"
+                        title="La Cité des Dragons - Dragon profil"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg"
+                            alt="La Cité des Dragons - Dragon profil"></a>
+                    <a href="media/images/14030603_10209962267075557_920340036_n.jpg"
+                        title="La Cité des Dragons - Porte" data-bespoke-lightbox><img
+                            src="media/images/sm_14030603_10209962267075557_920340036_n.jpg"
+                            alt="La Cité des Dragons - Porte"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg"
+                        title="La Cité des Dragons - Magicienne"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne.jpg"
+                            alt="La Cité des Dragons - Magicienne"></a>
+                    <a href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg"
+                        title="La Cité des Dragons - Bestiole début" data-bespoke-lightbox><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg"
+                            alt="La Cité des Dragons - Bestiole début"></a>
+                    <a data-bespoke-lightbox href="media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg"
+                        title="La Cité des Dragons - Dragon chinois"><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_chinois.jpg"
+                            alt="La Cité des Dragons - Dragon chinois"></a>
+                    <a href="media/images/Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg"
+                        title="La Cité des Dragons - Bestiole final" data-bespoke-lightbox><img
+                            src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg"
+                            alt="La Cité des Dragons - Bestiole final"></a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Credits & Production Section -->
+        <section id="creation-credits" class="stage-section">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Crédits & Production</h2>
+                </div>
+                <div class="col-content">
+                    <div class="credits">
+                        <h3 class="mono-text mb-m accent">Équipe</h3>
+                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Écriture, mise en scène &amp; costumes
+                                /</strong> Alice Tabart
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Interprétation /</strong> Coline Lubin, Joël
+                            Sitbon &amp; Alice Tabart
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Création musicale /</strong> Kristen Annequin
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Création vidéo, lumière et soutien technique
+                                /</strong> Christian Vialaret
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Aide à la création des créatures /</strong>
+                            Emmanuel Borgetto
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Stagiaires /</strong> Marion Guinot
+                            (administration), Pauline Lattaque (assitante mise en scène)
+                        </p>
+                    </div>
+
+                    <div class="production mt-l">
+                        <h3 class="mono-text mb-m accent">Production</h3>
+                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:1.8;">
+                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a>, avec le
+                            soutien du Conseil Départemental de l'Aveyron (aide à la résidence).<br>
+                            Nous remercions l'Ecole de Danse Virginie Gonzales ainsi que l'association
+                            Sévérac-Vidéo-Son.
+                        </p>
+                    </div>
+
+                    <div class="past-dates mt-l">
+                        <h3 class="mono-text mb-m accent">Dates Passées</h3>
+                        <div class="mono-text" style="font-size: 0.8rem; color: var(--script-gray);">
+                            <ul style="list-style-type:none; padding:0;">
+                                <div id="carousel-dragons-generic" class="carousel slide" data-ride="carousel"
+                                    data-interval="false">
+                                    <! //-- Wrapper for slides --/ />
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid"
+                                                src="media/images/revue-presse/depeche-dragons-2016.jpg"
+                                                alt="La Dépêche - 2016">
+                                            <div class="carousel-caption">
+                                                La Dépêche 25-08-2016
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Creation Section -->
-    <section id="home-creation" class="home-creation">
-        <div class="container-xl">
-            <div class="row d-flex flex-column flex-grow-1">
-                <div class="col-10 mx-auto">
-                    <div class="jumbotron dragons jumbotron-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!-- <h1 class="display-4">Le Commencement</h1> -->
-                                <h1>La Cité des Dragons</h1>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-md-end"><small><i>Étés 2015 à 2018</i></small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--DRAGONS-->
-                    <div class="creations dragons" id="dragons">
-                        <div class="col mt-4">
-                            <p>Spectacle total&nbsp;: marionnettes géantes, musique, théâtre, projections ; cette nouvelle expérience théâtrale hors les murs part à la recherche des dragons endormis dans les ruelles de la cité de Sévérac-le-Château.<br>Partant d'une rencontre inopinée entre orient et occident, lors de cette déambulation nous explorons, non sans humour, le monde des monstres et des chimères.<br>
-                            </p>
-                            <!-- <img src="media/images/big/Cie_Mesdames_A_Dragons_2015_main_titre.jpg" alt="La Cité des Dragons - Magicienne" class="img-fluid"> -->
-                            <h2>Galerie</h2>
-                            <div id="galdragons" class="mt-4">
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" title="La Cité des Dragons - Bestiole &amp; Magicienne"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_BestioleMagicienne.jpg" alt="Bestiole &amp; Magicienne" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_dragongros.jpg" title="La Cité des Dragons - Dragon géant"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_dragongros.jpg" alt="La Cité des Dragons - Dragon géant" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" title="La Cité des Dragons - Magicienne"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne2.jpg" alt="La Cité des Dragons - Magicienne" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_projection.jpg" title="La Cité des Dragons - Projection"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_projection.jpg" alt="La Cité des Dragons - Projection" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" title="La Cité des Dragons - Silhouette Bestiole"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleombre.jpg" alt="Silhouette Bestiole" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" title="La Cité des Dragons - Bestiole et tour"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioletour.jpg" alt="Bestiole et tour" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" title="La Cité des Dragons - Bestiole chut"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioleshut.jpg" alt="Bestiole chut" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" title="La Cité des Dragons - Dragon profil"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Dragonprofil.jpg" alt="La Cité des Dragons - Dragon profil" width="24%" class="img-thumbnail"></a>
-                                <a href="media/images/14030603_10209962267075557_920340036_n.jpg" title="La Cité des Dragons - Porte" data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox"><img src="media/images/sm_14030603_10209962267075557_920340036_n.jpg" alt="La Cité des Dragons - Porte" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg" title="La Cité des Dragons - Magicienne"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_magicienne.jpg" alt="La Cité des Dragons - Magicienne" width="24%" class="img-thumbnail"></a>
-                                <a href="media/images/Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" title="La Cité des Dragons - Bestiole début" data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestioledebut.jpg" alt="La Cité des Dragons - Bestiole début" width="24%" class="img-thumbnail"></a>
-                                <a data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox" href="media/images/Cie_Mesdames_A_Dragons_2015_chinois.jpg" title="La Cité des Dragons - Dragon chinois"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_chinois.jpg" alt="La Cité des Dragons - Dragon chinois" width="24%" class="img-thumbnail"></a>
-                                <a href="media/images/Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" title="La Cité des Dragons - Bestiole final" data-gallery="#blueimp-gallery-galdragons" data-toggle="lightbox"><img src="media/images/sm_Cie_Mesdames_A_Dragons_2015_Bestiolefinal.jpg" alt="La Cité des Dragons - Bestiole final" width="24%" class="img-thumbnail"></a>
-                            </div>
-                        </div>
-                        <h2>Le spectacle</h2>
-                        <p>Vous ne le savez sans doute pas Encore mais la cité de Sévérac le Château abrite de drôles de personnages. Il y a La Bestiole créée de toutes pièces, il y a aussi la magicienne dévoreuse de chamalow, mais il y a surtout ceux qui se cachent. Il paraît que dans la magie des ruelles gît un dragon solitaire qui ne se laisse apercevoir que par qui veut bien y croire. Ouvrez grands vos yeux et vos oreilles, peut-être en rencontrerez-vous un plus vite que prévu.<br><br>Laissez-vous guider par La Bestiole et découvrez l’histoire folle des dragons de la cité de Sévérac. Une déambulation pleine de surprises qui vous fera voyager dans le temps et de par le monde. Magie et musique vous accompagneront tout le long de cette soirée fantastique dont vous vous souviendrez encore longtemps.</p>
-                        <div class="hidden ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/245348569"></iframe></div>
-                        <h2>Équipe de création</h2>
-                        <p class="equip-crea">
-                            <span class="label-equipe-crea">Écriture, mise en scène &amp; costumes /</span> Alice Tabart
-                            <br>
-                            <span class="label-equipe-crea">Interprétation /</span> Coline Lubin, Joël Sitbon &amp; Alice Tabart
-                            <br>
-                            <span class="label-equipe-crea">Création musicale /</span> Kristen Annequin
-                            <br>
-                            <span class="label-equipe-crea">Création vidéo, lumière et soutien technique /</span> Christian Vialaret
-                            <br>
-                            <span class="label-equipe-crea">Aide à la création des créatures /</span> Emmanuel Borgetto
-                            <br>
-                            <span class="label-equipe-crea">Stagiaires /</span> Marion Guinot (administration), Pauline Lattaque (assitante mise en scène)
-                        </p>
-                        <h2>Production</h2>
-                        <p class="production">
-                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a>, avec le soutien du Conseil Départemental de l'Aveyron (aide à la résidence).<br>
-                            Nous remercions l'Ecole de Danse Virginie Gonzales ainsi que l'association Sévérac-Vidéo-Son.
-                        </p>
-                        <!-- <h2>Revue de presse</h2> -->
-                        <div class="hidden" id="galRPdragons">
-                            <a data-gallery="#blueimp-gallery-galRPdragons" data-toggle="lightbox" href="media/images/revue-presse/depeche-dragons-2016.jpg" title="La Dépêche 25-08-2016"><img src="media/images/revue-presse/depeche-dragons-2016.jpg" alt="La Dépêche 25-08-2016" width="24%"></a>
-                            <a data-gallery="#blueimp-gallery-galRPdragons" data-toggle="lightbox" href="media/images/revue-presse/dragon1aout2015.jpg" title="La Dépêche 25-08-2016"><img src="media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre" width="24%"></a>
-                            <a data-gallery="#blueimp-gallery-galRPdragons" data-toggle="lightbox" href="media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" title="La Dépêche - 17/08/2015"><img src="media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche - 2015" width="24%"></a>
-                        </div>
-                        <h2>Dates</h2>
-                        <div class="row row-cols-1 mb-3 d-flex flex-grow-1">
-                            <h5>2018</h5>
-                            <ul>
-                                <li>6 et 23 juillet / Sévérac le Château</li>
-                                <li>13 et 20 août / Sévérac le Château</li>
-                            </ul>
-                            <h5>2017</h5>
-                            <ul>
-                                <li>2 dates en juillet / Sévérac le Château</li>
-                                <li>2 dates en août / Sévérac le Château</li>
-                            </ul>
-                            <h5>2016</h5>
-                            <ul>
-                                <li>18 et 25 juillet / Sévérac le Château</li>
-                                <li>8 et 22 août / Sévérac le Château</li>
-                            </ul>
-                            <h5>2015</h5>
-                            <ul>
-                                <li>20 juillet/ Sévérac le Château</li>
-                                <li>3, 17 et 24 août / Sévérac le Château</li>
-                            </ul>
-                        </div>
-                        <!-- <div id="revue-presse-dragons-modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RevueDePresse" aria-hidden="false">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Revue de presse - La Cité des Dragons</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div id="carousel-dragons-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-                                                    <!//-- Wrapper for slides --//>
-                                                    <div class="carousel-inner">
-                                                        <div class="carousel-item active">
-                                                            <img class="img-fluid" src="media/images/revue-presse/depeche-dragons-2016.jpg" alt="La Dépêche - 2016">
-                                                            <div class="carousel-caption">
-                                                                La Dépêche 25-08-2016
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <img class="img-fluid" src="media/images/revue-presse/dragon1aout2015.jpg" alt="Midi Libre">
-                                                            <div class="carousel-caption">
-                                                                Midi Libre 01-08-2015
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item">
-                                                            <img class="img-fluid" src="media/images/revue-presse/la-depeche-17-aout-2015-dragons.jpg" alt="La Dépêche - 2015">
-                                                            <div class="carousel-caption">
-                                                                La Dépêche 17-08-2015
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!//-- Controls --//>
-                                                 <a class="carousel-control-prev" href="#carousel-dragons-generic" role="button" data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Précédent</span>
-                                                 </a>
-                                                 <a class="carousel-control-next" href="#carousel-dragons-generic" role="button" data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true">
-                                                    </span><span class="sr-only">Suivant</span>
-                                                 </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!//--stop video when close modal--//>
-                                <script async>
-                                $("#revue-presse-dragons-modal-lg").on('hidden.bs.modal', function(e) {
-                                    var $this = $(this);
-                                    var $frame = $this.find('iframe');
-                                    $frame.attr("src", $frame.attr("src"));
-                                });
-                                </script> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+        <div class="content-wrapper text-center">
+            <div class="socials mb-l">
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
+                <span class="dot-separator">•</span>
+                <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
+                <span class="dot-separator">•</span>
+                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
             </div>
-        </div>
-    </section>
-    <footer class="mt-4">
-        <div class="logo-contact">
-            <ul class="social-network social-circle">
-                <li><a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/Mesdames_A" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="adresse-internet">
-            <p class="text-center">
-                <a class="link-creation" href="https://mesdames-a.fr">www.mesdames-a.fr</a>
-            </p>
+
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+            <p
+                style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">
+                Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+            <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>
-    <script src="../../assets/js/bootstrap-legacy-bridge.js"></script>
-    <script src="../../assets/js/creation-page-enhancements.js"></script>
-    <script src="../../assets/js/redesign-2026.js"></script>
+
+
+
+    <!-- Interactive Elements Engine -->
+    <script src="../../assets/js/main.js"></script>
+
+
 </body>
-<!-- ///////////// SCRIPTS ////////////////-->
-<!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<!-- bs5-ligthbox-->
-<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
 </html>
