@@ -12,64 +12,21 @@
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- The Dark Space Aesthetic -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-
-    <style>
-        /* Specific Creation Page Overrides */
-        #creation-hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: var(--space-xl);
-            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-                url('media/images/eclairs-jeu.jpg') center/cover no-repeat;
-        }
-
-        #creation-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 5, 5, 0.6);
-            /* Darken hero image for text readability */
-        }
-
-        .hero-title-group {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-title-group h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            margin-bottom: var(--space-s);
-        }
-
-        .hero-title-group p {
-            font-size: 1.2rem;
-            color: var(--script-gray);
-            text-transform: uppercase;
-        }
-
-        /* Breadcrumb */
-        .page-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: var(--space-m);
-            z-index: 10;
-        }
-    </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
 
-<body class="dark-space">
+<body data-hero-bg="media/images/eclairs-girls.webp" class="dark-space">
     <!-- 1. The Guide (Mouse Tracker) -->
     <div id="red-dot"></div>
 
     <header class="page-header">
         <div class="content-wrapper">
-            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+            <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+            <div class="header-nav-right">
+                <a href="../commencement/index.html" class="nav-arrow" title="Précédent : Le Commencement">&larr;</a>
+                <a href="../SPECTATEURS/index.html" class="nav-arrow" title="Suivant : Spectateur&#40;s&#41; - un accident de théâtre">&rarr;</a>
+            </div>
         </div>
     </header>
 
@@ -85,7 +42,7 @@
         <!-- Core Text Content -->
         <section id="creation-content" class="stage-section">
             <div class="content-wrapper">
-                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
+                <div class="bio-focus">
                     <p>ÉCLAIRS propose un écrin onirique dans lequel nous suivons la quête d’une jeune femme
                         (interprétée par la danseuse Elsa Sanchez) sur les pas de sa grand-mère, fantôme bienveillant
                         joué par Coline Lubin. Elle y découvre sa lutte de femme libre et la folie douce de son
@@ -99,7 +56,8 @@
 
                 <div class="video-stage">
                     <div class="embed-responsive">
-                        <iframe src="https://player.vimeo.com/video/325242505" title="ÉCLAIRS"></iframe>
+                        <iframe src="https://player.vimeo.com/video/325242505" title="ÉCLAIRS"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -110,24 +68,24 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Galerie</h2>
                 <div class="masonry-gallery mt-l">
-                    <a data-bespoke-lightbox href="media/images/eclairs-guitare.jpg" title="ÉCLAIRS - Guitare">
-                        <img src="media/images/eclairs-guitare.jpg" alt="ÉCLAIRS">
+                    <a data-bespoke-lightbox href="media/images/eclairs-guitare.webp" title="ÉCLAIRS - Guitare">
+                        <img src="media/images/eclairs-guitare.webp" alt="ÉCLAIRS">
                     </a>
-                    <a data-bespoke-lightbox href="media/images/eclairs-sol.jpg" title="ÉCLAIRS - Sol">
-                        <img src="media/images/eclairs-sol.jpg" alt="ÉCLAIRS">
+                    <a data-bespoke-lightbox href="media/images/eclairs-sol.webp" title="ÉCLAIRS - Sol">
+                        <img src="media/images/eclairs-sol.webp" alt="ÉCLAIRS">
                     </a>
-                    <a data-bespoke-lightbox href="media/images/eclairs-elsa-coline.jpg"
+                    <a data-bespoke-lightbox href="media/images/eclairs-elsa-coline.webp"
                         title="ÉCLAIRS - Elsa & Coline">
-                        <img src="media/images/eclairs-elsa-coline.jpg" alt="ÉCLAIRS">
+                        <img src="media/images/eclairs-elsa-coline.webp" alt="ÉCLAIRS">
                     </a>
-                    <a data-bespoke-lightbox href="media/images/eclairs-jeu.jpg" title="ÉCLAIRS - Jeu">
-                        <img src="media/images/eclairs-jeu.jpg" alt="ÉCLAIRS">
+                    <a data-bespoke-lightbox href="media/images/eclairs-jeu.webp" title="ÉCLAIRS - Jeu">
+                        <img src="media/images/eclairs-jeu.webp" alt="ÉCLAIRS">
                     </a>
-                    <a data-bespoke-lightbox href="media/images/eclairs-girls.jpg" title="ÉCLAIRS - Groupe">
-                        <img src="media/images/eclairs-girls.jpg" alt="ÉCLAIRS">
+                    <a data-bespoke-lightbox href="media/images/eclairs-girls.webp" title="ÉCLAIRS - Groupe">
+                        <img src="media/images/eclairs-girls.webp" alt="ÉCLAIRS">
                     </a>
-                    <a data-bespoke-lightbox href="media/images/eclairs-calin-sur-scene.jpg" title="ÉCLAIRS - Câlin">
-                        <img src="media/images/eclairs-calin-sur-scene.jpg" alt="ÉCLAIRS">
+                    <a data-bespoke-lightbox href="media/images/eclairs-calin-sur-scene.webp" title="ÉCLAIRS - Câlin">
+                        <img src="media/images/eclairs-calin-sur-scene.webp" alt="ÉCLAIRS">
                     </a>
                 </div>
             </div>
@@ -142,30 +100,66 @@
                 <div class="col-content">
                     <div class="credits">
                         <h3 class="mono-text mb-m accent">Équipe</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
+                        <div class="mono-text" style="font-size:0.9rem; line-height:2;">
                             <br><strong style="color:var(--pure-white);">Mise en scène, écriture & chant /</strong>
                             Alice Tabart
-                            <br><strong style="color:var(--pure-white);">Interprétation /</strong> Coline Lubin, Elsa
-                            Sanchez, Éric Leclerc
+                            <br>
+                            <div class="avec-listing mt-m">
+                                <span class="label-equipe-crea label-avec">Avec :</span>
+                                <div class="names-list">
+                                    <span>Coline Lubin</span>
+                                    <span>Elsa Sanchez</span>
+                                    <span>Éric Leclerc</span>
+                                </div>
+                            </div>
                             <br><strong style="color:var(--pure-white);">Musique /</strong> Aladin Chaboche (Guitare),
                             Jean-Marc Serpin (Contrebasse)
                             <br><strong style="color:var(--pure-white);">Scénographie /</strong> Claire Balerdi
                             <br><strong style="color:var(--pure-white);">Lumière /</strong> Serena Andreasi
-                        </p>
+                        </div>
                     </div>
 
                     <div class="production mt-l">
                         <h3 class="mono-text mb-m accent">Production</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:1.8;">
+                        <p class="text-readable">
                             Une production de la compagnie Mesdames A.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+<!-- Archives: Dates passées & Affiche -->
+        <section id="creation-archives" class="stage-section" style="padding-bottom: var(--space-xl);">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Dates Passées</h2>
+                </div>
+                <div class="col-content">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-12 col-md-8">
+                            <div class="dates-list mono-text" style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                                <ul>
+                                    <li><b>2014</b></li>
+                                <li>- MJC L'Isle-Jourdain - Gers</li>
+                                <br>
+                                <li><b>2013</b></li>
+                                <li>- 1er juin: H..... - .......</li>
+                                <li>- 30 mars: ..... - ........</li>
+                                <br>
+                                <li><b>2012</b></li>
+                                <li>- 31 mars : ......</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
-    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
         <div class="content-wrapper text-center">
             <div class="socials mb-l">
                 <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
@@ -173,13 +167,14 @@
                 <span class="dot-separator">•</span>
                 <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
                 <span class="dot-separator">•</span>
-                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+                <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
             </div>
             <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
                 style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-            <p
-                style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">
-                Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+            <div class="footer-brand mt-xl">
+                <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+                <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+            </div>
             <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>

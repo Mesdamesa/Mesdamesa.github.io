@@ -15,16 +15,41 @@
         rel="stylesheet">
     <!-- Main Bespoke Stylesheet -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBBDMBMJEW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MBBDMBMJEW', { 'anonymize_ip': true });
+    </script>
+
+    <script>
+        window.axeptioSettings = {
+            clientId: "662665f16e157af438f3e17e",
+            cookiesVersion: "mesdames-a-fr-EU",
+        };
+        (function (d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+        })(document, "script");
+    </script>
 </head>
 
 <body class="dark-space">
+
+    </div>
 
     <!-- The Guiding Light -->
     <div id="red-dot"></div>
 
     <!-- Minimal, fading navigation -->
     <nav id="main-nav">
-        <a href="#hero" class="nav-brand">Mesdames A.</a>
+        <a href="#hero" class="nav-brand">
+            <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" class="nav-logo">
+            Mesdames A.
+        </a>
 
         <div class="nav-right">
             <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2026"
@@ -36,7 +61,7 @@
             </button>
 
             <div id="nav-drawer" class="nav-links">
-                <a href="#repertoire">Le Répertoire</a>
+                <a href="#creations">Créations</a>
                 <a href="#compagnie">La Compagnie</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -47,22 +72,33 @@
         <!-- Intro / Hero -->
         <section id="hero" class="stage-section">
             <div class="content-wrapper text-center">
-                <h1 class="dramatic-title">Une ombre, un éclat.</h1>
-                <p class="mono-text typing-effect">La scène est vide. Le spectacle commence.</p>
-                <div class="scroll-indicator">
-                    <span>Suivre la lumière</span>
+                <h1 class="dramatic-title">Depuis 2010, on allume des feux.</h1>
+                <p class="mono-text typing-effect">Théâtre, musique, danse — sur les plateaux et hors les murs, pour
+                    tous.</p>
+                <div class="mt-xl">
+                    <a href="https://severaclechateau.vostickets.net/billet/FR/representation-SEVERAC_LE_CHATEAU-31172-0.wb/"
+                        target="_blank" class="btn-support hover-glow d-inline-block"
+                        style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+                        <span class="mono-text"
+                            style="opacity:0.7; font-size:0.75rem; display:block; margin-bottom:0.25rem; letter-spacing:0.15em;">CROMWELL</span>
+                        Infos et réservations (12, 14 et 16 août) <i class="fa-solid fa-ticket ms-2"></i>
+                    </a>
+                </div>
+                <div class="scroll-indicator" style="margin-top: var(--space-l);">
+                    <span>Découvrir nos créations</span>
                     <div class="line"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Répertoire / Créations -->
-        <section id="repertoire" class="stage-section">
+        <!-- Créations -->
+        <section id="creations" class="stage-section">
+            <div id="creations-bg-layer"></div>
             <div class="content-wrapper">
-                <h2 class="section-title">Le Répertoire</h2>
+                <h2 class="section-title">Créations</h2>
 
                 <article class="creation-item"
-                    data-bg-src="creations/cromwell/media/images/cromwell-banniere-4-3-bg-2.png_576.webp">
+                    data-bg-src="creations/cromwell/media/images/cromwell-silhouettes-coline-lubin.png_1440.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2024/2026</span>
                         <h3 class="creation-title">CROMWELL</h3>
@@ -76,7 +112,7 @@
                 </article>
 
                 <article class="creation-item"
-                    data-bg-src="creations/commencement/media/images/05-commencement-md-coline-slide-dsc-9666.jpg">
+                    data-bg-src="creations/commencement/media/images/05-commencement-md-coline-slide-dsc-9666.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2022/2024</span>
                         <h3 class="creation-title">Le Commencement</h3>
@@ -89,7 +125,7 @@
                     </div>
                 </article>
 
-                <article class="creation-item" data-bg-src="creations/eclairs/media/images/eclairs-jeu.jpg">
+                <article class="creation-item" data-bg-src="creations/eclairs/media/images/eclairs-jeu.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2018/2020</span>
                         <h3 class="creation-title">ÉCLAIRS</h3>
@@ -105,7 +141,7 @@
                 </article>
 
                 <article class="creation-item"
-                    data-bg-src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg">
+                    data-bg-src="creations/SPECTATEURS/media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2014/2016</span>
                         <h3 class="creation-title">Spectateur(s) - un accident de théâtre</h3>
@@ -119,7 +155,7 @@
                 </article>
 
                 <article class="creation-item"
-                    data-bg-src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne.jpg">
+                    data-bg-src="creations/dragons/media/images/Cie_Mesdames_A_Dragons_2015_magicienne.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2015/2018</span>
                         <h3 class="creation-title">La Cité des Dragons</h3>
@@ -133,7 +169,7 @@
                 </article>
 
                 <article class="creation-item"
-                    data-bg-src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg">
+                    data-bg-src="creations/satyre/media/images/CIE_MESDAMES_A_2012_Satyre_epaules.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2012/2014</span>
                         <h3 class="creation-title">Le Satyre</h3>
@@ -147,7 +183,7 @@
                 </article>
 
                 <article class="creation-item"
-                    data-bg-src="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_dueldiapo.jpg">
+                    data-bg-src="creations/monologue/media/images/CIE_MESDAMES_A_2011_Monologue_dueldiapo.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2010/2011</span>
                         <h3 class="creation-title">Le Monologue d'une Tueuse</h3>
@@ -160,7 +196,7 @@
                     </div>
                 </article>
 
-                <article class="creation-item" data-bg-src="creations/voyages/media/images/voyages-resize-2.jpg">
+                <article class="creation-item" data-bg-src="creations/voyages/media/images/voyages-resize-2.webp">
                     <div class="creation-meta">
                         <span class="mono-text accent">2007/2023</span>
                         <h3 class="creation-title">Voyages dans le temps</h3>
@@ -183,165 +219,181 @@
 
         <!-- La Compagnie -->
         <section id="compagnie" class="stage-section">
-            <div class="content-wrapper row-layout">
-                <div class="col-title">
-                    <h2 class="section-title">La Compagnie</h2>
-                    <div class="bio-focus mt-l">
-                        <p>Elle est née en 2010 de l'envie d'une dizaine de jeunes artistes toulousain.e.s. Leur
-                            objectif dès le départ se situait à la rencontre entre la création contemporaine (théâtre,
-                            musique, danse) et la recherche, ainsi que dans une perspective résolue de diffusion pour le
-                            plus grand nombre à la fois en lieux de théâtre repérés et en milieux éloignés de l'offre
-                            culturelle.</p>
-                        <br>
-                        <p>Des créations inter-disciplinaires brassées par nos enjeux contemporains inscrites dans un
-                            vrai parcours de démocratisation culturelle.</p>
-                        <br>
-                        <p>Cette double philosophie nous a conduit sur les routes de l'Occitanie (et au-delà) avec des
-                            projets qui, sous la houlette d'Alice Tabart, dessinent une dramaturgie de l'histoire, à
-                            destination d'un réel tout public.</p>
+            <div class="content-wrapper">
+                <h2 class="section-title reveal-me">La Compagnie</h2>
+
+                <div class="row-layout compagnie-split mt-xl">
+                    <div class="col-bio">
+                        <div class="bio-focus">
+                            <p>Elle est née en 2010 de l'envie d'une dizaine de jeunes artistes toulousain.e.s. Leur
+                                objectif dès le départ se situait à la rencontre entre la création contemporaine
+                                (théâtre,
+                                musique, danse) et la recherche, ainsi que dans une perspective résolue de diffusion
+                                pour le
+                                plus grand nombre à la fois en lieux de théâtre repérés et en milieux éloignés de
+                                l'offre
+                                culturelle.</p>
+                            <br>
+                            <p>Des créations inter-disciplinaires brassées par nos enjeux contemporains inscrites dans
+                                un
+                                vrai parcours de démocratisation culturelle.</p>
+                            <br>
+                            <p>Cette double philosophie nous a conduit sur les routes de l'Occitanie (et au-delà) avec
+                                des
+                                projets qui, sous la houlette d'Alice Tabart, dessinent une dramaturgie de l'histoire, à
+                                destination d'un réel tout public.</p>
+                        </div>
+                    </div>
+                    <div class="col-team">
+                        <h3 class="mono-text mb-l accent">L'Équipe</h3>
+                        <div class="team-grid">
+                            <details class="team-member-accordion">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar" style="background-image:url('media/images/alice-square2.jpg');">
+                                    </div>
+                                    <div>
+                                        <h3 class="name">Alice Tabart</h3>
+                                        <span class="role mono-text">Mise en scène, écriture</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio">
+                                    <p>Initiée au jeu par Michel Genniaux à Millau, elle poursuit ses études
+                                        préparatoires
+                                        au lycée Fermat en Études Théâtrales avec Sébastien Bournac, puis en licence de
+                                        Lettres Modernes et Master Arts du spectacle et médias... Simultanément, elle se
+                                        forme lors de plusieurs stages, suit une formation mêlant chant, danse et jeu au
+                                        Théâtre de la Digue.</p>
+                                    <p>Elle crée avec Audrey Gary, la compagnie MESDAMES A en 2009. Depuis dix ans, elle
+                                        se
+                                        consacre à ses créations : Spectateur(s), La Cité des Dragons, ÉCLAIRS, et bien
+                                        d'autres.</p>
+                                    <a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" target="_blank"
+                                        class="mono-text link-minimal hover-glow">LinkedIn &rarr;</a>
+                                </div>
+                            </details>
+
+                            <details class="team-member-accordion">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar"
+                                        style="background-image:url('media/images/coline-square-2018.jpg');"></div>
+                                    <div>
+                                        <h3 class="name">Coline Lubin</h3>
+                                        <span class="role mono-text">Interprétation</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio">
+                                    <p>Après avoir commencé le théâtre très jeune, elle renforce sa pratique d’année en
+                                        année et se forme auprès de Virginie Baes et Sébastien Bournac au Théâtre de la
+                                        Digue. Ensuite, elle suit la formation professionnelle au Théâtre Le Hangar et
+                                        s’ouvre au théâtre classique.</p>
+                                    <p>Coline a été stagiaire au Théâtre du soleil et fait partie du groupe Hortense. Au
+                                        sein de Mesdames a, elle a participé à la création du Monologue d'une tueuse, du
+                                        Satyre, de Spectateur(s), et de La Cité des Dragons.</p>
+                                </div>
+                            </details>
+
+                            <details class="team-member-accordion">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar" style="background-image:url('media/images/lea-square.jpg');">
+                                    </div>
+                                    <div>
+                                        <h3 class="name">Léa Cuny-Bret</h3>
+                                        <span class="role mono-text">Chargée de production/diffusion</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio">
+                                    <p>Responsable de la production et de la diffusion des différentes créations et
+                                        tournées
+                                        de la compagnie.</p>
+                                </div>
+                            </details>
+
+                            <details class="team-member-accordion">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar"
+                                        style="background-image:url('media/images/mathilde-square.jpeg');">
+                                    </div>
+                                    <div>
+                                        <h3 class="name">Mathilde Ratajczyk</h3>
+                                        <span class="role mono-text">Chargée de production/administration</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio">
+                                    <p>En charge de la logistique administrative et de la gestion globale pour sécuriser
+                                        les
+                                        fondations de Mesdames A.</p>
+                                </div>
+                            </details>
+
+                            <details class="team-member-accordion past-members-list">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar" style="background-image:url('media/images/autres-square.jpg');">
+                                    </div>
+                                    <div>
+                                        <h3 class="name">Au fil du temps</h3>
+                                        <span class="role mono-text">Collaborations passées</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio">
+                                    <p class="mb-s">La troupe a eu la chance de croiser le chemin de nombreux artistes
+                                        ou
+                                        techniciens :</p>
+                                    <ul class="mono-text" style="font-size: 0.8rem; list-style-type: none;">
+                                        <li><span class="pure-white">Emmanuel Borgetto</span> / construction décor</li>
+                                        <li><span class="pure-white">Serena Andreasi</span> / création lumière</li>
+                                        <li><span class="pure-white">Claire Balerdi</span> / scénographie</li>
+                                        <li><span class="pure-white">Éric Leclerc</span> / interprétation</li>
+                                        <li><span class="pure-white">Aladin Chaboche</span> / guitare, composition</li>
+                                        <li><span class="pure-white">Jean-Marc Serpin</span> / contrebasse</li>
+                                        <li><span class="pure-white">Elsa Sanchez</span> / comedienne</li>
+                                        <li><span class="pure-white">Simon Giesbert</span> / comédien</li>
+                                        <li><span class="pure-white">Lucas Lemauff</span> / comédien</li>
+                                        <li><span class="pure-white">Olivier Marchepoil</span> / comédien</li>
+                                        <li><span class="pure-white">Juliette Nogera</span> / diffusion</li>
+                                        <li><span class="pure-white">Nadia Ouali</span> / communication</li>
+                                        <li><span class="pure-white">Laura Trujillo</span> / scénographie</li>
+                                        <li><span class="pure-white">Joël Sitbon</span> / chorégraphe</li>
+                                        <li><span class="pure-white">Marion Guinot</span> / stagiaire</li>
+                                        <li><span class="pure-white">Pauline Lattaque</span> / stagiaire</li>
+                                        <li><span class="pure-white">Charline Daligaud</span> / assistante MES</li>
+                                        <li><span class="pure-white">Romain Di Sante</span> / conception décors</li>
+                                        <li><span class="pure-white">Malik Pavaux</span> / création lumière</li>
+                                        <li><span class="pure-white">Thomas Dupeyron</span> / régie lumière</li>
+                                        <li><span class="pure-white">Nils Grauerholz</span> / graphiste, logo</li>
+                                        <li><span class="pure-white">Julien Botella</span> / comédien</li>
+                                        <li><span class="pure-white">Samuel Pivot</span> / comédien</li>
+                                        <li><span class="pure-white">Samuel Segura</span> / comédien / danseur</li>
+                                        <li><span class="pure-white">Claire Cittone</span> / comédienne, musicienne</li>
+                                        <li><span class="pure-white">Emmanuel Rogez</span> / musicien, décorateur</li>
+                                        <li><span class="pure-white">Mathilde Chamoux & Thibault Condy</span> / lumière
+                                        </li>
+                                        <li><span class="pure-white">Armony Moulis</span> / scénographie</li>
+                                        <li class="mt-s"><span class="pure-white">Audrey Gary</span> / co-créatrice de
+                                            la
+                                            Compagnie</li>
+                                    </ul>
+                                </div>
+                            </details>
+
+                            <details class="team-member-accordion support-item support-accordion">
+                                <summary class="team-member-header hover-glow">
+                                    <div class="avatar logo-portrait"><img src="media/images/LogoCompagnieMa.svg"
+                                            alt="Mesdames A."></div>
+                                    <div>
+                                        <h3 class="name">Nous soutenir</h3>
+                                        <span class="role mono-text">Compagnie Mesdames A.</span>
+                                    </div>
+                                </summary>
+                                <div class="team-member-bio text-center">
+                                    <p class="mb-m">Votre aide nous permet de continuer à faire vivre nos projets et à
+                                        porter le théâtre en milieux éloignés.</p>
+                                    <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2026"
+                                        target="_blank" class="btn-support">Faire un don / Adhérer</a>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                 </div>
-                <div class="col-content">
-                    <h3 class="mono-text mb-l accent">L'Équipe</h3>
-                    <div class="team-grid">
-                        <details class="team-member-accordion">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar" style="background-image:url('media/images/alice-square2.jpg');">
-                                </div>
-                                <div>
-                                    <h3 class="name">Alice Tabart</h3>
-                                    <span class="role mono-text">Mise en scène, écriture</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio">
-                                <p>Initiée au jeu par Michel Genniaux à Millau, elle poursuit ses études préparatoires
-                                    au lycée Fermat en Études Théâtrales avec Sébastien Bournac, puis en licence de
-                                    Lettres Modernes et Master Arts du spectacle et médias... Simultanément, elle se
-                                    forme lors de plusieurs stages, suit une formation mêlant chant, danse et jeu au
-                                    Théâtre de la Digue.</p>
-                                <p>Elle crée avec Audrey Gary, la compagnie MESDAMES A en 2009. Depuis dix ans, elle se
-                                    consacre à ses créations : Spectateur(s), La Cité des Dragons, ÉCLAIRS, et bien
-                                    d'autres.</p>
-                                <a href="https://fr.linkedin.com/in/alice-tabart-b0b37580" target="_blank"
-                                    class="mono-text link-minimal hover-glow">LinkedIn &rarr;</a>
-                            </div>
-                        </details>
-
-                        <details class="team-member-accordion">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar"
-                                    style="background-image:url('media/images/coline-square-2018.jpg');"></div>
-                                <div>
-                                    <h3 class="name">Coline Lubin</h3>
-                                    <span class="role mono-text">Interprétation</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio">
-                                <p>Après avoir commencé le théâtre très jeune, elle renforce sa pratique d’année en
-                                    année et se forme auprès de Virginie Baes et Sébastien Bournac au Théâtre de la
-                                    Digue. Ensuite, elle suit la formation professionnelle au Théâtre Le Hangar et
-                                    s’ouvre au théâtre classique.</p>
-                                <p>Coline a été stagiaire au Théâtre du soleil et fait partie du groupe Hortense. Au
-                                    sein de Mesdames a, elle a participé à la création du Monologue d'une tueuse, du
-                                    Satyre, de Spectateur(s), et de La Cité des Dragons.</p>
-                            </div>
-                        </details>
-
-                        <details class="team-member-accordion">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar" style="background-image:url('media/images/lea-square.jpg');"></div>
-                                <div>
-                                    <h3 class="name">Léa Cuny-Bret</h3>
-                                    <span class="role mono-text">Chargée de production/diffusion</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio">
-                                <p>Responsable de la production et de la diffusion des différentes créations et tournées
-                                    de la compagnie.</p>
-                            </div>
-                        </details>
-
-                        <details class="team-member-accordion">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar" style="background-image:url('media/images/mathilde-square.jpeg');">
-                                </div>
-                                <div>
-                                    <h3 class="name">Mathilde Ratajczyk</h3>
-                                    <span class="role mono-text">Chargée de production/administration</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio">
-                                <p>En charge de la logistique administrative et de la gestion globale pour sécuriser les
-                                    fondations de Mesdames A.</p>
-                            </div>
-                        </details>
-
-                        <details class="team-member-accordion support-item support-accordion">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar logo-portrait"><img src="media/images/LogoCompagnieMa.svg"
-                                        alt="Mesdames A."></div>
-                                <div>
-                                    <h3 class="name">Nous soutenir</h3>
-                                    <span class="role mono-text">Compagnie Mesdames A.</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio text-center">
-                                <p class="mb-m">Votre aide nous permet de continuer à faire vivre nos projets et à
-                                    porter le théâtre en milieux éloignés.</p>
-                                <a href="https://www.helloasso.com/associations/compagnie-mesdames-a/adhesions/adhesion-cie-mesdames-a-2026"
-                                    target="_blank" class="btn-support">Faire un don / Adhérer</a>
-                            </div>
-                        </details>
-
-                        <details class="team-member-accordion past-members-list">
-                            <summary class="team-member-header hover-glow">
-                                <div class="avatar" style="background-image:url('media/images/autres-square.jpg');">
-                                </div>
-                                <div>
-                                    <h3 class="name">Au fil du temps</h3>
-                                    <span class="role mono-text">Collaborations passées</span>
-                                </div>
-                            </summary>
-                            <div class="team-member-bio">
-                                <p class="mb-s">La troupe a eu la chance de croiser le chemin de nombreux artistes ou
-                                    techniciens :</p>
-                                <ul class="mono-text" style="font-size: 0.8rem; list-style-type: none;">
-                                    <li><span class="pure-white">Emmanuel Borgetto</span> / construction décor</li>
-                                    <li><span class="pure-white">Serena Andreasi</span> / création lumière</li>
-                                    <li><span class="pure-white">Claire Balerdi</span> / scénographie</li>
-                                    <li><span class="pure-white">Éric Leclerc</span> / interprétation</li>
-                                    <li><span class="pure-white">Aladin Chaboche</span> / guitare, composition</li>
-                                    <li><span class="pure-white">Jean-Marc Serpin</span> / contrebasse</li>
-                                    <li><span class="pure-white">Elsa Sanchez</span> / comedienne</li>
-                                    <li><span class="pure-white">Simon Giesbert</span> / comédien</li>
-                                    <li><span class="pure-white">Lucas Lemauff</span> / comédien</li>
-                                    <li><span class="pure-white">Olivier Marchepoil</span> / comédien</li>
-                                    <li><span class="pure-white">Juliette Nogera</span> / diffusion</li>
-                                    <li><span class="pure-white">Nadia Ouali</span> / communication</li>
-                                    <li><span class="pure-white">Laura Trujillo</span> / scénographie</li>
-                                    <li><span class="pure-white">Joël Sitbon</span> / chorégraphe</li>
-                                    <li><span class="pure-white">Marion Guinot</span> / stagiaire</li>
-                                    <li><span class="pure-white">Pauline Lattaque</span> / stagiaire</li>
-                                    <li><span class="pure-white">Charline Daligaud</span> / assistante MES</li>
-                                    <li><span class="pure-white">Romain Di Sante</span> / conception décors</li>
-                                    <li><span class="pure-white">Malik Pavaux</span> / création lumière</li>
-                                    <li><span class="pure-white">Thomas Dupeyron</span> / régie lumière</li>
-                                    <li><span class="pure-white">Nils Grauerholz</span> / graphiste, logo</li>
-                                    <li><span class="pure-white">Julien Botella</span> / comédien</li>
-                                    <li><span class="pure-white">Samuel Pivot</span> / comédien</li>
-                                    <li><span class="pure-white">Samuel Segura</span> / comédien / danseur</li>
-                                    <li><span class="pure-white">Claire Cittone</span> / comédienne, musicienne</li>
-                                    <li><span class="pure-white">Emmanuel Rogez</span> / musicien, décorateur</li>
-                                    <li><span class="pure-white">Mathilde Chamoux & Thibault Condy</span> / lumière</li>
-                                    <li><span class="pure-white">Armony Moulis</span> / scénographie</li>
-                                    <li class="mt-s"><span class="pure-white">Audrey Gary</span> / co-créatrice de la
-                                        Compagnie</li>
-                                </ul>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Contact/Footer -->
@@ -368,7 +420,7 @@
                     <div style="margin-bottom: var(--space-l); opacity: 1;">
                         <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" style="width: 120px;">
                     </div>
-                    <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.85rem; letter-spacing: 0.05em;">
+                    <p style="color: #808080; font-size: 0.85rem; letter-spacing: 0.05em;">
                         Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
                     <p style="color: var(--pure-white); opacity: 0.6; margin-top: 1rem;">© Compagnie Mesdames A.</p>
                 </div>

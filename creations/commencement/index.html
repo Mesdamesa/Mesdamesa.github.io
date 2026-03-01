@@ -1,80 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mesdames A. - Le Commencement</title>
     <!-- Core Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- The Dark Space Aesthetic -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-    
-    <style>
-        /* Specific Creation Page Overrides */
-        #creation-hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: var(--space-xl);
-            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-                        url('media/images/05-commencement-md-coline-slide-dsc-9666.jpg') center/cover no-repeat;
-        }
-        #creation-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 5, 5, 0.6); /* Darken hero image for text readability */
-        }
-        .hero-title-group {
-            position: relative;
-            z-index: 2;
-        }
-        .hero-title-group h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: var(--space-s); }
-        .hero-title-group p { font-size: 1.2rem; color: var(--script-gray); text-transform: uppercase; }
-        
-        /* Breadcrumb */
-        .page-header {
-            position: absolute;
-            top: 0; left: 0; width: 100%;
-            padding: var(--space-m);
-            z-index: 10;
-        }
-        
-        /* Gallery Reset */
-        .masonry-gallery a { width: auto; max-width: 100%; display: inline-block; margin: 10px; }
-        .masonry-gallery img { max-width: 100%; height: auto; border-radius: var(--space-s); transition: transform 0.3s; }
-        .masonry-gallery a:hover img { transform: scale(1.03); border: 1px solid var(--red-dot); }
-    
-        /* Reduce huge section padding for content blocks */
-        .stage-section { min-height: auto; padding: var(--space-l) var(--space-m); }
-        #creation-hero { min-height: 60vh; padding-top: var(--space-xl); }
-    
-    
-        .page-header { z-index: 1000; }
-        .stage-section { background: transparent; }
-        .footer-stage { background: var(--void-black); z-index: 100; }
-    
-    </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
-<body class="dark-space">
+
+<body data-hero-bg="media/images/01-commencement-xl-jmsahuquet.webp" class="dark-space">
+
     <!-- 1. The Guide (Mouse Tracker) -->
     <div id="red-dot"></div>
 
-    
-    
-    <header class="page-header">
+<header class="page-header">
         <div class="content-wrapper">
-            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+            <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+            <div class="header-nav-right">
+                <a href="../cromwell/index.html" class="nav-arrow " title="Précédent : Cromwell">&larr;</a>
+                <a href="../eclairs/index.html" class="nav-arrow " title="Suivant : ÉCLAIRS">&rarr;</a>
+            </div>
         </div>
     </header>
 
-
-
-    <main>
+<main>
         <!-- Hero Section -->
         <section id="creation-hero" class="stage-section">
             <div class="hero-title-group">
@@ -86,20 +43,25 @@
         <!-- Core Text Content -->
         <section id="creation-content" class="stage-section">
             <div class="content-wrapper">
-                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
+                <div class="bio-focus">
                     <div class="row">
-                            <div class="col mt-4">
-                                <p>
-                                    La pièce LE COMMENCEMENT prend place dans des espaces non dédiés au spectacle vivant.</p>
-                                <p>
-                                    Cette pièce raconte la préparation et l'atterrissage sur Terre d'un groupe d'humain.e.s du futur jusqu'alors rescapés dans l'espace et ayant perdu tout souvenir de son passé. Le public est entraîné par deux archéologues qui se donnent pour mission de retrouver l'origine de l'humanité. L'une est une scientifique, la deuxième est spécialisée dans l'interprétation des mythes des origines. Et c'est là tout ce qu'il leur reste des fictions terrestres.</p>
-                                <p>
-                                    Le public est conduit dans 4 espaces scénographiés, dans lesquels le dessin, les vols aériens et la musique en direct viennent augmenter l'expérience théâtrale.</p>
-                                <p class="text-end"><b><i>Durée 1h20</i></b></p>
-                            </div>
+                        <div class="col mt-4">
+                            <p>
+                                La pièce LE COMMENCEMENT prend place dans des espaces non dédiés au spectacle vivant.
+                            </p>
+                            <p>
+                                Cette pièce raconte la préparation et l'atterrissage sur Terre d'un groupe d'humain.e.s
+                                du futur jusqu'alors rescapés dans l'espace et ayant perdu tout souvenir de son passé.
+                                Le public est entraîné par deux archéologues qui se donnent pour mission de retrouver
+                                l'origine de l'humanité. L'une est une scientifique, la deuxième est spécialisée dans
+                                l'interprétation des mythes des origines. Et c'est là tout ce qu'il leur reste des
+                                fictions terrestres.</p>
+                            <p>
+                                Le public est conduit dans 4 espaces scénographiés, dans lesquels le dessin, les vols
+                                aériens et la musique en direct viennent augmenter l'expérience théâtrale.</p>
+                            <p class="text-end"><b><i>Durée 1h20</i></b></p>
                         </div>
                     </div>
-                    <!--
                 </div>
             </div>
         </section>
@@ -109,32 +71,42 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Galerie</h2>
                 <div class="masonry-gallery mt-l" style="text-align: center;">
-                    
-                        <a  data-bespoke-lightbox href="media/images/05-commencement-xl-coline-slide-dsc-9666.jpg" title="Le Commencement - Tyrolienne">
-                            <img src="media/images/05-commencement-sm-coline-slide-dsc-9666.jpg" alt="Le Commencement - Tyrolienne"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/06-commencement-xl-alice-coline-dsc-9684.jpg" title="Le Commencement - Astronautes Alice Coline">
-                            <img src="media/images/06-commencement-sm-alice-coline-dsc-9684.jpg" alt="Le Commencement - Astronautes Alice Coline"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/01-commencement-xl-jmsahuquet.jpg" title="Le Commencement - Vue ensemble" class="text-white">
-                            <img src="media/images/01-commencement-sm-jmsahuquet.jpg" alt="Le Commencement - Vue ensemble"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/03-commencement-xl-juliemachu.jpg" title="Le Commencement - Ruines">
-                            <img src="media/images/03-commencement-sm-juliemachu.jpg" alt="Le Commencement - Ruines"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/02-commencement-xl-jmsahuquet.jpg" title="Le Commencement - mouvement" class="text-white">
-                            <img src="media/images/02-commencement-sm-jmsahuquet.jpg" alt="Le Commencement - mouvement"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/04-commencement-xl-juliemachu.jpg" title="Le Commencement - Dessin">
-                            <img src="media/images/04-commencement-sm-juliemachu.jpg" alt="Le Commencement - Dessin"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/07-commencement-xl-alice-lea-sax-indoor.jpg" title="Le Commencement - Saxophone indoor">
-                            <img src="media/images/07-commencement-sm-alice-lea-sax-indoor.jpg" alt="Le Commencement - Saxophone indoor.jpg"  >
-                        </a>
-                        <!--  <a  data-bespoke-lightbox href="https://player.vimeo.com/video/182463716" title="Le Commencement - vidéo Vimeo">
+
+                    <a data-bespoke-lightbox href="media/images/05-commencement-xl-coline-slide-dsc-9666.webp"
+                        title="Le Commencement - Tyrolienne">
+                        <img src="media/images/05-commencement-sm-coline-slide-dsc-9666.webp"
+                            alt="Le Commencement - Tyrolienne">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/06-commencement-xl-alice-coline-dsc-9684.webp"
+                        title="Le Commencement - Astronautes Alice Coline">
+                        <img src="media/images/06-commencement-sm-alice-coline-dsc-9684.webp"
+                            alt="Le Commencement - Astronautes Alice Coline">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/01-commencement-xl-jmsahuquet.webp"
+                        title="Le Commencement - Vue ensemble" class="text-white">
+                        <img src="media/images/01-commencement-sm-jmsahuquet.webp" alt="Le Commencement - Vue ensemble">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/03-commencement-xl-juliemachu.webp"
+                        title="Le Commencement - Ruines">
+                        <img src="media/images/03-commencement-sm-juliemachu.webp" alt="Le Commencement - Ruines">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/02-commencement-xl-jmsahuquet.webp"
+                        title="Le Commencement - mouvement" class="text-white">
+                        <img src="media/images/02-commencement-sm-jmsahuquet.webp" alt="Le Commencement - mouvement">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/04-commencement-xl-juliemachu.webp"
+                        title="Le Commencement - Dessin">
+                        <img src="media/images/04-commencement-sm-juliemachu.webp" alt="Le Commencement - Dessin">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/07-commencement-xl-alice-lea-sax-indoor.webp"
+                        title="Le Commencement - Saxophone indoor">
+                        <img src="media/images/07-commencement-sm-alice-lea-sax-indoor.webp"
+                            alt="Le Commencement - Saxophone indoor.jpg">
+                    </a>
+                    <!--  <a  data-bespoke-lightbox href="https://player.vimeo.com/video/182463716" title="Le Commencement - vidéo Vimeo">
                             <img srcset="https://vumbnail.com/182463716.jpg 640w, https://vumbnail.com/182463716_large.jpg 640w, https://vumbnail.com/182463716_medium.jpg 200w, https://vumbnail.com/182463716_small.jpg 100w"  src="https://vumbnail.com/182463716.jpg" alt="Vimeo Thumbnail" >
                         </a> -->
-                    
+
                 </div>
             </div>
         </section>
@@ -148,66 +120,140 @@
                 <div class="col-content">
                     <div class="credits">
                         <h3 class="mono-text mb-m accent">Équipe</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
-                                <br><strong style="color:var(--pure-white);">Écriture et mise en scène /</strong>  Alice Tabart
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Collaboration à l'écriture /</strong>  Victor Ginicis
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Création lumière /</strong>  Théo Roumier
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Régie Plateau /</strong>  Grangil Marrast
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Installations aériennes /</strong>  Arnaud Delheure
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Costumes et accessoires /</strong>  Camille Bouvier
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Interprétation /</strong>  Coline Lubin, Léa Cuny-Bret, Raphaël Jamin &amp; Alice Tabart
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Peinture /</strong>  Louidela Nutakor (JustLoui)
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Composition musicale /</strong>  Raphaël Jamin
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Assistante à la mise en scène /</strong>  Sarah Piccoli
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Chargée de production et d'administration /</strong>  Mathilde Ratajczyk
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Chargée de diffusion /</strong>  Léa Cuny-Bret
-                                <br>
-                            </p>
-                    </div>
-                    
-                    
+                        <p class="mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Écriture et mise en scène /</strong>
+                            Alice Tabart
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Collaboration à l'écriture /</strong>
+                            Victor Ginicis
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Création lumière /</strong> Théo
+                            Roumier
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Régie Plateau /</strong> Grangil
+                            Marrast
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Installations aériennes /</strong>
+                            Arnaud Delheure
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Costumes et accessoires /</strong>
+                            Camille Bouvier
+                            <br>
+                            <br>
+                        <div class="avec-listing mt-m">
+                            <span class="label-equipe-crea label-avec">Avec :</span>
+                            <div class="names-list">
+                                <span>Coline Lubin</span>
+                                <span>Léa Cuny-Bret</span>
+                                <span>Raphaël Jamin</span>
+                                <span>Alice Tabart</span>
+                            </div>
+                        </div>
 
-                    
+                        <br><strong style="color:var(--pure-white);">Peinture /</strong> Louidela Nutakor
+                        (JustLoui)
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Composition musicale /</strong> Raphaël
+                        Jamin
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Assistante à la mise en scène
+                            /</strong> Sarah Piccoli
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Chargée de production et
+                            d'administration /</strong> Mathilde Ratajczyk
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Chargée de diffusion /</strong> Léa
+                        Cuny-Bret
+                        <br>
+                        </p>
+                    </div>
+
+                    <div class="production mt-l">
+                        <h3 class="mono-text mb-m accent">Production</h3>
+                        <p class="text-readable">
+                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a> avec
+                            le soutien de la DRAC (Été Culturel), du Conseil Départemental de l'Aveyron, de la
+                            Commune de Sévérac d’Aveyron (résidence de Territoire et diffusion), du Collège Jean
+                            D'Alembert (participation de la CHAM au spectacle), de l'Espace Archéologique
+                            Départemental de Montrozier (résidence et diffusion), et de l'Association d'entraide
+                            sociale et populaire de Saint Sernin les Mailhoc (accueil en résidence).
+                        </p>
+                    </div>
+
+</div>
+            </div>
+        </section>
+
+<!-- Archives: Dates passées & Affiche -->
+        <section id="creation-archives" class="stage-section" style="padding-bottom: var(--space-xl);">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Dates Passées</h2>
+                </div>
+                <div class="col-content">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-12 col-md-8">
+                            <div class="dates-list mono-text" style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                                <ul>
+                                    <li><b>2024</b></li>
+                                    <li>- 18 mai : Archéosite de Montans (81)</li><br>
+                                    <li><b>2023</b></li>
+                                    <li>- 17 juillet, 22 août : Château de Sévérac d'Aveyron (12)</li><br>
+                                    <li><b>2022</b></li>
+                                    <li>- 20 octobre : Maison des Dolmens de Buzeins, Sévérac d'Aveyron (12)</li>
+                                    <!-- <br>
+                                    <li><b>2013</b></li>
+                                    <li>- 1er juin : Halles de Villasavary - Aude</li>
+                                    <li>- 30 mars : Salle du Foyer Rural - CLARAC</li>
+                                    <li>- 22 mars : Mix'art Myrys - Toulouse (31) - Soirée Grèce et Démocratie avec le Collectif Ciné 2000</li>
+                                    <li>- 21 février au 2 mars : Théâtre de la Violette - Toulouse (31)</li>
+                                    <br>
+                                    <li><b>2012</b></li>
+                                    <li>- 24 août : Cour d'honneur - Séverac le Château (12)</li>
+                                    <li>- 16 juin : Lapanouse - Aveyron (12)</li>
+                                    <li>- 13 avril : Théâtre des Trois Ponts - Castelnaudary</li>
+                                    <li>- 31 mars : La Maison de la Terre à 21h - Poucharramet</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-12 col-md-4 mt-l mt-md-0 text-center">
+                        <a data-bespoke-lightbox href="media/images/00-affiche-commencement.png_960.webp" title="Affiche">
+                            <img src="media/images/00-affiche-commencement.png_720.webp" alt="Affiche" style="max-width: 100%; border-radius: 4px; border: 1px solid var(--subtle-line);">
+                        </a>
+                    </div>
+                
+                    </div>
                 </div>
             </div>
         </section>
+        
     </main>
 
-    
-    
-    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+<footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
         <div class="content-wrapper text-center">
             <div class="socials mb-l">
-                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="social-link hover-glow">Facebook</a>
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
                 <span class="dot-separator">•</span>
                 <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
                 <span class="dot-separator">•</span>
-                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+                <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
             </div>
-            
-            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow" style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-            
-                        <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+            <div class="footer-brand mt-xl">
+                <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+                <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+            </div>
             <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>
 
-
-
-    <!-- Interactive Elements Engine -->
+<!-- Interactive Elements Engine -->
     <script src="../../assets/js/main.js"></script>
-    
-    
+
 </body>
+
 </html>

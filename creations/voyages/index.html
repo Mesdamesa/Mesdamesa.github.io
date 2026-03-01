@@ -1,80 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mesdames A. - Voyages dans le temps</title>
     <!-- Core Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- The Dark Space Aesthetic -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-    
-    <style>
-        /* Specific Creation Page Overrides */
-        #creation-hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: var(--space-xl);
-            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-                        url('media/images/voyages-resize-2.jpg') center/cover no-repeat;
-        }
-        #creation-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 5, 5, 0.6); /* Darken hero image for text readability */
-        }
-        .hero-title-group {
-            position: relative;
-            z-index: 2;
-        }
-        .hero-title-group h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: var(--space-s); }
-        .hero-title-group p { font-size: 1.2rem; color: var(--script-gray); text-transform: uppercase; }
-        
-        /* Breadcrumb */
-        .page-header {
-            position: absolute;
-            top: 0; left: 0; width: 100%;
-            padding: var(--space-m);
-            z-index: 10;
-        }
-        
-        /* Gallery Reset */
-        .masonry-gallery a { width: auto; max-width: 100%; display: inline-block; margin: 10px; }
-        .masonry-gallery img { max-width: 100%; height: auto; border-radius: var(--space-s); transition: transform 0.3s; }
-        .masonry-gallery a:hover img { transform: scale(1.03); border: 1px solid var(--red-dot); }
-    
-        /* Reduce huge section padding for content blocks */
-        .stage-section { min-height: auto; padding: var(--space-l) var(--space-m); }
-        #creation-hero { min-height: 60vh; padding-top: var(--space-xl); }
-    
-    
-        .page-header { z-index: 1000; }
-        .stage-section { background: transparent; }
-        .footer-stage { background: var(--void-black); z-index: 100; }
-    
-    </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
-<body class="dark-space">
+
+<body data-hero-bg="media/images/voyages-resize-2.webp" class="dark-space">
     <!-- 1. The Guide (Mouse Tracker) -->
     <div id="red-dot"></div>
 
-    
-    
-    <header class="page-header">
+<header class="page-header">
         <div class="content-wrapper">
-            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+            <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+            <div class="header-nav-right">
+                <a href="../monologue/index.html" class="nav-arrow"
+                    title="Précédent : Le Monologue d'une Tueuse">&larr;</a>
+                <a href="../cromwell/index.html" class="nav-arrow" title="Suivant : CROMWELL">&rarr;</a>
+            </div>
         </div>
     </header>
 
-
-
-    <main>
+<main>
         <!-- Hero Section -->
         <section id="creation-hero" class="stage-section">
             <div class="hero-title-group">
@@ -86,41 +43,66 @@
         <!-- Core Text Content -->
         <section id="creation-content" class="stage-section">
             <div class="content-wrapper">
-                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
-                    <p><small>Saisons 2007 à 2023</small></p>
-                        <p>
-                            Pour chacun de ces voyages temporels, deux comédien·ne·s mettent en jeu des personnages hauts en couleur pour animer vos espaces patrimoniaux. Ludiques, originaux et dynamiques, ces voyages s'appuient sur les outils du théâtre pour rendre l'Histoire accessible aux petits et aux grands. Riches d'une grande rigueur historique, ils feront voler en éclats les clichés sur chaque époque. Les comédien·ne·s entraînent le public dans une ambiance unique et lui font vivre une expérience inoubliable !</p>
-                        
-                        <div class="ratio ratio-16x9">
-                            <div class="video-stage"><div class="embed-responsive"><iframe src="https://www.youtube.com/embed/cIMh0o2Rmq8" title="Voyages dans le temps"></iframe></div></div>
+                <div class="bio-focus">
+                    <p>
+                        Pour chacun de ces voyages temporels, deux comédien·ne·s mettent en jeu des personnages hauts en
+                        couleur pour animer vos espaces patrimoniaux. Ludiques, originaux et dynamiques, ces voyages
+                        s'appuient sur les outils du théâtre pour rendre l'Histoire accessible aux petits et aux grands.
+                        Riches d'une grande rigueur historique, ils feront voler en éclats les clichés sur chaque
+                        époque. Les comédien·ne·s entraînent le public dans une ambiance unique et lui font vivre une
+                        expérience inoubliable !</p>
+
+                    <div class="video-stage">
+                        <div class="embed-responsive">
+                            <iframe src="https://www.youtube.com/embed/cIMh0o2Rmq8" title="Voyages dans le temps"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
-                        
-                        <div class="clearfix">
-                            
-                            <img src="media/images/animation-sorcieres.jpg" class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid" alt="Sorcières">
-                            <p>Remontez le temps accompagnés de drôles de savantes et partez à la découverte des soins et croyances du Moyen-Âge : certaines de leurs bizarreries pourraient bien guérir nos maux actuels !</p>
-                        </div>
-                        <div class="clearfix">
-                            
-                            <img src="media/images/vie-de-faste-17eme2-2.jpg" class="col-sm-5 float-sm-start mb-3 me-sm-3 img-fluid" alt="Vie de faste 17ème">
-                            <p>Pourquoi faut-il lire Molière avec l'accent Québécois ? Pourquoi écrit-on asthme, et pas asme ? Pourquoi portait-on un vertugadin ? Et d'ailleurs, c'est quoi ? <br>
-                                Partez à la rencontre des résidents du château en plein âge d'or : costumes, musique et inventions : découvrez les origines du classicisme français !</p>
-                        </div>
-                        <div class="clearfix">
-                            
-                            <img src="media/images/danses-2.jpg" class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid" alt="Danses">
-                            <p>Plongez dans un panorama vivant et insolite des divertissements au Moyen-Âge : chants et danses vous entraîneront notamment à la découverte des joies de l’art troubadour. Une initiation qui permet de redécouvrir l’histoire de façon conviviale !</p>
-                        </div>
-                        <div class="clearfix">
-                            
-                            <img src="media/images/cuisine.jpg" class="col-sm-5 float-sm-start mb-3 me-sm-3 img-fluid" alt="Cuisine">
-                            <p>Rendez-vous au Moyen-âge pour suivre deux villageois.e dans un parcours qui vous en mettra plein la vue, l'ouïe, l'odorat et même peut-être vous donnera le goût de la vie populaire au cœur de la cité médiévale !</p>
-                        </div>
-                        <div class="clearfix">
-                            
-                            <img src="media/images/espices.jpg" class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid" alt="Gentes Dames - Épices">
-                            <p>Les gentes dames du château vous font découvrir l’art de la fête pendant la Renaissance. Entre une cuisine fleurie ou épicée, des animaux surprises et histoires incroyables, plongez-vous dans l’atmosphère du XVIème siècle !</p>
-                        </div>
+                    </div>
+                    <p class="text-end"><small><a class="action-link" href="https://www.youtube.com/watch?v=cIMh0o2Rmq8"
+                                target="_blank" rel="noopener noreferrer">Regarder sur YouTube</a></small></p>
+
+                    <div class="clearfix">
+
+                        <img src="media/images/animation-sorcieres.webp"
+                            class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid" alt="Sorcières">
+                        <p>Remontez le temps accompagnés de drôles de savantes et partez à la découverte des soins et
+                            croyances du Moyen-Âge : certaines de leurs bizarreries pourraient bien guérir nos maux
+                            actuels !</p>
+                    </div>
+                    <div class="clearfix">
+
+                        <img src="media/images/vie-de-faste-17eme2-2.webp"
+                            class="col-sm-5 float-sm-start mb-3 me-sm-3 img-fluid" alt="Vie de faste 17ème">
+                        <p>Pourquoi faut-il lire Molière avec l'accent Québécois ? Pourquoi écrit-on asthme, et pas asme
+                            ? Pourquoi portait-on un vertugadin ? Et d'ailleurs, c'est quoi ? <br>
+                            Partez à la rencontre des résidents du château en plein âge d'or : costumes, musique et
+                            inventions : découvrez les origines du classicisme français !</p>
+                    </div>
+                    <div class="clearfix">
+
+                        <img src="media/images/danses-2.webp" class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid"
+                            alt="Danses">
+                        <p>Plongez dans un panorama vivant et insolite des divertissements au Moyen-Âge : chants et
+                            danses vous entraîneront notamment à la découverte des joies de l’art troubadour. Une
+                            initiation qui permet de redécouvrir l’histoire de façon conviviale !</p>
+                    </div>
+                    <div class="clearfix">
+
+                        <img src="media/images/cuisine.webp" class="col-sm-5 float-sm-start mb-3 me-sm-3 img-fluid"
+                            alt="Cuisine">
+                        <p>Rendez-vous au Moyen-âge pour suivre deux villageois.e dans un parcours qui vous en mettra
+                            plein la vue, l'ouïe, l'odorat et même peut-être vous donnera le goût de la vie populaire au
+                            cœur de la cité médiévale !</p>
+                    </div>
+                    <div class="clearfix">
+
+                        <img src="media/images/espices.webp" class="col-sm-5 float-sm-end mb-3 ms-sm-3 img-fluid"
+                            alt="Gentes Dames - Épices">
+                        <p>Les gentes dames du château vous font découvrir l’art de la fête pendant la Renaissance.
+                            Entre une cuisine fleurie ou épicée, des animaux surprises et histoires incroyables,
+                            plongez-vous dans l’atmosphère du XVIème siècle !</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -130,80 +112,102 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Galerie</h2>
                 <div class="masonry-gallery mt-l" style="text-align: center;">
-                    
-                            <a data-bespoke-lightbox  href="media/images/animation-sorcieres.jpg" title="Voyages dans le temps - Sorcieres">
-                                <img src="media/images/animation-sorcieres-sm.jpg" alt="Voyages dans le temps - Sorcières" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/cuisine.jpg" title="Voyages dans le temps - Cuisine">
-                                <img src="media/images/cuisine-sm.jpg" alt="Voyages dans le temps - Cuisine" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/espices.jpg" title="Voyages dans le temps - Épices">
-                                <img src="media/images/espices-sm.jpg" alt="Voyages dans le temps - Épices" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/en-public.jpg" title="Voyages dans le temps - En public">
-                                <img src="media/images/en-public-sm.jpg" alt="Voyages dans le temps - En public" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/en-public2.jpg" title="Voyages dans le temps - En public">
-                                <img src="media/images/en-public2-sm.jpg" alt="Voyages dans le temps - En  public" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/danses-1.jpg" title="Voyages dans le temps - Danses">
-                                <img src="media/images/danses-1-sm.jpg" alt="Voyages dans le temps - Danses" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/danses-2.jpg" title="Voyages dans le temps - Danses">
-                                <img src="media/images/danses-2-sm.jpg" alt="Voyages dans le temps - Danses" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/danses-3.jpg" title="Voyages dans le temps - Danses">
-                                <img src="media/images/danses-3-sm.jpg" alt="Voyages dans le temps - Danses" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/detail-inspiration-maria-de-medicis.jpg" title="Voyages dans le temps - Détail robe">
-                                <img src="media/images/detail-inspiration-maria-de-medicis-sm.jpg" alt="Voyages dans le temps - Robe" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/ea-maria-de-medici-portrait.jpg" title="Voyages dans le temps - Inspiration robe - Marie de Médicis">
-                                <img src="media/images/ea-maria-de-medici-portrait-sm.jpg" alt="Voyages dans le temps - Robe" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/robes-medievales.jpg" title="Voyages dans le temps - Robes médiévales">
-                                <img src="media/images/robes-medievales-sm.jpg" alt="Voyages dans le temps - Robes médiévales" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-0664.jpg" title="Voyages dans le temps - Troubadours">
-                                <img src="media/images/img-0664-sm.jpg" alt="Voyages dans le temps - Troubadours" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-0401.jpg" title="Voyages dans le temps - Troubadours">
-                                <img src="media/images/img-0401-sm.jpg" alt="Voyages dans le temps - Troubadours" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-0608.jpg" title="Voyages dans le temps - Troubadours">
-                                <img src="media/images/img-0608-sm.jpg" alt="Voyages dans le temps - Troubadours" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-7498.jpg" title="Voyages dans le temps - Sorcières">
-                                <img src="media/images/img-0608-sm.jpg" alt="Voyages dans le temps - Sorcières" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-7501.jpg" title="Voyages dans le temps - Sorcières">
-                                <img src="media/images/img-7501-sm.jpg" alt="Voyages dans le temps - Sorcières" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/img-7523.jpg" title="Voyages dans le temps - Sorcières">
-                                <img src="media/images/img-7523-sm.jpg" alt="Voyages dans le temps - Sorcières" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/renaissance.jpg" title="Voyages dans le temps - Renaissance">
-                                <img src="media/images/renaissance-sm.jpg" alt="Voyages dans le temps - Renaissance" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/renaissance2.jpg" title="Voyages dans le temps - Renaissance">
-                                <img src="media/images/renaissance2-sm.jpg" alt="Voyages dans le temps - Renaissance" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/saut-med.jpg" title="Voyages dans le temps - Robes médiévales saut">
-                                <img src="media/images/saut-med-sm.jpg" alt="Voyages dans le temps - Robes médiévales - saut" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/troubadour-saut.jpg" title="Voyages dans le temps - Troubadour saut">
-                                <img src="media/images/troubadour-saut-sm.jpg" alt="Voyages dans le temps - Troubadour saut" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/troubadours-saut.jpg" title="Voyages dans le temps - Troubadour saut">
-                                <img src="media/images/troubadours-saut-sm.jpg" alt="Voyages dans le temps - Troubadours saut" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/vie-de-faste-17eme-2.jpg" title="Voyages dans le temps - Vie de faste 17ème">
-                                <img src="media/images/vie-de-faste-17eme-2-sm.jpg" alt="Voyages dans le temps - Vie de faste 17ème.jpg" >
-                            </a>
-                            <a data-bespoke-lightbox  href="media/images/vie-de-faste-17eme2-2.jpg" title="Voyages dans le temps - Vie de faste 17ème">
-                                <img src="media/images/vie-de-faste-17eme2-2-sm.jpg" alt="Voyages dans le temps - Vie de faste 17ème.jpg" >
-                            </a>
-                        
+
+                    <a data-bespoke-lightbox href="media/images/animation-sorcieres.webp"
+                        title="Voyages dans le temps - Sorcieres">
+                        <img src="media/images/animation-sorcieres-sm.webp" alt="Voyages dans le temps - Sorcières">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/cuisine.webp" title="Voyages dans le temps - Cuisine">
+                        <img src="media/images/cuisine-sm.webp" alt="Voyages dans le temps - Cuisine">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/espices.webp" title="Voyages dans le temps - Épices">
+                        <img src="media/images/espices-sm.webp" alt="Voyages dans le temps - Épices">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/en-public.webp"
+                        title="Voyages dans le temps - En public">
+                        <img src="media/images/en-public-sm.webp" alt="Voyages dans le temps - En public">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/en-public2.webp"
+                        title="Voyages dans le temps - En public">
+                        <img src="media/images/en-public2-sm.webp" alt="Voyages dans le temps - En  public">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/danses-1.webp" title="Voyages dans le temps - Danses">
+                        <img src="media/images/danses-1-sm.webp" alt="Voyages dans le temps - Danses">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/danses-2.webp" title="Voyages dans le temps - Danses">
+                        <img src="media/images/danses-2-sm.webp" alt="Voyages dans le temps - Danses">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/danses-3.webp" title="Voyages dans le temps - Danses">
+                        <img src="media/images/danses-3-sm.webp" alt="Voyages dans le temps - Danses">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/detail-inspiration-maria-de-medicis.webp"
+                        title="Voyages dans le temps - Détail robe">
+                        <img src="media/images/detail-inspiration-maria-de-medicis-sm.webp"
+                            alt="Voyages dans le temps - Robe">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/ea-maria-de-medici-portrait.webp"
+                        title="Voyages dans le temps - Inspiration robe - Marie de Médicis">
+                        <img src="media/images/ea-maria-de-medici-portrait-sm.webp" alt="Voyages dans le temps - Robe">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/robes-medievales.webp"
+                        title="Voyages dans le temps - Robes médiévales">
+                        <img src="media/images/robes-medievales-sm.webp" alt="Voyages dans le temps - Robes médiévales">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-0664.webp"
+                        title="Voyages dans le temps - Troubadours">
+                        <img src="media/images/img-0664-sm.webp" alt="Voyages dans le temps - Troubadours">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-0401.webp"
+                        title="Voyages dans le temps - Troubadours">
+                        <img src="media/images/img-0401-sm.webp" alt="Voyages dans le temps - Troubadours">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-0608.webp"
+                        title="Voyages dans le temps - Troubadours">
+                        <img src="media/images/img-0608-sm.webp" alt="Voyages dans le temps - Troubadours">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-7498.webp"
+                        title="Voyages dans le temps - Sorcières">
+                        <img src="media/images/img-0608-sm.webp" alt="Voyages dans le temps - Sorcières">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-7501.webp"
+                        title="Voyages dans le temps - Sorcières">
+                        <img src="media/images/img-7501-sm.webp" alt="Voyages dans le temps - Sorcières">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/img-7523.webp"
+                        title="Voyages dans le temps - Sorcières">
+                        <img src="media/images/img-7523-sm.webp" alt="Voyages dans le temps - Sorcières">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/renaissance.webp"
+                        title="Voyages dans le temps - Renaissance">
+                        <img src="media/images/renaissance-sm.webp" alt="Voyages dans le temps - Renaissance">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/renaissance2.webp"
+                        title="Voyages dans le temps - Renaissance">
+                        <img src="media/images/renaissance2-sm.webp" alt="Voyages dans le temps - Renaissance">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/saut-med.webp"
+                        title="Voyages dans le temps - Robes médiévales saut">
+                        <img src="media/images/saut-med-sm.webp" alt="Voyages dans le temps - Robes médiévales - saut">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/troubadour-saut.webp"
+                        title="Voyages dans le temps - Troubadour saut">
+                        <img src="media/images/troubadour-saut-sm.webp" alt="Voyages dans le temps - Troubadour saut">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/troubadours-saut.webp"
+                        title="Voyages dans le temps - Troubadour saut">
+                        <img src="media/images/troubadours-saut-sm.webp" alt="Voyages dans le temps - Troubadours saut">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/vie-de-faste-17eme-2.webp"
+                        title="Voyages dans le temps - Vie de faste 17ème">
+                        <img src="media/images/vie-de-faste-17eme-2-sm.webp"
+                            alt="Voyages dans le temps - Vie de faste 17ème.jpg">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/vie-de-faste-17eme2-2.webp"
+                        title="Voyages dans le temps - Vie de faste 17ème">
+                        <img src="media/images/vie-de-faste-17eme2-2-sm.webp"
+                            alt="Voyages dans le temps - Vie de faste 17ème.jpg">
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -217,54 +221,64 @@
                 <div class="col-content">
                     <div class="credits">
                         <h3 class="mono-text mb-m accent">Équipe</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
-                                    <br><strong style="color:var(--pure-white);">Mise en scène &amp; costumes /</strong>  Alice Tabart
-                                    <br>
-                                    <br><strong style="color:var(--pure-white);">Interprétation /</strong>  Alice Tabart, Coline Lubin, Victor Ginicis, 
-                                    <br>
-                                    <br><strong style="color:var(--pure-white);">Création affiche /</strong>  C.....
-                                    <br>
-                                </p>
+                        <p class="mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Mise en scène &amp; costumes /</strong> Alice
+                            Tabart
+                            <br>
+                            <br>
+                        <div class="avec-listing mt-m">
+                            <span class="label-equipe-crea label-avec">Avec :</span>
+                            <div class="names-list">
+                                <span>Alice Tabart</span>
+                                <span>Coline Lubin</span>
+                                <span>Victor Ginicis</span>
+                            </div>
+                        </div>
+                        <br><strong style="color:var(--pure-white);">Création affiche /</strong> C.....
+                        <br>
+                        </p>
                     </div>
-                    
+
                     <div class="production mt-l">
                         <h3 class="mono-text mb-m accent">Production</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:1.8;">
-                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a> en partenariat avec La Commune de Sévérac d'Aveyron et le soutien de la DRAC (Été Culturel).
+                        <p class="text-readable">
+                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a> en partenariat
+                            avec La Commune de Sévérac d'Aveyron et le soutien de la DRAC (Été Culturel).
                             <!-- Retrouvez tous les détails et des avis du public dans le <a href="media/PDF/depliant-v5.pdf">dossier de communication</a> -->
                         </p>
                     </div>
 
-                    
-                </div>
+</div>
             </div>
         </section>
-    </main>
 
-    
-    
-    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+</main>
+
+<footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
         <div class="content-wrapper text-center">
             <div class="socials mb-l">
-                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="social-link hover-glow">Facebook</a>
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
                 <span class="dot-separator">•</span>
                 <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
                 <span class="dot-separator">•</span>
-                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+                <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
             </div>
-            
-            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow" style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-            
-                        <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+            <div class="footer-brand mt-xl">
+                <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+                <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+            </div>
             <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>
 
-
-
-    <!-- Interactive Elements Engine -->
+<!-- Interactive Elements Engine -->
     <script src="../../assets/js/main.js"></script>
-    
-    
+
 </body>
+
 </html>

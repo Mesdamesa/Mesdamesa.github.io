@@ -1,80 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Mesdames A. - Spectateur(s) - un accident de théâtre</title>
   <!-- Core Typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
   <!-- The Dark Space Aesthetic -->
   <link rel="stylesheet" href="../../assets/css/main.css">
-  
-  <style>
-    /* Specific Creation Page Overrides */
-    #creation-hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: var(--space-xl);
-      background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-            url('media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseuseterre1.jpg') center/cover no-repeat;
-    }
-    #creation-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(5, 5, 5, 0.6); /* Darken hero image for text readability */
-    }
-    .hero-title-group {
-      position: relative;
-      z-index: 2;
-    }
-    .hero-title-group h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: var(--space-s); }
-    .hero-title-group p { font-size: 1.2rem; color: var(--script-gray); text-transform: uppercase; }
-    
-    /* Breadcrumb */
-    .page-header {
-      position: absolute;
-      top: 0; left: 0; width: 100%;
-      padding: var(--space-m);
-      z-index: 10;
-    }
-    
-    /* Gallery Reset */
-    .masonry-gallery a { width: auto; max-width: 100%; display: inline-block; margin: 10px; }
-    .masonry-gallery img { max-width: 100%; height: auto; border-radius: var(--space-s); transition: transform 0.3s; }
-    .masonry-gallery a:hover img { transform: scale(1.03); border: 1px solid var(--red-dot); }
-  
-    /* Reduce huge section padding for content blocks */
-    .stage-section { min-height: auto; padding: var(--space-l) var(--space-m); }
-    #creation-hero { min-height: 60vh; padding-top: var(--space-xl); }
-  
-  
-    .page-header { z-index: 1000; }
-    .stage-section { background: transparent; }
-    .footer-stage { background: var(--void-black); z-index: 100; }
-  
-  </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
-<body class="dark-space">
+
+<body data-hero-bg="media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.webp" class="dark-space">
   <!-- 1. The Guide (Mouse Tracker) -->
   <div id="red-dot"></div>
 
-  
-  
-  <header class="page-header">
+<header class="page-header">
     <div class="content-wrapper">
-      <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+      <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+      <div class="header-nav-right">
+        <a href="../eclairs/index.html" class="nav-arrow" title="Précédent : ÉCLAIRS">&larr;</a>
+        <a href="../dragons/index.html" class="nav-arrow" title="Suivant : La Cité des Dragons">&rarr;</a>
+      </div>
     </div>
   </header>
 
-
-
-  <main>
+<main>
     <!-- Hero Section -->
     <section id="creation-hero" class="stage-section">
       <div class="hero-title-group">
@@ -86,17 +42,22 @@
     <!-- Core Text Content -->
     <section id="creation-content" class="stage-section">
       <div class="content-wrapper">
-        <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
-          <div class="row">
-              <div class="video-stage"><div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://player.vimeo.com/video/119352016" title="Spectateur(s) - un accident de théâtre"></iframe>
-              </div></div>
-              <p>Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une fable contemporaine, quelque part entre l'Inde, New-York et la France.
-                <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question essentielle&nbsp;: sommes nous acteurs ou spectateurs de nos vies ?
-                <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage&nbsp;: ni toute drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
-                <br>
-              </p>
+        <div class="bio-focus">
+          <p>
+            Apparemment construite sur une série d'incidents et d'improvisations, cette tragi-comédie relate une
+            fable contemporaine, quelque part entre l'Inde, New-York et la France.
+            <br> Cette quête farfelue nous invite à réagir aux accidents de tous les jours et pose une question
+            essentielle&nbsp;: sommes nous acteurs ou spectateurs de nos vies ?
+            <br> SPECTATEUR(S) tente de renouer avec la fable et se construit entre drame et décalage&nbsp;: ni toute
+            drôle, ni toute noire. On y cultive une forme de rire entre prise de conscience et force de libération.
+          </p>
+
+          <div class="video-stage">
+            <div class="embed-responsive">
+              <iframe src="https://player.vimeo.com/video/119352016" title="Spectateur(s) - un accident de théâtre"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -105,28 +66,37 @@
     <section id="creation-gallery" class="stage-section">
       <div class="content-wrapper">
         <h2 class="section-title">Galerie</h2>
-                                <div class="masonry-gallery mt-l">
-                  <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" title="Spectateurs - Scène">
-                    <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.jpg" alt="Spectateurs">
-                  </a>
-                  <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" title="Spectateurs - Molière">
-                    <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.jpg" alt="Spectateurs">
-                  </a>
-                  <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" title="Spectateurs - Pyramide">
-                    <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.jpg" alt="Spectateurs">
-                  </a>
-                  <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg" title="Spectateurs - Danse">
-                    <img src="media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.jpg" alt="Spectateurs">
-                  </a>
-                  <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.jpg" title="Spectateurs - Duo">
-                    <img src="media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.jpg" alt="Spectateurs">
-                  </a>
-                  <a data-bespoke-lightbox href="https://player.vimeo.com/video/182463716" title="Spectateurs - vidéo Vimeo">
-                    <img src="https://vumbnail.com/182463716.jpg" alt="Vimeo Thumbnail">
-                  </a>
-                </div>
-          
+        <div class="masonry-gallery mt-l">
+          <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.webp"
+            title="Spectateurs - Scène">
+            <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_danseusetheatre.webp" alt="Spectateurs">
+          </a>
+          <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.webp"
+            title="Spectateurs - Molière">
+            <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_CartonMoliere.webp" alt="Spectateurs">
+          </a>
+          <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.webp"
+            title="Spectateurs - Pyramide">
+            <img src="media/images/sm_CIE_MESDAMES_A_2015_SPECTATEURS_pyramide.webp" alt="Spectateurs">
+          </a>
+          <a data-bespoke-lightbox
+            href="media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.webp"
+            title="Spectateurs - Danse">
+            <img src="media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_danse_Inde.webp"
+              alt="Spectateurs">
+          </a>
+          <a data-bespoke-lightbox
+            href="media/images/CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.webp"
+            title="Spectateurs - Duo">
+            <img src="media/images/sm_CIE_MESDAMES_A_2016_SPECTATEURS_3_ponts_par_Fanny_Moulin_Coline-Lucas.webp"
+              alt="Spectateurs">
+          </a>
+          <a data-bespoke-lightbox href="https://player.vimeo.com/video/182463716" title="Spectateurs - vidéo Vimeo">
+            <img src="https://vumbnail.com/182463716.jpg" alt="Vimeo Thumbnail">
+          </a>
         </div>
+
+      </div>
       </div>
     </section>
 
@@ -139,64 +109,118 @@
         <div class="col-content">
           <div class="credits">
             <h3 class="mono-text mb-m accent">Équipe</h3>
-            <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
-                <br><strong style="color:var(--pure-white);">Écriture, mise en scène &amp; costumes /</strong> Alice Tabart
-                <br>
-                <br><strong style="color:var(--pure-white);">Interprétation /</strong> Simon Giesbert, Coline Lubin, Olivier Marchepoil ou Lucas Lemauff &amp; Elsa Sanchez
-                <br>
-                <br><strong style="color:var(--pure-white);">Chorégraphies /</strong> Joël Sitbon &amp; Elsa Sanchez
-                <br>
-                <br><strong style="color:var(--pure-white);">Création musicale /</strong> Simon Giesbert
-                <br>
-                <br><strong style="color:var(--pure-white);">Création lumière /</strong> Damien Peray &amp; Serena Andreasi
-                <br>
-              </p>
+            <p class="mono-text" style="font-size:0.9rem; line-height:2;">
+              <br><strong style="color:var(--pure-white);">Écriture, mise en scène &amp; costumes /</strong> Alice
+              Tabart
+              <br>
+              <br>
+            <div class="avec-listing mt-m">
+              <span class="label-equipe-crea label-avec">Avec :</span>
+              <div class="names-list">
+                <span>Simon Giesbert</span>
+                <span>Coline Lubin</span>
+                <span>Olivier Marchepoil / Lucas Lemauff</span>
+                <span>Elsa Sanchez</span>
+              </div>
+            </div>
+            <br><strong style="color:var(--pure-white);">Chorégraphies /</strong> Joël Sitbon &amp; Elsa Sanchez
+            <br>
+            <br><strong style="color:var(--pure-white);">Création musicale /</strong> Simon Giesbert
+            <br>
+            <br><strong style="color:var(--pure-white);">Création lumière /</strong> Damien Peray &amp; Serena
+            Andreasi
+            <br>
+            </p>
           </div>
-          
-          
 
-          <div class="past-dates mt-l">
-            <h3 class="mono-text mb-m accent">Dates Passées</h3>
-            <div class="mono-text" style="font-size: 0.8rem; color: var(--script-gray);">
-              <ul style="list-style-type:none; padding:0;">
-                          <div id="carousel-spectateurs-generic" class="carousel" data-bs-ride="carousel" data-bs-interval="false">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="img-fluid" src="media/images/revue-presse/LeBrigadier.jpg" alt="Le Brigadier">
-                                <div class="carousel-caption">
-                                  Le Brigadier, revue des Arts de la scène
-                                </div>
+          <div class="production mt-l">
+            <h3 class="mono-text mb-m accent">Production</h3>
+            <p class="text-readable">
+              Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a>, avec le soutien de la
+              Commission Européenne (PEJA 2013), et du Conseil Général de la Haute-Garonne (aide à la
+              création),en partenariat avec le CIAM, Mix’art Myrys et l’association ACT.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+    </section>
+
+<!-- Archives: Dates passées & Affiche -->
+    <section id="creation-archives" class="stage-section" style="padding-bottom: var(--space-xl);">
+      <div class="content-wrapper row-layout">
+        <div class="col-title">
+          <h2 class="section-title">Dates Passées</h2>
+        </div>
+        <div class="col-content">
+          <div class="row w-100 align-items-center">
+            <div class="col-12 col-md-8">
+              <div class="dates-list mono-text" style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                <ul>
+                  <p>
+                    <li><b>2016</b></li>
+                    <li>- 10 et 11 novembre: THE COCKPIT Theatre - Londres, UK</li>
+                    <li>- du 18 au 22 octobre: Théâtre du Grand Rond - Toulouse (31)</li>
+                    <li>- 10 mars: Scène des Trois Ponts - Castelnaudary (11)</li>
+                  </p>
+                  <p>
+                    <li><b>2015</b></li>
+                    <li>- 14 novembre: Salle des fêtes - Labastide Saint Sernin (31)</li>
+                    <li>- 17 octobre: La Canourgue (48)</li>
+                    <li>- 14 octobre: Saint Gaudens (31)</li>
+                    <li>- 2 octobre: Toulouse (31)</li>
+                    <li>- 21 août: Cour d'honneur - Séverac le Château (12)</li>
+                    <li>- 13 juin: La Halle du Café-Théâtre - Le Burgaud (31)</li>
+                    <li>- 6 juin: Le Kiosque - Villefranche de Rouergue (12)</li>
+                    <li>- 4 avril: Les Halles - Villasavary (11)</li>
+                    <li>- 28 mars: Salle du Foyer de la Mairie - Clarac (31)</li>
+                    <li>- 7 mars: Salle des Fêtes - Lapanouse de Séverac (12)</li>
+                    <li>- 21 février: Le Préau - La Salvetat Saint Gilles (31)</li>
+                    <li>- 20 et 21 janvier 2015&nbsp;: Fabrique Arts, Culture - Toulouse (31)</li>
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mt-l mt-md-0 text-center">
+              <a data-bespoke-lightbox href="media/images/affiche-spectateurs.jpg" title="Affiche">
+                <img src="media/images/affiche-spectateurs.jpg" alt="Affiche"
+                  style="max-width: 100%; border-radius: 4px; border: 1px solid var(--subtle-line);">
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  
-  
-  <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+<footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
     <div class="content-wrapper text-center">
       <div class="socials mb-l">
         <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="social-link hover-glow">Facebook</a>
         <span class="dot-separator">•</span>
         <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
         <span class="dot-separator">•</span>
-        <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+        <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
       </div>
-      
-      <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow" style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-      
-                  <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
-            <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
+
+      <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+        style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+      <div class="footer-brand mt-xl">
+        <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+        <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+      </div>
+      <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
     </div>
   </footer>
 
-
-
-  <!-- Interactive Elements Engine -->
+<!-- Interactive Elements Engine -->
   <script src="../../assets/js/main.js"></script>
-  
-  
+
 </body>
+
 </html>

@@ -1,80 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mesdames A. - Cromwell</title>
     <!-- Core Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- The Dark Space Aesthetic -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-    
-    <style>
-        /* Specific Creation Page Overrides */
-        #creation-hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: var(--space-xl);
-            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-                        url('media/images/cromwell-banniere-4-3-bg-2.png_1440.webp') center/cover no-repeat;
-        }
-        #creation-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 5, 5, 0.6); /* Darken hero image for text readability */
-        }
-        .hero-title-group {
-            position: relative;
-            z-index: 2;
-        }
-        .hero-title-group h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: var(--space-s); }
-        .hero-title-group p { font-size: 1.2rem; color: var(--script-gray); text-transform: uppercase; }
-        
-        /* Breadcrumb */
-        .page-header {
-            position: absolute;
-            top: 0; left: 0; width: 100%;
-            padding: var(--space-m);
-            z-index: 10;
-        }
-        
-        /* Gallery Reset */
-        .masonry-gallery a { width: auto; max-width: 100%; display: inline-block; margin: 10px; }
-        .masonry-gallery img { max-width: 100%; height: auto; border-radius: var(--space-s); transition: transform 0.3s; }
-        .masonry-gallery a:hover img { transform: scale(1.03); border: 1px solid var(--red-dot); }
-    
-        /* Reduce huge section padding for content blocks */
-        .stage-section { min-height: auto; padding: var(--space-l) var(--space-m); }
-        #creation-hero { min-height: 60vh; padding-top: var(--space-xl); }
-    
-    
-        .page-header { z-index: 1000; }
-        .stage-section { background: transparent; }
-        .footer-stage { background: var(--void-black); z-index: 100; }
-    
-    </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
-<body class="dark-space">
+
+<body data-hero-bg="media/images/cromwell-silhouettes-coline-lubin.png_1440.webp" class="dark-space">
     <!-- 1. The Guide (Mouse Tracker) -->
     <div id="red-dot"></div>
 
-    
-    
-    <header class="page-header">
+<header class="page-header">
         <div class="content-wrapper">
-            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+            <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+            <div class="header-nav-right">
+                <a href="../voyages/index.html" class="nav-arrow" title="Précédent : Voyages dans le temps">&larr;</a>
+                <a href="../commencement/index.html" class="nav-arrow" title="Suivant : Le Commencement">&rarr;</a>
+            </div>
         </div>
     </header>
 
-
-
-    <main>
+<main>
         <!-- Hero Section -->
         <section id="creation-hero" class="stage-section">
             <div class="hero-title-group">
@@ -86,32 +42,55 @@
         <!-- Core Text Content -->
         <section id="creation-content" class="stage-section">
             <div class="content-wrapper">
-                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
+                <div class="bio-focus">
                     <div class="row">
-                            <div class="col mt-4">
-                                
-                                <p>Cromwell, pièce-fleuve révolutionnaire de Victor Hugo, c'est 400 pages, 6000 vers, une alternance de scènes intimes, de farce, de cour, de bouffonneries, de chansons, d'intrigues politiques et d'espionnage. Surtout un grand élan théâtral aux 80 personnages qui tissent la trame de ce jeu historique. Réputée immontable, immontée en intégralité depuis son édition en 1827, plus connue pour sa préface que pour son drame, c’est pourtant une magnifique machine à jouer.</p>
-                                <div class="video-stage"><video class="w-100" controls preload="metadata" playsinline poster="media/images/cromwell-banniere-2.png_576.webp">
+                        <div class="col mt-4">
+
+                            <p>Cromwell, pièce-fleuve révolutionnaire de Victor Hugo, c'est 400 pages, 6000 vers, une
+                                alternance de scènes intimes, de farce, de cour, de bouffonneries, de chansons,
+                                d'intrigues politiques et d'espionnage. Surtout un grand élan théâtral aux 80
+                                personnages qui tissent la trame de ce jeu historique. Réputée immontable, immontée en
+                                intégralité depuis son édition en 1827, plus connue pour sa préface que pour son drame,
+                                c’est pourtant une magnifique machine à jouer.</p>
+                            <div class="video-stage"><video class="w-100" controls preload="metadata" playsinline
+                                    poster="media/images/cromwell-banniere-2.png_576.webp">
                                     <source src="media/videos/teaser-cromwell-mesdames-a-h.265.mp4" type="video/mp4" />
                                     <source src="media/videos/teaser-cromwell-mesdames-a.mp4" type="video/mp4" />
                                 </video></div>
-                                <p class="text-end"><small><a class="action-link" href="https://www.youtube.com/watch?v=rNTvWCtgTHI" target="_blank" rel="noopener noreferrer">Regarder sur YouTube</a></small></p>
-                                <p>Pour monter ce projet nous sommes six metteur.e.s en scène</p>
-                                <ul class="liste-p">
-                                    <li>Mélanie Vayssettes et Simon Le Floc'h - <i>le club dramatique</i>,</li>
-                                    <li>Nathan Croquet - <i>Théâtre du Rocher</i>,</li>
-                                    <li>Maëva Meunier - <i>La Particule</i>,</li>
-                                    <li>Victor Ginicis - <i>Avant L'Incendie</i> et</li>
-                                    <li>Théodore Oliver - <i>MégaSuperThéâtre</i></li>
-                                </ul>
-                                <p>invité.e.s par Alice Tabart à venir monter chacun.e un acte de ce monstre dont elle assure la coordination et la dramaturgie générale.</p>
-                                <p class="text-end"><i><b>Durée : 5h40 de spectacle</b><br>
-                                        Entractes (pauses et repas) compris : 7h40</i></p>
-                                <p><i class="fa-solid fa-circle-info fa-lg u-inline-f949b42b61"></i> <a class="action-link" href="https://severaclechateau.vostickets.net/billet/FR/representation-SEVERAC_LE_CHATEAU-31172-0.wb/">Infos et réservations (12, 14 et 16 août)</a> <i class="fa-solid fa-ticket fa-rotate-by fa-lg u-inline-680145163b"></i></p>
+                            <p class="text-end"><small><a class="action-link"
+                                        href="https://www.youtube.com/watch?v=rNTvWCtgTHI" target="_blank"
+                                        rel="noopener noreferrer">Regarder sur YouTube</a></small></p>
+                            <p>Pour monter ce projet nous sommes six metteur.e.s en scène</p>
+                            <ul class="liste-p">
+                                <li>Mélanie Vayssettes et Simon Le Floc'h - <i>le club dramatique</i>,</li>
+                                <li>Nathan Croquet - <i>Théâtre du Rocher</i>,</li>
+                                <li>Maëva Meunier - <i>La Particule</i>,</li>
+                                <li>Victor Ginicis - <i>Avant L'Incendie</i> et</li>
+                                <li>Théodore Oliver - <i>MégaSuperThéâtre</i></li>
+                            </ul>
+                            <p>invité.e.s par Alice Tabart à venir monter chacun.e un acte de ce monstre dont elle
+                                assure la coordination et la dramaturgie générale.</p>
+                            <div class="mt-xl reveal-me"
+                                style="border-top: 1px solid var(--subtle-line); padding-top: var(--space-m);">
+                                <div class="mono-text" style="font-size: 0.9rem; letter-spacing: 0.05em;">
+                                    <span style="color: var(--pure-white);">Durée : 5h40 de spectacle</span>
+                                    <br>
+                                    <span style="opacity: 0.5; font-size: 0.85rem;">Entractes (pauses et repas) compris
+                                        : 7h40</span>
+                                </div>
+                                <div class="mt-l">
+                                    <a href="https://severaclechateau.vostickets.net/billet/FR/representation-SEVERAC_LE_CHATEAU-31172-0.wb/"
+                                        target="_blank" class="btn-support hover-glow d-inline-block"
+                                        style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+                                        Infos et réservations (12, 14 et 16 août) <i
+                                            class="fa-solid fa-ticket ms-2"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -120,11 +99,23 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Galerie</h2>
                 <div class="masonry-gallery mt-l" style="text-align: center;">
-                    
-                        <a  data-bespoke-lightbox href="media/images/cromwell-silhouettes-coline-lubin.png_1440.webp" title="Cromwell - Tyrolienne">
-                            <img src="media/images/cromwell-silhouettes-coline-lubin.png_576.webp" alt="Cromwell - coucher soleil - Crédit : Coline Lubin"  >
-                        </a>
-                    
+                    <a data-bespoke-lightbox href="media/images/cromwell-silhouettes-coline-lubin.png_1440.webp"
+                        title="Cromwell - Silhouettes">
+                        <img src="media/images/cromwell-silhouettes-coline-lubin.png_576.webp"
+                            alt="Cromwell - Silhouettes - Crédit : Coline Lubin">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/severac-aveyron-cromwell-1-1024x681.webp"
+                        title="Cromwell - Sévérac 1">
+                        <img src="media/images/severac-aveyron-cromwell-1-1024x681.webp" alt="Cromwell - Sévérac 1">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/severac-aveyron-cromwell-2-1024x547.webp"
+                        title="Cromwell - Sévérac 2">
+                        <img src="media/images/severac-aveyron-cromwell-2-1024x547.webp" alt="Cromwell - Sévérac 2">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/severac-aveyron-cromwell-3-860x573.webp"
+                        title="Cromwell - Sévérac 3">
+                        <img src="media/images/severac-aveyron-cromwell-3-860x573.webp" alt="Cromwell - Sévérac 3">
+                    </a>
                 </div>
             </div>
         </section>
@@ -138,94 +129,163 @@
                 <div class="col-content">
                     <div class="credits">
                         <h3 class="mono-text mb-m accent">Équipe</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
-                                <br><strong style="color:var(--pure-white);">Coordination et dramaturgie /</strong>  Alice Tabart
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Mise en scène /</strong>  Mélanie Vayssettes, Simon Le Floc'h, Nathan Croquet, Maëva Meunier, Victor Ginicis et Théodore Oliver
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Régie générale /</strong>  Grangil Marrast (Sévérac)
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Régie générale /</strong>  Thierry Manuel (Toulouse)
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Création lumière /</strong>  Lionel Ueberschlag et Artur Forterre-Canillas
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Son et création musicale /</strong>  Franzie Rivère
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Musicien⸱ne et création musicale /</strong>  Clarice Boyriven, Eliot Saour, Raphaël Jamin
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Rigger /</strong>  Arnaud Delheure
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Électricien /</strong>  Julien Louisgrand
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Technicienne lumière /</strong>  Héloïse Vandermacq
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Regard costumes /</strong>  Elsa Séguier-Faucher
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Costumes /</strong>  Adrien Galaup
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Chargée de production /</strong>  Marion Hodel
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Médiation /</strong>  Clément Cadinot
-                                <br>
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Avec :</strong> 
-                                <br>
-                                Alice Tabart<br>
-                                Chloé Sarrat<br>
-                                Christian Moutelière<br>
-                                Clarice Boyriven<br>
-                                Clémence Barbier<br>
-                                Coline Lubin<br>
-                                Eliot Saour<br>
-                                Fanny Violeau<br>
-                                Guillaume Langou<br>
-                                Julie Duchaussoy<br>
-                                Juliette Paul<br>
-                                Lucas Saint Faust<br>
-                                Maëva Meunier<br>
-                                Nathan Croquet<br>
-                                Quentin Quignon<br>
-                                Sachernka Anacassis<br>
-                                Sara Charrier<br>
-                                Théodore Oliver<br>
-                                Victor Ginicis<br>
-                                Yoan Charles<br>
-                                Yohann Villepastour<br>
-                            </p>
+                        <p class="mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Coordination et dramaturgie /</strong> Alice
+                            Tabart
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Mise en scène /</strong> Mélanie Vayssettes,
+                            Simon Le Floc'h, Nathan Croquet, Maëva Meunier, Victor Ginicis et Théodore Oliver
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Régie générale /</strong> Grangil Marrast
+                            (Sévérac)
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Régie générale /</strong> Thierry Manuel
+                            (Toulouse)
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Création lumière /</strong> Lionel Ueberschlag
+                            et Artur Forterre-Canillas
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Son et création musicale /</strong> Franzie
+                            Rivère
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Musicien⸱ne et création musicale /</strong>
+                            Clarice Boyriven, Eliot Saour, Raphaël Jamin
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Rigger /</strong> Arnaud Delheure
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Électricien /</strong> Julien Louisgrand
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Technicienne lumière /</strong> Héloïse
+                            Vandermacq
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Regard costumes /</strong> Elsa Séguier-Faucher
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Costumes /</strong> Adrien Galaup
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Chargée de production /</strong> Marion Hodel
+                            <br>
+                            <br><strong style="color:var(--pure-white);">Médiation /</strong> Clément Cadinot
+                            <br>
+                            <br>
+                            <br>
+                        <div class="avec-listing mt-m">
+                            <span class="label-equipe-crea label-avec">Avec :</span>
+                            <div class="names-list">
+                                <span>Alice Tabart</span>
+                                <span>Chloé Sarrat</span>
+                                <span>Christian Moutelière</span>
+                                <span>Clarice Boyriven</span>
+                                <span>Clémence Barbier</span>
+                                <span>Coline Lubin</span>
+                                <span>Eliot Saour</span>
+                                <span>Fanny Violeau</span>
+                                <span>Guillaume Langou</span>
+                                <span>Julie Duchaussoy</span>
+                                <span>Juliette Paul</span>
+                                <span>Lucas Saint Faust</span>
+                                <span>Maëva Meunier</span>
+                                <span>Nathan Croquet</span>
+                                <span>Quentin Quignon</span>
+                                <span>Sachernka Anacassis</span>
+                                <span>Sara Charrier</span>
+                                <span>Théodore Oliver</span>
+                                <span>Victor Ginicis</span>
+                                <span>Yoan Charles</span>
+                                <span>Yohann Villepastour</span>
+                            </div>
+                        </div>
+                        </p>
                     </div>
-                    
-                    
 
-                    
+                    <div class="production mt-l">
+                        <h3 class="mono-text mb-m accent">Production</h3>
+                        <p class="text-readable">
+                            <span class="label-equipe-crea">Production :</span> <a
+                                href="https://mesdames-a.fr">Compagnie Mesdames A</a>.
+                        </p>
+                        <p class="text-readable">
+                            <span class="label-equipe-crea">Co-producteurs :</span> Commune de Sévérac d'Aveyron,
+                            Théâtre Jules Julien, Théâtre du Grand Rond.
+                        </p>
+                        <p class="text-readable">
+                            <span class="label-equipe-crea">Avec le soutien de :</span> l'Union Européenne (Fond
+                            LEADER), la DRAC (Été Culturel), la Région Occitanie, le Département de l’Aveyron, la
+                            Communauté de communes des Causses à l'Aubrac et la Mairie de Toulouse.
+                        </p>
+                        <p class="text-readable">
+                            <span class="label-equipe-crea">En partenariat avec :</span> le Théâtre Sorano, le Centre
+                            Culturel Bonnefoy, le Théâtre des Mazades, l’Usine | CNAREP de Tournefeuille.
+                        </p>
+                        <p class="text-readable">
+                            <span class="label-equipe-crea">Avec le soutien matériel de :</span> Théâtre de la Cité -
+                            CDN de Toulouse, RAVIV-Réseau des Arts vivants, MégaSuperThéâtre, leclubdramatique, Avant
+                            l'incendie, Le Théâtre du Rocher, Centre Culturel de la Brique Rouge, Théâtre des Mazades,
+                            Théâtre Jules Julien, La Grainerie, Théâtre du Pavé, Gafalu, Le Motor, Scène F, Le Phun,
+                            Compagnie Le Périscope, Baro d'Evel.
+                        </p>
+                    </div>
+
+</div>
+            </div>
+        </section>
+
+<!-- Archives: Dates passées & Affiche -->
+        <section id="creation-archives" class="stage-section" style="padding-bottom: var(--space-xl);">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Dates passées</h2>
+                </div>
+                <div class="col-content">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-12 col-md-8">
+                            <div class="dates-list mono-text"
+                                style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                                <ul>
+                                    <li><b>2024 et 2025</b></li>
+                                    <li>- 12, 14 et 16 août<br>Cour d'honneur du Château de Sévérac (Aveyron, 12)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-l mt-md-0 text-center">
+                            <a data-bespoke-lightbox href="media/images/photos-origine/affiche-cromwell-jaune_vf.pdf"
+                                title="Affiche">
+                                <img src="media/images/affiche-cromwell-jaune_v4_2025.png_720.webp" alt="Affiche"
+                                    style="max-width: 100%; border-radius: 4px; border: 1px solid var(--subtle-line);">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    
-    
-    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+<footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
         <div class="content-wrapper text-center">
             <div class="socials mb-l">
-                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="social-link hover-glow">Facebook</a>
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
                 <span class="dot-separator">•</span>
                 <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
                 <span class="dot-separator">•</span>
-                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+                <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
             </div>
-            
-            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow" style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-            
-                        <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+            <div class="footer-brand mt-xl">
+                <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+                <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+            </div>
             <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>
 
-
-
-    <!-- Interactive Elements Engine -->
+<!-- Interactive Elements Engine -->
     <script src="../../assets/js/main.js"></script>
-    
-    
+
 </body>
+
 </html>

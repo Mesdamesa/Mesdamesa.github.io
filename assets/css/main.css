@@ -30,7 +30,7 @@
     --space-xl: 8rem;
     --space-xxl: 16rem;
 
-    --max-width: 1100px;
+    --max-width: 1000px;
 }
 
 /* -------------------------------------------------------------------------
@@ -87,9 +87,49 @@ body.dark-space {
 
 .mono-text {
     font-family: var(--font-technical);
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+}
+
+.text-readable {
+    font-family: var(--font-dramatic);
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--off-white);
+}
+
+.label-equipe-crea {
+    font-family: var(--font-technical);
+    color: var(--red-dot);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 0.5rem;
+}
+
+.label-avec {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.names-list {
+    display: block;
+    line-height: 1.8;
+}
+
+.names-list span {
+    display: block;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.bio-focus {
+    font-size: 1.3rem;
+    color: var(--script-gray);
+    max-width: 800px;
+    margin-top: var(--space-m);
 }
 
 /* -------------------------------------------------------------------------
@@ -112,6 +152,22 @@ body.dark-space {
     mix-blend-mode: screen;
 }
 
+.dot-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--red-dot);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    mix-blend-mode: screen;
+    box-shadow: 0 0 10px var(--red-dot-glow);
+    opacity: 0;
+    /* Base opacity, will be set via JS */
+}
+
 /* Enlarge dot when hovering interactive items (handled via JS classes) */
 #red-dot.hover-active {
     width: 40px;
@@ -126,8 +182,8 @@ body.dark-space {
    ------------------------------------------------------------------------- */
 
 .stage-section {
-    min-height: 100vh;
-    padding: var(--space-xxl) var(--space-m);
+    min-height: auto;
+    padding: var(--space-xl) var(--space-m);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +207,15 @@ body.dark-space {
     .row-layout {
         grid-template-columns: 1fr 2fr;
     }
+
+    .compagnie-split {
+        grid-template-columns: 1.7fr 1.3fr;
+        align-items: start;
+    }
+}
+
+.compagnie-split .bio-focus {
+    margin-top: 0;
 }
 
 /* Utilities */
@@ -174,6 +239,24 @@ body.dark-space {
    COMPONENTS
    ------------------------------------------------------------------------- */
 
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 3.5rem 0;
+    transition: background 0.3s, padding 0.3s;
+}
+
+.page-header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--space-m);
+    /* Gutter */
+}
+
 /* Navigation */
 #main-nav {
     position: fixed;
@@ -194,6 +277,137 @@ body.dark-space {
     color: var(--pure-white);
     text-decoration: none;
     z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-logo {
+    height: 32px;
+    width: auto;
+    transition: height 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 24px;
+    }
+}
+
+.nav-brand-small {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-dramatic);
+    font-size: 1.2rem;
+    color: var(--pure-white);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#hero,
+#creations {
+    min-height: 100vh;
+}
+
+/* -------------------------------------------------------------------------
+   Creation Pages — Shared Styles
+   (hero bg is driven by --hero-bg custom property set on <body>)
+   ------------------------------------------------------------------------- */
+#creation-hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: var(--space-xl);
+    /* Hero bg is applied by main.js reading data-hero-bg on <body> */
+}
+
+#creation-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 5, 5, 0.5);
+}
+
+.hero-title-group {
+    position: relative;
+    z-index: 2;
+}
+
+.page-header {
+    z-index: 1000;
+}
+
+.footer-stage {
+    background: var(--void-black);
+    z-index: 100;
+}
+
+#creation-hero h1 {
+    font-size: clamp(3.5rem, 9vw, 6.5rem);
+    margin-bottom: var(--space-s);
+}
+
+.nav-brand-small:hover {
+    opacity: 1;
+}
+
+.nav-brand-small img {
+    height: 20px;
+}
+
+.header-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.video-stage .embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-stage .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.nav-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--subtle-line);
+    border-radius: 50%;
+    color: var(--pure-white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+    border-color: var(--red-dot);
+    color: var(--red-dot);
+    box-shadow: 0 0 10px var(--red-dot-glow);
+}
+
+.nav-arrow.disabled {
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 .nav-right {
@@ -436,15 +650,24 @@ body.dark-space {
     margin-top: 0.2rem;
 }
 
-.bio-focus {
-    font-size: 1.2rem;
-    color: var(--script-gray);
-    max-width: 700px;
-}
+
 
 /* Footer / Contact Stage */
 .footer-stage {
     background-color: var(--void-black);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0.9;
+}
+
+.footer-brand img {
+    width: 80px;
+    height: auto;
 }
 
 .big-mail {
@@ -504,13 +727,13 @@ body.dark-space {
     transform: translateY(0);
 }
 
-/* Dynamic Repertoire Background */
-#repertoire {
+/* Dynamic Creations Background */
+#creations {
     position: relative;
     overflow: hidden;
 }
 
-#repertoire-bg-layer {
+#creations-bg-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -520,11 +743,12 @@ body.dark-space {
     z-index: 0;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     opacity: 0;
     transition: opacity 0.6s ease, background-image 0.4s ease;
 }
 
-#repertoire .content-wrapper {
+#creations .content-wrapper {
     position: relative;
     z-index: 1;
     /* Keep text above background */
@@ -754,4 +978,55 @@ body.dark-space {
 
 .support-accordion:hover .avatar img {
     transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------
+   CREATION HIGHLIGHTS (Metadata Bar)
+   ------------------------------------------------------------------------- */
+.creation-highlight-bar {
+    margin: var(--space-xl) 0;
+    padding: var(--space-l);
+    background: rgba(227, 38, 38, 0.03);
+    border: 1px solid var(--subtle-line);
+    border-left: 3px solid var(--red-dot);
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-l);
+    animation: fadeIn 1.2s ease;
+}
+
+.highlight-info-group .h-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--red-dot);
+}
+
+.highlight-info-group .h-value {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: var(--font-technical);
+    color: var(--pure-white);
+    line-height: 1.2;
+}
+
+.highlight-info-group .h-sub {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    font-style: italic;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+@media (max-width: 900px) {
+    .creation-highlight-bar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
 }

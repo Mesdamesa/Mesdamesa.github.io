@@ -1,80 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mesdames A. - Le Satyre</title>
     <!-- Core Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c46c0e6279.js" crossorigin="anonymous"></script>
     <!-- The Dark Space Aesthetic -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-    
-    <style>
-        /* Specific Creation Page Overrides */
-        #creation-hero {
-            position: relative;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: var(--space-xl);
-            background: linear-gradient(to bottom, transparent 50%, var(--void-black) 100%),
-                        url('media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg') center/cover no-repeat;
-        }
-        #creation-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(5, 5, 5, 0.6); /* Darken hero image for text readability */
-        }
-        .hero-title-group {
-            position: relative;
-            z-index: 2;
-        }
-        .hero-title-group h1 { font-size: clamp(3rem, 8vw, 6rem); margin-bottom: var(--space-s); }
-        .hero-title-group p { font-size: 1.2rem; color: var(--script-gray); text-transform: uppercase; }
-        
-        /* Breadcrumb */
-        .page-header {
-            position: absolute;
-            top: 0; left: 0; width: 100%;
-            padding: var(--space-m);
-            z-index: 10;
-        }
-        
-        /* Gallery Reset */
-        .masonry-gallery a { width: auto; max-width: 100%; display: inline-block; margin: 10px; }
-        .masonry-gallery img { max-width: 100%; height: auto; border-radius: var(--space-s); transition: transform 0.3s; }
-        .masonry-gallery a:hover img { transform: scale(1.03); border: 1px solid var(--red-dot); }
-    
-        /* Reduce huge section padding for content blocks */
-        .stage-section { min-height: auto; padding: var(--space-l) var(--space-m); }
-        #creation-hero { min-height: 60vh; padding-top: var(--space-xl); }
-    
-    
-        .page-header { z-index: 1000; }
-        .stage-section { background: transparent; }
-        .footer-stage { background: var(--void-black); z-index: 100; }
-    
-    </style>
+    <script async src="../../assets/js/analytics.js"></script>
 </head>
-<body class="dark-space">
+
+<body data-hero-bg="media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.webp" class="dark-space">
     <!-- 1. The Guide (Mouse Tracker) -->
     <div id="red-dot"></div>
 
-    
-    
-    <header class="page-header">
+<header class="page-header">
         <div class="content-wrapper">
-            <a href="../../index.html#repertoire" class="mono-text hover-glow bespoke-link">← Retour au Répertoire</a>
+            <a href="../../index.html#creations" class="mono-text hover-glow bespoke-link">← Retour aux Créations</a>
+
+            <div class="header-nav-right">
+                <a href="../dragons/index.html" class="nav-arrow" title="Précédent : La Cité des Dragons">&larr;</a>
+                <a href="../monologue/index.html" class="nav-arrow" title="Suivant : Le Monologue d'une Tueuse">&rarr;</a>
+            </div>
         </div>
     </header>
 
-
-
-    <main>
+<main>
         <!-- Hero Section -->
         <section id="creation-hero" class="stage-section">
             <div class="hero-title-group">
@@ -86,25 +42,22 @@
         <!-- Core Text Content -->
         <section id="creation-content" class="stage-section">
             <div class="content-wrapper">
-                <div class="bio-focus text-readable" style="font-size: 1.15rem; line-height: 1.8;">
-                    <div class="row">
-                            <div class="col-md-6">
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <p class="text-md-end"><small><i>Saisons 2012/13 et 2013/14</i></small></p>
-                            </div>
-                        </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <div class="video-stage"><div class="embed-responsive"><iframe class="embed-responsive-item" src="https://player.vimeo.com/video/182463716"></iframe></div></div>
-                        </div>
-                        <div class="row">
-                            <p>
-                                Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
-                                <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans un face à face avec les Dieux de l'Olympe.
-                                <br>
-                                <br> Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.</p>
+                <div class="bio-focus">
+                    <p>
+                        Le Satyre est un poème, ludique et épique, tiré de La Légende des Siècles de Victor Hugo.
+                        <br> Il nous entraîne, aux côtés d'une créature marginale et monstrueusement subversive dans
+                        un face à face avec les Dieux de l'Olympe.
+                    </p>
+                    <p>
+                        Ombres et lumières, mots et jeux, musiques et danses, maniés avec habileté par deux
+                        comédiens, nous plongent dans une heure quinze de spectacle où le rire sert une réflexion
+                        très contemporaine sur le progrès, la place des puissants et la folle course de l'humanité.
+                    </p>
+
+                    <div class="video-stage">
+                        <div class="embed-responsive">
+                            <iframe src="https://player.vimeo.com/video/182463716" title="Le Satyre"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -116,26 +69,33 @@
             <div class="content-wrapper">
                 <h2 class="section-title">Galerie</h2>
                 <div class="masonry-gallery mt-l" style="text-align: center;">
-                    
-                        <a  data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" title="Le Satyre - Poursuite" class="text-white">
-                            <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.jpg" alt="Le Satyre - Poursuite"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg" title="Le Satyre - Epaules" class="text-white">
-                            <img src="media/images/CIE_MESDAMES_A_2012_Satyre_epaules.jpg" alt="Le Satyre - Epaules"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" title="Le Satyre - Guerre">
-                            <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.jpg" alt="Le Satyre - Guerre"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.jpg" title="Le Satyre - Psyché">
-                            <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.jpg" alt="Le Satyre - Psyché"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Faune.jpg" title="Le Satyre - Faune">
-                            <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Faune.jpg" alt="Le Satyre - Faune"  >
-                        </a>
-                        <a  data-bespoke-lightbox href="https://player.vimeo.com/video/182463716" title="Le Satyre - vidéo Vimeo">
-                            <img srcset="https://vumbnail.com/182463716.jpg 640w, https://vumbnail.com/182463716_large.jpg 640w, https://vumbnail.com/182463716_medium.jpg 200w, https://vumbnail.com/182463716_small.jpg 100w"  src="https://vumbnail.com/182463716.jpg" alt="Vimeo Thumbnail" >
-                        </a>
-                    
+
+                    <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.webp"
+                        title="Le Satyre - Poursuite" class="text-white">
+                        <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Poursuite.webp" alt="Le Satyre - Poursuite">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_epaules.webp"
+                        title="Le Satyre - Epaules" class="text-white">
+                        <img src="media/images/CIE_MESDAMES_A_2012_Satyre_epaules.webp" alt="Le Satyre - Epaules">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.webp"
+                        title="Le Satyre - Guerre">
+                        <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Guerre.webp" alt="Le Satyre - Guerre">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.webp"
+                        title="Le Satyre - Psyché">
+                        <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Psyche.webp" alt="Le Satyre - Psyché">
+                    </a>
+                    <a data-bespoke-lightbox href="media/images/CIE_MESDAMES_A_2012_Satyre_Faune.webp"
+                        title="Le Satyre - Faune">
+                        <img src="media/images/CIE_MESDAMES_A_2012_Satyre_Faune.webp" alt="Le Satyre - Faune">
+                    </a>
+                    <a data-bespoke-lightbox href="https://player.vimeo.com/video/182463716"
+                        title="Le Satyre - vidéo Vimeo">
+                        <img srcset="https://vumbnail.com/182463716.jpg 640w, https://vumbnail.com/182463716_large.jpg 640w, https://vumbnail.com/182463716_medium.jpg 200w, https://vumbnail.com/182463716_small.jpg 100w"
+                            src="https://vumbnail.com/182463716.jpg" alt="Vimeo Thumbnail">
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -149,52 +109,105 @@
                 <div class="col-content">
                     <div class="credits">
                         <h3 class="mono-text mb-m accent">Équipe</h3>
-                        <p class="text-readable mono-text" style="font-size:0.9rem; line-height:2;">
-                                <br><strong style="color:var(--pure-white);">Mise en scène &amp; costumes /</strong>  Alice Tabart
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Interprétation /</strong>  Coline Lubin &amp; Simon Giesbert
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Création musicale /</strong>  Simon Giesbert
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Stagiaire /</strong>  Charline Daligaud
-                                <br>
-                                <br><strong style="color:var(--pure-white);">Création affiche /</strong>  Cécile Vallade
-                                <br>
-                            </p>
+                        <p class="mono-text" style="font-size:0.9rem; line-height:2;">
+                            <br><strong style="color:var(--pure-white);">Mise en scène &amp; costumes /</strong> Alice
+                            Tabart
+                            <br>
+                            <br>
+                        <div class="avec-listing mt-m">
+                            <span class="label-equipe-crea label-avec">Avec :</span>
+                            <div class="names-list">
+                                <span>Coline Lubin</span>
+                                <span>Simon Giesbert</span>
+                            </div>
+                        </div>
+                        <br><strong style="color:var(--pure-white);">Création musicale /</strong> Simon Giesbert
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Stagiaire /</strong> Charline Daligaud
+                        <br>
+                        <br><strong style="color:var(--pure-white);">Création affiche /</strong> Cécile Vallade
+                        <br>
+                        </p>
                     </div>
-                    
-                    
 
-                    
+                    <div class="production mt-l">
+                        <h3 class="mono-text mb-m accent">Production</h3>
+                        <p class="text-readable">
+                            Une production de la <a href="https://mesdames-a.fr">compagnie Mesdames A</a> en partenariat
+                            avec l’Association ACT-Mirail et le Collectif Mix’art Myrys.
+                        </p>
+                    </div>
+
+</div>
+            </div>
+        </section>
+
+<!-- Archives: Dates passées & Affiche -->
+        <section id="creation-archives" class="stage-section" style="padding-bottom: var(--space-xl);">
+            <div class="content-wrapper row-layout">
+                <div class="col-title">
+                    <h2 class="section-title">Dates Passées</h2>
+                </div>
+                <div class="col-content">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-12 col-md-8">
+                            <div class="dates-list mono-text" style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                                <ul>
+                                    <li><b>2014</b></li>
+                                    <li>- MJC L'Isle-Jourdain - Gers</li>
+                                    <br>
+                                    <li><b>2013</b></li>
+                                    <li>- 1er juin: Halles de Villasavary - Aude</li>
+                                    <li>- 30 mars: Salle du Foyer Rural - CLARAC</li>
+                                    <li>- 22 mars: Mix'art Myrys - Toulouse (31) - Soirée Grèce et Démocratie avec le Collectif Ciné 2000</li>
+                                    <li>- 21 février au 2 mars: Théâtre de la Violette - Toulouse (31)</li>
+                                    <br>
+                                    <li><b>2012</b></li>
+                                    <li>- 24 août: Cour d'honneur - Séverac le Château (12)</li>
+                                    <li>- 16 juin: Lapanouse - Aveyron (12)</li>
+                                    <li>- 13 avril: Théâtre des Trois Ponts - Castelnaudary</li>
+                                    <li>- 31 mars : La Maison de la Terre à 21h - Poucharramet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="col-12 col-md-4 mt-l mt-md-0 text-center">
+                        <a data-bespoke-lightbox href="media/images/affiche-satyre.jpg" title="Affiche">
+                            <img src="media/images/affiche-satyre.jpg" alt="Affiche" style="max-width: 100%; border-radius: 4px; border: 1px solid var(--subtle-line);">
+                        </a>
+                    </div>
+                
+                    </div>
                 </div>
             </div>
         </section>
+        
     </main>
 
-    
-    
-    <footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-xl) var(--space-m);">
+<footer class="footer-stage stage-section" style="min-height: auto; padding: var(--space-l) var(--space-m);">
         <div class="content-wrapper text-center">
             <div class="socials mb-l">
-                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/" class="social-link hover-glow">Facebook</a>
+                <a href="http://www.facebook.com/Compagnie-Mesdames-a-161213841387/"
+                    class="social-link hover-glow">Facebook</a>
                 <span class="dot-separator">•</span>
                 <a href="https://twitter.com/Mesdames_A" class="social-link hover-glow">Twitter</a>
                 <span class="dot-separator">•</span>
-                <a href="../../index.html#repertoire" class="social-link hover-glow">Retour</a>
+                <a href="../../index.html#creations" class="social-link hover-glow">Retour aux Créations</a>
             </div>
-            
-            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow" style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
-            
-                        <p style="color: var(--pure-white); opacity: 0.8; font-size: 0.8rem; letter-spacing: 0.05em; margin-top: var(--space-m);">Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
+
+            <a href="mailto:cie.mesdames.a@gmail.com" class="big-mail hover-glow"
+                style="font-size: clamp(2rem, 5vw, 4rem); margin-top: var(--space-m);">cie.mesdames.a@gmail.com</a>
+
+            <div class="footer-brand mt-xl">
+                <img src="../../media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo">
+                <p class="mono-text" style="color: var(--pure-white); opacity: 0.8;">Mesdames A.</p>
+            </div>
             <p class="legal mt-m mono-text" style="color: var(--pure-white); opacity: 0.6;">© Compagnie Mesdames A.</p>
         </div>
     </footer>
 
-
-
-    <!-- Interactive Elements Engine -->
+<!-- Interactive Elements Engine -->
     <script src="../../assets/js/main.js"></script>
-    
-    
+
 </body>
+
 </html>
