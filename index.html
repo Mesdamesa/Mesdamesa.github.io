@@ -7,12 +7,65 @@
     <title>Mesdames A | Compagnie de Théâtre</title>
     <meta name="description"
         content="Site de la compagnie Mesdames A, compagnie de théâtre contemporain basée à Toulouse.">
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Mesdames A | Compagnie de Théâtre">
+    <meta property="og:description" content="Théâtre, musique, danse — sur les plateaux et hors les murs, pour tous. Compagnie de théâtre contemporain basée à Toulouse.">
+    <meta property="og:image" content="https://mesdames-a.fr/media/images/LogoCompagnieMa.svg">
+    <meta property="og:url" content="https://mesdames-a.fr/">
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TheaterGroup",
+      "name": "Compagnie Mesdames A",
+      "url": "https://mesdames-a.fr",
+      "logo": "https://mesdames-a.fr/media/images/LogoCompagnieMa.svg",
+      "sameAs": [
+        "https://www.facebook.com/Compagnie-Mesdames-a-161213841387/",
+        "https://twitter.com/Mesdames_A"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TheaterEvent",
+      "name": "CROMWELL par Mesdames A",
+      "startDate": "2024-08-12",
+      "endDate": "2024-08-16",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Sévérac-le-Château",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sévérac-le-Château",
+          "addressCountry": "FR"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://severaclechateau.vostickets.net/billet/FR/representation-SEVERAC_LE_CHATEAU-31172-0.wb/",
+        "availability": "https://schema.org/InStock"
+      },
+      "performer": {
+        "@type": "PerformingGroup",
+        "name": "Compagnie Mesdames A"
+      }
+    }
+    </script>
     <!-- Google Fonts: Dramatic Serif for headers, Monospace/Clean Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </noscript>
     <!-- Main Bespoke Stylesheet -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
@@ -47,7 +100,7 @@
     <!-- Minimal, fading navigation -->
     <nav id="main-nav">
         <a href="#hero" class="nav-brand">
-            <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" class="nav-logo">
+            <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" class="nav-logo" width="50" height="50">
             Mesdames A.
         </a>
 
@@ -378,7 +431,7 @@
                             <details class="team-member-accordion support-item support-accordion">
                                 <summary class="team-member-header hover-glow">
                                     <div class="avatar logo-portrait"><img src="media/images/LogoCompagnieMa.svg"
-                                            alt="Mesdames A."></div>
+                                            alt="Mesdames A." width="80" height="80"></div>
                                     <div>
                                         <h3 class="name">Nous soutenir</h3>
                                         <span class="role mono-text">Compagnie Mesdames A.</span>
@@ -418,7 +471,7 @@
 
                 <div class="legal mono-text mt-xl">
                     <div style="margin-bottom: var(--space-l); opacity: 1;">
-                        <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" style="width: 120px;">
+                        <img src="media/images/LogoCompagnieMa.svg" alt="Mesdames A. Logo" style="width: 120px; height: 120px;" width="120" height="120">
                     </div>
                     <p style="color: #808080; font-size: 0.85rem; letter-spacing: 0.05em;">
                         Licence entrepreneur : n° L-R-21-13672 | SIRET : 539 558 304 000 41</p>
@@ -429,7 +482,7 @@
     </main>
 
     <!-- Custom Interaction Script -->
-    <script src="assets/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
 </body>
 
 </html>
